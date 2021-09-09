@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -75,15 +76,16 @@ returns the values from the html form as hash reference
 sub ITSMConfigItemFormDataGet {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(Key Item ConfigItemID)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!"
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(Key Item ConfigItemID)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # load backend
@@ -114,15 +116,16 @@ returns a input field html string
 sub ITSMConfigItemInputCreate {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(Key Item)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!"
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(Key Item)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # load backend
@@ -152,15 +155,16 @@ returns the values from the search html form
 sub ITSMConfigItemSearchFormDataGet {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(Key Item)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!"
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(Key Item)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # load backend
@@ -190,15 +194,16 @@ returns a search input field html string
 sub ITSMConfigItemSearchInputCreate {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(Key Item)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!"
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(Key Item)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # load backend

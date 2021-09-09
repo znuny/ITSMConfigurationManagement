@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -156,15 +157,16 @@ return the current counter of a class
 sub CurrentCounterGet {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(ClassID Type)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!",
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(ClassID Type)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # ask the database

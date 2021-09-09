@@ -1,7 +1,8 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
-# $origin: otrs - 8207d0f681adcdeb5c1b497ac547a1d9749838d5 - Kernel/System/Service/PreferencesDB.pm
+# $origin: Znuny - 183da4c8303484a83594b3cc5750138013316727 - Kernel/System/Service/PreferencesDB.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -50,11 +51,11 @@ sub ServicePreferencesSet {
     my ( $Self, %Param ) = @_;
 
     # check needed stuff
-    for (qw(ServiceID Key Value)) {
-        if ( !defined $Param{$_} ) {
+    for my $Needed (qw(ServiceID Key Value)) {
+        if ( !defined $Param{$Needed} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message  => "Need $_!"
+                Message  => "Need $Needed!"
             );
             return;
         }
@@ -90,11 +91,11 @@ sub ServicePreferencesGet {
     my ( $Self, %Param ) = @_;
 
     # check needed stuff
-    for (qw(ServiceID)) {
-        if ( !$Param{$_} ) {
+    for my $Needed (qw(ServiceID)) {
+        if ( !$Param{$Needed} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message  => "Need $_!"
+                Message  => "Need $Needed!"
             );
             return;
         }

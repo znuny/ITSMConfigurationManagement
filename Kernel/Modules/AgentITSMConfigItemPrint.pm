@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -786,7 +787,7 @@ sub _PDFOutputXMLOutput {
 
             # output space, if level was given
             if ( $Param{Level} ) {
-                for ( 1 .. $Param{Level} ) {
+                for my $Level ( 1 .. $Param{Level} ) {
                     $NewRow->{Key}   = '    ' . $NewRow->{Key};
                     $NewRow->{Value} = '    ' . $NewRow->{Value};
                 }

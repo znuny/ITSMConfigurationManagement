@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -28,16 +29,13 @@ use vars qw(@ISA);
 
 our @ObjectDependencies = (
     'Kernel::Config',
-    'Kernel::System::DB',
     'Kernel::System::Cache',
+    'Kernel::System::DB',
     'Kernel::System::GeneralCatalog',
     'Kernel::System::LinkObject',
     'Kernel::System::Log',
-    'Kernel::System::Main',
     'Kernel::System::Service',
-    'Kernel::System::User',
     'Kernel::System::VirtualFS',
-    'Kernel::System::XML',
 );
 
 =head1 NAME
@@ -347,15 +345,16 @@ add a new config item
 sub ConfigItemAdd {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(ClassID UserID)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!",
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(ClassID UserID)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # get class list

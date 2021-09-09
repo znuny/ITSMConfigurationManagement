@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -40,15 +41,14 @@ sub Run {
     # get log object
     my $LogObject = $Kernel::OM->Get('Kernel::System::Log');
 
-    # check needed stuff
+    NEEDED:
     for my $Needed (qw(PageShown StartHit)) {
-        if ( !$Param{$Needed} ) {
-            $LogObject->Log(
-                Priority => 'error',
-                Message  => "Need $Needed!",
-            );
-            return;
-        }
+        next NEEDED if defined $Param{$Needed};
+        $LogObject->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     # need ConfigItemIDs

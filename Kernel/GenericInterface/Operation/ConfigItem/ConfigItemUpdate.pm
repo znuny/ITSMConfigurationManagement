@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -531,13 +532,15 @@ sub _CheckConfigItem {
     my $ConfigItem = $Param{ConfigItem};
 
     # check config item internally
+    NEEDED:
     for my $Needed (qw(Class Name DeplState InciState CIXMLData)) {
-        if ( !$ConfigItem->{$Needed} ) {
-            return {
-                ErrorCode    => "$Self->{OperationName}.MissingParameter",
-                ErrorMessage => "$Self->{OperationName}: ConfigItem->$Needed parameter is missing!",
-            };
-        }
+
+        next NEEDED if defined $ConfigItem->{$Needed};
+
+        return {
+            ErrorCode    => "$Self->{OperationName}.MissingParameter",
+            ErrorMessage => "$Self->{OperationName}: ConfigItem->$Needed parameter is missing!",
+        };
     }
 
     # check ConfigItem->Class
@@ -614,14 +617,16 @@ sub _CheckAttachment {
     my $Attachment = $Param{Attachment};
 
     # check attachment item internally
+    NEEDED:
     for my $Needed (qw(Content ContentType Filename)) {
-        if ( !$Attachment->{$Needed} ) {
-            return {
-                ErrorCode => "$Self->{OperationName}.MissingParameter",
-                ErrorMessage =>
-                    "$Self->{OperationName}: Attachment->$Needed  parameter is missing!",
-            };
-        }
+
+        next NEEDED if defined $Attachment->{$Needed};
+
+        return {
+            ErrorCode => "$Self->{OperationName}.MissingParameter",
+            ErrorMessage =>
+                "$Self->{OperationName}: Attachment->$Needed  parameter is missing!",
+        };
     }
 
     # check Article->ContentType
@@ -782,17 +787,18 @@ sub _ConfigItemUpdate {
                 UserID       => $Param{UserID},
             );
 
-            if ( !$DeletionSuccess ) {
-                $Kernel::OM->Get('Kernel::System::Log')->Log(
-                    Priority => 'error',
-                    Message  => "Unknown problem when deleting attachment $Filename of ConfigItem "
-                        . "$ConfigItemID. Please check the VirtualFS backend for stale files!",
-                );
-            }
+            next FILENAME if $DeletionSuccess;
+
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => "Unknown problem when deleting attachment $Filename of ConfigItem "
+                    . "$ConfigItemID. Please check the VirtualFS backend for stale files!",
+            );
         }
     }
 
     # set attachments
+    ATTACHMENT:
     if ( IsArrayRefWithData($AttachmentList) ) {
 
         for my $Attachment ( @{$AttachmentList} ) {
@@ -802,15 +808,15 @@ sub _ConfigItemUpdate {
                 UserID       => $Param{UserID}
             );
 
-            if ( !$Result->{Success} ) {
-                my $ErrorMessage = $Result->{ErrorMessage}
-                    || "Attachment could not be created, please contact the system administrator";
+            next ATTACHMENT if $Result->{Success};
 
-                return {
-                    Success      => 0,
-                    ErrorMessage => $ErrorMessage,
-                };
-            }
+            my $ErrorMessage = $Result->{ErrorMessage}
+                || "Attachment could not be created, please contact the system administrator";
+
+            return {
+                Success      => 0,
+                ErrorMessage => $ErrorMessage,
+            };
         }
     }
 

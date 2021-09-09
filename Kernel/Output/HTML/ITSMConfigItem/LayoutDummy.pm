@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -12,10 +13,9 @@ use strict;
 use warnings;
 
 our @ObjectDependencies = (
-    'Kernel::System::Log',
     'Kernel::Output::HTML::Layout',
+    'Kernel::System::Log',
     'Kernel::System::Web::Request',
-    'Kernel::Config',
 );
 
 =head1 NAME
@@ -106,15 +106,16 @@ get form data as hash reference
 sub FormDataGet {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(Key Item)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!",
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(Key Item)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     my %FormData;
@@ -142,15 +143,16 @@ create a input string
 sub InputCreate {
     my ( $Self, %Param ) = @_;
 
-    # check needed stuff
-    for my $Argument (qw(Key Item)) {
-        if ( !$Param{$Argument} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Argument!",
-            );
-            return;
-        }
+    NEEDED:
+    for my $Needed (qw(Key Item)) {
+
+        next NEEDED if defined $Param{$Needed};
+
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Need $Needed!",
+        );
+        return;
     }
 
     my $Value = $Param{Value};
