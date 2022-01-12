@@ -192,9 +192,12 @@ sub InputCreate {
             Search => $Value,
         );
 
+        # set keys to lowercase to match non case sensitive email-adresses
+         %CustomerSearchList = map { lc $_ => $CustomerSearchList{$_} } keys %CustomerSearchList;
+
         # transform ascii to html
         $Search = $Kernel::OM->Get('Kernel::Output::HTML::Layout')->Ascii2Html(
-            Text           => $CustomerSearchList{$Value} || '',
+            Text           => $CustomerSearchList{lc $Value} || '',
             HTMLResultMode => 1,
         );
     }
