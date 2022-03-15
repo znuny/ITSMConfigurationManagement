@@ -1017,7 +1017,7 @@
         </Value>
     </Setting>
     <Setting Name="UniqueCIName::EnableUniquenessCheck" Required="0" Valid="1">
-        <Description Translatable="1">Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.ITSMConfigItemListDuplicates.pl.</Description>
+        <Description Translatable="1">Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.</Description>
         <Navigation>Core::ITSMConfigItem</Navigation>
         <Value>
             <Item ValueType="Select" SelectedID="0">

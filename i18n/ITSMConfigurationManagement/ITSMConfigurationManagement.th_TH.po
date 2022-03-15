@@ -1053,11 +1053,11 @@ msgid ""
 "Enables/disables the functionality to check ConfigItems for unique names. "
 "Before enabling this option you should check your system for already "
 "existing config items with duplicate names. You can do this with the script "
-"bin/otrs.ITSMConfigItemListDuplicates.pl."
+"bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
 msgstr ""
 "เปิด / ปิดการใช้งานฟังก์ชั่นเพื่อตรวจสอบ ConfigItems สำหรับชื่อที่ไม่ซ้ำกัน "
 "ก่อนเปิดใช้งานตัวเลือกนี้คุณควรตรวจสอบระบบของคุณสำหรับรายการการตั้งค่าที่มีอยู่แล้วด้วยชื่อที่ซ้ำกัน "
-"คุณสามารถทำเช่นนี้ด้วยสคริปต์ดังต่อไปนี้ bin / otrs.ITSMConfigItemListDuplicates.pl"
+"คุณสามารถทำเช่นนี้ด้วยสคริปต์ดังต่อไปนี้ bin / otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."

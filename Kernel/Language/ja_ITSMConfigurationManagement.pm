@@ -333,7 +333,7 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
         '担当者フロントエンドが一度に複数の設定項目で機能するように設定項目一括操作機能を有効にします。';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'リストされたグループの構成アイテム一括処理機能のみを有効にします。';
-    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.ITSMConfigItemListDuplicates.pl.'} =
+    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'チケット構成アイテムのリンクに構成アイテムのステータスを設定するイベントモジュール';

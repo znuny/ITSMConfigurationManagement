@@ -327,8 +327,8 @@ sub Data {
         'Abilita la funzione di azione in blocco degli elementi di configurazione affinché il frontend dell\'agente funzioni su più di un elemento di configurazione alla volta.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Abilita la funzione di azione in blocco dell\'elemento di configurazione solo per i gruppi elencati.';
-    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.ITSMConfigItemListDuplicates.pl.'} =
-        'Abilita / disabilita la funzionalità per controllare ConfigItems per nomi univoci. Prima di abilitare questa opzione, è necessario controllare il sistema per elementi di configurazione già esistenti con nomi duplicati. Puoi farlo con lo script bin/otrs.ITSMConfigItemListDuplicates.pl.';
+    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
+        'Abilita / disabilita la funzionalità per controllare ConfigItems per nomi univoci. Prima di abilitare questa opzione, è necessario controllare il sistema per elementi di configurazione già esistenti con nomi duplicati. Puoi farlo con lo script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Modulo evento per impostare lo stato di configurazione su ticket-configitem-link.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Panoramica degli elementi di configurazione ITSM.';

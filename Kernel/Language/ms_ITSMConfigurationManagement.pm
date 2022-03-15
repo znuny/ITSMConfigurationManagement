@@ -327,8 +327,8 @@ sub Data {
         'Membolehkan ciri tindakan pukal item konfigurasi untuk frontend ejen untuk bekerja pada lebih daripada satu item konfigurasi pada satu masa.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Membolehkan ciri item konfigurasi tindakan pukal hanya untuk kumpulan yang disenaraikan.';
-    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.ITSMConfigItemListDuplicates.pl.'} =
-        'Membolehkan/melumpuhkan fungsi untuk menyemak KonfigItem untuk nama-nama yang unik. Sebelum membolehkan pilihan ini anda perlu menyemak sistem anda untuk barangan konfig yang telah sedia ada dengan nama yang sama. Anda boleh melakukan ini dengan bin skrip/otrs.ITSMConfigItemListDuplicates.pl.';
+    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
+        'Membolehkan/melumpuhkan fungsi untuk menyemak KonfigItem untuk nama-nama yang unik. Sebelum membolehkan pilihan ini anda perlu menyemak sistem anda untuk barangan konfig yang telah sedia ada dengan nama yang sama. Anda boleh melakukan ini dengan bin skrip/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Model acara untuk menyediakan status-itemconfig atas sambungan-itemconfig-tiket.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'pandangan item config ITSM.';
