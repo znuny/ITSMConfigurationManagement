@@ -3,7 +3,6 @@
     <Name>ITSMConfigurationManagement</Name>
     <!-- nofilter(TidyAll::Plugin::OTRS::SOPM::DocumentationPresent) -->
     <Version>6.0.31</Version>
-    <ChangeLog Version="6.0.31" Date="2021-09-29 15:54:41 +0200">Znuny LTS</ChangeLog>
     <Framework Minimum="6.0.30">6.0.x</Framework>
     <PackageRequired Version="6.0.30">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -13,6 +12,7 @@
     <Description Lang="de">Das OTRS::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az OTRS::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="6.0.31" Date="2021-09-29 15:54:41 +0200">Znuny LTS</ChangeLog>
     <Filelist>
         <File Permission="660" Location="doc/itsm-configuration-management-database.dia"/>
         <File Permission="660" Location="doc/itsm-configuration-management-database.png"/>
