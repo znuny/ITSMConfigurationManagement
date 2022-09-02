@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-09-02 15:14+0000\n"
+"Last-Translator: Peter Værlien <peter.varlien@kdrs.no>\n"
+"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/"
+"znuny/itsmconfigurationmanagement/nb_NO/>\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1\n"
 
 #. Template: AdminITSMConfigItem
 msgid "Config Item Management"
@@ -68,7 +71,7 @@ msgstr "Filter for klasser"
 
 #. Template: AgentITSMConfigItemAdd
 msgid "Select a Class from the list to create a new Config Item."
-msgstr "Velg en klasse fra listen for å opprette en ny konfigurasjonsenhet"
+msgstr "Velg en klasse fra listen for å opprette en ny konfigurasjonsenhet."
 
 #. Template: AgentITSMConfigItemBulk
 msgid "ITSM ConfigItem Bulk Action"
@@ -88,11 +91,11 @@ msgstr "Koble til en annen"
 
 #. Template: AgentITSMConfigItemBulk
 msgid "Invalid Configuration Item number!"
-msgstr ""
+msgstr "Ugyldig konfigurasjonsenhetsnummer!"
 
 #. Template: AgentITSMConfigItemBulk
 msgid "The number of another Configuration Item to link with."
-msgstr ""
+msgstr "Nummeret til en annen konfigurasjonsenhet du vil koble til."
 
 #. Template: AgentITSMConfigItemDelete
 msgid "Do you really want to delete this config item?"
@@ -106,6 +109,7 @@ msgstr "Navnet til denne konfigurasjonsenheten"
 msgid ""
 "Name is already in use by the ConfigItems with the following Number(s): %s"
 msgstr ""
+"Navnet er allerede i bruk for konfigurasjonsenheter med følgende nummer: %s"
 
 #. Template: AgentITSMConfigItemHistory
 msgid "History of Config Item: %s"
@@ -133,7 +137,7 @@ msgstr "Konfigurasjonsenheter per side"
 
 #. Template: AgentITSMConfigItemOverviewSmall
 msgid "A generic ITSM Configuration Item table"
-msgstr ""
+msgstr "En generisk ITSM konfigurasjonsenhetstabell"
 
 #. Template: AgentITSMConfigItemSearch
 msgid "Run Search"
@@ -189,35 +193,35 @@ msgstr "Egenskap"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
 msgid "No access to Class is given!"
-msgstr ""
+msgstr "Ingen tilgang er gitt til klassen!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
 msgid "Overview: ITSM ConfigItem"
-msgstr ""
+msgstr "Oversikt: ITSM konfigurasjonsenhet"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "No ConfigItemID is given!"
-msgstr ""
+msgstr "Ingen konfigurasjonsenhetsID er gitt!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "You need at least one selected Configuration Item!"
-msgstr ""
+msgstr "Du må velge minst en konfigurasjonsenhet!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "You don't have write access to this configuration item: %s."
-msgstr ""
+msgstr "Du har ikke skrivetilgang til denne konfigurasjonsenhet: %s."
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "Config item \"%s\" not found in database!"
-msgstr ""
+msgstr "Fant ikke konfigurasjonsenheten \"%s\" i databasen!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "Was not able to delete the configitem ID %s!"
-msgstr ""
+msgstr "Kunne ikke slette konfigurasjonsenheten med ID %s!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "No version found for ConfigItemID %s!"
-msgstr ""
+msgstr "Ingen versjon funnet for konfigurasjonsenheten med ID %s!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
 msgid "No ConfigItemID, DuplicateID or ClassID is given!"
@@ -321,7 +325,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "No Result!"
-msgstr "Ingen resultater"
+msgstr "Ingen resultater!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Config Item Search Results"
@@ -333,15 +337,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "operational"
-msgstr ""
+msgstr "operativ"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "warning"
-msgstr ""
+msgstr "advarsel"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "incident"
-msgstr ""
+msgstr "hendelse"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "The deployment state of this config item"
@@ -1081,7 +1085,7 @@ msgstr ""
 
 #. SysConfig
 msgid "Permission Group"
-msgstr ""
+msgstr "Tilgangsgruppe"
 
 #. SysConfig
 msgid ""

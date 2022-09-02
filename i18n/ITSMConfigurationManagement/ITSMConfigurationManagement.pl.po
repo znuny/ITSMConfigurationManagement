@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
-"PO-Revision-Date: 2022-03-15 09:12+0000\n"
-"Last-Translator: Denny Korsukéwitz <dk@znuny.com>\n"
+"PO-Revision-Date: 2022-05-30 21:09+0000\n"
+"Last-Translator: Daniel Lisiecki <lisiecki.daniel@gmail.com>\n"
 "Language-Team: Polish <https://translations.znuny.org/projects/znuny/"
 "itsmconfigurationmanagement/pl/>\n"
 "Language: pl\n"
@@ -52,7 +52,7 @@ msgstr "Typ stanu wdrożenia"
 
 #. Template: AgentDashboardITSMConfigItemGeneric
 msgid "Current Incident State"
-msgstr "Aktualny stan"
+msgstr "Aktualny stan incydentu"
 
 #. Template: AgentDashboardITSMConfigItemGeneric
 msgid "Current Incident State Type"
@@ -337,15 +337,15 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "operational"
-msgstr ""
+msgstr "operacyjny"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "warning"
-msgstr ""
+msgstr "ostrzeżenie"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "incident"
-msgstr ""
+msgstr "incydent"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "The deployment state of this config item"
@@ -832,6 +832,11 @@ msgid ""
 "css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent."
 "TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
+"Określa akcje dla których jest dostępny przycisk ustawień w widżecie "
+"połączonych obiektów (LinkObject::ViewMode = \"complex\"). Zwróć uwagę, że "
+"te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: "
+"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
+"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid ""
