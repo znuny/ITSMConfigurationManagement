@@ -38,28 +38,28 @@ sub Configure {
         Name        => 'accept',
         Description => "Accept delete all or cancel.",
         Required    => 0,
-        ValueRegex  => qr/(y|n)/smx,
+        ValueRegex  => qr/\A(y|n)\z/i,
     );
     $Self->AddOption(
         Name        => 'class',
         Description => "Delete all config items of this class.",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/.*/smx,
+        ValueRegex  => qr/.+/,
     );
     $Self->AddOption(
         Name        => 'deployment-state',
         Description => "Delete all config items with this deployment state (ONLY TOGETHER with the --class parameter).",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/.*/smx,
+        ValueRegex  => qr/.+/,
     );
     $Self->AddOption(
         Name        => 'configitem-number',
         Description => "Delete listed config items.",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/\d+/smx,
+        ValueRegex  => qr/\A\d+\z/,
         Multiple    => 1,
     );
     $Self->AddOption(
@@ -70,17 +70,17 @@ sub Configure {
     );
     $Self->AddOption(
         Name        => 'all-but-keep-last-versions',
-        Description => "Delete all config item versions but keep the last XX versions.",
+        Description => "Delete all config item versions but keep the given number of newest versions.",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/\d+/smx,
+        ValueRegex  => qr/\A\d+\z/,
     );
     $Self->AddOption(
         Name        => 'all-older-than-days-versions',
-        Description => "Delete all config item versions older than XX days.",
+        Description => "Delete all config item versions older than given number of days.",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/\d+/smx,
+        ValueRegex  => qr/\A\d+\z/,
     );
 
     return;

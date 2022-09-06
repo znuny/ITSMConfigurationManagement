@@ -27,20 +27,20 @@ our @ObjectDependencies = (
 sub Configure {
     my ( $Self, %Param ) = @_;
 
-    $Self->Description('List ConfigItems which have a non-unique name.');
+    $Self->Description('List config items which have a non-unique name.');
     $Self->AddOption(
         Name        => 'class',
         Description => "Check only config items of this class.",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/.*/smx,
+        ValueRegex  => qr/.+/,
     );
     $Self->AddOption(
         Name        => 'scope',
         Description => "Define the scope for the uniqueness check (global|class)",
         Required    => 0,
         HasValue    => 1,
-        ValueRegex  => qr/(global|class)/smx,
+        ValueRegex  => qr/\A(global|class)\z/,
     );
     $Self->AddOption(
         Name        => 'all-states',

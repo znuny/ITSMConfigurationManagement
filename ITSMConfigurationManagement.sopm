@@ -15,6 +15,7 @@
     <ChangeLog Version="6.4.2" Date="2022-07-28 15:47:25 +0200">Initial release for Znuny 6.4.2.</ChangeLog>
     <ChangeLog Version="6.3.3" Date="2022-04-28 10:13:33 +0200">Release for Znuny 6.3.3.</ChangeLog>
     <ChangeLog Version="6.3.1" Date="2022-03-18 16:19:03 +0100">Ported to 6.3.</ChangeLog>
+    <ChangeLog Version="6.0.31" Date="2021-09-29 15:54:41 +0200">Znuny LTS</ChangeLog>
     <Filelist>
         <File Permission="660" Location="doc/itsm-configuration-management-database.dia"/>
         <File Permission="660" Location="doc/itsm-configuration-management-database.png"/>
