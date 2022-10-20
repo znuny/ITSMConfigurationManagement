@@ -707,6 +707,19 @@ $RandomID = $Helper->GetRandomID();
 
 my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 
+my %Types = reverse $TicketObject->TicketTypeList(
+    UserID => 1,
+);
+
+if (!$Types{Incident}){
+    my $TypeObject = $Kernel::OM->Get('Kernel::System::Type');
+    my $ID = $TypeObject->TypeAdd(
+        Name    => 'Incident',
+        ValidID => 1,
+        UserID  => 1,
+    );
+}
+
 # Create test ticket.
 my $TicketID = $TicketObject->TicketCreate(
     Title        => "TN-$RandomID",
