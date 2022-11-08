@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'การจัดการ Config Item';
     $Self->{Translation}->{'Change class definition'} = 'นิยามของคลาสการเปลี่ยนแปลง';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = 'นิยาม';
     $Self->{Translation}->{'Change'} = 'เปลี่ยน';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'สถานภาพของเหต์การณ์';
     $Self->{Translation}->{'Deployment State'} = 'สถานภาพการใช้งาน';
     $Self->{Translation}->{'Class'} = 'คลาส';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'ประเภทสถานภาพของเหต์การณ์ปัจจุบัน';
     $Self->{Translation}->{'Last changed'} = 'การเปลี่ยนแปลงล่าสุด';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Config Item';
     $Self->{Translation}->{'Filter for Classes'} = 'ตัวกรองสำหรับคลาส';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'เลือกคลาสจากรายการที่จะสร้าง Config Item ใหม่';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'การทำงานเป็นกลุ่มของ ITSM ConfigItem';
     $Self->{Translation}->{'Deployment state'} = 'สถานภาพการใช้งาน';
     $Self->{Translation}->{'Incident state'} = 'สถานภาพของเหตุการณ์';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'จำนวนรายการการกำหนดค่าไม่ถูกต้อง!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'จำนวนของรายการการกำหนดค่าอื่นๆที่ต้องการเชื่อมโยง';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = ' ชื่อของรายการการตั้งค่านี้\'';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'ชื่อที่ถูกการใช้งานโดย ConfigItems มีจำนวนดังต่อไปนี้ (s): %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = 'เนื้อหาประวัติ';
     $Self->{Translation}->{'Createtime'} = 'เวลาที่สร้าง';
     $Self->{Translation}->{'Zoom view'} = 'มุมมองการซูม';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'การตั้งค่าข้อความ';
     $Self->{Translation}->{'Config Items per page'} = 'Config Items ในแต่ละหน้า';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'ดำเนินการค้นหา';
     $Self->{Translation}->{'Also search in previous versions?'} = 'ค้นหาเวอร์ชั่นที่แล้วด้วยหรือไม่?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'รายการการกำหนดค่า';
     $Self->{Translation}->{'Configuration Item Information'} = 'ข้อมูลรายการการกำหนดค่า';
     $Self->{Translation}->{'Current Deployment State'} = 'สถานภาพการใช้งานปัจจุบัน';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'แรม';
     $Self->{Translation}->{'Hard Disk'} = 'ฮาร์ดดิสก์';
     $Self->{Translation}->{'Capacity'} = 'ความจุ';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'การ์ดเชื่อมต่อเครือข่าย';
     $Self->{Translation}->{'IP over DHCP'} = 'IP ผ่าน DHCP';
     $Self->{Translation}->{'IP Address'} = 'ที่อยู่ไอพี';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'วันหมดอายุ';
     $Self->{Translation}->{'Media'} = 'มีเดีย';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '';
     $Self->{Translation}->{'Hardware'} = '';
     $Self->{Translation}->{'Network'} = '';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'การดูแลรักษา';
     $Self->{Translation}->{'Pilot'} = 'การนำร่อง';
     $Self->{Translation}->{'Planned'} = 'การวางแผน';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'ซ่อม';
     $Self->{Translation}->{'Retired'} = 'เกษียณ';
     $Self->{Translation}->{'Review'} = 'ตัวอย่าง';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'โอเพนซอร์ส';
     $Self->{Translation}->{'Unlimited'} = 'ไม่จำกัด';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'โอเค';
 
     # SysConfig

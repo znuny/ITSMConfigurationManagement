@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2020-09-22 13:14+0000\n"
+"POT-Creation-Date: 2022-11-08 13:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,179 +10,179 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Management"
 msgstr ""
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change class definition"
 msgstr ""
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Class"
 msgstr ""
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Definition"
 msgstr ""
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Incident State"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Deployment State"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Class"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Deployment State Type"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Current Incident State"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Current Incident State Type"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Last changed"
 msgstr ""
 
-#. Template: AgentITSMConfigItemAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Config Item"
 msgstr ""
 
-#. Template: AgentITSMConfigItemAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Filter for Classes"
 msgstr ""
 
-#. Template: AgentITSMConfigItemAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Select a Class from the list to create a new Config Item."
 msgstr ""
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "ITSM ConfigItem Bulk Action"
 msgstr ""
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Deployment state"
 msgstr ""
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Incident state"
 msgstr ""
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Link to another"
 msgstr ""
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Invalid Configuration Item number!"
 msgstr ""
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "The number of another Configuration Item to link with."
 msgstr ""
 
-#. Template: AgentITSMConfigItemDelete
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
 msgid "Do you really want to delete this config item?"
 msgstr ""
 
-#. Template: AgentITSMConfigItemEdit
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
 msgid "The name of this config item"
 msgstr ""
 
-#. Template: AgentITSMConfigItemEdit
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
 msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History of Config Item: %s"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History Content"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "Createtime"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "Zoom view"
 msgstr ""
 
-#. Template: AgentITSMConfigItemOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
 msgid "Context Settings"
 msgstr ""
 
-#. Template: AgentITSMConfigItemOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
 msgid "Config Items per page"
 msgstr ""
 
-#. Template: AgentITSMConfigItemOverviewSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
 msgid "A generic ITSM Configuration Item table"
 msgstr ""
 
-#. Template: AgentITSMConfigItemSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
 msgid "Run Search"
 msgstr ""
 
-#. Template: AgentITSMConfigItemSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
 msgid "Also search in previous versions?"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item Information"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Current Deployment State"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Last changed by"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show one version"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show all versions"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Version Incident State"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Version Deployment State"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Version Number"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item Version Details"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Property"
 msgstr ""
 
@@ -399,6 +399,10 @@ msgid "Capacity"
 msgstr ""
 
 #. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "FQDN"
+msgstr ""
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
 msgid "Network Adapter"
 msgstr ""
 
@@ -470,271 +474,275 @@ msgstr ""
 msgid "Media"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Computer"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Hardware"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Network"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Software"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Maintenance"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Pilot"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Planned"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
+msgid "Production"
+msgstr ""
+
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Repair"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Retired"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Review"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Test/QA"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Laptop"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Desktop"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "PDA"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Server"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Other"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Monitor"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Printer"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Switch"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Router"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "WLAN Access Point"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Security Device"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Backup Device"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Mouse"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Keyboard"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Camera"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Beamer"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Modem"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "PCMCIA Card"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "USB Device"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Docking Station"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Scanner"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Building"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Office"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Floor"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Room"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Rack"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Workplace"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Outlet"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "IT Facility"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "LAN"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "WLAN"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Telco"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "GSM"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Client Application"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Middleware"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Server Application"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Client OS"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Server OS"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Admin Tool"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "User Tool"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Embedded"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Single Licence"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per User"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per Processor"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per Server"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per Node"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Volume Licence"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Enterprise Licence"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Developer Licence"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Demo"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Time Restricted"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Freeware"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Open Source"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Unlimited"
 msgstr ""
 
-#. JS File: ITSM.Agent.ConfigItem.Zoom
+#. JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
 msgid "Ok"
 msgstr ""
 

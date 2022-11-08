@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Configuratie-item beheer';
     $Self->{Translation}->{'Change class definition'} = 'Wijzig definitie';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = 'Definitie';
     $Self->{Translation}->{'Change'} = 'Wijzigen';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Incidentstatus';
     $Self->{Translation}->{'Deployment State'} = 'Status';
     $Self->{Translation}->{'Class'} = 'Klasse';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = '';
     $Self->{Translation}->{'Last changed'} = 'Laatst gewijzigd';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Configuratie-item';
     $Self->{Translation}->{'Filter for Classes'} = 'Filter op klassen';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Selecteer een klasse uit de lijst om een nieuw configuratie-item aan te maken.';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '';
     $Self->{Translation}->{'Deployment state'} = '';
     $Self->{Translation}->{'Incident state'} = '';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'De naam van dit configuratie-item';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = 'Geschiedenisinhoud';
     $Self->{Translation}->{'Createtime'} = 'Maak tijd';
     $Self->{Translation}->{'Zoom view'} = 'Detailoverzicht';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Contextinstellingen';
     $Self->{Translation}->{'Config Items per page'} = 'Aantal configuratie-items per pagina';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = '';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Ook in eerdere versies zoeken?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'Configuratie-item';
     $Self->{Translation}->{'Configuration Item Information'} = 'Configuratie-item informatie';
     $Self->{Translation}->{'Current Deployment State'} = 'Actuele status';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'RAM';
     $Self->{Translation}->{'Hard Disk'} = 'Harde schijf';
     $Self->{Translation}->{'Capacity'} = 'Capaciteit';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Netwerk adapter';
     $Self->{Translation}->{'IP over DHCP'} = 'IP via DHCP';
     $Self->{Translation}->{'IP Address'} = 'IP adres';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Expiratiedatum';
     $Self->{Translation}->{'Media'} = 'Media';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '';
     $Self->{Translation}->{'Hardware'} = '';
     $Self->{Translation}->{'Network'} = '';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'In onderhoud';
     $Self->{Translation}->{'Pilot'} = 'Pilot';
     $Self->{Translation}->{'Planned'} = 'Geplanned';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'In reparatie';
     $Self->{Translation}->{'Retired'} = 'Uitgefaseerd';
     $Self->{Translation}->{'Review'} = 'Review';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Open Source';
     $Self->{Translation}->{'Unlimited'} = 'Ongelimiteerd';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig

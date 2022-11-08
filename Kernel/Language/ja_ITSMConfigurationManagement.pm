@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = '構成アイテム管理';
     $Self->{Translation}->{'Change class definition'} = 'クラス定義を変更';
     $Self->{Translation}->{'Config Item Class'} = '構成アイテムのクラス';
     $Self->{Translation}->{'Definition'} = '記述';
     $Self->{Translation}->{'Change'} = '変更';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'インシデント状況';
     $Self->{Translation}->{'Deployment State'} = 'デプロイ・ステータス';
     $Self->{Translation}->{'Class'} = 'クラス';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = '現在のインシデント・ステータスのタイプ';
     $Self->{Translation}->{'Last changed'} = '最終変更日時';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = '構成アイテム';
     $Self->{Translation}->{'Filter for Classes'} = 'クラスでフィルタ';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = '新規の構成アイテムを作成するには、リストからクラスを選択してください。';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '構成アイテム一括アクション';
     $Self->{Translation}->{'Deployment state'} = 'デプロイ・ステータス';
     $Self->{Translation}->{'Incident state'} = 'インシデント状況';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '構成アイテムの値が不正です!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '他の構成アイテムへのリンク数';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '本当にこの構成アイテムを削除しますか？';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'この 構成アイテム の名称';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'この名称はすでに Number(s): %s の構成アイテムで使用中です。';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '構成アイテムの履歴: %s';
     $Self->{Translation}->{'History Content'} = '履歴内容';
     $Self->{Translation}->{'Createtime'} = '作成日時';
     $Self->{Translation}->{'Zoom view'} = 'ズーム・ビュー';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'コンテキストの設定';
     $Self->{Translation}->{'Config Items per page'} = '1ページ毎の設定項目';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'ジェネリック構成アイテムのテーブル';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = '検索を実行';
     $Self->{Translation}->{'Also search in previous versions?'} = 'プレビュー時、以前のバージョンも検索対象としますか？';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = '構成アイテム';
     $Self->{Translation}->{'Configuration Item Information'} = '構成アイテム情報';
     $Self->{Translation}->{'Current Deployment State'} = '現在のデプロイ・ステータス';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'RAM';
     $Self->{Translation}->{'Hard Disk'} = 'ハードディスク';
     $Self->{Translation}->{'Capacity'} = '容量';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'ネットワークアダプタ';
     $Self->{Translation}->{'IP over DHCP'} = 'DHCP有効';
     $Self->{Translation}->{'IP Address'} = 'IP アドレス';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = '有効期限';
     $Self->{Translation}->{'Media'} = 'メディア';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = 'コンピューター';
     $Self->{Translation}->{'Hardware'} = 'ハードウェア';
     $Self->{Translation}->{'Network'} = 'ネットワーク';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'メンテナンス';
     $Self->{Translation}->{'Pilot'} = 'パイロット';
     $Self->{Translation}->{'Planned'} = '計画';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = '修理';
     $Self->{Translation}->{'Retired'} = '引退';
     $Self->{Translation}->{'Review'} = 'レビュー';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'オープンソース';
     $Self->{Translation}->{'Unlimited'} = '無制限';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig

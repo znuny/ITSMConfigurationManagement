@@ -10,182 +10,179 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Management"
 msgstr "Конфиг Член Менаџмент"
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change class definition"
 msgstr "Промени дефиниција на класа"
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Class"
 msgstr ""
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Definition"
 msgstr "Дефиниција"
 
-#. Template: AdminITSMConfigItem
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change"
 msgstr ""
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Incident State"
 msgstr "Состојба на Инцидент"
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Deployment State"
 msgstr "Состојба на Распоред"
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Class"
 msgstr "Класа"
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Deployment State Type"
 msgstr "Тип на Состојба на Распоред"
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Current Incident State"
 msgstr "Сегашна Состојба на Инцидент"
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Current Incident State Type"
 msgstr "Сегашен Тип на Состојба на Инцидент"
 
-#. Template: AgentDashboardITSMConfigItemGeneric
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Last changed"
 msgstr "Последно променето"
 
-#. Template: AgentITSMConfigItemAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Config Item"
 msgstr "Конфиг Член"
 
-#. Template: AgentITSMConfigItemAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Filter for Classes"
 msgstr "Филтер за Класи"
 
-#. Template: AgentITSMConfigItemAdd
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Select a Class from the list to create a new Config Item."
 msgstr "Одбери Класа од листата за да креирате нов Конфиг Член."
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "ITSM ConfigItem Bulk Action"
 msgstr "ITSM КонфигЧлен Bulk Action"
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Deployment state"
 msgstr "Распоредувачка состојба"
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Incident state"
 msgstr "Сосотјба на Инцидент"
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Link to another"
 msgstr "Поврзи со друг"
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Invalid Configuration Item number!"
 msgstr "Невалиден Кофигурациски број на Член!"
 
-#. Template: AgentITSMConfigItemBulk
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "The number of another Configuration Item to link with."
 msgstr "Бројот на друг Конфигурациски Член со линк ширина."
 
-#. Template: AgentITSMConfigItemDelete
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
 msgid "Do you really want to delete this config item?"
 msgstr ""
 
-#. Template: AgentITSMConfigItemEdit
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
 msgid "The name of this config item"
 msgstr "Името на овој конфиг член"
 
-#. Template: AgentITSMConfigItemEdit
-msgid ""
-"Name is already in use by the ConfigItems with the following Number(s): %s"
-msgstr ""
-"Името е веќе во употреба од страна на КонфигЧленовите со следнов/те "
-"Број(еви): %s"
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
+msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
+msgstr "Името е веќе во употреба од страна на КонфигЧленовите со следнов/те Број(еви): %s"
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History of Config Item: %s"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History Content"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "Createtime"
 msgstr ""
 
-#. Template: AgentITSMConfigItemHistory
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "Zoom view"
 msgstr "Зумирај"
 
-#. Template: AgentITSMConfigItemOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
 msgid "Context Settings"
 msgstr ""
 
-#. Template: AgentITSMConfigItemOverviewNavBar
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
 msgid "Config Items per page"
 msgstr "Конфиг Членови по страница"
 
-#. Template: AgentITSMConfigItemOverviewSmall
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
 msgid "A generic ITSM Configuration Item table"
 msgstr ""
 
-#. Template: AgentITSMConfigItemSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
 msgid "Run Search"
 msgstr "Преварувај"
 
-#. Template: AgentITSMConfigItemSearch
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
 msgid "Also search in previous versions?"
 msgstr "Исто така барај во претходните верзи?"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item"
 msgstr "Конфигурациски Член"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item Information"
 msgstr "Конфигурациски Член Информација"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Current Deployment State"
 msgstr "Сегашна Состојба на Распоред"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Last changed by"
 msgstr ""
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show one version"
 msgstr "Прикажи една верзија"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show all versions"
 msgstr "Прикажи ги сите верзии"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Version Incident State"
 msgstr "Верзија на Инцидент Состојба"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Version Deployment State"
 msgstr "Верзија на Состојба на Распорадување"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Version Number"
 msgstr "Број на Верзија"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item Version Details"
 msgstr "Конфигурациски Член Детали за Верзија"
 
-#. Template: AgentITSMConfigItemZoom
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Property"
 msgstr "Својства"
 
@@ -473,271 +470,271 @@ msgstr "Дата на истекување"
 msgid "Media"
 msgstr "Медиа"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Computer"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Hardware"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Network"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Software"
 msgstr ""
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Expired"
 msgstr "Истечено"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Maintenance"
 msgstr "Одржување"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Pilot"
 msgstr "Пилот"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Planned"
 msgstr "Планирано"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Repair"
 msgstr "Поправи"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Retired"
 msgstr "Прекинати"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Review"
 msgstr "Преглед"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Test/QA"
 msgstr "Тест/QA"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Laptop"
 msgstr "Лаптоп"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Desktop"
 msgstr "Работна површина"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "PDA"
 msgstr "PDA"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Server"
 msgstr "Сервер"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Other"
 msgstr "Друго"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Monitor"
 msgstr "Монитор"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Printer"
 msgstr "Печатач"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Switch"
 msgstr "Преклопник(Switch)"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Router"
 msgstr "Рутер"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "WLAN Access Point"
 msgstr "Бежична Локална Мрежа Место за Пристап"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Security Device"
 msgstr "Безбедносен Уред"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Backup Device"
 msgstr "Бекап Уред"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Mouse"
 msgstr "Глушец"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Keyboard"
 msgstr "Тастатура"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Camera"
 msgstr "Камера"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Beamer"
 msgstr "Бимер"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Modem"
 msgstr "Модем"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "PCMCIA Card"
 msgstr "PCMCIA Картичка"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "USB Device"
 msgstr "USB Уред"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Docking Station"
 msgstr "Приклучна Станица"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Scanner"
 msgstr "Скенер"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Building"
 msgstr "Градејќи"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Office"
 msgstr "Канцеларија"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Floor"
 msgstr "Под"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Room"
 msgstr "Соба"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Rack"
 msgstr "Рамка"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Workplace"
 msgstr "Работноместо"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Outlet"
 msgstr "Излезни"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "IT Facility"
 msgstr "IT Објект"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "LAN"
 msgstr "Локална Мрежа"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "WLAN"
 msgstr "Бежична Локална Мрежа"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Telco"
 msgstr "Telco"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "GSM"
 msgstr "GSM"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Client Application"
 msgstr "Клиент Апликација"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Middleware"
 msgstr "Middleware"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Server Application"
 msgstr "Сервисна Апликација"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Client OS"
 msgstr "Клиент ОС"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Server OS"
 msgstr "Сервер ОС"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Admin Tool"
 msgstr "Админ Алатки"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "User Tool"
 msgstr "Корисник Алатка"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Embedded"
 msgstr "Вградени"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Single Licence"
 msgstr "Единечна Лиценца"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per User"
 msgstr "По Корисник"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per Processor"
 msgstr "По Процесор"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per Server"
 msgstr "По Сервер"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Per Node"
 msgstr "По Јазол"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Volume Licence"
 msgstr "Волумент на Лиценца"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Enterprise Licence"
 msgstr "Претпријатие Лиценца"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Developer Licence"
 msgstr "Развивач Лиценца"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Demo"
 msgstr "Демо"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Time Restricted"
 msgstr "Време на Забрана"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Freeware"
 msgstr "Бесплатен софтвер"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Open Source"
 msgstr "Отворен Извор"
 
-#. Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+#. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Unlimited"
 msgstr "Неограничено"
 
-#. JS File: ITSM.Agent.ConfigItem.Zoom
+#. JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
 msgid "Ok"
 msgstr ""
 
@@ -758,14 +755,8 @@ msgid "CMDB Settings"
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Check for a unique name only within the same ConfigItem class ('class') or "
-"globally ('global'), which means every existing ConfigItem is taken into "
-"account when looking for duplicates."
-msgstr ""
-"Провери за уникатно име само во рамките на иста КонфигЧлен класа ('class') "
-"или глобално ('global'), што значи дека секој постојачки КонфигЧлен е земен "
-"во профилот кога се бараат дупликати."
+msgid "Check for a unique name only within the same ConfigItem class ('class') or globally ('global'), which means every existing ConfigItem is taken into account when looking for duplicates."
+msgstr "Провери за уникатно име само во рамките на иста КонфигЧлен класа ('class') или глобално ('global'), што значи дека секој постојачки КонфигЧлен е земен во профилот кога се бараат дупликати."
 
 #. SysConfig
 msgid "Config Items"
@@ -780,12 +771,8 @@ msgid "Config item edit."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Config item event module that enables logging to history in the agent "
-"interface."
-msgstr ""
-"Конфиг член настан модули кои овозможуваат запишуваат логови во историја на "
-"агент интефејсот."
+msgid "Config item event module that enables logging to history in the agent interface."
+msgstr "Конфиг член настан модули кои овозможуваат запишуваат логови во историја на агент интефејсот."
 
 #. SysConfig
 msgid "Config item history."
@@ -828,88 +815,51 @@ msgid "Create and manage the definitions for Configuration Items."
 msgstr "Креирај и менаџирај дефиниции за Конфигурациски Членови."
 
 #. SysConfig
-msgid ""
-"Define Actions where a settings button is available in the linked objects "
-"widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions "
-"must have registered the following JS and CSS files: Core.AllocationList."
-"css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent."
-"TableFilters.js and Core.Agent.LinkObject.js."
+msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Defines Required permissions to create ITSM configuration items using the "
-"Generic Interface."
-msgstr ""
-"Дефинира Барани пермисии да креира ITSM конфигурациски членови користејќи "
-"Генерички Интерфејси."
+msgid "Defines Required permissions to create ITSM configuration items using the Generic Interface."
+msgstr "Дефинира Барани пермисии да креира ITSM конфигурациски членови користејќи Генерички Интерфејси."
 
 #. SysConfig
-msgid ""
-"Defines Required permissions to delete ITSM configuration items using the "
-"Generic Interface."
+msgid "Defines Required permissions to delete ITSM configuration items using the Generic Interface."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Defines Required permissions to get ITSM configuration items using the "
-"Generic Interface."
-msgstr ""
-"Дефинира Барани пермисии за  да земе ITSM конфигурациски членови користејќи "
-"Генерички Интерфејс."
+msgid "Defines Required permissions to get ITSM configuration items using the Generic Interface."
+msgstr "Дефинира Барани пермисии за  да земе ITSM конфигурациски членови користејќи Генерички Интерфејс."
 
 #. SysConfig
-msgid ""
-"Defines Required permissions to search ITSM configuration items using the "
-"Generic Interface."
-msgstr ""
-"Дефинира Барани пермисии за ITSM конфигурациски членови користејќи Генерички "
-"Интерфејси."
+msgid "Defines Required permissions to search ITSM configuration items using the Generic Interface."
+msgstr "Дефинира Барани пермисии за ITSM конфигурациски членови користејќи Генерички Интерфејси."
 
 #. SysConfig
-msgid ""
-"Defines Required permissions to update ITSM configuration items using the "
-"Generic Interface."
-msgstr ""
-"Дефинира Барани пермисии за надградба на ITSM конфигурациски членови на "
-"Генерички Интерфејс."
+msgid "Defines Required permissions to update ITSM configuration items using the Generic Interface."
+msgstr "Дефинира Барани пермисии за надградба на ITSM конфигурациски членови на Генерички Интерфејс."
 
 #. SysConfig
-msgid ""
-"Defines an overview module to show the small view of a configuration item "
-"list."
-msgstr ""
-"Дефинира преглед модул за приказ на мал преглед на кофигурациска лчен листа."
+msgid "Defines an overview module to show the small view of a configuration item list."
+msgstr "Дефинира преглед модул за приказ на мал преглед на кофигурациска лчен листа."
 
 #. SysConfig
-msgid ""
-"Defines regular expressions individually for each ConfigItem class to check "
-"the ConfigItem name and to show corresponding error messages."
-msgstr ""
-"Дефинира регуларни изрази индивидуално за секоја КонфигЧлен класа за да "
-"провери КонфигЧлен име и да ги прикаже грешните кореспондирачките пораки."
+msgid "Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages."
+msgstr "Дефинира регуларни изрази индивидуално за секоја КонфигЧлен класа за да провери КонфигЧлен име и да ги прикаже грешните кореспондирачките пораки."
 
 #. SysConfig
 msgid "Defines the default subobject of the class 'ITSMConfigItem'."
 msgstr "Дефинира стандарден субобјект за класата 'ITSMConfigItem'."
 
 #. SysConfig
-msgid ""
-"Defines the number of rows for the CI definition editor in the admin "
-"interface."
-msgstr ""
-"Дефинира број на редици за CI дефиницискиот уредник во админ интерфејсот."
+msgid "Defines the number of rows for the CI definition editor in the admin interface."
+msgstr "Дефинира број на редици за CI дефиницискиот уредник во админ интерфејсот."
 
 #. SysConfig
-msgid ""
-"Defines the order of incident states from high (e.g. cricital) to low (e.g. "
-"functional)."
+msgid "Defines the order of incident states from high (e.g. cricital) to low (e.g. functional)."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Defines the relevant deployment states where linked tickets can affect the "
-"status of a CI."
+msgid "Defines the relevant deployment states where linked tickets can affect the status of a CI."
 msgstr ""
 
 #. SysConfig
@@ -921,121 +871,35 @@ msgid "Defines the search limit for the AgentITSMConfigItemSearch screen."
 msgstr "Дефинира лимит за барања за AgentITSMConfigItemSearch екранот."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns in the config item overview. This option has no "
-"effect on the position of the column. Note: Class column is always available "
-"if filter 'All' is selected."
-msgstr ""
-"Дефинира приказ на колони во конфиг членот преглед. Оваа опција нема ефект "
-"на позицијата на колони. Забелешка: Класни колони се секогаш достапни ако "
-"филтерот 'All' е одбран."
+msgid "Defines the shown columns in the config item overview. This option has no effect on the position of the column. Note: Class column is always available if filter 'All' is selected."
+msgstr "Дефинира приказ на колони во конфиг членот преглед. Оваа опција нема ефект на позицијата на колони. Забелешка: Класни колони се секогаш достапни ако филтерот 'All' е одбран."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns in the config item search. This option has no "
-"effect on the position of the column."
-msgstr ""
-"Дефинира приказ на колони во конфиг член барање. Оваа опција нема ефект на "
-"позицијата на колоните."
+msgid "Defines the shown columns in the config item search. This option has no effect on the position of the column."
+msgstr "Дефинира приказ на колони во конфиг член барање. Оваа опција нема ефект на позицијата на колоните."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns of CIs in the config item overview depending on "
-"the CI class. Each entry must be prefixed with the class name and double "
-"colons (i.e. Computer::). There are a few CI-Attributes that are common to "
-"all CIs (example for the class Computer: Computer::Name, Computer::"
-"CurDeplState, Computer::CreateTime). To show individual CI-Attributes as "
-"defined in the CI-Definition, the following scheme must be used (example for "
-"the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::"
-"Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If "
-"there is no entry for a CI class, then the default columns are shown as "
-"defined in the setting ITSMConfigItem::Frontend::"
-"AgentITSMConfigItem###ShowColumns."
-msgstr ""
-"Дефинира приказ на колони од CIs во конфиг членот прегледот во зависност од "
-"CI класата. Секој влез мора да има префикс со класно име и двојни колони (i."
-"e. Computer::). Има неколку CI-Атрибути кои се чести со сите CIs (пример за "
-"класта Computer: Computer::Name, Computer::CurDeplState, Computer::"
-"CreateTime). За приказ на идивидуални CI-Attributes како што се дефинирани "
-"во  CI-Дефиницијата, следнава шема мора да биде искористена (пример за "
-"класата  Computer): Computer::HardDisk::1, Computer::HardDisk::1::"
-"Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ако "
-"нема влез за CI класа, тогаш стандардните колони се прикажани како што се "
-"дефинирани во поставувањето ITSMConfigItem::Frontend::"
-"AgentITSMConfigItem###ShowColumns."
+msgid "Defines the shown columns of CIs in the config item overview depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that are common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown as defined in the setting ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+msgstr "Дефинира приказ на колони од CIs во конфиг членот прегледот во зависност од CI класата. Секој влез мора да има префикс со класно име и двојни колони (i.e. Computer::). Има неколку CI-Атрибути кои се чести со сите CIs (пример за класта Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). За приказ на идивидуални CI-Attributes како што се дефинирани во  CI-Дефиницијата, следнава шема мора да биде искористена (пример за класата  Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ако нема влез за CI класа, тогаш стандардните колони се прикажани како што се дефинирани во поставувањето ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns of CIs in the config item search depending on the "
-"CI class. Each entry must be prefixed with the class name and double colons "
-"(i.e. Computer::). There are a few CI-Attributes that are common to all CIs "
-"(example for the class Computer: Computer::Name, Computer::CurDeplState, "
-"Computer::CreateTime). To show individual CI-Attributes as defined in the CI-"
-"Definition, the following scheme must be used (example for the class "
-"Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, "
-"Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no "
-"entry for a CI class, then the default columns are shown as defined in the "
-"setting ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
-msgstr ""
-"Дефинира приказ на колони од CIs во конфиг членот прегледот во зависност од "
-"CI класата. Секој влез мора да има префикс со класно име и двојни колони (i."
-"e. Computer::). Има неколку CI-Атрибути кои се чести со сите CIs (пример за "
-"класта Computer: Computer::Name, Computer::CurDeplState, Computer::"
-"CreateTime). За приказ на идивидуални CI-Attributes како што се дефинирани "
-"во  CI-Дефиницијата, следнава шема мора да биде искористена (пример за "
-"класата  Computer): Computer::HardDisk::1, Computer::HardDisk::1::"
-"Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ако "
-"нема влез за CI класа, тогаш стандардните колони се прикажани како што се "
-"дефинирани во поставувањето ITSMConfigItem::Frontend::"
-"AgentITSMConfigItem###ShowColumns."
+msgid "Defines the shown columns of CIs in the config item search depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that are common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown as defined in the setting ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
+msgstr "Дефинира приказ на колони од CIs во конфиг членот прегледот во зависност од CI класата. Секој влез мора да има префикс со класно име и двојни колони (i.e. Computer::). Има неколку CI-Атрибути кои се чести со сите CIs (пример за класта Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). За приказ на идивидуални CI-Attributes како што се дефинирани во  CI-Дефиницијата, следнава шема мора да биде искористена (пример за класата  Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ако нема влез за CI класа, тогаш стандардните колони се прикажани како што се дефинирани во поставувањето ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns."
 
 #. SysConfig
-msgid ""
-"Defines the shown columns of CIs in the config item widget depending on the "
-"CI class. Each entry must be prefixed with the class name and double colons "
-"(i.e. Computer::). There are a few CI-Attributes that are common to all CIs "
-"(example for the class Computer: Computer::Name, Computer::CurDeplState, "
-"Computer::CreateTime). To show individual CI-Attributes as defined in the CI-"
-"Definition, the following scheme must be used (example for the class "
-"Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, "
-"Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no "
-"entry for a CI class, then the default columns are shown as defined in the "
-"setting AgentCustomerInformationCenter::Backend###0060-CIC-"
-"ITSMConfigItemCustomerCompany (key DefaultColumns)."
+msgid "Defines the shown columns of CIs in the config item widget depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that are common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown as defined in the setting AgentCustomerInformationCenter::Backend###0060-CIC-ITSMConfigItemCustomerCompany (key DefaultColumns)."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Defines the shown columns of CIs in the link table complex view for all CI "
-"classes. If there is no entry, then the default columns are shown."
+msgid "Defines the shown columns of CIs in the link table complex view for all CI classes. If there is no entry, then the default columns are shown."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Defines the shown columns of CIs in the link table complex view, depending "
-"on the CI class. Each entry must be prefixed with the class name and double "
-"colons (i.e. Computer::). There are a few CI-Attributes that common to all "
-"CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, "
-"Computer::CreateTime). To show individual CI-Attributes as defined in the CI-"
-"Definition, the following scheme must be used (example for the class "
-"Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, "
-"Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no "
-"entry for a CI class, then the default columns are shown."
-msgstr ""
-"Дефинира приказ на колони од CIs во конфиг членот прегледот во зависност од "
-"CI класата. Секој влез мора да има префикс со класно име и двојни колони (i."
-"e. Computer::). Има неколку CI-Атрибути кои се чести со сите CIs (пример за "
-"класта Computer: Computer::Name, Computer::CurDeplState, Computer::"
-"CreateTime). За приказ на идивидуални CI-Attributes како што се дефинирани "
-"во  CI-Дефиницијата, следнава шема мора да биде искористена (пример за "
-"класата  Computer): Computer::HardDisk::1, Computer::HardDisk::1::"
-"Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ако "
-"нема влез за CI класа, тогаш стандардните колони се прикажани."
+msgid "Defines the shown columns of CIs in the link table complex view, depending on the CI class. Each entry must be prefixed with the class name and double colons (i.e. Computer::). There are a few CI-Attributes that common to all CIs (example for the class Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). To show individual CI-Attributes as defined in the CI-Definition, the following scheme must be used (example for the class Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. If there is no entry for a CI class, then the default columns are shown."
+msgstr "Дефинира приказ на колони од CIs во конфиг членот прегледот во зависност од CI класата. Секој влез мора да има префикс со класно име и двојни колони (i.e. Computer::). Има неколку CI-Атрибути кои се чести со сите CIs (пример за класта Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). За приказ на идивидуални CI-Attributes како што се дефинирани во  CI-Дефиницијата, следнава шема мора да биде искористена (пример за класата  Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Ако нема влез за CI класа, тогаш стандардните колони се прикажани."
 
 #. SysConfig
-msgid ""
-"Defines which type of link (named from the ticket perspective) can affect "
-"the status of a linked CI."
+msgid "Defines which type of link (named from the ticket perspective) can affect the status of a linked CI."
 msgstr ""
 
 #. SysConfig
@@ -1055,31 +919,16 @@ msgid "Duplicate"
 msgstr "Дупликат"
 
 #. SysConfig
-msgid ""
-"Enables configuration item bulk action feature for the agent frontend to "
-"work on more than one configuration item at a time."
-msgstr ""
-"Овозможува конфигурациски член bulk action карактеристики за агент предендел "
-"за да работи со повење од ефен конфигурациски член во исто врме."
+msgid "Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time."
+msgstr "Овозможува конфигурациски член bulk action карактеристики за агент предендел за да работи со повење од ефен конфигурациски член во исто врме."
 
 #. SysConfig
-msgid ""
-"Enables configuration item bulk action feature only for the listed groups."
-msgstr ""
-"Овозможува конфигурациски член bulk action карактеристики само за групните "
-"листи."
+msgid "Enables configuration item bulk action feature only for the listed groups."
+msgstr "Овозможува конфигурациски член bulk action карактеристики само за групните листи."
 
 #. SysConfig
-msgid ""
-"Enables/disables the functionality to check ConfigItems for unique names. "
-"Before enabling this option you should check your system for already "
-"existing config items with duplicate names. You can do this with the script "
-"bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
-msgstr ""
-"Овозможува/оневозможува функционалности за проверка на КонфигЧленови за "
-"уникатни имиња. Пред да ја овозможите оваа опција треба да го проверите "
-"вашиот систем дали веќе постојат конфиг членови со исто име. Вие можете да "
-"го направите со скрипата  bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
+msgid "Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
+msgstr "Овозможува/оневозможува функционалности за проверка на КонфигЧленови за уникатни имиња. Пред да ја овозможите оваа опција треба да го проверите вашиот систем дали веќе постојат конфиг членови со исто име. Вие можете да го направите со скрипата  bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."
@@ -1110,35 +959,19 @@ msgid "Overview."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Parameters for the dashboard backend of the customer company config item "
-"overview of the agent interface . \"Limit\" is the number of entries shown "
-"by default. \"Group\" is used to restrict the access to the plugin (e. g. "
-"Group: admin;group1;group2;). \"Default\" determines if the plugin is "
-"enabled by default or if the user needs to enable it manually. "
-"\"CacheTTLLocal\" is the cache time in minutes for the plugin."
+msgid "Parameters for the dashboard backend of the customer company config item overview of the agent interface . \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Parameters for the deployment states color in the preferences view of the "
-"agent interface."
-msgstr ""
-"Параметри за боја на распоред состојбите во прегледот со опциите  на агент "
-"интерфејсот."
+msgid "Parameters for the deployment states color in the preferences view of the agent interface."
+msgstr "Параметри за боја на распоред состојбите во прегледот со опциите  на агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Parameters for the deployment states in the preferences view of the agent "
-"interface."
-msgstr ""
-"Параметри за распоред состојбите во прегледот со опциите  на агент "
-"интерфејсот."
+msgid "Parameters for the deployment states in the preferences view of the agent interface."
+msgstr "Параметри за распоред состојбите во прегледот со опциите  на агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Parameters for the example permission groups of the general catalog "
-"attributes."
+msgid "Parameters for the example permission groups of the general catalog attributes."
 msgstr "Параметри за пример дозволите за групи од генерални каталог атрибути."
 
 #. SysConfig
@@ -1150,60 +983,32 @@ msgid "Permission Group"
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Required permissions to use the ITSM configuration item screen in the agent "
-"interface."
-msgstr ""
-"Барани премисии за употреба на ITSM  конфигурациски член екран во агент "
-"интерфејсот."
+msgid "Required permissions to use the ITSM configuration item screen in the agent interface."
+msgstr "Барани премисии за употреба на ITSM  конфигурациски член екран во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Required permissions to use the ITSM configuration item search screen in the "
-"agent interface."
-msgstr ""
-"Барани премисии за употреба на ITSM  конфигурациски член екран пребарување "
-"во агент интерфејсот."
+msgid "Required permissions to use the ITSM configuration item search screen in the agent interface."
+msgstr "Барани премисии за употреба на ITSM  конфигурациски член екран пребарување во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Required permissions to use the ITSM configuration item zoom screen in the "
-"agent interface."
-msgstr ""
-"Барани премисии за употреба на ITSM  конфигурациски член зголемувачки екран "
-"во агент интерфејсот."
+msgid "Required permissions to use the ITSM configuration item zoom screen in the agent interface."
+msgstr "Барани премисии за употреба на ITSM  конфигурациски член зголемувачки екран во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Required permissions to use the add ITSM configuration item screen in the "
-"agent interface."
-msgstr ""
-"Барани премисии за употреба на додавање на ITSM  конфигурациски член екран "
-"во агент интерфејсот."
+msgid "Required permissions to use the add ITSM configuration item screen in the agent interface."
+msgstr "Барани премисии за употреба на додавање на ITSM  конфигурациски член екран во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Required permissions to use the edit ITSM configuration item screen in the "
-"agent interface."
-msgstr ""
-"Барани премисии за употреба на уреди ITSM  конфигурациски член екран во "
-"агент интерфејсот."
+msgid "Required permissions to use the edit ITSM configuration item screen in the agent interface."
+msgstr "Барани премисии за употреба на уреди ITSM  конфигурациски член екран во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Required permissions to use the history ITSM configuration item screen in "
-"the agent interface."
-msgstr ""
-"Барани премисии за употреба на историја на ITSM  конфигурациски член екран "
-"во агент интерфејсот."
+msgid "Required permissions to use the history ITSM configuration item screen in the agent interface."
+msgstr "Барани премисии за употреба на историја на ITSM  конфигурациски член екран во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Required permissions to use the print ITSM configuration item screen in the "
-"agent interface."
-msgstr ""
-"Барани премисии за употреба на принт на ITSM  конфигурациски член екран во "
-"агент интерфејсот."
+msgid "Required permissions to use the print ITSM configuration item screen in the agent interface."
+msgstr "Барани премисии за употреба на принт на ITSM  конфигурациски член екран во агент интерфејсот."
 
 #. SysConfig
 msgid "Required privileges to delete config items."
@@ -1214,126 +1019,68 @@ msgid "Search config items."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Selects the configuration item number generator module. \"AutoIncrement\" "
-"increments the configuration item number, the SystemID, the "
-"ConfigItemClassID and the counter are used. The format is \"SystemID."
-"ConfigItemClassID.Counter\", e.g. 1205000004, 1205000005."
-msgstr ""
-"Одбира конфигурациски член број генерирачки модул.  \"AutoIncrement\"  "
-"инкрементира конфигурависки чен број, SystemID,ConfigItemClassID  и бројачот "
-"е искористен. Форматот е  \"SystemID.ConfigItemClassID.Counter\", п.р. "
-"1205000004, 1205000005."
+msgid "Selects the configuration item number generator module. \"AutoIncrement\" increments the configuration item number, the SystemID, the ConfigItemClassID and the counter are used. The format is \"SystemID.ConfigItemClassID.Counter\", e.g. 1205000004, 1205000005."
+msgstr "Одбира конфигурациски член број генерирачки модул.  \"AutoIncrement\"  инкрементира конфигурависки чен број, SystemID,ConfigItemClassID  и бројачот е искористен. Форматот е  \"SystemID.ConfigItemClassID.Counter\", п.р. 1205000004, 1205000005."
 
 #. SysConfig
-msgid ""
-"Set the incident state of a CI automatically when a Ticket is Linked to a CI."
+msgid "Set the incident state of a CI automatically when a Ticket is Linked to a CI."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Sets the deployment state in the configuration item bulk screen of the agent "
-"interface."
-msgstr ""
-"Сетира распоред состојба на конфигурациски член bulk екранот од агент "
-"интерфејсот."
+msgid "Sets the deployment state in the configuration item bulk screen of the agent interface."
+msgstr "Сетира распоред состојба на конфигурациски член bulk екранот од агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Sets the incident state in the configuration item bulk screen of the agent "
-"interface."
-msgstr ""
-"Сетира инцидент состојба на конфигурациски член bulk екранот од агент "
-"интерфејсот."
+msgid "Sets the incident state in the configuration item bulk screen of the agent interface."
+msgstr "Сетира инцидент состојба на конфигурациски член bulk екранот од агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu that allows linking a configuration item with "
-"another object in the config item zoom view of the agent interface."
-msgstr ""
-"Прикажува линк во менито кое овозможува поврзување со конфигурациски член со "
-"друг објект во конфиг член  зголемен преглед во агент интерфејсот."
+msgid "Shows a link in the menu that allows linking a configuration item with another object in the config item zoom view of the agent interface."
+msgstr "Прикажува линк во менито кое овозможува поврзување со конфигурациски член со друг објект во конфиг член  зголемен преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to access the history of a configuration item in "
-"the configuration item overview of the agent interface."
-msgstr ""
-"Прикажува линк во менито кое пристапува во историјата на  конфигурациски "
-"член во конфиг член преглед во агент интерфејсот."
+msgid "Shows a link in the menu to access the history of a configuration item in the configuration item overview of the agent interface."
+msgstr "Прикажува линк во менито кое пристапува во историјата на  конфигурациски член во конфиг член преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to access the history of a configuration item in "
-"the its zoom view of the agent interface."
-msgstr ""
-"Прикажува линк во менито кое овозможува пристап до историјата на "
-"конфигурациски член во конфиг член  зголемен преглед во агент интерфејсот."
+msgid "Shows a link in the menu to access the history of a configuration item in the its zoom view of the agent interface."
+msgstr "Прикажува линк во менито кое овозможува пристап до историјата на конфигурациски член во конфиг член  зголемен преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to delete a configuration item in its zoom view of "
-"the agent interface."
+msgid "Shows a link in the menu to delete a configuration item in its zoom view of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to duplicate a configuration item in the "
-"configuration item overview of the agent interface."
-msgstr ""
-"Прикажува линк во менито со дупликат конфигурациски член во конфиг член "
-"преглед во агент интерфејсот."
+msgid "Shows a link in the menu to duplicate a configuration item in the configuration item overview of the agent interface."
+msgstr "Прикажува линк во менито со дупликат конфигурациски член во конфиг член преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to duplicate a configuration item in the its zoom "
-"view of the agent interface."
-msgstr ""
-"Прикажува линк во менито со дупликат конфигурациски член во зголемен преглед "
-"во агент интерфејсот."
+msgid "Shows a link in the menu to duplicate a configuration item in the its zoom view of the agent interface."
+msgstr "Прикажува линк во менито со дупликат конфигурациски член во зголемен преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to edit a configuration item in the its zoom view "
-"of the agent interface."
-msgstr ""
-"Прикажува линк во менито за уредување на конфигурациски член во зголемен "
-"преглед во агент интерфејсот."
+msgid "Shows a link in the menu to edit a configuration item in the its zoom view of the agent interface."
+msgstr "Прикажува линк во менито за уредување на конфигурациски член во зголемен преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to go back in the configuration item zoom view of "
-"the agent interface."
+msgid "Shows a link in the menu to go back in the configuration item zoom view of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to print a configuration item in the its zoom view "
-"of the agent interface."
-msgstr ""
-"Прикажува линк во менито за печатење во конфигурациски член зголемен преглед "
-"во агент интерфејсот."
+msgid "Shows a link in the menu to print a configuration item in the its zoom view of the agent interface."
+msgstr "Прикажува линк во менито за печатење во конфигурациски член зголемен преглед во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"Shows a link in the menu to zoom into a configuration item in the "
-"configuration item overview of the agent interface."
-msgstr ""
-"Прикажува линк во менито со зголемување на кнфигурациски член во  "
-"кнфигурациски член преглед во агент интерфејсот."
+msgid "Shows a link in the menu to zoom into a configuration item in the configuration item overview of the agent interface."
+msgstr "Прикажува линк во менито со зголемување на кнфигурациски член во  кнфигурациски член преглед во агент интерфејсот."
 
 #. SysConfig
 msgid "Shows the config item history (reverse ordered) in the agent interface."
-msgstr ""
-"Прикажува  конфиг член историја (во обратен редослед) во агент интерфејсот."
+msgstr "Прикажува  конфиг член историја (во обратен редослед) во агент интерфејсот."
 
 #. SysConfig
-msgid ""
-"The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. "
-"The default is ConfigItem#."
-msgstr ""
-"Иднетификувачот за конфигурациски член, п.р.  ConfigItem#, MyConfigItem#. "
-"Стандардот е ConfigItem#."
+msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#."
+msgstr "Иднетификувачот за конфигурациски член, п.р.  ConfigItem#, MyConfigItem#. Стандардот е ConfigItem#."
 
 #. SysConfig
 msgid "class"
@@ -1354,3 +1101,12 @@ msgstr ""
 #. SysConfig
 msgid "productive"
 msgstr ""
+
+#. Perl Module: var/packagesetup/ITSMConfigurationManagement.pm
+msgid "FQDN"
+msgstr ""
+
+#. XML Definition: ITSMConfigurationManagement.sopm
+msgid "Production"
+msgstr ""
+

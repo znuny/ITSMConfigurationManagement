@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Pengelolaan item konfigurasi';
     $Self->{Translation}->{'Change class definition'} = 'ubah definisi kelas';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = 'Definisi';
     $Self->{Translation}->{'Change'} = 'Ubah';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Kondisi insiden';
     $Self->{Translation}->{'Deployment State'} = 'Status penyebaran';
     $Self->{Translation}->{'Class'} = 'Kelas';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'Tipe Status insiden saat ini';
     $Self->{Translation}->{'Last changed'} = 'Terakhir diubah';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Item konfigurasi';
     $Self->{Translation}->{'Filter for Classes'} = 'Saringan untuk kelas-kelas';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Pilih satu kelas dari datar untuk membuat sebuah item konfigurasi baru';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Tindakan masal ItemKonfigurasi ITSM';
     $Self->{Translation}->{'Deployment state'} = 'Status penyebaran';
     $Self->{Translation}->{'Incident state'} = 'Status insiden';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Nomor item konfigurasi tidak sah';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Jumlah item konfigurasi lainnya yang akan di hubungkan';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'Nama item konfigurasi ini';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Nama ini telah di gunakan oleh ItemKonfigurasi dengan nomor(nomor-nomor) berikut: %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = 'Isi sejarah';
     $Self->{Translation}->{'Createtime'} = 'BuatWaktu';
     $Self->{Translation}->{'Zoom view'} = 'Pandangan dekat';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Setting Konteks';
     $Self->{Translation}->{'Config Items per page'} = 'Item konfigurasi per halaman';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Mulai Pencarian';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Cari di versi sebelumnya juga ?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'Item Konfigurasi';
     $Self->{Translation}->{'Configuration Item Information'} = 'Informasi item konfigurasi';
     $Self->{Translation}->{'Current Deployment State'} = 'Status penyebaraan saat ini';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'Ram';
     $Self->{Translation}->{'Hard Disk'} = 'Hard Disk';
     $Self->{Translation}->{'Capacity'} = 'Kapasitas';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Adapter Jaringan';
     $Self->{Translation}->{'IP over DHCP'} = 'IP lebih dari DHCP';
     $Self->{Translation}->{'IP Address'} = 'Alamat IP';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Tanggal Kadaluarsa';
     $Self->{Translation}->{'Media'} = 'Media';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '';
     $Self->{Translation}->{'Hardware'} = '';
     $Self->{Translation}->{'Network'} = '';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Pemeliharaan';
     $Self->{Translation}->{'Pilot'} = 'Pilot';
     $Self->{Translation}->{'Planned'} = 'Telah direncanakan';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'Perbaiki';
     $Self->{Translation}->{'Retired'} = 'Pensiun';
     $Self->{Translation}->{'Review'} = 'Ulasan';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Sumber Terbuka';
     $Self->{Translation}->{'Unlimited'} = 'Tidak terbatas';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig

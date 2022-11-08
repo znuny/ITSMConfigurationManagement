@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Управление на конфигурационните единици CI';
     $Self->{Translation}->{'Change class definition'} = '';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = '';
     $Self->{Translation}->{'Change'} = 'Промяна';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = '';
     $Self->{Translation}->{'Deployment State'} = '';
     $Self->{Translation}->{'Class'} = 'Клас';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = '';
     $Self->{Translation}->{'Last changed'} = 'Последна промяна';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = '';
     $Self->{Translation}->{'Filter for Classes'} = '';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = '';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '';
     $Self->{Translation}->{'Deployment state'} = '';
     $Self->{Translation}->{'Incident state'} = '';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = '';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         '';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = '';
     $Self->{Translation}->{'Createtime'} = 'време на създаване';
     $Self->{Translation}->{'Zoom view'} = '';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = '';
     $Self->{Translation}->{'Config Items per page'} = '';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = '';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Да търси и в предишните версии?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = '';
     $Self->{Translation}->{'Configuration Item Information'} = '';
     $Self->{Translation}->{'Current Deployment State'} = '';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'Памет';
     $Self->{Translation}->{'Hard Disk'} = 'Твърд диск';
     $Self->{Translation}->{'Capacity'} = 'Капацитет';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Мрежов адаптер';
     $Self->{Translation}->{'IP over DHCP'} = 'IP от DHCP';
     $Self->{Translation}->{'IP Address'} = 'IP адрес';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Дата на изтичане';
     $Self->{Translation}->{'Media'} = 'Медия';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '';
     $Self->{Translation}->{'Hardware'} = '';
     $Self->{Translation}->{'Network'} = '';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Поддръжка';
     $Self->{Translation}->{'Pilot'} = 'Пилот-водач';
     $Self->{Translation}->{'Planned'} = 'Планиран';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'Ремонт/Възстановяване';
     $Self->{Translation}->{'Retired'} = 'Излязъл от употреба';
     $Self->{Translation}->{'Review'} = 'Преглеждан';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Софтуер с отворен код';
     $Self->{Translation}->{'Unlimited'} = 'Неограничен лиценз';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = '';
 
     # SysConfig

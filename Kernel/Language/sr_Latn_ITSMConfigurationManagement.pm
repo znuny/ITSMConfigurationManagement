@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Upravljanje konfiguracionim stavkama';
     $Self->{Translation}->{'Change class definition'} = 'Definicija klase promene';
     $Self->{Translation}->{'Config Item Class'} = 'Klasa konfiguracione stavke';
     $Self->{Translation}->{'Definition'} = 'Definicija';
     $Self->{Translation}->{'Change'} = 'Promeni';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Stanje incidenta';
     $Self->{Translation}->{'Deployment State'} = 'Status raspoređivanja';
     $Self->{Translation}->{'Class'} = 'Klasa';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'Tip trenutnog statusa incidenta';
     $Self->{Translation}->{'Last changed'} = 'Zadnji put promenjeno';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Konfiguraciona stavka';
     $Self->{Translation}->{'Filter for Classes'} = 'Filter za klase';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Izaberite klasu iz liste radi kreiranja nove konfiguracione stavke.';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'ITSM masovna akcija na tiketu';
     $Self->{Translation}->{'Deployment state'} = 'Status raspoređivanja';
     $Self->{Translation}->{'Incident state'} = 'Stanje incidenta';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Neispravan broj konfiguracione stavke!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Broj druge konfiguracione stavke za povezivanje.';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Da li stvarno želite da obrišete ovu konfiguracionu stavku?';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'Naziv ove konfiguracione stavke';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Naziv je već u upotrebi na konfiguracionim stavkama broj: %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = 'Istorijat konfiguracione stavke: %s';
     $Self->{Translation}->{'History Content'} = 'Sadržaj istorije';
     $Self->{Translation}->{'Createtime'} = 'Vreme kreiranja';
     $Self->{Translation}->{'Zoom view'} = 'Uvećani pregled';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Podešavanje konteksta';
     $Self->{Translation}->{'Config Items per page'} = 'Konfiguracione stavke po strani';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'Generička tabela ITSM konfiguracione stavke';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Pokreni pretragu';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Pretražite i u prethotnim verzijama?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'Konfiguraciona stavka';
     $Self->{Translation}->{'Configuration Item Information'} = 'Informacija o konfiguracionoj stavki';
     $Self->{Translation}->{'Current Deployment State'} = 'Trenutni status raspoređivanja';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'RAM';
     $Self->{Translation}->{'Hard Disk'} = 'Hard disk';
     $Self->{Translation}->{'Capacity'} = 'Kapacitet';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Mrežni adapter';
     $Self->{Translation}->{'IP over DHCP'} = 'IP preko DHCP';
     $Self->{Translation}->{'IP Address'} = 'IP adresa';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Datum isticanja';
     $Self->{Translation}->{'Media'} = 'Medija';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = 'Računar';
     $Self->{Translation}->{'Hardware'} = 'Hardver';
     $Self->{Translation}->{'Network'} = 'Mreža';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Održavanje';
     $Self->{Translation}->{'Pilot'} = 'Pilot';
     $Self->{Translation}->{'Planned'} = 'Planirano';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'Na popravci';
     $Self->{Translation}->{'Retired'} = 'Rashodovano';
     $Self->{Translation}->{'Review'} = 'Recenzija';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Otvoreni kod';
     $Self->{Translation}->{'Unlimited'} = 'Neograničeno';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'U redu';
 
     # SysConfig

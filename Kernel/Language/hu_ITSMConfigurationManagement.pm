@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Konfigurációelem-menedzsment';
     $Self->{Translation}->{'Change class definition'} = 'Osztály-meghatározás módosítása';
     $Self->{Translation}->{'Config Item Class'} = 'Konfigurációelem-osztály';
     $Self->{Translation}->{'Definition'} = 'Meghatározás';
     $Self->{Translation}->{'Change'} = 'Változás';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Incidensállapot';
     $Self->{Translation}->{'Deployment State'} = 'Üzembe állítási állapot';
     $Self->{Translation}->{'Class'} = 'Osztály';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'Jelenlegi incidensállapot típus';
     $Self->{Translation}->{'Last changed'} = 'Utolsó módosítás';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Konfigurációelem';
     $Self->{Translation}->{'Filter for Classes'} = 'Szűrő az osztályokhoz';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Válasszon egy osztályt a listából egy új konfigurációelem létrehozásához.';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'ITSM konfigurációelem tömeges művelet';
     $Self->{Translation}->{'Deployment state'} = 'Üzembe állítási állapot';
     $Self->{Translation}->{'Incident state'} = 'Incidensállapot';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Érvénytelen konfigurációelem-szám!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Egy másik konfigurációelem száma, amellyel össze kell kötni.';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Valóban törölni szeretné ezt a konfigurációelemet?';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'A konfigurációelem neve';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'A nevet már használják a konfigurációelemek a következő számokkal: %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = 'Konfigurációelem előzményei: %s';
     $Self->{Translation}->{'History Content'} = 'Előzménytartalom';
     $Self->{Translation}->{'Createtime'} = 'Létrehozás ideje';
     $Self->{Translation}->{'Zoom view'} = 'Nagyítási nézet';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Környezet beállítások';
     $Self->{Translation}->{'Config Items per page'} = 'Konfigurációelemek oldalanként';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'Egy általános ITSM konfigurációelem táblázat';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Keresés futtatása';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Keressen az előző verziókban is?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'Konfigurációelem';
     $Self->{Translation}->{'Configuration Item Information'} = 'Konfigurációelem-információk';
     $Self->{Translation}->{'Current Deployment State'} = 'Jelenlegi üzembe állítási állapot';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'Ram';
     $Self->{Translation}->{'Hard Disk'} = 'Merevlemez';
     $Self->{Translation}->{'Capacity'} = 'Kapacitás';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Hálózati csatoló';
     $Self->{Translation}->{'IP over DHCP'} = 'IP a DHCP fölött';
     $Self->{Translation}->{'IP Address'} = 'IP-cím';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Lejárati idő';
     $Self->{Translation}->{'Media'} = 'Adathordozó';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = 'Számítógép';
     $Self->{Translation}->{'Hardware'} = 'Hardver';
     $Self->{Translation}->{'Network'} = 'Hálózat';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Karbantartás';
     $Self->{Translation}->{'Pilot'} = 'Próbaüzem';
     $Self->{Translation}->{'Planned'} = 'Tervezett';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'Javítás';
     $Self->{Translation}->{'Retired'} = 'Visszavont';
     $Self->{Translation}->{'Review'} = 'Vizsgálat';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Nyílt forrású';
     $Self->{Translation}->{'Unlimited'} = 'Korlátlan';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'OK';
 
     # SysConfig

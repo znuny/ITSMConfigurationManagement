@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Usanidi wa usimamizi wa kipengele ';
     $Self->{Translation}->{'Change class definition'} = 'Badili ufafanuzi wa tabaka';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = 'Ufafanuzi';
     $Self->{Translation}->{'Change'} = 'Badilisha';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Hali ya tukio';
     $Self->{Translation}->{'Deployment State'} = 'Hali ya kutumia';
     $Self->{Translation}->{'Class'} = 'Tabaka';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'Aina ya hali ya tukio la sasa';
     $Self->{Translation}->{'Last changed'} = 'Mwisho kubadilishwa';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Usanidi wa Kipengele ';
     $Self->{Translation}->{'Filter for Classes'} = 'Chuja kwa ajili ya matabaka';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Chagua tabaka kutoka kwenye orodha ya kutengeneza kipengele cha usanidi kipya. ';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Vitendo vya wingi vya kipengele cha usanidi cha ITSM';
     $Self->{Translation}->{'Deployment state'} = 'Hali ya kutumia';
     $Self->{Translation}->{'Incident state'} = 'Hali ya tukio';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Namba ya kipengele cha usanidi n batili!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Namba ya kipengele kingine cha usanidi cha kuunganisha nacho.';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'Jina la hiki kipengele cha usanidi';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Jina hili tayari limekwisha tumikana kipengele cha usanidi chenye namba i(z)fuatazo: %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = 'Maudhui ya historia';
     $Self->{Translation}->{'Createtime'} = 'Muda wa kutengeneza';
     $Self->{Translation}->{'Zoom view'} = 'Mandhari iliyokuzwa';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Mipangilio ya muktadha';
     $Self->{Translation}->{'Config Items per page'} = 'Vipengele vya usanidi kwa kila ukurusa';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Tafuta';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Pia tafuta katika toleo lililopita?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'Kipengele cha Usanidi';
     $Self->{Translation}->{'Configuration Item Information'} = 'Taarifa za kipengele cha usanidi';
     $Self->{Translation}->{'Current Deployment State'} = 'Hali ya kutumia ya sasa';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'Ram';
     $Self->{Translation}->{'Hard Disk'} = 'Diski kuu';
     $Self->{Translation}->{'Capacity'} = 'Uwezo';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Adapta ya mtandao';
     $Self->{Translation}->{'IP over DHCP'} = 'IP kwa DHCP';
     $Self->{Translation}->{'IP Address'} = 'Anwani ya IP';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Tarehe ya mwisho';
     $Self->{Translation}->{'Media'} = 'Midia';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '';
     $Self->{Translation}->{'Hardware'} = '';
     $Self->{Translation}->{'Network'} = 'Mtandao';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Matengenezo';
     $Self->{Translation}->{'Pilot'} = 'Kwanza';
     $Self->{Translation}->{'Planned'} = 'Iliyopangwa';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'Rekebisha';
     $Self->{Translation}->{'Retired'} = 'Staafu';
     $Self->{Translation}->{'Review'} = 'Mapitio';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Chanzo cha wazi';
     $Self->{Translation}->{'Unlimited'} = 'Haina kikomo';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'Sawa';
 
     # SysConfig

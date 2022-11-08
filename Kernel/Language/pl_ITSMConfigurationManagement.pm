@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Zarządzanie CI';
     $Self->{Translation}->{'Change class definition'} = 'Zmień definicję klasy';
     $Self->{Translation}->{'Config Item Class'} = 'Klasa CI';
     $Self->{Translation}->{'Definition'} = 'Definicja';
     $Self->{Translation}->{'Change'} = 'Zmiana';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Stan zdarzenia';
     $Self->{Translation}->{'Deployment State'} = 'Stan wdrożenia';
     $Self->{Translation}->{'Class'} = 'Klasa';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'Aktualny typ stanu';
     $Self->{Translation}->{'Last changed'} = 'Ostatnio zmienione';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'CI';
     $Self->{Translation}->{'Filter for Classes'} = 'Filtr dla klas';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Zaznacz klasę na liście aby utworzyć nowe CI.';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Akcja grupowa na CI';
     $Self->{Translation}->{'Deployment state'} = 'Stan wdrożenia';
     $Self->{Translation}->{'Incident state'} = 'Stan zdarzenia';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Nieprawidłowy numer CI!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'Nazwa tego CI';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Nazwa jest już używana przez CI o następujących numerach: %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '';
     $Self->{Translation}->{'History Content'} = 'Zawartość historii';
     $Self->{Translation}->{'Createtime'} = 'Utworzone';
     $Self->{Translation}->{'Zoom view'} = 'Widok szczegółowy';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Ustawienia kontekstu';
     $Self->{Translation}->{'Config Items per page'} = 'Liczba CI na stronie';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Uruchom wyszukiwanie';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Uwzględnić poprzednie wersje?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'CI';
     $Self->{Translation}->{'Configuration Item Information'} = 'Informacje o CI';
     $Self->{Translation}->{'Current Deployment State'} = 'Aktualny stan wdrożenia';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'RAM';
     $Self->{Translation}->{'Hard Disk'} = 'Dysk twardy';
     $Self->{Translation}->{'Capacity'} = 'Pojemność';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Karta sieciowa';
     $Self->{Translation}->{'IP over DHCP'} = 'Adres IP z DHCP';
     $Self->{Translation}->{'IP Address'} = 'Adres IP';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Data wygaśnięcia';
     $Self->{Translation}->{'Media'} = 'Nośnik';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '';
     $Self->{Translation}->{'Hardware'} = '';
     $Self->{Translation}->{'Network'} = '';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Utrzymanie';
     $Self->{Translation}->{'Pilot'} = 'Pilotaż';
     $Self->{Translation}->{'Planned'} = 'Planowany';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'Naprawa';
     $Self->{Translation}->{'Retired'} = 'Wycofany';
     $Self->{Translation}->{'Review'} = 'Przegląd';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Open source';
     $Self->{Translation}->{'Unlimited'} = 'Bez limitu';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
@@ -349,7 +350,7 @@ sub Data {
         'Parametry dla przykładowych grup uprawnień atrybutów katalogu głównego.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '';
-    $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'Permission Group'} = 'Uprawnienia grup';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = '管理配置项';
     $Self->{Translation}->{'Change class definition'} = '修改类定义';
     $Self->{Translation}->{'Config Item Class'} = '配置项类';
     $Self->{Translation}->{'Definition'} = '定义';
     $Self->{Translation}->{'Change'} = '变更';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = '故障状态';
     $Self->{Translation}->{'Deployment State'} = '部署状态';
     $Self->{Translation}->{'Class'} = '类';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = '当前的故障状态类型';
     $Self->{Translation}->{'Last changed'} = '最后修改';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = '配置项';
     $Self->{Translation}->{'Filter for Classes'} = '类过滤器';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = '先从列表中选择类，然后创建新的配置项。';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'ITSM 配置项 批量操作';
     $Self->{Translation}->{'Deployment state'} = '部署状态';
     $Self->{Translation}->{'Incident state'} = '事件状态';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '无效的配置项编号！';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '将要链接的另外一个配置项编号。';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '你真的想要删除这个配置项吗?';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = '为这个配置项命名';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         '编号为(s):%s的配置项已经使用了此名字';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = '配置项：%s 的历史信息';
     $Self->{Translation}->{'History Content'} = '历史值';
     $Self->{Translation}->{'Createtime'} = '创建时间';
     $Self->{Translation}->{'Zoom view'} = '详情视图';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = '上下文设置';
     $Self->{Translation}->{'Config Items per page'} = '每页配置项个数';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '一个通用的ITSM配置项表格';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = '搜索';
     $Self->{Translation}->{'Also search in previous versions?'} = '同时搜索以前的版本吗?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = '配置项';
     $Self->{Translation}->{'Configuration Item Information'} = '配置项信息';
     $Self->{Translation}->{'Current Deployment State'} = '当前的部署状态';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = '内存';
     $Self->{Translation}->{'Hard Disk'} = '硬盘';
     $Self->{Translation}->{'Capacity'} = '容量';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = '网卡';
     $Self->{Translation}->{'IP over DHCP'} = '从DHCP获取IP';
     $Self->{Translation}->{'IP Address'} = 'IP地址';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = '过期日期';
     $Self->{Translation}->{'Media'} = '介质';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = '计算机';
     $Self->{Translation}->{'Hardware'} = '硬件';
     $Self->{Translation}->{'Network'} = '网络';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = '维护';
     $Self->{Translation}->{'Pilot'} = '试验';
     $Self->{Translation}->{'Planned'} = '已计划';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = '修复';
     $Self->{Translation}->{'Retired'} = '报废';
     $Self->{Translation}->{'Review'} = '复审';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = '开源';
     $Self->{Translation}->{'Unlimited'} = '无限制的';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = '确定';
 
     # SysConfig

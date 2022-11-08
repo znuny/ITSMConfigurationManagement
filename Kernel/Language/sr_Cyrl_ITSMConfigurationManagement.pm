@@ -1,5 +1,4 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
@@ -16,14 +15,14 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    # Template: AdminITSMConfigItem
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Управљање конфигурационим ставкама';
     $Self->{Translation}->{'Change class definition'} = 'Дефиниција класе промене';
     $Self->{Translation}->{'Config Item Class'} = 'Класа конфигурационе ставке';
     $Self->{Translation}->{'Definition'} = 'Дефиниција';
     $Self->{Translation}->{'Change'} = 'Промени';
 
-    # Template: AgentDashboardITSMConfigItemGeneric
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
     $Self->{Translation}->{'Incident State'} = 'Стање инцидента';
     $Self->{Translation}->{'Deployment State'} = 'Статус распоређивања';
     $Self->{Translation}->{'Class'} = 'Класа';
@@ -32,12 +31,12 @@ sub Data {
     $Self->{Translation}->{'Current Incident State Type'} = 'Тип тренутног статуса инцидента';
     $Self->{Translation}->{'Last changed'} = 'Задњи пут промењено';
 
-    # Template: AgentITSMConfigItemAdd
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Конфигурациона ставка';
     $Self->{Translation}->{'Filter for Classes'} = 'Филтер за класе';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Изаберите класу из листе ради креирања нове конфигурационе ставке.';
 
-    # Template: AgentITSMConfigItemBulk
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'ITSM масовна акција на тикету';
     $Self->{Translation}->{'Deployment state'} = 'Статус распоређивања';
     $Self->{Translation}->{'Incident state'} = 'Стање инцидента';
@@ -45,32 +44,32 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Неисправан број конфигурационе ставке!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Број друге конфигурационе ставке за повезивање.';
 
-    # Template: AgentITSMConfigItemDelete
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Да ли стварно желите да обришете ову конфигурациону ставку?';
 
-    # Template: AgentITSMConfigItemEdit
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'Назив ове конфигурационе ставке';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Назив је већ у употреби на конфигурационим ставкама број: %s';
 
-    # Template: AgentITSMConfigItemHistory
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = 'Историјат конфигурационе ставке: %s';
     $Self->{Translation}->{'History Content'} = 'Садржај историје';
     $Self->{Translation}->{'Createtime'} = 'Време креирања';
     $Self->{Translation}->{'Zoom view'} = 'Увећани преглед';
 
-    # Template: AgentITSMConfigItemOverviewNavBar
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Подешавање контекста';
     $Self->{Translation}->{'Config Items per page'} = 'Конфигурационе ставке по страни';
 
-    # Template: AgentITSMConfigItemOverviewSmall
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'Генеричка табела ITSM конфигурационе ставке';
 
-    # Template: AgentITSMConfigItemSearch
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Покрени претрагу';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Претражите и у претхотним верзијама?';
 
-    # Template: AgentITSMConfigItemZoom
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
     $Self->{Translation}->{'Configuration Item'} = 'Конфигурациона ставка';
     $Self->{Translation}->{'Configuration Item Information'} = 'Информација о конфигурационој ставки';
     $Self->{Translation}->{'Current Deployment State'} = 'Тренутни статус распоређивања';
@@ -161,6 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'RAM';
     $Self->{Translation}->{'Hard Disk'} = 'Хард диск';
     $Self->{Translation}->{'Capacity'} = 'Капацитет';
+    $Self->{Translation}->{'FQDN'} = '';
     $Self->{Translation}->{'Network Adapter'} = 'Мрежни адаптер';
     $Self->{Translation}->{'IP over DHCP'} = 'IP преко DHCP';
     $Self->{Translation}->{'IP Address'} = 'IP адреса';
@@ -180,7 +180,7 @@ sub Data {
     $Self->{Translation}->{'Expiration Date'} = 'Датум истицања';
     $Self->{Translation}->{'Media'} = 'Медија';
 
-    # Database XML / SOPM Definition: ITSMConfigurationManagement.sopm
+    # XML Definition: ITSMConfigurationManagement.sopm
     $Self->{Translation}->{'Computer'} = 'Рачунар';
     $Self->{Translation}->{'Hardware'} = 'Хардвер';
     $Self->{Translation}->{'Network'} = 'Мрежа';
@@ -189,6 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Одржавање';
     $Self->{Translation}->{'Pilot'} = 'Пилот';
     $Self->{Translation}->{'Planned'} = 'Планирано';
+    $Self->{Translation}->{'Production'} = '';
     $Self->{Translation}->{'Repair'} = 'На поправци';
     $Self->{Translation}->{'Retired'} = 'Расходовано';
     $Self->{Translation}->{'Review'} = 'Рецензија';
@@ -248,7 +249,7 @@ sub Data {
     $Self->{Translation}->{'Open Source'} = 'Отворени код';
     $Self->{Translation}->{'Unlimited'} = 'Неограничено';
 
-    # JS File: ITSM.Agent.ConfigItem.Zoom
+    # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
     $Self->{Translation}->{'Ok'} = 'У реду';
 
     # SysConfig
