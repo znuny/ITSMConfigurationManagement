@@ -12,8 +12,6 @@ package Kernel::System::ITSMConfigItem::Permission::ItemClassGroupCheck;
 use strict;
 use warnings;
 
-## nofilter(TidyAll::Plugin::OTRS::Migrations::OTRS6::SysConfig)
-
 our @ObjectDependencies = (
     'Kernel::System::GeneralCatalog',
     'Kernel::System::Group',

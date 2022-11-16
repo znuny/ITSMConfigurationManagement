@@ -10,8 +10,7 @@
 
 // TODO:
 //Remove this line and fix JSDoc
-// nofilter(TidyAll::Plugin::OTRS::JavaScript::ESLint)
-
+// nofilter(TidyAll::Plugin::Znuny::JavaScript::ESLint)
 
 "use strict";
 
@@ -43,7 +42,7 @@ ITSM.Agent.ConfigItem.CustomerSearch = (function (TargetNS) {
 
             for (var i = 0; i < CustomerSearchItemIDs.length; i++) {
                 // escape possible colons (:) in element id because jQuery can not handle it in id attribute selectors
-                ITSM.Agent.CustomerSearch.Init( $("#" + Core.App.EscapeSelector(CustomerSearchItemIDs[i]) ) );
+                ITSM.Agent.CustomerSearch.Init($("#" + Core.App.EscapeSelector(CustomerSearchItemIDs[i])));
             }
         }
     };

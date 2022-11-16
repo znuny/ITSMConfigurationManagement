@@ -12,8 +12,6 @@ package Kernel::System::ITSMConfigItem::Version;
 use strict;
 use warnings;
 
-## nofilter(TidyAll::Plugin::OTRS::Migrations::OTRS6::SysConfig)
-
 use Kernel::System::VariableCheck qw(:all);
 
 use Storable;

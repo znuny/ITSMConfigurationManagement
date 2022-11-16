@@ -10,7 +10,7 @@
 
 // TODO:
 //Remove this line and fix JSDoc
-// nofilter(TidyAll::Plugin::OTRS::JavaScript::ESLint)
+// nofilter(TidyAll::Plugin::Znuny::JavaScript::ESLint)
 
 
 "use strict";
@@ -34,7 +34,7 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
      */
     TargetNS.Init = function () {
         var ITSMConfigItemOpenSearchDialog = Core.Config.Get('ITSMConfigItemOpenSearchDialog');
-        if ( ITSMConfigItemOpenSearchDialog ) {
+        if (ITSMConfigItemOpenSearchDialog) {
             ITSM.Agent.ConfigItem.Search.OpenSearchDialog(
                 ITSMConfigItemOpenSearchDialog.Action,
                 Core.App.EscapeSelector(ITSMConfigItemOpenSearchDialog.Profile),
@@ -105,7 +105,7 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
                     $(this).prev().attr('id', InputID + 'Selected');
 
                     // escape possible colons (:) in element id because jQuery can not handle it in id attribute selectors
-                    ITSM.Agent.CustomerSearch.Init( $('#' + Core.App.EscapeSelector(InputID) ) );
+                    ITSM.Agent.CustomerSearch.Init($('#' + Core.App.EscapeSelector(InputID)));
 
                     // prevent dialog closure when select a customer from the list
                     $('ul.ui-autocomplete').on('click', function(Event) {
@@ -427,7 +427,7 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
                 ITSM.Agent.ConfigItem.Search.AdditionalAttributeSelectionRebuild();
             });
 
-            TargetNS.SetSearchDialog( '$Env{"Action"}' );
+            TargetNS.SetSearchDialog('$Env{"Action"}');
             $('#ITSMSearchProfile').removeClass('Hidden');
             $('#ITSMSearchFields').removeClass('Hidden');
             $('.Dialog:visible #SearchFormSubmit').appendTo($('.Dialog:visible > .Content > .ContentFooter'));
@@ -600,8 +600,8 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
                 Core.UI.Dialog.ShowContentDialog(HTML, Core.Config.Get('SearchMsg'), '10px', 'Center', true, [], true);
 
                 $('#SearchClassID').off('change.SearchProfile').on('change.SearchProfile', function() {
-                    if ( $('#SearchClassID').val() !== "" ) {
-                        ITSM.Agent.ConfigItem.Search.LoadProfile( $('#SearchProfile').val() );
+                    if ($('#SearchClassID').val() !== "") {
+                        ITSM.Agent.ConfigItem.Search.LoadProfile($('#SearchProfile').val());
                     }
                     else {
                         $('#SearchProfile').attr("id", "SearchProfileOld");

@@ -12,8 +12,6 @@ package var::packagesetup::ITSMConfigurationManagement;    ## no critic
 use strict;
 use warnings;
 
-## nofilter(TidyAll::Plugin::OTRS::Migrations::OTRS6::SysConfig)
-
 use Kernel::Language qw(Translatable);
 use Kernel::Output::Template::Provider;
 
@@ -174,7 +172,7 @@ sub CodeReinstall {
 
 This function is only executed if the installed module version is smaller than 4.0.2.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_2();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_2();
 
 =cut
 
@@ -191,7 +189,7 @@ sub CodeUpgradeFromLowerThan_4_0_2 {    ## no critic
 
 This function is only executed if the installed module version is smaller than 4.0.8.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_8();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_8();
 
 =cut
 
@@ -208,7 +206,7 @@ sub CodeUpgradeFromLowerThan_4_0_8 {    ## no critic
 
 This function is only executed if the installed module version is smaller than 4.0.91.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_91();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_91();
 
 =cut
 

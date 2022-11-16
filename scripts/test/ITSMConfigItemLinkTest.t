@@ -10,8 +10,6 @@
 use strict;
 use warnings;
 
-## nofilter(TidyAll::Plugin::OTRS::Migrations::OTRS6::SysConfig)
-
 use utf8;
 
 use vars qw($Self);
@@ -711,9 +709,9 @@ my %Types = reverse $TicketObject->TicketTypeList(
     UserID => 1,
 );
 
-if (!$Types{Incident}){
+if ( !$Types{Incident} ) {
     my $TypeObject = $Kernel::OM->Get('Kernel::System::Type');
-    my $ID = $TypeObject->TypeAdd(
+    my $ID         = $TypeObject->TypeAdd(
         Name    => 'Incident',
         ValidID => 1,
         UserID  => 1,

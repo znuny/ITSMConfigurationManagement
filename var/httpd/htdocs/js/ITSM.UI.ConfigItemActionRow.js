@@ -10,7 +10,7 @@
 
 // TODO:
 //Remove this line and fix JSDoc
-// nofilter(TidyAll::Plugin::OTRS::JavaScript::ESLint)
+// nofilter(TidyAll::Plugin::Znuny::JavaScript::ESLint)
 
 
 "use strict";
@@ -120,7 +120,7 @@ ITSM.UI.ConfigItemActionRow = (function (TargetNS) {
                 .find('li:last').addClass('Last');
         }
         // Exactly one checkbox is selected
-        else if ($Checkboxes.length === 1 && !$('#SelectAllConfigItems').is(':checked') ) {
+        else if ($Checkboxes.length === 1 && !$('#SelectAllConfigItems').is(':checked')) {
             // Update actions and activate bulk action
             $ActionRow.find('#ConfigItemBulkAction').removeClass('Inactive');
 
