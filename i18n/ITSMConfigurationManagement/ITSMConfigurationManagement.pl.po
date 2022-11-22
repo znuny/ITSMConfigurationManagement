@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
-"PO-Revision-Date: 2022-05-30 21:09+0000\n"
+"PO-Revision-Date: 2022-11-19 21:24+0000\n"
 "Last-Translator: Daniel Lisiecki <lisiecki.daniel@gmail.com>\n"
 "Language-Team: Polish <https://translations.znuny.org/projects/znuny/"
 "itsmconfigurationmanagement/pl/>\n"
@@ -10,12 +10,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Management"
-msgstr "Zarządzanie CI"
+msgstr "Zarządzanie Elementem Konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change class definition"
@@ -23,7 +24,7 @@ msgstr "Zmień definicję klasy"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Class"
-msgstr "Klasa CI"
+msgstr "Klasa Elementu Konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Definition"
@@ -63,7 +64,7 @@ msgstr "Ostatnio zmienione"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Config Item"
-msgstr "CI"
+msgstr "Element Konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Filter for Classes"
@@ -71,11 +72,11 @@ msgstr "Filtr dla klas"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Select a Class from the list to create a new Config Item."
-msgstr "Zaznacz klasę na liście aby utworzyć nowe CI."
+msgstr "Zaznacz klasę na liście aby utworzyć nowy element konfiguracji."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "ITSM ConfigItem Bulk Action"
-msgstr "Akcja grupowa na CI"
+msgstr "Akcja grupowa na Elementach Konfiguracji ITSM"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Deployment state"
@@ -91,19 +92,19 @@ msgstr "Połącz z innym"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "Invalid Configuration Item number!"
-msgstr "Nieprawidłowy numer CI!"
+msgstr "Nieprawidłowy numer elementu konfiguracji!"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
 msgid "The number of another Configuration Item to link with."
-msgstr ""
+msgstr "Numer innego elementu konfiguracji do połączenia."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
 msgid "Do you really want to delete this config item?"
-msgstr ""
+msgstr "Czy na pewno chcesz usunąć ten element konfiguracji?"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
 msgid "The name of this config item"
-msgstr "Nazwa tego CI"
+msgstr "Nazwa tego elementu konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
 msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
@@ -111,7 +112,7 @@ msgstr "Nazwa jest już używana przez CI o następujących numerach: %s"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History of Config Item: %s"
-msgstr ""
+msgstr "Historia Elementu Konfiguracji: %s"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History Content"
@@ -131,11 +132,11 @@ msgstr "Ustawienia kontekstu"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
 msgid "Config Items per page"
-msgstr "Liczba CI na stronie"
+msgstr "Liczba Elementów Konfiguracji na stronę"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
 msgid "A generic ITSM Configuration Item table"
-msgstr ""
+msgstr "Ogólna tabela elementów konfiguracji ITSM"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
 msgid "Run Search"
@@ -147,11 +148,11 @@ msgstr "Uwzględnić poprzednie wersje?"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item"
-msgstr "CI"
+msgstr "Element Konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item Information"
-msgstr "Informacje o CI"
+msgstr "Informacje o Elemencie Konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Current Deployment State"
@@ -163,7 +164,7 @@ msgstr "Ostatnio zmienione przez"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show one version"
-msgstr "Pokaż jedną wersję!"
+msgstr "Pokaż jedną wersję"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show all versions"
@@ -183,7 +184,7 @@ msgstr "Wersja"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Configuration Item Version Details"
-msgstr "Szczegóły wersji CI"
+msgstr "Szczegóły wersji Elementu Konfiguracji"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Property"
@@ -195,7 +196,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
 msgid "Overview: ITSM ConfigItem"
-msgstr ""
+msgstr "Przegląd: Elementy Konfiguracji ITSM"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "No ConfigItemID is given!"
@@ -207,7 +208,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
 msgid "You don't have write access to this configuration item: %s."
-msgstr ""
+msgstr "Nie masz prawa zapisu do tego elementu konfiguracji: %s."
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
 msgid "Config item \"%s\" not found in database!"
@@ -247,7 +248,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "New version (ID=%s)"
-msgstr ""
+msgstr "Nowa wersja (ID=%s)"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Deployment state updated (new=%s, old=%s)"
@@ -263,11 +264,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Link to %s (type=%s) added"
-msgstr ""
+msgstr "Łącze do %s (typ=%s) dodane"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Link to %s (type=%s) deleted"
-msgstr ""
+msgstr "Łącze do %s (typ=%s) usunięte"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "ConfigItem definition updated (ID=%s)"
@@ -279,11 +280,11 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Attribute %s updated from \"%s\" to \"%s\""
-msgstr ""
+msgstr "Atrybut %s zmieniony z \"%s\" na \"%s\""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
 msgid "Version %s deleted"
-msgstr ""
+msgstr "Wersja %s usunięta"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "No ConfigItemID or VersionID is given!"
@@ -303,7 +304,7 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "ConfigItem"
-msgstr "CI"
+msgstr "Element Konfiguracji"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
 msgid "printed by %s at %s"
@@ -327,7 +328,7 @@ msgstr "Brak Wyników!"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
 msgid "Config Item Search Results"
-msgstr ""
+msgstr "Wyniki wyszukiwania Elementów Konfiguracji"
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
 msgid "Can't show item, no access rights for ConfigItem are given!"
@@ -355,7 +356,7 @@ msgstr "Stan zdarzenia tego CI"
 
 #. Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
 msgid "Shown config items"
-msgstr ""
+msgstr "Pokazane elementy konfiguracji"
 
 #. Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
 msgid "Between"
@@ -1117,4 +1118,3 @@ msgstr ""
 #. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Production"
 msgstr ""
-
