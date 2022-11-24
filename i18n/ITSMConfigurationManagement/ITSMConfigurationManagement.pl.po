@@ -4,14 +4,12 @@ msgstr ""
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
 "PO-Revision-Date: 2022-11-19 21:24+0000\n"
 "Last-Translator: Daniel Lisiecki <lisiecki.daniel@gmail.com>\n"
-"Language-Team: Polish <https://translations.znuny.org/projects/znuny/"
-"itsmconfigurationmanagement/pl/>\n"
+"Language-Team: Polish <https://translations.znuny.org/projects/znuny/itsmconfigurationmanagement/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.14.1\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
@@ -820,12 +818,7 @@ msgstr "Tworzenie i zarządzanie definicjami elementów konfiguracji."
 
 #. SysConfig
 msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
-msgstr ""
-"Określa akcje dla których jest dostępny przycisk ustawień w widżecie "
-"połączonych obiektów (LinkObject::ViewMode = \"complex\"). Zwróć uwagę, że "
-"te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: "
-"Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, "
-"Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
+msgstr "Określa akcje dla których jest dostępny przycisk ustawień w widżecie połączonych obiektów (LinkObject::ViewMode = \"complex\"). Zwróć uwagę, że te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 
 #. SysConfig
 msgid "Defines Required permissions to create ITSM configuration items using the Generic Interface."
@@ -1118,3 +1111,4 @@ msgstr ""
 #. XML Definition: ITSMConfigurationManagement.sopm
 msgid "Production"
 msgstr ""
+

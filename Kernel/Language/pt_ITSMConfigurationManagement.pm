@@ -135,9 +135,9 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
     $Self->{Translation}->{'Can\'t show item, no access rights for ConfigItem are given!'} =
         '';
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'operativo';
+    $Self->{Translation}->{'warning'} = 'aviso';
+    $Self->{Translation}->{'incident'} = 'incidente';
     $Self->{Translation}->{'The deployment state of this config item'} = 'O estado de implementação do item de configuração';
     $Self->{Translation}->{'The incident state of this config item'} = 'O estado de incidente deste item de configuração';
 

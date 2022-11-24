@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
 "PO-Revision-Date: 2022-09-02 15:14+0000\n"
 "Last-Translator: Peter Værlien <peter.varlien@kdrs.no>\n"
-"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/"
-"znuny/itsmconfigurationmanagement/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://translations.znuny.org/projects/znuny/itsmconfigurationmanagement/nb_NO/>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -107,8 +106,7 @@ msgstr "Navnet til denne konfigurasjonsenheten"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
 msgid "Name is already in use by the ConfigItems with the following Number(s): %s"
-msgstr ""
-"Navnet er allerede i bruk for konfigurasjonsenheter med følgende nummer: %s"
+msgstr "Navnet er allerede i bruk for konfigurasjonsenheter med følgende nummer: %s"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
 msgid "History of Config Item: %s"

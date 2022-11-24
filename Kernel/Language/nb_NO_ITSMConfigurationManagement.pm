@@ -34,15 +34,15 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = 'Konfigurasjonsenhet';
     $Self->{Translation}->{'Filter for Classes'} = 'Filter for klasser';
-    $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Velg en klasse fra listen for å opprette en ny konfigurasjonsenhet';
+    $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Velg en klasse fra listen for å opprette en ny konfigurasjonsenhet.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Masseredigering av konfigurasjonsenheter';
     $Self->{Translation}->{'Deployment state'} = 'Produksjonssettingstilstand';
     $Self->{Translation}->{'Incident state'} = 'Hendelsestilstand';
     $Self->{Translation}->{'Link to another'} = 'Koble til en annen';
-    $Self->{Translation}->{'Invalid Configuration Item number!'} = '';
-    $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
+    $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Ugyldig konfigurasjonsenhetsnummer!';
+    $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Nummeret til en annen konfigurasjonsenhet du vil koble til.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Vil du virkelig fjerne denne konfigurasjonsenheten?';
@@ -50,7 +50,7 @@ sub Data {
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
     $Self->{Translation}->{'The name of this config item'} = 'Navnet til denne konfigurasjonsenheten';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
-        '';
+        'Navnet er allerede i bruk for konfigurasjonsenheter med følgende nummer: %s';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
     $Self->{Translation}->{'History of Config Item: %s'} = 'Historien til konfigurasjonsenheten: %s';
@@ -63,7 +63,7 @@ sub Data {
     $Self->{Translation}->{'Config Items per page'} = 'Konfigurasjonsenheter per side';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
-    $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
+    $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'En generisk ITSM konfigurasjonsenhetstabell';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Utfør søket';
@@ -83,19 +83,19 @@ sub Data {
     $Self->{Translation}->{'Property'} = 'Egenskap';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
-    $Self->{Translation}->{'No access to Class is given!'} = '';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
+    $Self->{Translation}->{'No access to Class is given!'} = 'Ingen tilgang er gitt til klassen!';
+    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = 'Oversikt: ITSM konfigurasjonsenhet';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
-    $Self->{Translation}->{'No ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'You need at least one selected Configuration Item!'} = '';
+    $Self->{Translation}->{'No ConfigItemID is given!'} = 'Ingen konfigurasjonsenhetsID er gitt!';
+    $Self->{Translation}->{'You need at least one selected Configuration Item!'} = 'Du må velge minst en konfigurasjonsenhet!';
     $Self->{Translation}->{'You don\'t have write access to this configuration item: %s.'} =
-        '';
+        'Du har ikke skrivetilgang til denne konfigurasjonsenhet: %s.';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
-    $Self->{Translation}->{'Config item "%s" not found in database!'} = '';
-    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = '';
-    $Self->{Translation}->{'No version found for ConfigItemID %s!'} = '';
+    $Self->{Translation}->{'Config item "%s" not found in database!'} = 'Fant ikke konfigurasjonsenheten "%s" i databasen!';
+    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = 'Kunne ikke slette konfigurasjonsenheten med ID %s!';
+    $Self->{Translation}->{'No version found for ConfigItemID %s!'} = 'Ingen versjon funnet for konfigurasjonsenheten med ID %s!';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
     $Self->{Translation}->{'No ConfigItemID, DuplicateID or ClassID is given!'} = '';
@@ -129,15 +129,15 @@ sub Data {
     $Self->{Translation}->{'Invalid ClassID!'} = '';
     $Self->{Translation}->{'No ClassID is given!'} = '';
     $Self->{Translation}->{'No access rights for this class given!'} = '';
-    $Self->{Translation}->{'No Result!'} = 'Ingen resultater';
+    $Self->{Translation}->{'No Result!'} = 'Ingen resultater!';
     $Self->{Translation}->{'Config Item Search Results'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
     $Self->{Translation}->{'Can\'t show item, no access rights for ConfigItem are given!'} =
         '';
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'operativ';
+    $Self->{Translation}->{'warning'} = 'advarsel';
+    $Self->{Translation}->{'incident'} = 'hendelse';
     $Self->{Translation}->{'The deployment state of this config item'} = 'Produksjonssettingstilstand for denne konfigurasjonsenheten';
     $Self->{Translation}->{'The incident state of this config item'} = 'Hendelsestilstanden for denne konfigurasjonsenheten';
 
@@ -350,7 +350,7 @@ sub Data {
         'Parametere for tilgangsgruppe-eksempel i attributtene for generell katalog.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '';
-    $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'Permission Group'} = 'Tilgangsgruppe';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

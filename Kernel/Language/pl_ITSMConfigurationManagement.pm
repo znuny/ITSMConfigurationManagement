@@ -16,9 +16,9 @@ sub Data {
     my $Self = shift;
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = 'Zarządzanie CI';
+    $Self->{Translation}->{'Config Item Management'} = 'Zarządzanie Elementem Konfiguracji';
     $Self->{Translation}->{'Change class definition'} = 'Zmień definicję klasy';
-    $Self->{Translation}->{'Config Item Class'} = 'Klasa CI';
+    $Self->{Translation}->{'Config Item Class'} = 'Klasa Elementu Konfiguracji';
     $Self->{Translation}->{'Definition'} = 'Definicja';
     $Self->{Translation}->{'Change'} = 'Zmiana';
 
@@ -27,70 +27,70 @@ sub Data {
     $Self->{Translation}->{'Deployment State'} = 'Stan wdrożenia';
     $Self->{Translation}->{'Class'} = 'Klasa';
     $Self->{Translation}->{'Deployment State Type'} = 'Typ stanu wdrożenia';
-    $Self->{Translation}->{'Current Incident State'} = 'Aktualny stan';
+    $Self->{Translation}->{'Current Incident State'} = 'Aktualny stan incydentu';
     $Self->{Translation}->{'Current Incident State Type'} = 'Aktualny typ stanu';
     $Self->{Translation}->{'Last changed'} = 'Ostatnio zmienione';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = 'CI';
+    $Self->{Translation}->{'Config Item'} = 'Element Konfiguracji';
     $Self->{Translation}->{'Filter for Classes'} = 'Filtr dla klas';
-    $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Zaznacz klasę na liście aby utworzyć nowe CI.';
+    $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Zaznacz klasę na liście aby utworzyć nowy element konfiguracji.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
-    $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Akcja grupowa na CI';
+    $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Akcja grupowa na Elementach Konfiguracji ITSM';
     $Self->{Translation}->{'Deployment state'} = 'Stan wdrożenia';
     $Self->{Translation}->{'Incident state'} = 'Stan zdarzenia';
     $Self->{Translation}->{'Link to another'} = 'Połącz z innym';
-    $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Nieprawidłowy numer CI!';
-    $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '';
+    $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Nieprawidłowy numer elementu konfiguracji!';
+    $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Numer innego elementu konfiguracji do połączenia.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
-    $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
+    $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Czy na pewno chcesz usunąć ten element konfiguracji?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt
-    $Self->{Translation}->{'The name of this config item'} = 'Nazwa tego CI';
+    $Self->{Translation}->{'The name of this config item'} = 'Nazwa tego elementu konfiguracji';
     $Self->{Translation}->{'Name is already in use by the ConfigItems with the following Number(s): %s'} =
         'Nazwa jest już używana przez CI o następujących numerach: %s';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt
-    $Self->{Translation}->{'History of Config Item: %s'} = '';
+    $Self->{Translation}->{'History of Config Item: %s'} = 'Historia Elementu Konfiguracji: %s';
     $Self->{Translation}->{'History Content'} = 'Zawartość historii';
     $Self->{Translation}->{'Createtime'} = 'Utworzone';
     $Self->{Translation}->{'Zoom view'} = 'Widok szczegółowy';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewNavBar.tt
     $Self->{Translation}->{'Context Settings'} = 'Ustawienia kontekstu';
-    $Self->{Translation}->{'Config Items per page'} = 'Liczba CI na stronie';
+    $Self->{Translation}->{'Config Items per page'} = 'Liczba Elementów Konfiguracji na stronę';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemOverviewSmall.tt
-    $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
+    $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'Ogólna tabela elementów konfiguracji ITSM';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
     $Self->{Translation}->{'Run Search'} = 'Uruchom wyszukiwanie';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Uwzględnić poprzednie wersje?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
-    $Self->{Translation}->{'Configuration Item'} = 'CI';
-    $Self->{Translation}->{'Configuration Item Information'} = 'Informacje o CI';
+    $Self->{Translation}->{'Configuration Item'} = 'Element Konfiguracji';
+    $Self->{Translation}->{'Configuration Item Information'} = 'Informacje o Elemencie Konfiguracji';
     $Self->{Translation}->{'Current Deployment State'} = 'Aktualny stan wdrożenia';
     $Self->{Translation}->{'Last changed by'} = 'Ostatnio zmienione przez';
-    $Self->{Translation}->{'Show one version'} = 'Pokaż jedną wersję!';
+    $Self->{Translation}->{'Show one version'} = 'Pokaż jedną wersję';
     $Self->{Translation}->{'Show all versions'} = 'Pokaż wszystkie wersje';
     $Self->{Translation}->{'Version Incident State'} = 'Stan';
     $Self->{Translation}->{'Version Deployment State'} = 'Stan wdrożenia wersji';
     $Self->{Translation}->{'Version Number'} = 'Wersja';
-    $Self->{Translation}->{'Configuration Item Version Details'} = 'Szczegóły wersji CI';
+    $Self->{Translation}->{'Configuration Item Version Details'} = 'Szczegóły wersji Elementu Konfiguracji';
     $Self->{Translation}->{'Property'} = 'Właściwość';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = '';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
+    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = 'Przegląd: Elementy Konfiguracji ITSM';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = '';
     $Self->{Translation}->{'You need at least one selected Configuration Item!'} = '';
     $Self->{Translation}->{'You don\'t have write access to this configuration item: %s.'} =
-        '';
+        'Nie masz prawa zapisu do tego elementu konfiguracji: %s.';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
     $Self->{Translation}->{'Config item "%s" not found in database!'} = '';
@@ -106,23 +106,23 @@ sub Data {
     $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = '';
     $Self->{Translation}->{'Can\'t show history, no access rights given!'} = '';
     $Self->{Translation}->{'New ConfigItem (ID=%s)'} = '';
-    $Self->{Translation}->{'New version (ID=%s)'} = '';
+    $Self->{Translation}->{'New version (ID=%s)'} = 'Nowa wersja (ID=%s)';
     $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = '';
     $Self->{Translation}->{'Incident state updated (new=%s, old=%s)'} = '';
     $Self->{Translation}->{'ConfigItem (ID=%s) deleted'} = '';
-    $Self->{Translation}->{'Link to %s (type=%s) added'} = '';
-    $Self->{Translation}->{'Link to %s (type=%s) deleted'} = '';
+    $Self->{Translation}->{'Link to %s (type=%s) added'} = 'Łącze do %s (typ=%s) dodane';
+    $Self->{Translation}->{'Link to %s (type=%s) deleted'} = 'Łącze do %s (typ=%s) usunięte';
     $Self->{Translation}->{'ConfigItem definition updated (ID=%s)'} = '';
     $Self->{Translation}->{'Name updated (new=%s, old=%s)'} = '';
-    $Self->{Translation}->{'Attribute %s updated from "%s" to "%s"'} = '';
-    $Self->{Translation}->{'Version %s deleted'} = '';
+    $Self->{Translation}->{'Attribute %s updated from "%s" to "%s"'} = 'Atrybut %s zmieniony z "%s" na "%s"';
+    $Self->{Translation}->{'Version %s deleted'} = 'Wersja %s usunięta';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemPrint.pm
     $Self->{Translation}->{'No ConfigItemID or VersionID is given!'} = '';
     $Self->{Translation}->{'Can\'t show config item, no access rights given!'} = '';
     $Self->{Translation}->{'ConfigItemID %s not found in database!'} = '';
     $Self->{Translation}->{'VersionID %s not found in database!'} = '';
-    $Self->{Translation}->{'ConfigItem'} = 'CI';
+    $Self->{Translation}->{'ConfigItem'} = 'Element Konfiguracji';
     $Self->{Translation}->{'printed by %s at %s'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemSearch.pm
@@ -130,19 +130,19 @@ sub Data {
     $Self->{Translation}->{'No ClassID is given!'} = '';
     $Self->{Translation}->{'No access rights for this class given!'} = '';
     $Self->{Translation}->{'No Result!'} = 'Brak Wyników!';
-    $Self->{Translation}->{'Config Item Search Results'} = '';
+    $Self->{Translation}->{'Config Item Search Results'} = 'Wyniki wyszukiwania Elementów Konfiguracji';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
     $Self->{Translation}->{'Can\'t show item, no access rights for ConfigItem are given!'} =
         '';
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'operacyjny';
+    $Self->{Translation}->{'warning'} = 'ostrzeżenie';
+    $Self->{Translation}->{'incident'} = 'incydent';
     $Self->{Translation}->{'The deployment state of this config item'} = 'Stan wdrożenia tego CI';
     $Self->{Translation}->{'The incident state of this config item'} = 'Stan zdarzenia tego CI';
 
     # Perl Module: Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm
-    $Self->{Translation}->{'Shown config items'} = '';
+    $Self->{Translation}->{'Shown config items'} = 'Pokazane elementy konfiguracji';
 
     # Perl Module: Kernel/Output/HTML/ITSMConfigItem/LayoutDate.pm
     $Self->{Translation}->{'Between'} = 'Pomiędzy';
@@ -276,7 +276,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Tworzenie i zarządzanie definicjami elementów konfiguracji.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
-        '';
+        'Określa akcje dla których jest dostępny przycisk ustawień w widżecie połączonych obiektów (LinkObject::ViewMode = "complex"). Zwróć uwagę, że te akcje muszą mieć zarejestrowane następujące pliki JS i CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =

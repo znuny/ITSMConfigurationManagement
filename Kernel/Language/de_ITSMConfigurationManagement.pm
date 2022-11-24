@@ -189,7 +189,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'In Wartung';
     $Self->{Translation}->{'Pilot'} = 'Pilotbetrieb';
     $Self->{Translation}->{'Planned'} = 'Geplant';
-    $Self->{Translation}->{'Production'} = '';
+    $Self->{Translation}->{'Production'} = 'Produktiv';
     $Self->{Translation}->{'Repair'} = 'In Reparatur';
     $Self->{Translation}->{'Retired'} = 'Außer Dienst';
     $Self->{Translation}->{'Review'} = 'Unter Review';
