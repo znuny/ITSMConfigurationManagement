@@ -1,9 +1,9 @@
 # --
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::de_ITSMConfigurationManagement;
@@ -160,7 +160,7 @@ sub Data {
     $Self->{Translation}->{'Ram'} = 'RAM';
     $Self->{Translation}->{'Hard Disk'} = 'Festplatte';
     $Self->{Translation}->{'Capacity'} = 'Kapazität';
-    $Self->{Translation}->{'FQDN'} = '';
+    $Self->{Translation}->{'FQDN'} = 'FQDN';
     $Self->{Translation}->{'Network Adapter'} = 'Netzwerk-Adapter';
     $Self->{Translation}->{'IP over DHCP'} = 'IP über DHCP';
     $Self->{Translation}->{'IP Address'} = 'IP-Addresse';
