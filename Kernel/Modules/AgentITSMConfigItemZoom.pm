@@ -11,6 +11,7 @@ package Kernel::Modules::AgentITSMConfigItemZoom;
 
 use strict;
 use warnings;
+use utf8;
 
 use Kernel::Language qw(Translatable);
 
@@ -31,6 +32,7 @@ sub Run {
 
     # get param object
     my $ParamObject = $Kernel::OM->Get('Kernel::System::Web::Request');
+    my $LogObject   = $Kernel::OM->Get('Kernel::System::Log');
 
     # get params
     my $ConfigItemID = $ParamObject->GetParam( Param => 'ConfigItemID' ) || 0;
@@ -115,7 +117,36 @@ sub Run {
     if ( ref $ConfigObject->Get('ITSMConfigItem::Frontend::MenuModule') eq 'HASH' ) {
         my %Menus   = %{ $ConfigObject->Get('ITSMConfigItem::Frontend::MenuModule') };
         my $Counter = 0;
+
+        Menu:
         for my $Menu ( sort keys %Menus ) {
+
+            my $Access;
+            my $Permission;
+            my $Action = $Menus{$Menu}->{Action};
+
+            if ($Action) {
+                my $Config = $ConfigObject->Get("ITSMConfigItem::Frontend::$Action") || {};
+
+                if ( $Config && $Config->{Permission} ) {
+                    $Permission = $Config->{Permission};
+                }
+            }
+
+            if ( !$Permission ) {
+                $Access = 1;
+            }
+
+            if ( !$Access && defined $Permission ) {
+
+                $Access = $ConfigItemObject->Permission(
+                    Type   => $Permission,
+                    Scope  => 'Item',
+                    ItemID => $ConfigItemID,
+                    UserID => $Self->{UserID},
+                );
+            }
+            next Menu if !$Access;
 
             # load module
             if ( $Kernel::OM->Get('Kernel::System::Main')->Require( $Menus{$Menu}->{Module} ) ) {
@@ -134,7 +165,6 @@ sub Run {
                     elsif ( $Menus{$Menu}->{Target} eq 'Back' ) {
                         $Menus{$Menu}->{MenuClass} = 'HistoryBack';
                     }
-
                 }
 
                 # run module
@@ -444,7 +474,7 @@ sub Run {
 
         # return error if file does not exist
         if ( !$AttachmentData ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
+            $LogObject->Log(
                 Message  => "No such attachment ($Filename)!",
                 Priority => 'error',
             );
