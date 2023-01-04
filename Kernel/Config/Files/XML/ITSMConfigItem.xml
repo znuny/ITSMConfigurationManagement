@@ -811,6 +811,7 @@
                 <Item Key="Block">Permission</Item>
                 <Item Key="Class">ITSM::ConfigItem::Class</Item>
                 <Item Key="PrefKey">Permission</Item>
+                <Item Key="Mandatory">1</Item>
             </Hash>
         </Value>
     </Setting>
