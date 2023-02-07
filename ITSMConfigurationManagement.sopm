@@ -22,6 +22,8 @@
         <File Permission="660" Location="Kernel/Config/Files/XML/ITSMConfigItem.xml"/>
         <File Permission="660" Location="Kernel/Config/Files/XML/ITSMConfigItemGenericInterface.xml"/>
         <File Permission="660" Location="Kernel/Config/Files/XML/ITSMConfigItemTicketLink.xml"/>
+        <File Permission="660" Location="Kernel/GenericInterface/Event/ObjectType/ITSMConfigItem.pm"/>
+        <File Permission="660" Location="Kernel/GenericInterface/Invoker/ITSMConfigItem/Generic.pm"/>
         <File Permission="660" Location="Kernel/GenericInterface/Operation/ConfigItem/Common.pm"/>
         <File Permission="660" Location="Kernel/GenericInterface/Operation/ConfigItem/ConfigItemCreate.pm"/>
         <File Permission="660" Location="Kernel/GenericInterface/Operation/ConfigItem/ConfigItemDelete.pm"/>
@@ -117,7 +119,9 @@
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/ITSM/Configitem/Delete.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/ITSM/IncidentState/Recalculate.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.pm"/>
+
         <File Permission="660" Location="Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm"/>
+        <File Permission="660" Location="Kernel/System/ITSMConfigItemInvoker.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/Definition.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/History.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/Number.pm"/>
@@ -140,6 +144,7 @@
         <File Permission="660" Location="Kernel/System/LinkObject/ITSMConfigItem.pm"/>
         <File Permission="660" Location="Kernel/System/Stats/Dynamic/ITSMConfigItem.pm"/>
         <File Permission="660" Location="Kernel/System/Ticket/Event/TicketStatusLink.pm"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemCreate.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemDelete.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemGet.t"/>
@@ -169,6 +174,9 @@
         <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/Delete.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/IncidentState/Recalculate.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.t"/>
+        <File Permission="660" Location="scripts/test/System/ITSMConfigItemInvoker.t"/>
+        <File Permission="660" Location="scripts/test/System/ITSMConfigItemInvokerReadableValue.t"/>
+        <File Permission="660" Location="scripts/test/GenericInterface/Invoker/ITSMConfigItem/Generic.t"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.CustomerSearch.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Search.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Add.js"/>
@@ -1582,4 +1590,5 @@
         <br/>
 
     ]]></IntroUninstall>
+    <PackageMerge Name="Znuny-ITSMConfigItemInvoker" TargetVersion="6.5.0"/>
 </otrs_package>

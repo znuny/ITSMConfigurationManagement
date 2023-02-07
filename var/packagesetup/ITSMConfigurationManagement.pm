@@ -14,6 +14,7 @@ use warnings;
 
 use Kernel::Language qw(Translatable);
 use Kernel::Output::Template::Provider;
+use Kernel::System::VariableCheck qw(:all);
 
 our @ObjectDependencies = (
     'Kernel::Config',
@@ -115,6 +116,9 @@ sub CodeInstall {
     # set default permission group
     $Self->_SetDefaultPermission();
 
+   # set migrate webservice configs - InvokerType from Znuny4OTRSITSMConfigItemInvoker to ITSMConfigItemInvoker::Generic
+    $Self->_MigrateWebserviceConfigs();
+
     # install stats
     $Kernel::OM->Get('Kernel::System::Stats')->StatsInstall(
         FilePrefix => $Self->{FilePrefix},
@@ -158,6 +162,9 @@ sub CodeReinstall {
 
     # set default permission group
     $Self->_SetDefaultPermission();
+
+   # set migrate webservice configs - InvokerType from Znuny4OTRSITSMConfigItemInvoker to ITSMConfigItemInvoker::Generic
+    $Self->_MigrateWebserviceConfigs();
 
     # install stats
     $Kernel::OM->Get('Kernel::System::Stats')->StatsInstall(
@@ -247,6 +254,9 @@ sub CodeUpgrade {
 
     # set default permission group
     $Self->_SetDefaultPermission();
+
+   # set migrate webservice configs - InvokerType from Znuny4OTRSITSMConfigItemInvoker to ITSMConfigItemInvoker::Generic
+    $Self->_MigrateWebserviceConfigs();
 
     # install stats
     $Kernel::OM->Get('Kernel::System::Stats')->StatsInstall(
@@ -1506,6 +1516,55 @@ sub _ConvertPerlDefinitions2YAML {
     );
 
     return;
+}
+
+sub _MigrateWebserviceConfigs {
+    my ( $Self, %Param ) = @_;
+
+    my $WebserviceObject = $Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');
+
+    my $Webservices = $WebserviceObject->WebserviceList(
+        Valid => 0,
+    );
+    return 1 if !IsHashRefWithData($Webservices);
+
+    my %InvokerTypeMapping = (
+        'Znuny4OTRSITSMConfigItemInvoker::Generic' => 'ITSMConfigItem::Generic',
+        'ITSMConfigItemInvoker::Generic'           => 'ITSMConfigItem::Generic',
+    );
+
+    WEBSERVICEID:
+    for my $WebserviceID ( sort keys %{$Webservices} ) {
+        my $WebserviceData = $WebserviceObject->WebserviceGet(
+            ID => $WebserviceID,
+        );
+        next WEBSERVICEID if !IsHashRefWithData($WebserviceData);
+
+        my $InvokerConfigs   = $WebserviceData->{Config}->{Requester}->{Invoker};
+        my $OperationConfigs = $WebserviceData->{Config}->{Provider}->{Operation};
+
+        # Migrate web service invoker types.
+        if ( IsHashRefWithData($InvokerConfigs) ) {
+            INVOKER:
+            for my $Invoker ( sort keys %{$InvokerConfigs} ) {
+                my $InvokerConfig = $InvokerConfigs->{$Invoker};
+                next INVOKER if !defined $InvokerConfig->{Type};
+                next INVOKER if !exists $InvokerTypeMapping{ $InvokerConfig->{Type} };
+
+                $InvokerConfig->{Type} = $InvokerTypeMapping{ $InvokerConfig->{Type} };
+            }
+        }
+
+        $WebserviceObject->WebserviceUpdate(
+            ID      => $WebserviceID,
+            Name    => $WebserviceData->{Name},
+            Config  => $WebserviceData->{Config},
+            ValidID => $WebserviceData->{ValidID},
+            UserID  => 1,
+        );
+    }
+
+    return 1;
 }
 
 1;
