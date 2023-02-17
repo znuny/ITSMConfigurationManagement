@@ -15,6 +15,28 @@ use utf8;
 sub Data {
     my $Self = shift;
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+    $Self->{Translation}->{'This field is required and the value must be alphanumeric.'} = '';
+    $Self->{Translation}->{'Must be unique and only accepts alphanumeric characters.'} = '';
+    $Self->{Translation}->{'This is the order in which this field will be shown on the screens where it is active.'} =
+        '';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+    $Self->{Translation}->{'Config item class'} = '';
+    $Self->{Translation}->{'The selected config item class is invalid or does not exist.'} =
+        '';
+    $Self->{Translation}->{'Config item deployment states'} = '';
+    $Self->{Translation}->{'Config item link type'} = '';
+    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
+        '';
+    $Self->{Translation}->{'Config item link source'} = '';
+    $Self->{Translation}->{'Config item link removal'} = '';
+    $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
+        '';
+    $Self->{Translation}->{'Config item key'} = '';
+    $Self->{Translation}->{'These dynamic fields will be filled with values of the same selected config item(s).'} =
+        '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Pengurusan Config Item';
     $Self->{Translation}->{'Change class definition'} = 'Ubah definisi kelas';
@@ -256,6 +278,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
+    $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '';
     $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
@@ -264,6 +287,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Semak nama yang unik sahaja di dalam kelas ConfigItem yang sama (\'kelas\') atau di peringkat global (\'global\'), yang bermaksud setiap ConfigItem sedia ada diambil kira ketika mencari pendua.';
     $Self->{Translation}->{'Config Items'} = 'Barangan Konfigurasi';
+    $Self->{Translation}->{'Config item (dropdown)'} = '';
+    $Self->{Translation}->{'Config item (multiselect)'} = '';
     $Self->{Translation}->{'Config item add.'} = 'Tambah item config.';
     $Self->{Translation}->{'Config item edit.'} = 'Edit item config.';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
@@ -330,8 +355,11 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Takrifkan jenis tiket yang mana boleh menjejaskan status bagi satu sambungan CI.';
     $Self->{Translation}->{'Delete Configuration Item'} = '';
+    $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Penempatan Keadaan Warna.';
     $Self->{Translation}->{'Duplicate'} = 'Gandakan';
+    $Self->{Translation}->{'Dynamic fields administration'} = '';
+    $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         '';
@@ -350,6 +378,8 @@ sub Data {
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul untuk menyemak kumpulan bertanggungjawab untuk item konfigurasi.';
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'Modul untuk menjana statistik konfig item ITSM.';
+    $Self->{Translation}->{'No longer in use. Do not change. Required due to compatibility with previous package versions.'} =
+        '';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'Objekt-Backend Modul Registration des Import/Export Moduls.';
     $Self->{Translation}->{'Overview.'} = 'Pandangan keseluruhan.';
@@ -364,6 +394,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter untuk muka surat (di mana item konfigurasi ditunjukkan).';
     $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'RelevantTo'} = '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
@@ -417,6 +448,9 @@ sub Data {
         'Tunjuk sejarah barangan konfig (urutan terbalik) dalam antara muka agen.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Pengecam untuk item konfigurasi, contoh: ConfigItem#, MyConfigItem#. Default ialah ConfigItem#.';
+    $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
+        '';
+    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
     $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
         '';
     $Self->{Translation}->{'class'} = 'kelas';

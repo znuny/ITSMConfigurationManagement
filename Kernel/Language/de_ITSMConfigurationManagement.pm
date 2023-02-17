@@ -15,6 +15,28 @@ use utf8;
 sub Data {
     my $Self = shift;
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+    $Self->{Translation}->{'This field is required and the value must be alphanumeric.'} = 'Dieses Feld ist erforderlich und der Wert muss alphanumerisch sein.';
+    $Self->{Translation}->{'Must be unique and only accepts alphanumeric characters.'} = 'Muss eindeutig sein und darf nur alphanumerische Zeichen enthalten.';
+    $Self->{Translation}->{'This is the order in which this field will be shown on the screens where it is active.'} =
+        'Dies ist die Reihenfolge, in der dieses Feld in den aktiven Dialogen angezeigt wird.';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+    $Self->{Translation}->{'Config item class'} = 'Config-Item-Klasse';
+    $Self->{Translation}->{'The selected config item class is invalid or does not exist.'} =
+        'Die gewählte Config-Item-Klasse ist ungültig oder existiert nicht.';
+    $Self->{Translation}->{'Config item deployment states'} = 'Config-Item-Verwendungsstatus';
+    $Self->{Translation}->{'Config item link type'} = 'Config-Item-Linktyp';
+    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
+        'Wählen Sie einen Linktyp, um die Verknüpfung zwischen Ticket und gewählten Config-Items zu aktivieren. Beachten Sie, dass die Verknüpfung nur für dynamische Felder von Tickets zur Verfügung steht.';
+    $Self->{Translation}->{'Config item link source'} = 'Config-Item-Linkquelle';
+    $Self->{Translation}->{'Config item link removal'} = 'Config-Item-Links entfernen';
+    $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
+        'Aktivieren Sie diese Option, um Verknüpfungen zwischen Ticket und Config-Items zu entfernen, die aus diesem Feld entfernt wurden.';
+    $Self->{Translation}->{'Config item key'} = 'Config-Item-Schlüssel';
+    $Self->{Translation}->{'These dynamic fields will be filled with values of the same selected config item(s).'} =
+        'Diese dynamischen Felder werden mit den Werten aus dem/den gewählten Config-Item(s) befüllt.';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'ConfigItem-Verwaltung';
     $Self->{Translation}->{'Change class definition'} = 'Klassen-Definition ändern';
@@ -256,6 +278,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
+    $Self->{Translation}->{'AlternativeTo'} = 'Alternativ zu';
     $Self->{Translation}->{'Assigned CIs'} = 'Zugewiesene Configuration Items';
     $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = 'Automatisches Laden von ITSMConfigurationManagement-Erweiterungen.';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Zum Kunden zugewiesene Configurations Items';
@@ -264,6 +287,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Prüft Namen auf Eindeutigkeit innerhalb der selben Configuration Item-Klasse oder global, d.h. es werden alle Configuration Items jeglicher Configuration Item-Klasse bei der Prüfung auf einen eindeutigen Namen berücksichtigt.';
     $Self->{Translation}->{'Config Items'} = 'Configuration Items';
+    $Self->{Translation}->{'Config item (dropdown)'} = 'Config-Item (Einfachauswahl)';
+    $Self->{Translation}->{'Config item (multiselect)'} = 'Config-Item (Mehrfachauswahl)';
     $Self->{Translation}->{'Config item add.'} = 'Configuration Item hinzufügen.';
     $Self->{Translation}->{'Config item edit.'} = 'Configuration Item bearbeiten.';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
@@ -330,8 +355,11 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Definiert, welcher Typ von Ticket den Status eines verknüpften Configuration Items beeinflussen kann.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Configuration Item löschen.';
+    $Self->{Translation}->{'DependsOn'} = 'Hängt ab von';
     $Self->{Translation}->{'Deployment State Color'} = 'Verwendungsstatus-Farbe';
     $Self->{Translation}->{'Duplicate'} = 'Duplizieren';
+    $Self->{Translation}->{'Dynamic fields administration'} = '';
+    $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = 'Aktiviert die Suche nach Config-Items basierend auf dem Kundenbenutzer.';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         'Aktiviert die Suche nach Config-Items basierend auf dem Kunden.';
@@ -350,6 +378,8 @@ sub Data {
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul, um die Gruppe zu überprüfen, die für ein Configuration Item verantwortlich ist.';
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'Modul zum Generieren von ITSM-Configuration Item-Statistiken.';
+    $Self->{Translation}->{'No longer in use. Do not change. Required due to compatibility with previous package versions.'} =
+        'Nicht mehr in Verwendung. Nicht ändern. Notwendig wg. Kompatibilität zu vorherigen Paketversionen.';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'Objekt-Backend Modul Registration des Import/Export Moduls.';
     $Self->{Translation}->{'Overview.'} = 'Übersicht.';
@@ -364,6 +394,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter für die Seiten, in denen Configuration Items angezeigt werden.';
     $Self->{Translation}->{'Permission Group'} = 'Berechtigungsgruppe';
+    $Self->{Translation}->{'RelevantTo'} = 'Relevant für';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = 'Registriert einen Output-Filter, der ein Config-Item-Widget anzeigt.';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
         'Erforderliche Gruppenberechtigungen für die Verwendung des Customer-Config-Item-Widgets in der Agentenoberfläche.';
@@ -419,6 +450,9 @@ sub Data {
         'Zeigt die Configuration Item-Historie (umgekehrte Reihenfolge) im Agenten-Interface an.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Der Identifikator für ein Configuration Item, bspw. "ConfigItem#" , "MeinConfigItem#". Der Standard ist "ConfigItem#".';
+    $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
+        'Ticket-Event-Modul, das Links zwischen Tickets und Config-Items erstellt und entfernt.';
+    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = 'Ticket-Event-Modul, das Dynamische Felter aktualisiert.';
     $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
         'Diese Konfiguration registriert ein Frontend-Modul für die Agenten-Interface, das die AJAX-Schnittstelle für AgentITSMConfigItemCustomerCIsWidget bereitstellt.';
     $Self->{Translation}->{'class'} = 'Klasse';

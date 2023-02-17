@@ -15,6 +15,28 @@ use utf8;
 sub Data {
     my $Self = shift;
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+    $Self->{Translation}->{'This field is required and the value must be alphanumeric.'} = '';
+    $Self->{Translation}->{'Must be unique and only accepts alphanumeric characters.'} = '';
+    $Self->{Translation}->{'This is the order in which this field will be shown on the screens where it is active.'} =
+        '';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+    $Self->{Translation}->{'Config item class'} = '';
+    $Self->{Translation}->{'The selected config item class is invalid or does not exist.'} =
+        '';
+    $Self->{Translation}->{'Config item deployment states'} = '';
+    $Self->{Translation}->{'Config item link type'} = '';
+    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
+        '';
+    $Self->{Translation}->{'Config item link source'} = '';
+    $Self->{Translation}->{'Config item link removal'} = '';
+    $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
+        '';
+    $Self->{Translation}->{'Config item key'} = '';
+    $Self->{Translation}->{'These dynamic fields will be filled with values of the same selected config item(s).'} =
+        '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = '構成アイテム管理';
     $Self->{Translation}->{'Change class definition'} = 'クラス定義を変更';
@@ -256,6 +278,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
+    $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '';
     $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
@@ -264,6 +287,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         '同じConfigItemクラス（ \'class\'）内またはグローバル（ \'global\'）内でのみ一意の名前を確認します。これは、重複を検索するときに既存のConfigItemがすべて考慮されることを意味します。';
     $Self->{Translation}->{'Config Items'} = '構成アイテム';
+    $Self->{Translation}->{'Config item (dropdown)'} = '';
+    $Self->{Translation}->{'Config item (multiselect)'} = '';
     $Self->{Translation}->{'Config item add.'} = '構成アイテムを追加';
     $Self->{Translation}->{'Config item edit.'} = '構成アイテムを修正';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
@@ -336,8 +361,11 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'リンクされたCIのステータスに影響するチケットのタイプを定義します。';
     $Self->{Translation}->{'Delete Configuration Item'} = '構成アイテムを削除';
+    $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'デプロイ・ステータスのカラー';
     $Self->{Translation}->{'Duplicate'} = 'コピー';
+    $Self->{Translation}->{'Dynamic fields administration'} = '';
+    $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         '';
@@ -356,6 +384,8 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         '構成アイテムを担当するグループをチェックするモジュール';
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = '構成タイテムのレポートを生成するためのモジュール';
+    $Self->{Translation}->{'No longer in use. Do not change. Required due to compatibility with previous package versions.'} =
+        '';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'インポート/エクスポートモジュールのオブジェクトバックエンドモジュール登録';
     $Self->{Translation}->{'Overview.'} = '概要';
@@ -370,6 +400,7 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'ページのパラメータ（構成アイテムが表示されます）';
     $Self->{Translation}->{'Permission Group'} = '権限グループ';
+    $Self->{Translation}->{'RelevantTo'} = '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
@@ -423,6 +454,9 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
         '担当者Webインターフェイスで構成アイテムの履歴（逆順）を表示します。';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '構成アイテムの識別子。 ConfigItem＃、MyConfigItem＃、 デフォルトはConfigItem＃です。';
+    $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
+        '';
+    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
     $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
         '';
     $Self->{Translation}->{'class'} = 'クラス';

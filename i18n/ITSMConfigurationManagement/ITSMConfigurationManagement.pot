@@ -10,6 +10,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+msgid "This field is required and the value must be alphanumeric."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+msgid "Must be unique and only accepts alphanumeric characters."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+msgid "This is the order in which this field will be shown on the screens where it is active."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item class"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "The selected config item class is invalid or does not exist."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item deployment states"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item link type"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item link source"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item link removal"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Activate this option to remove links between the ticket and config items that are removed from this field."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item key"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "These dynamic fields will be filled with values of the same selected config item(s)."
+msgstr ""
+
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Management"
 msgstr ""
@@ -751,6 +803,10 @@ msgid "Ok"
 msgstr ""
 
 #. SysConfig
+msgid "AlternativeTo"
+msgstr ""
+
+#. SysConfig
 msgid "Assigned CIs"
 msgstr ""
 
@@ -776,6 +832,14 @@ msgstr ""
 
 #. SysConfig
 msgid "Config Items"
+msgstr ""
+
+#. SysConfig
+msgid "Config item (dropdown)"
+msgstr ""
+
+#. SysConfig
+msgid "Config item (multiselect)"
 msgstr ""
 
 #. SysConfig
@@ -935,11 +999,23 @@ msgid "Delete Configuration Item"
 msgstr ""
 
 #. SysConfig
+msgid "DependsOn"
+msgstr ""
+
+#. SysConfig
 msgid "Deployment State Color"
 msgstr ""
 
 #. SysConfig
 msgid "Duplicate"
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields administration"
+msgstr ""
+
+#. SysConfig
+msgid "DynamicFieldConfigItem"
 msgstr ""
 
 #. SysConfig
@@ -991,6 +1067,10 @@ msgid "Module to generate ITSM config item statistics."
 msgstr ""
 
 #. SysConfig
+msgid "No longer in use. Do not change. Required due to compatibility with previous package versions."
+msgstr ""
+
+#. SysConfig
 msgid "Object backend module registration for the import/export module."
 msgstr ""
 
@@ -1020,6 +1100,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Permission Group"
+msgstr ""
+
+#. SysConfig
+msgid "RelevantTo"
 msgstr ""
 
 #. SysConfig
@@ -1138,6 +1222,13 @@ msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#.
 msgstr ""
 
 #. SysConfig
+msgid "Ticket event module that creates and removes links between tickets and config items."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket event module that updates DynamicFields."
+msgstr ""
+
 msgid "This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget."
 msgstr ""
 

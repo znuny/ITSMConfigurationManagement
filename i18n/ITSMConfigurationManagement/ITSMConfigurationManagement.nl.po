@@ -1112,6 +1112,102 @@ msgstr ""
 msgid "Production"
 msgstr ""
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+msgid "This field is required and the value must be alphanumeric."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+msgid "Must be unique and only accepts alphanumeric characters."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+msgid "This is the order in which this field will be shown on the screens where it is active."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item class"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "The selected config item class is invalid or does not exist."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item deployment states"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item link type"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item link source"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item link removal"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Activate this option to remove links between the ticket and config items removed from this field."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Config item key"
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "These dynamic fields will be filled with values of the same selected config item(s)."
+msgstr ""
+
+#. SysConfig
+msgid "AlternativeTo"
+msgstr ""
+
+#. SysConfig
+msgid "Config item (dropdown)"
+msgstr ""
+
+#. SysConfig
+msgid "Config item (multiselect)"
+msgstr ""
+
+#. SysConfig
+msgid "DependsOn"
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields administration"
+msgstr ""
+
+#. SysConfig
+msgid "DynamicFieldConfigItem"
+msgstr ""
+
+#. SysConfig
+msgid "No longer in use. Do not change. Required due to compatibility with previous package versions."
+msgstr ""
+
+#. SysConfig
+msgid "RelevantTo"
+msgstr ""
+
+#. SysConfig
+msgid "Ticket event module that creates and removes links between tickets and config items."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Activate this option to remove links between the ticket and config items that are removed from this field."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket event module that updates DynamicFields."
+msgstr ""
+
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
 msgid "Customer related config items"
 msgstr ""

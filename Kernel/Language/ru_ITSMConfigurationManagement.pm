@@ -15,6 +15,28 @@ use utf8;
 sub Data {
     my $Self = shift;
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
+    $Self->{Translation}->{'This field is required and the value must be alphanumeric.'} = '';
+    $Self->{Translation}->{'Must be unique and only accepts alphanumeric characters.'} = '';
+    $Self->{Translation}->{'This is the order in which this field will be shown on the screens where it is active.'} =
+        '';
+
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+    $Self->{Translation}->{'Config item class'} = '';
+    $Self->{Translation}->{'The selected config item class is invalid or does not exist.'} =
+        '';
+    $Self->{Translation}->{'Config item deployment states'} = '';
+    $Self->{Translation}->{'Config item link type'} = '';
+    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
+        '';
+    $Self->{Translation}->{'Config item link source'} = '';
+    $Self->{Translation}->{'Config item link removal'} = '';
+    $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
+        '';
+    $Self->{Translation}->{'Config item key'} = '';
+    $Self->{Translation}->{'These dynamic fields will be filled with values of the same selected config item(s).'} =
+        '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Управление Конфигурационными единицами';
     $Self->{Translation}->{'Change class definition'} = 'Изменить описание класса';
@@ -256,6 +278,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
+    $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '';
     $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
@@ -264,6 +287,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Проверка уникальности Имени внутри текущего класса КЕ(\'class\') или глобально (\'global\'),что означает, что любая существующая КЕ учитывается при поиске дубликатов ';
     $Self->{Translation}->{'Config Items'} = 'Конфигурационные единицы';
+    $Self->{Translation}->{'Config item (dropdown)'} = '';
+    $Self->{Translation}->{'Config item (multiselect)'} = '';
     $Self->{Translation}->{'Config item add.'} = 'Создать конфигурационную единицу';
     $Self->{Translation}->{'Config item edit.'} = 'Редактировать конфигурационную единицу';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
@@ -330,8 +355,11 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Определяет, какой тип заявки может повлиять на статус связанной КЕ.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Удалить конфигурационную единицу';
+    $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Цвет состояния использования';
     $Self->{Translation}->{'Duplicate'} = 'Резерв';
+    $Self->{Translation}->{'Dynamic fields administration'} = '';
+    $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         '';
@@ -350,6 +378,8 @@ sub Data {
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Модуль для проверки группы ответственной за КЕ';
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'Модуль формирования статистики по КЕ.';
+    $Self->{Translation}->{'No longer in use. Do not change. Required due to compatibility with previous package versions.'} =
+        '';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'Object backend module registration для модуля Import/Export.';
     $Self->{Translation}->{'Overview.'} = 'Обзор';
@@ -364,6 +394,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Параметры страниц (на которых отображаются КЕ)';
     $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'RelevantTo'} = '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
@@ -417,6 +448,9 @@ sub Data {
         'Показ истории содержимого КЕ (порядок показа)';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Идентификатор (префикс) к номеру КЕ, т.е КЕ_№, КЕ#, Учетный_элемент_№. По умолчанию - ConfigItem# (или его перевод).';
+    $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
+        '';
+    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
     $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
         '';
     $Self->{Translation}->{'class'} = 'класс';
