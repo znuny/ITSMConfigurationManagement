@@ -7,11 +7,6 @@
 // did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 // --
 
-
-// TODO:
-//Remove this line and fix JSDoc
-// nofilter(TidyAll::Plugin::Znuny::JavaScript::ESLint)
-
 "use strict";
 
 var ITSM = ITSM || {};
@@ -36,11 +31,12 @@ ITSM.Agent.ConfigItem.CustomerSearch = (function (TargetNS) {
      */
     TargetNS.Init = function () {
 
-        var CustomerSearchItemIDs = Core.Config.Get('CustomerSearchItemIDs');
+        var CustomerSearchItemIDs = Core.Config.Get('CustomerSearchItemIDs'),
+            i;
 
         if (typeof CustomerSearchItemIDs !== 'undefined' && Array.isArray(CustomerSearchItemIDs) && CustomerSearchItemIDs.length) {
 
-            for (var i = 0; i < CustomerSearchItemIDs.length; i++) {
+            for (i = 0; i < CustomerSearchItemIDs.length; i++) {
                 // escape possible colons (:) in element id because jQuery can not handle it in id attribute selectors
                 ITSM.Agent.CustomerSearch.Init($("#" + Core.App.EscapeSelector(CustomerSearchItemIDs[i])));
             }

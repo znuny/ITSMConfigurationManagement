@@ -113,6 +113,23 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
                         return false;
                     });
                 });
+
+                // set autocomplete to user type fields
+                $('#SearchInsert').find('.ITSMUserSearch').each(function() {
+                    var InputID = $(this).attr('id') + 'Autocomplete';
+                    $(this).removeClass('ITSMUserSearch');
+                    $(this).attr('id', InputID);
+                    $(this).prev().attr('id', InputID + 'Selected');
+
+                    // escape possible colons (:) in element id because jQuery can not handle it in id attribute selectors
+                    ITSM.Agent.UserSearch.Init( $('#' + Core.App.EscapeSelector(InputID) ) );
+
+                    // prevent dialog closure when select a customer from the list
+                    $('ul.ui-autocomplete').bind('click', function(Event) {
+                        Event.stopPropagation();
+                        return false;
+                    });
+                });
             }
 
         Core.UI.InputFields.Activate($('#SearchInsert'));

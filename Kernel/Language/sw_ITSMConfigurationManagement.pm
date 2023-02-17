@@ -254,6 +254,7 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Assigned CIs'} = '';
+    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
     $Self->{Translation}->{'CIs assigned to customer user'} = '';
     $Self->{Translation}->{'CMDB Settings'} = '';
@@ -353,6 +354,8 @@ ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Vigezo kwa ajili ya ukurasa (ambavyo vipengele vya usanidi vimeonyeshwa).';
     $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Inahitaji ruhusa kutumia skrini ya kipengele cha usanidi cha ITSM katika kiolesura cha wakala.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

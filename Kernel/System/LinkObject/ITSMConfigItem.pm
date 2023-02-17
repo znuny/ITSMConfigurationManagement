@@ -150,7 +150,8 @@ sub ObjectPermission {
 
 return a hash of object descriptions
 
-Return
+Return:
+
     %Description = (
         Normal => "ConfigItem# 1234455",
         Long   => "ConfigItem# 1234455: The Config Item Title",
@@ -209,7 +210,8 @@ sub ObjectDescriptionGet {
 
 return a hash list of the search results
 
-Return
+Return:
+
     $SearchList = {
         C<NOTLINKED> => {
             Source => {

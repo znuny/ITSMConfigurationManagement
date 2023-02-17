@@ -582,6 +582,7 @@ sub Run {
 
     # output xml form
     if ( $XMLDefinition->{Definition} ) {
+        $Self->{UserSearchItemIDs}     = [];
         $Self->{CustomerSearchItemIDs} = [];
         $Self->_XMLFormOutput(
             XMLDefinition => $XMLDefinition->{DefinitionRef},
@@ -879,6 +880,9 @@ sub _XMLFormOutput {
 
             my $ItemID = 'Item' . $ItemCounter++ . $Param{Prefix} . $Param{Level};
 
+            if ( $Item->{Input}->{Type} eq 'User' ) {
+                push @{ $Self->{UserSearchItemIDs} }, $ItemID;
+            }
             if ( $Item->{Input}->{Type} eq 'Customer' ) {
                 push @{ $Self->{CustomerSearchItemIDs} }, $ItemID;
             }
@@ -1038,13 +1042,19 @@ sub _XMLFormOutput {
         }
     }
 
-    return 1 if !IsArrayRefWithData( $Self->{CustomerSearchItemIDs} );
+    if ( IsArrayRefWithData( $Self->{UserSearchItemIDs} ) ) {
+        $LayoutObject->AddJSData(
+            Key   => 'UserSearchItemIDs',
+            Value => $Self->{UserSearchItemIDs},
+        );
+    }
 
-    $LayoutObject->AddJSData(
-        Key   => 'CustomerSearchItemIDs',
-        Value => $Self->{CustomerSearchItemIDs},
-    );
-
+    if ( IsArrayRefWithData( $Self->{CustomerSearchItemIDs} ) ) {
+        $LayoutObject->AddJSData(
+            Key   => 'CustomerSearchItemIDs',
+            Value => $Self->{CustomerSearchItemIDs},
+        );
+    }
     return 1;
 }
 

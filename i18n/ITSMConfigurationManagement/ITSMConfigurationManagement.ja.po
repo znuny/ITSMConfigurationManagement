@@ -1117,3 +1117,11 @@ msgstr ""
 msgid "Production"
 msgstr ""
 
+#. SysConfig
+msgid "Autoloading of ITSMConfigurationManagement extensions."
+msgstr ""
+
+#. SysConfig
+msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
+msgstr ""
+

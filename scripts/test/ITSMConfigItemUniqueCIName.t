@@ -13,12 +13,10 @@ use utf8;
 
 use vars qw($Self);
 
-# get needed objects
 my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
 my $ConfigItemObject     = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
 
-# get helper object
 $Kernel::OM->ObjectParamAdd(
     'Kernel::System::UnitTest::Helper' => {
         RestoreDatabase => 1,

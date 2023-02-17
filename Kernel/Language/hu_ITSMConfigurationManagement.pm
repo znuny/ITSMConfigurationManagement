@@ -254,6 +254,7 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Assigned CIs'} = 'Hozzárendelt konfigurációelemek';
+    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Ügyfél-vállalathoz hozzárendelt konfigurációelemek';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Ügyfél-felhasználóhoz hozzárendelt konfigurációelemek';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB beállítások';
@@ -351,6 +352,8 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Paraméterek az oldalakhoz (amelyeken a konfigurációelemek megjelennek).';
     $Self->{Translation}->{'Permission Group'} = 'Jogosultsági csoport';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'A szükséges jogosultságok az ITSM konfigurációelem képernyőjének használatához az ügyintézői felületen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

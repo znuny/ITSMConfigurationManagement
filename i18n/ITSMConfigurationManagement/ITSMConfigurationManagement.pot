@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2022-11-08 13:54+0000\n"
+"POT-Creation-Date: 2023-02-09 14:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -751,6 +751,10 @@ msgid "Assigned CIs"
 msgstr ""
 
 #. SysConfig
+msgid "Autoloading of ITSMConfigurationManagement extensions."
+msgstr ""
+
+#. SysConfig
 msgid "CIs assigned to customer company"
 msgstr ""
 
@@ -988,6 +992,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Permission Group"
+msgstr ""
+
+#. SysConfig
+msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
 msgstr ""
 
 #. SysConfig

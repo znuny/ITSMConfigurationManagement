@@ -254,6 +254,7 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Assigned CIs'} = 'CIs asignados';
+    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Cis asignados a la Empresa del Cliente';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Cis asignados al usuario del cliente';
     $Self->{Translation}->{'CMDB Settings'} = 'Configuraciones CMDB';
@@ -351,6 +352,8 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parámetros para las páginas (donde se muestran los elementos de configuración)';
     $Self->{Translation}->{'Permission Group'} = 'Grupo de permisos';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Permisos necesarios para usar la ventana de los elementos de configuración en la interfaz del agente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

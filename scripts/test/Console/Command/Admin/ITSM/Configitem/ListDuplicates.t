@@ -17,7 +17,6 @@ use vars (qw($Self));
 # get command object
 my $CommandObject = $Kernel::OM->Get('Kernel::System::Console::Command::Admin::ITSM::Configitem::ListDuplicates');
 
-# get helper object
 $Kernel::OM->ObjectParamAdd(
     'Kernel::System::UnitTest::Helper' => {
         RestoreDatabase => 1,

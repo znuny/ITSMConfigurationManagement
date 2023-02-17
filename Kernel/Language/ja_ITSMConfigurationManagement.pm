@@ -254,6 +254,7 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Assigned CIs'} = '';
+    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
     $Self->{Translation}->{'CIs assigned to customer user'} = '';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDBの設定';
@@ -357,6 +358,8 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'ページのパラメータ（構成アイテムが表示されます）';
     $Self->{Translation}->{'Permission Group'} = '権限グループ';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '担当者Webインターフェイスで構成アイテム画面を使用するために必要な権限';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

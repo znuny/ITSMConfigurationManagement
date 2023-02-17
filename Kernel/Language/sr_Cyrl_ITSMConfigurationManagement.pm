@@ -254,6 +254,7 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Assigned CIs'} = 'Додељене конфигурационе ставке';
+    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Конфигурационе ставке додељене фирми клијента';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Конфигурационе ставке додељене клијенту кориснику';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB подешавања';
@@ -351,6 +352,8 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Параметри за странице (на којима су конфигурационе ставке приказане).';
     $Self->{Translation}->{'Permission Group'} = 'Група приступа';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Потребне дозволе за употребу екрана ITSM конфигурационе ставке у интерфејсу оператера.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

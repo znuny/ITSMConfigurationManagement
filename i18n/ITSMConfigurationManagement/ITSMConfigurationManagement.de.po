@@ -1112,3 +1112,11 @@ msgstr "FQDN"
 msgid "Production"
 msgstr "Produktiv"
 
+#. SysConfig
+msgid "Autoloading of ITSMConfigurationManagement extensions."
+msgstr "Automatisches Laden von ITSMConfigurationManagement-Erweiterungen."
+
+#. SysConfig
+msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
+msgstr "Registriert ein ITSMConfigItem-EventModule, das zugehörige Anhänge speichert."
+

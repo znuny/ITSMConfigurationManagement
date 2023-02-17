@@ -254,6 +254,7 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Assigned CIs'} = '已分配的配置项';
+    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '已分配给客户单位的配置项';
     $Self->{Translation}->{'CIs assigned to customer user'} = '已分配给客户用户的配置项';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB设置';
@@ -351,6 +352,8 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '显示配置项的页面参数。';
     $Self->{Translation}->{'Permission Group'} = '权限组';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '服务人员界面使用ITSM配置项窗口需要的权限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =

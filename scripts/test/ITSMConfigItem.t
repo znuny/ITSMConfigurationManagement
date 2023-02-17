@@ -14,7 +14,6 @@ use utf8;
 
 use vars qw($Self);
 
-# get needed objects
 my $DBObject             = $Kernel::OM->Get('Kernel::System::DB');
 my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 my $ConfigItemObject     = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
@@ -22,7 +21,6 @@ my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
 my $LinkObject           = $Kernel::OM->Get('Kernel::System::LinkObject');
 my $UserObject           = $Kernel::OM->Get('Kernel::System::User');
 
-# get helper object
 $Kernel::OM->ObjectParamAdd(
     'Kernel::System::UnitTest::Helper' => {
         RestoreDatabase => 1,
