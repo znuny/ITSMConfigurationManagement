@@ -44,6 +44,9 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Неисправан број конфигурационе ставке!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Број друге конфигурационе ставке за повезивање.';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+    $Self->{Translation}->{'Customer related config items'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Да ли стварно желите да обришете ову конфигурациону ставку?';
 
@@ -278,6 +281,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Креирање и управљање дефиниција за конфигурационе ставке.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Дефинише акције где је дугме поставки доступно у повезаном графичком елементу објекта (LinkObject::ViewMode = "complex"). Молимо да имате на уму да ове Акције морају да буду регистроване у следећим JS и CSS датотекама: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js и Core.Agent.LinkObject.js.';
+    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Дефинише неопходне дозволе за креирање ITSM конфигурационих ставки коришћењем генеричког интерфејса.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -320,20 +325,27 @@ sub Data {
         'Дефинише приказане колоне конфигурационих ставки у табели веза у зависности од класе. Сваки унос мора садржати префикс са називом класе и двотачком (нпр. Computer::). Постоји пар атрибута који су заједнички за све класе (нпр. за класу Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). За приказ појединачних атрибута из дефиниције, морате користити следећу шему (пример за класу Computer): Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Уколико не постоји унос за појединачну класу, биће приказане подразумеване колоне.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         'Одређује који тип везе (гледано из перспективе тикета) може да утиче на повезану CI.';
+    $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
+        '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Одређује који тип тикета може да утиче на статус повезане CI.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Брисање конфигурационе ставке';
     $Self->{Translation}->{'Deployment State Color'} = 'Боја статуса распоређивања';
     $Self->{Translation}->{'Duplicate'} = 'Дупликат';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
+    $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
+        '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Омогућава масовну акцију на конфигурационим ставкама у приступном систему оператера на више од једне ставке истовремено.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Активира својство масовне акције на конфигирационим ставкама само за излистане групе.';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         'Активира/деактивира функцију за проверу јединствености имана конфигурационих ставки. Пре активирања ове опције требате проверити у вашем систему постојање дупликата на постојећим ставкама. То можете урадити помоћу скрипта bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates. ';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Модул догађаја за подешавање статуса конфигурационих ставки приликом постављања веза.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Преглед ITSM конфигурационе ставке.';
+    $Self->{Translation}->{'Limit for config item search.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Модул за проверу групе одговорне за класу.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Модул за проверу групе одговорне за конфигурациону ставку.';
@@ -352,8 +364,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Параметри за странице (на којима су конфигурационе ставке приказане).';
     $Self->{Translation}->{'Permission Group'} = 'Група приступа';
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
-        '';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Потребне дозволе за употребу екрана ITSM конфигурационе ставке у интерфејсу оператера.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -362,6 +375,8 @@ sub Data {
         'Потребне дозволе за употребу екрана деталног приказа ITSM конфигурационе ставке у интерфејсу оператера.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'Потребне дозволе за употребу екрана додавања ITSM конфигурационе ставке у интерфејсу оператера.';
+    $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'Потребне дозволе за употребу екрана измене ITSM конфигурационе ставке у интерфејсу оператера.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -402,6 +417,8 @@ sub Data {
         'Приказује историјат конфигурационе ставке (обрнут редослед) у интерфејсу оператера.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Идентификатор за конфигурациону ставку, нпр. ConfigItem#, MyConfigItem#. Подразумевано је ConfigItem#.';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'class'} = 'класа';
     $Self->{Translation}->{'global'} = 'глобално';
     $Self->{Translation}->{'postproductive'} = 'пост-продукција';
@@ -416,6 +433,7 @@ sub Data {
     'Settings',
     'Submit',
     'Yes',
+    'none',
     );
 
 }

@@ -1112,6 +1112,54 @@ msgstr "FQDN"
 msgid "Production"
 msgstr "Produktiv"
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+msgid "Customer related config items"
+msgstr "Kundenbezogene Config-Items"
+
+#. SysConfig
+msgid "Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface."
+msgstr "Definieren Sie eine Zuordnung zwischen Item-Klassen und Fontawesome-Symbolen, welche im Agenten-Interface angezeigt werden."
+
+#. SysConfig
+msgid "Defines which type of link (named from the ticket perspective) is used to link tickets and config items."
+msgstr "Legt fest, welche Art von Link (aus der Ticket-Perspektive) verwendet wird, um Tickets und Config-Items zu verlinken."
+
+#. SysConfig
+msgid "Limit for config item search."
+msgstr "Limit für die Config-Item-Suche."
+
+#. SysConfig
+msgid "Registers a Ticket-EventModule that test."
+msgstr "Registriert ein Ticket-EventModul."
+
+#. SysConfig
+msgid "Registers an output filter that shows a config item widget."
+msgstr "Registriert einen Output-Filter, der ein Config-Item-Widget anzeigt."
+
+#. SysConfig
+msgid "Required group permissions to use the customer config item widget in the agent interface."
+msgstr "Erforderliche Gruppenberechtigungen für die Verwendung des Customer-Config-Item-Widgets in der Agentenoberfläche."
+
+#. SysConfig
+msgid "Required permissions to use the config item dialog in the agent interface."
+msgstr "Erforderliche Berechtigungen für die Verwendung des Config-Item-Dialogs in der Agentenschnittstelle."
+
+#. SysConfig
+msgid "This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget."
+msgstr "Diese Konfiguration registriert ein Frontend-Modul für die Agenten-Interface, das die AJAX-Schnittstelle für AgentITSMConfigItemCustomerCIsWidget bereitstellt."
+
+#. SysConfig
+msgid "Enable search for config items based on the customer id."
+msgstr "Aktiviert die Suche nach Config-Items basierend auf dem Kundenbenutzer."
+
+#. SysConfig
+msgid "Enable search for config items based on the customer user id."
+msgstr "Aktiviert die Suche nach Config-Items basierend auf dem Kunden."
+
+#. SysConfig
+msgid "Event Module that links a ConfigItem."
+msgstr "Ein Ereignismodul das ein Configuration Item verlinkt."
+
 #. SysConfig
 msgid "Autoloading of ITSMConfigurationManagement extensions."
 msgstr "Automatisches Laden von ITSMConfigurationManagement-Erweiterungen."
@@ -1119,4 +1167,3 @@ msgstr "Automatisches Laden von ITSMConfigurationManagement-Erweiterungen."
 #. SysConfig
 msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
 msgstr "Registriert ein ITSMConfigItem-EventModule, das zugehörige Anhänge speichert."
-

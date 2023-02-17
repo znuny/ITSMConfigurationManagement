@@ -1518,6 +1518,67 @@ sub _ConvertPerlDefinitions2YAML {
     return;
 }
 
+=head2 _MigrateZnunyCustomerCIsSysConfig()
+
+Migrate SysConfig of package Znuny-CustomerCIs.
+
+=cut
+
+sub _MigrateZnunyCustomerCIsSysConfig {
+    my ( $Self, %Param ) = @_;
+
+    my $SysConfigMigrationObject = $Kernel::OM->Get('Kernel::System::SysConfig::Migration');
+    my $ConfigObject             = $Kernel::OM->Get('Kernel::Config');
+
+    my $Home      = $ConfigObject->Get('Home');
+    my $FileClass = 'Kernel::Config::Files::ZZZAAuto';
+    my $FilePath  = "$Home/Kernel/Config/Backups/ZZZAAuto.pm";
+
+    if ( !-f $FilePath ) {
+        print "\n\n Error: ZZZAAuto backup file not found.\n";
+        return;
+    }
+
+    my %MigrateSysConfigSettings = (
+        "ITSMConfigItem::Frontend::AgentZnunyCustomerCIs###SearchLimit" => {
+            UpdateName => 'ITSMConfigItem::Frontend::AgentITSMConfigItemCustomerCIs###SearchLimit',
+        },
+        "ITSMConfigItem::Frontend::AgentZnunyCustomerCIs###CustomerUser" => {
+            UpdateName => 'ITSMConfigItem::Frontend::AgentITSMConfigItemCustomerCIs###CustomerUser',
+        },
+        "ITSMConfigItem::Frontend::AgentZnunyCustomerCIs###CustomerCompany" => {
+            UpdateName => 'ITSMConfigItem::Frontend::AgentITSMConfigItemCustomerCIs###CustomerCompany',
+        },
+        "ITSMConfigItem::Frontend::AgentZnunyCustomerCIs###Mapping" => {
+            UpdateName => 'ITSMConfigItem::Frontend::AgentITSMConfigItemCustomerCIs###Mapping',
+        },
+        "ITSMConfigItem::Frontend::AgentZnunyCustomerCIs###Permission" => {
+            UpdateName => 'ITSMConfigItem::Frontend::AgentITSMConfigItemCustomerCIs###Permission',
+        },
+        "Frontend::Output::FilterElementPost###ZnunyCustomerCIs" => {
+            UpdateName => 'Frontend::Output::FilterElementPost###AgentITSMConfigItemCustomerCIs',
+        },
+        "ZnunyCustomerCIsWidget###Group" => {
+            UpdateName => 'AgentITSMConfigItemCustomerCIsWidget###Group',
+        },
+        "ZnunyCustomerCIsWidget###LinkType" => {
+            UpdateName => 'AgentITSMConfigItemCustomerCIsWidget###LinkType',
+        },
+        "Frontend::Module###AgentZnunyCustomerCIsWidgetAJAX" => {
+            UpdateName => 'Frontend::Module###AgentITSMConfigItemCustomerCIsWidget',
+        },
+
+    );
+
+    my $Success = $SysConfigMigrationObject->MigrateSysConfigSettings(
+        FileClass => $FileClass,
+        FilePath  => $FilePath,
+        Data      => \%MigrateSysConfigSettings,
+    );
+
+    return 1;
+}
+
 sub _MigrateWebserviceConfigs {
     my ( $Self, %Param ) = @_;
 

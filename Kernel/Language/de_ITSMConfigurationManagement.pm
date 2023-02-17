@@ -44,6 +44,9 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Ungültige Configuration Item Nummer!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Die Nummer des zu verknüpfenden Configuration Items.';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+    $Self->{Translation}->{'Customer related config items'} = 'Kundenbezogene Config-Items';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Wollen Sie dieses Configuration Item wirklich löschen?';
 
@@ -278,6 +281,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Die Definitionen von Configuration Item-Limit erstellen und verwalten.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = "complex"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen:  Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js.';
+    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+        'Definieren Sie eine Zuordnung zwischen Item-Klassen und Fontawesome-Symbolen, welche im Agenten-Interface angezeigt werden.';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Definiert die benötigten Berechtigungen zum Erstellen von ITSM Configuration Items durch das Generic Interface.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -320,20 +325,27 @@ sub Data {
         'Definiert die angezeigten Spalten von Configuration Items in der Komplexansicht der Verknüpfungstabelle abhängig von der Configuration Item-Klasse. Definiert die angezeigten Spalten von Configuration Items in der Configuration Item-Übersicht in Abhängigkeit von der Configuration Item-Klasse. Jedem Eintrag müssen der Klassenname und Doppelpunkte vorangestellt werden (z.B. Computer:::). Es gibt einige Configuration Item-Attribute, die allen Configuration Items gemeinsam sind (Beispiel für die Klasse Computer: Computer::Name, Computer::CurDeplState, Computer::CreateTime). Um einzelne Configuration Item-Attribute, wie sie in der Configuration Item-Definition definiert sind, darzustellen, muss das folgende Schema verwendet werden (Beispiel für die Klasse Computer): Computer::HardDisk::1, Computer::HardDisk::1::Kapazität::1, Computer::HardDisk::2, Computer::HardDisk::2::Kapazität::1. Wenn es keinen Eintrag für eine Configuration Item-Klasse gibt, werden die Standardspalten angezeigt.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         'Legt fest, welche Art von Link (aus der Ticketperspektive benannt) den Status eines verlinkten CI beeinflussen kann.';
+    $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
+        'Legt fest, welche Art von Link (aus der Ticket-Perspektive) verwendet wird, um Tickets und Config-Items zu verlinken.';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Definiert, welcher Typ von Ticket den Status eines verknüpften Configuration Items beeinflussen kann.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Configuration Item löschen.';
     $Self->{Translation}->{'Deployment State Color'} = 'Verwendungsstatus-Farbe';
     $Self->{Translation}->{'Duplicate'} = 'Duplizieren';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = 'Aktiviert die Suche nach Config-Items basierend auf dem Kundenbenutzer.';
+    $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
+        'Aktiviert die Suche nach Config-Items basierend auf dem Kunden.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Aktiviert die Funktion "Sammelaktion" für das Agenten-Frontend, um zur gleichen Zeit an mehreren Configuration Items arbeiten zu können.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Aktiviert die Funktion "Sammelaktion" nur für die gelisteten Gruppen.';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         '(De-)Aktiviert die Funktionalität um ConfigItems auf eindeutige Namen zu überprüfen. Bevor Sie diese Option aktivieren, sollten Sie Ihr System auf bereits vorhandene ConfigItems mit gleichem Namen überprüfen. Sie können dies mit Hilfe des scripts bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates tun.';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = 'Ein Ereignismodul das ein Configuration Item verlinkt.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Ein Ereignismodul das beim Verknüpfen von Tickets mit Configuration Items den Status des Configuration Items verändert.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM Configuration Item-Übersicht';
+    $Self->{Translation}->{'Limit for config item search.'} = 'Limit für die Config-Item-Suche.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul zur Überprüfung der Gruppe, die für eine Klasse verantwortlich ist.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul, um die Gruppe zu überprüfen, die für ein Configuration Item verantwortlich ist.';
@@ -352,6 +364,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter für die Seiten, in denen Configuration Items angezeigt werden.';
     $Self->{Translation}->{'Permission Group'} = 'Berechtigungsgruppe';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = 'Registriert einen Output-Filter, der ein Config-Item-Widget anzeigt.';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+        'Erforderliche Gruppenberechtigungen für die Verwendung des Customer-Config-Item-Widgets in der Agentenoberfläche.';
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
         'Registriert ein ITSMConfigItem-EventModule, das zugehörige Anhänge speichert.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
@@ -362,6 +377,8 @@ sub Data {
         'Erforderliche Berechtigungen, um die Detailansicht von Configuration Items im Agenten-Interface nutzen zu können.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'Erforderliche Berechtigungen, um die Ansicht zum Hinzufügen von Configuration Items im Agenten-Interface nutzen zu können.';
+    $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
+        'Erforderliche Berechtigungen für die Verwendung des Config-Item-Dialogs in der Agentenschnittstelle.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'Erforderliche Berechtigungen, um die Ansicht zum Bearbeiten von Configuration Items im Agenten-Interface nutzen zu können.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -402,6 +419,8 @@ sub Data {
         'Zeigt die Configuration Item-Historie (umgekehrte Reihenfolge) im Agenten-Interface an.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Der Identifikator für ein Configuration Item, bspw. "ConfigItem#" , "MeinConfigItem#". Der Standard ist "ConfigItem#".';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        'Diese Konfiguration registriert ein Frontend-Modul für die Agenten-Interface, das die AJAX-Schnittstelle für AgentITSMConfigItemCustomerCIsWidget bereitstellt.';
     $Self->{Translation}->{'class'} = 'Klasse';
     $Self->{Translation}->{'global'} = 'Global';
     $Self->{Translation}->{'postproductive'} = 'Post-produktiv';
@@ -416,6 +435,7 @@ sub Data {
     'Settings',
     'Submit',
     'Yes',
+    'none',
     );
 
 }

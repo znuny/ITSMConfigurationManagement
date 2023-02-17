@@ -44,6 +44,9 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '无效的配置项编号！';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '将要链接的另外一个配置项编号。';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+    $Self->{Translation}->{'Customer related config items'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '你真的想要删除这个配置项吗?';
 
@@ -278,6 +281,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = '创建和管理配置项定义';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         '定义链接对象小部件(LinkObject::ViewMode = \"complex\")设置按钮中的操作。请注意，这些操作必须已经在以下JS和CSS文件中注册：Core.AllocationList.css、Core.UI.AllocationList.js、 Core.UI.Table.Sort.js、Core.Agent.TableFilters.js和Core.Agent.LinkObject.js。';
+    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         '定义使用通用接口创建ITSM配置项所需的权限。';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -320,20 +325,27 @@ sub Data {
         '定义链接表复合视图中按配置项类分类显示的字段。每个条目均需以类名为前缀再加上双冒号（如计算机::）。有一些配置项属性是所有配置项都有的（例如，对于计算机类：计算机::名称、计算机::CurDeplState当前部署状态、计算机::CreateTime创建时间）。要显示在配置项定义中定义的独特的配置项属性，必须使用下面的方案（例如：对于计算机类：计算机::硬盘::1、计算机::硬盘::容量::1、计算机::硬盘::2、计算机::硬盘::2计算机::硬盘::2）。如果一个配置项类没有条目存在，则使用在ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns中设置的默认字段。';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '定义哪一类(从工单角度命名的)链接可以影响一个链接的配置项的状态。';
+    $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
+        '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '定义哪一类工单可以影响一个链接的配置项的状态。';
     $Self->{Translation}->{'Delete Configuration Item'} = '删除配置项';
     $Self->{Translation}->{'Deployment State Color'} = '部署状态的颜色';
     $Self->{Translation}->{'Duplicate'} = '复制';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
+    $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
+        '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         '在服务人员界面启用配置项批量操作功能，可以一次处理多个配置项。';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         '只有列表中的组才有权限使用配置项批量操作功能。';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         '启用/禁用检查配置项唯一名称功能。在启用这个选项前，您应该检查系统中是否已经存在重名的配置项，您可以使用这个脚本来检查重名情况：bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates。';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         '在工单-配置项的链接中设置配置项-状态的事件模块。';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM配置项概览。';
+    $Self->{Translation}->{'Limit for config item search.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = '用于检查配置项类的组权限的模块。';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         '用于检查配置项的组权限的模块。';
@@ -352,8 +364,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '显示配置项的页面参数。';
     $Self->{Translation}->{'Permission Group'} = '权限组';
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
-        '';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '服务人员界面使用ITSM配置项窗口需要的权限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -362,6 +375,8 @@ sub Data {
         '服务人员界面使用ITSM配置项详情窗口需要的权限。';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         '服务人员界面使用添加ITSM配置项窗口需要的权限。';
+    $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         '服务人员界面使用编辑ITSM配置项窗口需要的权限。';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -402,6 +417,8 @@ sub Data {
         '在服务人员界面显示配置项历史（倒序）。';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '配置项标识符，如ConfigItem#、MyConfigItem#，默认是ConfigItem#。';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'class'} = '类';
     $Self->{Translation}->{'global'} = '全局';
     $Self->{Translation}->{'postproductive'} = '闲置';
@@ -416,6 +433,7 @@ sub Data {
     'Settings',
     'Submit',
     'Yes',
+    'none',
     );
 
 }

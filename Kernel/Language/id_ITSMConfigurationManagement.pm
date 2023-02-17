@@ -44,6 +44,9 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'Nomor item konfigurasi tidak sah';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Jumlah item konfigurasi lainnya yang akan di hubungkan';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+    $Self->{Translation}->{'Customer related config items'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
@@ -278,6 +281,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Buat dan atur definisi - definisi untuk item konfigurasi';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         '';
+    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Definisikan izin yang di butuhkan untuk menciptakan item konfigurasi ITSM dengan menggunakan antarmuka umum.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -320,20 +325,27 @@ sub Data {
         'Mendefinisikan kolom yang ditampilkan dari CI di link tabel tampilan yang kompleks, tergantung pada kelas CI. Setiap entri harus diawali dengan nama kelas dan titik dua ganda (i.e. Computer::). Ada beberapa CI-Atribut yang umum untuk semua CI (Contoh untuk Komputer kelas: Komputer :: Nama, Komputer :: CurDeplState, Komputer :: CreateTime). Untuk menunjukkan individu CI-Atribut sebagaimana didefinisikan dalam CI-Definition, skema berikut harus digunakan (misalnya untuk Komputer kelas):  Computer::HardDisk::1, Computer::HardDisk::1::Capacity::1, Computer::HardDisk::2, Computer::HardDisk::2::Capacity::1. Jika tidak ada entri untuk kelas CI, maka kolom standar ditampilkan sebagaimana didefinisikan dalam pengaturan ITSMConfigItem::Frontend::AgentITSMConfigItem###ShowColumns.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '';
+    $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
+        '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Delete Configuration Item'} = '';
     $Self->{Translation}->{'Deployment State Color'} = '';
     $Self->{Translation}->{'Duplicate'} = 'Duplikat';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
+    $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
+        '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Memungkinkan fitur item konfigurasi tindakan massal untuk agen frontend untuk bekerja pada lebih dari satu item konfigurasi pada suatu waktu.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Memungkinkan fitur tindakan massal item konfigurasi hanya untuk kelompok terdaftar.';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         'Mengaktifkan / menonaktifkan fungsi untuk memeriksa ConfigItems untuk nama yang unik. Sebelum mengaktifkan opsi ini Anda harus memeriksa sistem anda untuk produk-config yang sudah ada dengan nama duplikat. Anda dapat melakukan ini dengan script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         '';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
+    $Self->{Translation}->{'Limit for config item search.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul untuk memeriksa kelompok yang bertanggung jawab untuk kelas.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul untuk memeriksa kelompok yang bertanggung jawab untuk item konfigurasi.';
@@ -352,8 +364,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter untuk halaman (di mana item konfigurasi akan ditampilkan).';
     $Self->{Translation}->{'Permission Group'} = '';
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
-        '';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'izin yang diperlukan untuk menggunakan layar item konfigurasi ITSM di antarmuka agen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -362,6 +375,8 @@ sub Data {
         'izin yang diperlukan untuk menggunakan konfigurasi ITSM item layar zoom di antarmuka agen.';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'izin yang diperlukan untuk menggunakan add ITSM layar item konfigurasi dalam antarmuka agen.';
+    $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'izin yang diperlukan untuk menggunakan mengedit ITSM layar item konfigurasi dalam antarmuka agen.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -402,6 +417,8 @@ sub Data {
         'Menunjukkan sejarah config item (urutan terbalik) di antarmuka agen.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Pengenal untuk item konfigurasi, misalnya ConfigItem #, MyConfig Item #. default adalah ConfigItem #.';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'class'} = '';
     $Self->{Translation}->{'global'} = '';
     $Self->{Translation}->{'postproductive'} = '';
@@ -416,6 +433,7 @@ sub Data {
     'Settings',
     'Submit',
     'Yes',
+    'none',
     );
 
 }

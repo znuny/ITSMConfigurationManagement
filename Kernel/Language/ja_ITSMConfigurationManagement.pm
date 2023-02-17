@@ -44,6 +44,9 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = '構成アイテムの値が不正です!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = '他の構成アイテムへのリンク数';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+    $Self->{Translation}->{'Customer related config items'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '本当にこの構成アイテムを削除しますか？';
 
@@ -278,6 +281,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = '構成アイテムの作成または変更';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'リンクオブジェクトウィジェット（LinkObject :: ViewMode = "complex"）で設定ボタンを使用できるアクションを定義します。 これらのアクションは、次のJSおよびCSSファイルを登録している必要があります。Core.AllocationList.css、Core.UI.AllocationList.js、Core.UI.Table.Sort.js、Core.Agent.TableFilters.js、及びCore.Agent .LinkObject.js';
+    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'ジェネリックインターフェイスを活用して構成アイテムを作成する権限を定義する。';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -326,20 +331,27 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
         '';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         'リンクされたCIのステータスに影響するリンクのタイプ（チケットの観点から名前が付けられます）を定義します。';
+    $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
+        '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'リンクされたCIのステータスに影響するチケットのタイプを定義します。';
     $Self->{Translation}->{'Delete Configuration Item'} = '構成アイテムを削除';
     $Self->{Translation}->{'Deployment State Color'} = 'デプロイ・ステータスのカラー';
     $Self->{Translation}->{'Duplicate'} = 'コピー';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
+    $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
+        '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         '担当者フロントエンドが一度に複数の設定項目で機能するように設定項目一括操作機能を有効にします。';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'リストされたグループの構成アイテム一括処理機能のみを有効にします。';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         '';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'チケット構成アイテムのリンクに構成アイテムのステータスを設定するイベントモジュール';
     $Self->{Translation}->{'ITSM config item overview.'} = '構成アイテムの一覧';
+    $Self->{Translation}->{'Limit for config item search.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'クラスを担当するグループをチェックするモジュール';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         '構成アイテムを担当するグループをチェックするモジュール';
@@ -358,8 +370,9 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'ページのパラメータ（構成アイテムが表示されます）';
     $Self->{Translation}->{'Permission Group'} = '権限グループ';
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
-        '';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '担当者Webインターフェイスで構成アイテム画面を使用するために必要な権限';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -368,6 +381,8 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
         '担当者Webインターフェイス構成アイテムのズーム画面を使用するために必要な権限';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         '担当者Webインターフェイスで構成アイテムの追加画面を使用するために必要な権限';
+    $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         '担当者Webインターフェイスで構成アイテムの編集画面を使用するために必要な権限';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -408,6 +423,8 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
         '担当者Webインターフェイスで構成アイテムの履歴（逆順）を表示します。';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '構成アイテムの識別子。 ConfigItem＃、MyConfigItem＃、 デフォルトはConfigItem＃です。';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'class'} = 'クラス';
     $Self->{Translation}->{'global'} = 'グローバル';
     $Self->{Translation}->{'postproductive'} = '次の生産';
@@ -422,6 +439,7 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     'Settings',
     'Submit',
     'Yes',
+    'none',
     );
 
 }

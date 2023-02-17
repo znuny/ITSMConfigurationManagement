@@ -1117,6 +1117,54 @@ msgstr ""
 msgid "Production"
 msgstr ""
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+msgid "Customer related config items"
+msgstr ""
+
+#. SysConfig
+msgid "Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines which type of link (named from the ticket perspective) is used to link tickets and config items."
+msgstr ""
+
+#. SysConfig
+msgid "Limit for config item search."
+msgstr ""
+
+#. SysConfig
+msgid "Registers a Ticket-EventModule that test."
+msgstr ""
+
+#. SysConfig
+msgid "Registers an output filter that shows a config item widget."
+msgstr ""
+
+#. SysConfig
+msgid "Required group permissions to use the customer config item widget in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Required permissions to use the config item dialog in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget."
+msgstr ""
+
+#. SysConfig
+msgid "Enable search for config items based on the customer id."
+msgstr ""
+
+#. SysConfig
+msgid "Enable search for config items based on the customer user id."
+msgstr ""
+
+#. SysConfig
+msgid "Event Module that links a ConfigItem."
+msgstr ""
+
 #. SysConfig
 msgid "Autoloading of ITSMConfigurationManagement extensions."
 msgstr ""
@@ -1124,4 +1172,3 @@ msgstr ""
 #. SysConfig
 msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
 msgstr ""
-

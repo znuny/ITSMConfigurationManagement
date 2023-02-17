@@ -44,6 +44,9 @@ sub Data {
     $Self->{Translation}->{'Invalid Configuration Item number!'} = 'จำนวนรายการการกำหนดค่าไม่ถูกต้อง!';
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'จำนวนของรายการการกำหนดค่าอื่นๆที่ต้องการเชื่อมโยง';
 
+    # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
+    $Self->{Translation}->{'Customer related config items'} = '';
+
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = '';
 
@@ -278,6 +281,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'สร้างและจัดการคำนิยามสำหรับ Configuration Items';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         '';
+    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'กำหนดสิทธิ์ที่จำเป็นในการสร้างรายการการตั้งค่า ITSMโดยใช้อินเตอร์เฟซทั่วไป';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -320,20 +325,27 @@ sub Data {
         'กำหนดคอลัมน์ที่แสดง CIs ในตารางการเชื่อมโยงมุมมองที่ซับซ้อนซึ่งขึ้นอยู่กับคลาส CI รายการการป้อนแต่ละรายการจะต้องนำหน้าด้วยชื่อคลาสและเครื่องหมายทวิภาคคู่ (เช่นคอมพิวเตอร์: :) มีแอตทริบิวต์ CI เพียงไม่กี่แอตทริบิวต์ ที่ใช้กันทั่วไปใน CIs ทั้งหมด (ตัวอย่างสำหรับคลาสคอมพิวเตอร์: คอมพิวเตอร์::ชื่อ, คอมพิวเตอร์::CurDeplState, คอมพิวเตอร์::CreateTime) ในการแสดงแอตทริบิวต์ CI ตามที่กำหนดไว้ในคำนิยาม CI จะต้องใช้รูปแบบต่อไปนี้(ตัวอย่างสำหรับคลาสคอมพิวเตอร์): คอมพิวเตอร์::ฮาร์ดดิสก์::1, คอมพิวเตอร์::ฮาร์ดดิสก์::1::ความจุ::1, คอมพิวเตอร์::ฮาร์ดดิสก์::2, คอมพิวเตอร์::ฮาร์ดดิสก์::2::ความจุ::1 หากไม่มีการป้อนคลาสที่ CI แล้วคอลัมน์เริ่มต้นจะแสดงตามที่กำหนดไว้ในการตั้งค่า ITSMConfigItem ::Frontend :: AgentITSMConfigItem ### ShowColumns';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         '';
+    $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
+        '';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Delete Configuration Item'} = '';
     $Self->{Translation}->{'Deployment State Color'} = '';
     $Self->{Translation}->{'Duplicate'} = 'ซ้ำ';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
+    $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
+        '';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'เปิดใช้งานการตั้งค่ารายการคุณลักษณะของการทำงานเป็นกลุ่ม สำหรับฟรอนต์เอนของเอเย่นต์เพื่อทำงานกับรายการการกำหนดค่าที่มีมากกว่าหนึ่งในหนึ่งครั้ง';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'เปิดใช้งานการตั้งค่ารายการคุณลักษณะของการทำงานเป็นกลุ่มเฉพาะสำหรับกลุ่มที่ระบุไว้';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
         'เปิด / ปิดการใช้งานฟังก์ชั่นเพื่อตรวจสอบ ConfigItems สำหรับชื่อที่ไม่ซ้ำกัน ก่อนเปิดใช้งานตัวเลือกนี้คุณควรตรวจสอบระบบของคุณสำหรับรายการการตั้งค่าที่มีอยู่แล้วด้วยชื่อที่ซ้ำกัน คุณสามารถทำเช่นนี้ด้วยสคริปต์ดังต่อไปนี้ bin / otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         '';
     $Self->{Translation}->{'ITSM config item overview.'} = '';
+    $Self->{Translation}->{'Limit for config item search.'} = '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'โมดูลในการตรวจสอบผู้รับผิดชอบกลุ่มสำหรับคลาส';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'โมดูลในการตรวจสอบผู้รับผิดชอบกลุ่มสำหรับ configuration item';
@@ -352,8 +364,9 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'พารามิเตอร์สำหรับแต่ละหน้า(ซึ่ง configuration items แสดง)';
     $Self->{Translation}->{'Permission Group'} = '';
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
-        '';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -362,6 +375,8 @@ sub Data {
         'จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอการซูมรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานการเพิ่มในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
+    $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'จำเป็นต้องมีการอนุญาติในการใช้งานการแก้ไขในหน้าจอรายการการตั้งค่า ITSM ในอินเตอร์เฟซของเอเย่นต์';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -402,6 +417,8 @@ sub Data {
         'แสดงประวัติ config item (ลำดับย้อนกลับ) ในอินเตอร์เฟซเอเย่นต์';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'ตัวบ่งชี้สำหรับ  Configuration Item เช่น ConfigItem#, MyConfigItem# ค่าเริ่มต้นคือ ConfigItem#';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'class'} = '';
     $Self->{Translation}->{'global'} = '';
     $Self->{Translation}->{'postproductive'} = '';
@@ -416,6 +433,7 @@ sub Data {
     'Settings',
     'Submit',
     'Yes',
+    'none',
     );
 
 }

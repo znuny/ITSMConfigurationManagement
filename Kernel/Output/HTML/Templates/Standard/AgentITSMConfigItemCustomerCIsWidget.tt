@@ -1,0 +1,30 @@
+# --
+# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+[% RenderBlockStart("Widget") %]
+<div class="WidgetSimple Expanded" id="AgentITSMConfigItemCustomerCIsWidget">
+    <div class="Header">
+        <h2>[% Translate("Customer related config items") | html %]</h2>
+    </div>
+    <div class="Content">
+        <fieldset id='AgentITSMConfigItemCustomerCIs' class="TableLike FixedLabelSmall Narrow">
+            [% Translate("none") | html %]
+         </fieldset>
+    </div>
+</div>
+[% RenderBlockEnd("Widget") %]
+
+[% RenderBlockStart("ConfigItems") %]
+            <span>
+                <label for="ConfigItem-[% Data.Name | html %]" class="Checked">
+                    <input type="checkbox" class="ConfigItemLink" name="ConfigItemLink" id="ConfigItemLink" value="[% Data.ConfigItemID | html %]" [% IF Data.Linked %]checked[% END %] />
+                    <a href="[% Env("Baselink") %]Action=AgentITSMConfigItemZoom;ConfigItemID=[% Data.ConfigItemID | html %]" target="_blank">[% IF Data.Icon %]<i class="fa [% Data.Icon %]"></i>&nbsp;[% END %][% Data.Name | html %] ([% Data.Number | html %])</a>
+                </label>
+            </span>
+            <div class="Clear"></div>
+[% RenderBlockEnd("ConfigItems") %]

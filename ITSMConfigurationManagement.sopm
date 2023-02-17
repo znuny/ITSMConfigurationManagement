@@ -82,6 +82,7 @@
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemAdd.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemAttachment.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemBulk.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemCustomerCIsWidget.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemDelete.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemEdit.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemHistory.pm"/>
@@ -89,6 +90,7 @@
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemSearch.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentITSMConfigItemZoom.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/Dashboard/ITSMConfigItemGeneric.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/AgentITSMConfigItemCustomerCIs.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutBaseSelectable.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutCI.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutCIAttachment.pm"/>
@@ -102,8 +104,8 @@
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutInteger.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutPriority.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutQueue.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutService.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutSLA.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutService.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutState.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutText.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ITSMConfigItem/LayoutTextArea.pm"/>
@@ -118,6 +120,7 @@
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt"/>
+        <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemEdit.tt"/>
         <File Permission="660" Location="Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemHistory.tt"/>
@@ -129,10 +132,9 @@
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/ITSM/Configitem/ListDuplicates.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Admin/ITSM/IncidentState/Recalculate.pm"/>
         <File Permission="660" Location="Kernel/System/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.pm"/>
-        <File Permission="660" Location="Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/CIAttachment.pm"/>
-        <File Permission="660" Location="Kernel/System/ITSMConfigItemInvoker.pm"/>
+        <File Permission="660" Location="Kernel/System/ITSMConfigItem/Definition.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/Definition.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/Event/CIAttachment.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/Event/DoHistory.pm"/>
@@ -157,35 +159,57 @@
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Integer.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Priority.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Queue.pm"/>
-        <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Service.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/SLA.pm"/>
+        <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Service.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/State.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Text.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/TextArea.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/TextLink.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/Type.pm"/>
         <File Permission="660" Location="Kernel/System/ITSMConfigItem/XML/Type/User.pm"/>
+        <File Permission="660" Location="Kernel/System/ITSMConfigItemCustomerCIs.pm"/>
+        <File Permission="660" Location="Kernel/System/ITSMConfigItemInvoker.pm"/>
+        <File Permission="660" Location="Kernel/System/ImportExport/ObjectBackend/ITSMConfigItem.pm"/>
+        <File Permission="660" Location="Kernel/System/LinkObject/ITSMConfigItem.pm"/>
         <File Permission="660" Location="Kernel/System/LinkObject/ITSMConfigItem.pm"/>
         <File Permission="660" Location="Kernel/System/Stats/Dynamic/ITSMConfigItem.pm"/>
+        <File Permission="660" Location="Kernel/System/Stats/Dynamic/ITSMConfigItem.pm"/>
+        <File Permission="660" Location="Kernel/System/Ticket/Event/ITSMConfigItemCustomerCIs.pm"/>
+        <File Permission="660" Location="Kernel/System/Ticket/Event/TicketStatusLink.pm"/>
         <File Permission="660" Location="Kernel/System/Ticket/Event/TicketStatusLink.pm"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/Delete.t"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/Delete.t"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/ListDuplicates.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/ListDuplicates.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/IncidentState/Recalculate.t"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/IncidentState/Recalculate.t"/>
         <File Permission="660" Location="scripts/test/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.t"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.t"/>
+        <File Permission="660" Location="scripts/test/GenericInterface/Invoker/ITSMConfigItem/Generic.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemCreate.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemDelete.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemGet.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemSearch.t"/>
         <File Permission="660" Location="scripts/test/GenericInterface/Operation/ConfigItem/ConfigItemUpdate.t"/>
-        <File Permission="660" Location="scripts/test/ImportExportObjectITSMConfigItem.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItem.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItem/CIAttachment.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionAdd.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionAdd.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionAdd.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionGet.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionGet.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionGet.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionList.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionList.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionList.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItem/Event/CIAttachment.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItemLinkTest.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItemLinkTest.t"/>
         <File Permission="660" Location="scripts/test/ITSMConfigItemUniqueCIName.t"/>
+        <File Permission="660" Location="scripts/test/ITSMConfigItemUniqueCIName.t"/>
+        <File Permission="660" Location="scripts/test/ImportExportObjectITSMConfigItem.t"/>
+        <File Permission="660" Location="scripts/test/ImportExportObjectITSMConfigItem.t"/>
         <File Permission="660" Location="scripts/test/Layout/ITSMConfigItem.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/Admin/AdminITSMConfigItem.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/ITSMConfigurationManagement/AgentITSMConfigItem.t"/>
@@ -199,29 +223,22 @@
         <File Permission="660" Location="scripts/test/Selenium/Agent/ITSMConfigurationManagement/AgentITSMConfigItemZoom.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/ITSMConfigurationManagement/AgentLinkObject.t"/>
         <File Permission="660" Location="scripts/test/Selenium/Agent/ITSMConfigurationManagement/DashboardITSMConfigItemGeneric.t"/>
-        <File Permission="660" Location="scripts/webservices/GenericConfigItemConnectorSOAP.yml"/>
-        <File Permission="660" Location="scripts/test/ImportExportObjectITSMConfigItem.t"/>
-        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionAdd.t"/>
-        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionList.t"/>
-        <File Permission="660" Location="scripts/test/ITSMConfigItem/Definition/DefinitionGet.t"/>
-        <File Permission="660" Location="scripts/test/ITSMConfigItem.t"/>
-        <File Permission="660" Location="scripts/test/ITSMConfigItemLinkTest.t"/>
-        <File Permission="660" Location="scripts/test/ITSMConfigItemUniqueCIName.t"/>
-        <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/ListDuplicates.t"/>
-        <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/Configitem/Delete.t"/>
-        <File Permission="660" Location="scripts/test/Console/Command/Admin/ITSM/IncidentState/Recalculate.t"/>
-        <File Permission="660" Location="scripts/test/Console/Command/Maint/ITSM/Configitem/DefinitionPerl2YAML.t"/>
+        <File Permission="660" Location="scripts/test/System/ITSMConfigItemCustomerCIs.t"/>
         <File Permission="660" Location="scripts/test/System/ITSMConfigItemInvoker.t"/>
         <File Permission="660" Location="scripts/test/System/ITSMConfigItemInvokerReadableValue.t"/>
-        <File Permission="660" Location="scripts/test/GenericInterface/Invoker/ITSMConfigItem/Generic.t"/>
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.CustomerSearch.js"/>
-        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Search.js"/>
+        <File Permission="660" Location="scripts/test/System/Ticket/Event/ITSMConfigItemCustomerCIs.t"/>
+        <File Permission="660" Location="scripts/webservices/GenericConfigItemConnectorSOAP.yml"/>
+        <File Permission="660" Location="scripts/webservices/GenericConfigItemConnectorSOAP.yml"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Add.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Add.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.CustomerCIsWidget.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.CustomerSearch.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.CustomerSearch.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Dashboard.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Edit.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.History.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Overview.js"/>
+        <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Search.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Search.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.UserSearch.js"/>
         <File Permission="660" Location="var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js"/>
@@ -1624,6 +1641,8 @@
         <br/>
 
     ]]></IntroUninstall>
+    <PackageMerge Name="Znuny-CustomerCIs" TargetVersion="6.5.0"/>
+    <PackageMerge Name="Znuny4OTRS-CustomerCIs" TargetVersion="6.5.0"/>
     <PackageMerge Name="Znuny4OTRS-ITSMConfigItemTypes" TargetVersion="6.5.0"/>
     <PackageMerge Name="Znuny-ITSMConfigItemTypes" TargetVersion="6.5.0"/>
     <PackageMerge Name="Znuny4OTRS-ITSMConfigItemInvoker" TargetVersion="6.5.0"/>
