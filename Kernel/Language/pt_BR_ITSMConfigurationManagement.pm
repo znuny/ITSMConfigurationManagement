@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2023 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -214,7 +214,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Manutenção';
     $Self->{Translation}->{'Pilot'} = 'Piloto';
     $Self->{Translation}->{'Planned'} = 'Planejado';
-    $Self->{Translation}->{'Production'} = '';
+    $Self->{Translation}->{'Production'} = 'Produção';
     $Self->{Translation}->{'Repair'} = 'Reparo';
     $Self->{Translation}->{'Retired'} = 'Retirado';
     $Self->{Translation}->{'Review'} = 'Revisão';
@@ -280,7 +280,6 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '';
-    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'IC atribuido à empresa cliente';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'IC atribuido ao usuário cliente';
     $Self->{Translation}->{'CMDB Settings'} = 'Configurações do CMDB';
@@ -374,6 +373,8 @@ sub Data {
         'Módulo de Evento para configurar o estado de item de configuração quando um chamado for associado a um IC.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Visão Geral  do Item de Configuração.';
     $Self->{Translation}->{'Limit for config item search.'} = '';
+    $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
+        '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Módulo para verificar o grupo responsável por uma classe.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Módulo para verificar o grupo responsável por um item de configuração.';
@@ -394,10 +395,12 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parâmetros das páginas (nas quais os itens de configuração são mostrados).';
     $Self->{Translation}->{'Permission Group'} = '';
-    $Self->{Translation}->{'RelevantTo'} = '';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'RelevantTo'} = '';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Permissões necessárias para usar a tela de item de configuração ITSM na interface de atendente.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -448,11 +451,11 @@ sub Data {
         'Mostra o histórico do item configuração (ordem reversa) na interface de atendente.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'O identificador para um item de configuração, ex. ItemConfig#, MeuItemConfig#. O padrão é ItemConfig#.';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         '';
     $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
-    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
-        '';
     $Self->{Translation}->{'class'} = 'class';
     $Self->{Translation}->{'global'} = 'global';
     $Self->{Translation}->{'postproductive'} = 'pós-produtivo';

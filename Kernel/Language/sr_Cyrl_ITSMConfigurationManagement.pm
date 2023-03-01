@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2023 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -280,7 +280,6 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = 'Додељене конфигурационе ставке';
-    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Конфигурационе ставке додељене фирми клијента';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Конфигурационе ставке додељене клијенту кориснику';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB подешавања';
@@ -374,6 +373,8 @@ sub Data {
         'Модул догађаја за подешавање статуса конфигурационих ставки приликом постављања веза.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Преглед ITSM конфигурационе ставке.';
     $Self->{Translation}->{'Limit for config item search.'} = '';
+    $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
+        '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Модул за проверу групе одговорне за класу.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Модул за проверу групе одговорне за конфигурациону ставку.';
@@ -394,10 +395,12 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Параметри за странице (на којима су конфигурационе ставке приказане).';
     $Self->{Translation}->{'Permission Group'} = 'Група приступа';
-    $Self->{Translation}->{'RelevantTo'} = '';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'RelevantTo'} = '';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Потребне дозволе за употребу екрана ITSM конфигурационе ставке у интерфејсу оператера.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -448,11 +451,11 @@ sub Data {
         'Приказује историјат конфигурационе ставке (обрнут редослед) у интерфејсу оператера.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Идентификатор за конфигурациону ставку, нпр. ConfigItem#, MyConfigItem#. Подразумевано је ConfigItem#.';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         '';
     $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
-    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
-        '';
     $Self->{Translation}->{'class'} = 'класа';
     $Self->{Translation}->{'global'} = 'глобално';
     $Self->{Translation}->{'postproductive'} = 'пост-продукција';

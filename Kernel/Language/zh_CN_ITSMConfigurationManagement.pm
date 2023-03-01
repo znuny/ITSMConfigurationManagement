@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2023 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -280,7 +280,6 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '已分配的配置项';
-    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '已分配给客户单位的配置项';
     $Self->{Translation}->{'CIs assigned to customer user'} = '已分配给客户用户的配置项';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB设置';
@@ -374,6 +373,8 @@ sub Data {
         '在工单-配置项的链接中设置配置项-状态的事件模块。';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM配置项概览。';
     $Self->{Translation}->{'Limit for config item search.'} = '';
+    $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
+        '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = '用于检查配置项类的组权限的模块。';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         '用于检查配置项的组权限的模块。';
@@ -394,10 +395,12 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '显示配置项的页面参数。';
     $Self->{Translation}->{'Permission Group'} = '权限组';
-    $Self->{Translation}->{'RelevantTo'} = '';
+    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
+        '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
+    $Self->{Translation}->{'RelevantTo'} = '';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
-    $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} = '';
+        '';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         '服务人员界面使用ITSM配置项窗口需要的权限。';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -448,11 +451,11 @@ sub Data {
         '在服务人员界面显示配置项历史（倒序）。';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         '配置项标识符，如ConfigItem#、MyConfigItem#，默认是ConfigItem#。';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        '';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         '';
     $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
-    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
-        '';
     $Self->{Translation}->{'class'} = '类';
     $Self->{Translation}->{'global'} = '全局';
     $Self->{Translation}->{'postproductive'} = '闲置';

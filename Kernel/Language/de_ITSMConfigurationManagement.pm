@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2023 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -280,7 +280,6 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'AlternativeTo'} = 'Alternativ zu';
     $Self->{Translation}->{'Assigned CIs'} = 'Zugewiesene Configuration Items';
-    $Self->{Translation}->{'Autoloading of ITSMConfigurationManagement extensions.'} = 'Automatisches Laden von ITSMConfigurationManagement-Erweiterungen.';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Zum Kunden zugewiesene Configurations Items';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Zum Kundenbenutzer zugewiesene Configurations Items';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB-Einstellungen';
@@ -374,6 +373,8 @@ sub Data {
         'Ein Ereignismodul das beim Verknüpfen von Tickets mit Configuration Items den Status des Configuration Items verändert.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM Configuration Item-Übersicht';
     $Self->{Translation}->{'Limit for config item search.'} = 'Limit für die Config-Item-Suche.';
+    $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
+        '';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul zur Überprüfung der Gruppe, die für eine Klasse verantwortlich ist.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul, um die Gruppe zu überprüfen, die für ein Configuration Item verantwortlich ist.';
@@ -394,12 +395,12 @@ sub Data {
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter für die Seiten, in denen Configuration Items angezeigt werden.';
     $Self->{Translation}->{'Permission Group'} = 'Berechtigungsgruppe';
-    $Self->{Translation}->{'RelevantTo'} = 'Relevant für';
-    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = 'Registriert einen Output-Filter, der ein Config-Item-Widget anzeigt.';
-    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
-        'Erforderliche Gruppenberechtigungen für die Verwendung des Customer-Config-Item-Widgets in der Agentenoberfläche.';
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
         'Registriert ein ITSMConfigItem-EventModule, das zugehörige Anhänge speichert.';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = 'Registriert einen Output-Filter, der ein Config-Item-Widget anzeigt.';
+    $Self->{Translation}->{'RelevantTo'} = 'Relevant für';
+    $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
+        'Erforderliche Gruppenberechtigungen für die Verwendung des Customer-Config-Item-Widgets in der Agentenoberfläche.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'Erforderliche Berechtigungen, um die Ansicht zur Konfiguration von Configuration Items im Agenten-Interface nutzen zu können.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -450,11 +451,11 @@ sub Data {
         'Zeigt die Configuration Item-Historie (umgekehrte Reihenfolge) im Agenten-Interface an.';
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Der Identifikator für ein Configuration Item, bspw. "ConfigItem#" , "MeinConfigItem#". Der Standard ist "ConfigItem#".';
+    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
+        'Diese Konfiguration registriert ein Frontend-Modul für die Agenten-Interface, das die AJAX-Schnittstelle für AgentITSMConfigItemCustomerCIsWidget bereitstellt.';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         'Ticket-Event-Modul, das Links zwischen Tickets und Config-Items erstellt und entfernt.';
     $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = 'Ticket-Event-Modul, das Dynamische Felter aktualisiert.';
-    $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
-        'Diese Konfiguration registriert ein Frontend-Modul für die Agenten-Interface, das die AJAX-Schnittstelle für AgentITSMConfigItemCustomerCIsWidget bereitstellt.';
     $Self->{Translation}->{'class'} = 'Klasse';
     $Self->{Translation}->{'global'} = 'Global';
     $Self->{Translation}->{'postproductive'} = 'Post-produktiv';

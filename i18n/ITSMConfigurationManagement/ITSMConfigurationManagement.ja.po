@@ -1268,3 +1268,8 @@ msgstr ""
 #. SysConfig
 msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
 msgstr ""
+
+#. SysConfig
+msgid "List of events that are available for generic interface event object type ITSMConfigItem."
+msgstr ""
+

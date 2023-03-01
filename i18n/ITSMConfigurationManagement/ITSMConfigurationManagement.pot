@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2023-02-15 15:00+0000\n"
+"POT-Creation-Date: 2023-03-01 15:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -811,10 +811,6 @@ msgid "Assigned CIs"
 msgstr ""
 
 #. SysConfig
-msgid "Autoloading of ITSMConfigurationManagement extensions."
-msgstr ""
-
-#. SysConfig
 msgid "CIs assigned to customer company"
 msgstr ""
 
@@ -1055,6 +1051,10 @@ msgid "Limit for config item search."
 msgstr ""
 
 #. SysConfig
+msgid "List of events that are available for generic interface event object type ITSMConfigItem."
+msgstr ""
+
+#. SysConfig
 msgid "Module to check the group responsible for a class."
 msgstr ""
 
@@ -1103,7 +1103,7 @@ msgid "Permission Group"
 msgstr ""
 
 #. SysConfig
-msgid "RelevantTo"
+msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
 msgstr ""
 
 #. SysConfig
@@ -1111,10 +1111,11 @@ msgid "Registers an output filter that shows a config item widget."
 msgstr ""
 
 #. SysConfig
-msgid "Required group permissions to use the customer config item widget in the agent interface."
+msgid "RelevantTo"
 msgstr ""
 
-msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
+#. SysConfig
+msgid "Required group permissions to use the customer config item widget in the agent interface."
 msgstr ""
 
 #. SysConfig
@@ -1222,14 +1223,15 @@ msgid "The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#.
 msgstr ""
 
 #. SysConfig
+msgid "This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget."
+msgstr ""
+
+#. SysConfig
 msgid "Ticket event module that creates and removes links between tickets and config items."
 msgstr ""
 
 #. SysConfig
 msgid "Ticket event module that updates DynamicFields."
-msgstr ""
-
-msgid "This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget."
 msgstr ""
 
 #. SysConfig

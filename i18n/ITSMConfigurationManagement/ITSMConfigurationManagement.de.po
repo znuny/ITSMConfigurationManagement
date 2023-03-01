@@ -1202,11 +1202,11 @@ msgstr "Ticket-Event-Modul, das Links zwischen Tickets und Config-Items erstellt
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Activate this option to remove links between the ticket and config items that are removed from this field."
-msgstr ""
+msgstr "Aktivieren Sie diese Option, um Verknüpfungen zwischen Ticket und Config-Items zu entfernen, die aus diesem Feld entfernt wurden."
 
 #. SysConfig
 msgid "Ticket event module that updates DynamicFields."
-msgstr ""
+msgstr "Ticket-Event-Modul, das Dynamische Felter aktualisiert."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
 msgid "Customer related config items"
@@ -1263,3 +1263,8 @@ msgstr "Automatisches Laden von ITSMConfigurationManagement-Erweiterungen."
 #. SysConfig
 msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
 msgstr "Registriert ein ITSMConfigItem-EventModule, das zugehörige Anhänge speichert."
+
+#. SysConfig
+msgid "List of events that are available for generic interface event object type ITSMConfigItem."
+msgstr ""
+
