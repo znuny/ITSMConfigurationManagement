@@ -122,6 +122,7 @@ my $WebserviceConfig = {
                 MaxLength => 10_000_000,
                 NameSpace => 'http://otrs.org/SoapTestInterface/',
                 Endpoint  => $RemoteSystem,
+                Timeout   => 60,
             },
         },
         Operation => {
@@ -143,6 +144,7 @@ my $WebserviceConfig = {
                 NameSpace => 'http://otrs.org/SoapTestInterface/',
                 Encoding  => 'UTF-8',
                 Endpoint  => $RemoteSystem,
+                Timeout   => 60,
             },
         },
         Invoker => {
