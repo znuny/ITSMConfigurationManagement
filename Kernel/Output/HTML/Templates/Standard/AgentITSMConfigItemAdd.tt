@@ -7,11 +7,9 @@
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
-<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst">
-    <h1>[% Translate("Add") | html %]: [% Translate("Config Item") | html %]</h1>
+<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst ActionsSideBar">
 
-    <div class="SidebarColumn">
-
+    <div class="SidebarColumn ActionsSideBarComp">
         <div class="WidgetSimple">
             <div class="Header">
                 <h2><label for="FilterClasses">[% Translate("Filter for Classes") | html %]</label></h2>
@@ -20,7 +18,6 @@
                 <input type="text" id="FilterClasses" class="FilterBox" name="FilterClasses" value="" title="[% Translate("Filter for Classes") | html %]" placeholder="[% Translate("Just start typing to filter...") | html %]" />
             </div>
         </div>
-
         <div class="WidgetSimple">
             <div class="Header">
                 <h2>[% Translate("Hint") | html %]</h2>
@@ -31,10 +28,11 @@
                 </p>
             </div>
         </div>
-
     </div>
 
     <div class="ContentColumn">
+        <h1>[% Translate("Add") | html %]: [% Translate("Config Item") | html %]</h1>
+
         <div class="WidgetSimple">
             <div class="Header">
                 <h2>[% Translate("List") | html %]</h2>
@@ -62,5 +60,4 @@
             </div>
         </div>
     </div>
-    <div class="Clear"></div>
 </div>

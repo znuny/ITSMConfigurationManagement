@@ -929,8 +929,8 @@ msgid "Enables configuration item bulk action feature only for the listed groups
 msgstr "只有列表中的组才有权限使用配置项批量操作功能。"
 
 #. SysConfig
-msgid "Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
-msgstr "启用/禁用检查配置项唯一名称功能。在启用这个选项前，您应该检查系统中是否已经存在重名的配置项，您可以使用这个脚本来检查重名情况：bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates。"
+msgid "Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/znuny.Console.pl Admin::ITSM::Configitem::ListDuplicates."
+msgstr "启用/禁用检查配置项唯一名称功能。在启用这个选项前，您应该检查系统中是否已经存在重名的配置项，您可以使用这个脚本来检查重名情况：bin/znuny.Console.pl Admin::ITSM::Configitem::ListDuplicates。"
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."

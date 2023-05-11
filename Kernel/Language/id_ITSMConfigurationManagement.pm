@@ -366,8 +366,8 @@ sub Data {
         'Memungkinkan fitur item konfigurasi tindakan massal untuk agen frontend untuk bekerja pada lebih dari satu item konfigurasi pada suatu waktu.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Memungkinkan fitur tindakan massal item konfigurasi hanya untuk kelompok terdaftar.';
-    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
-        'Mengaktifkan / menonaktifkan fungsi untuk memeriksa ConfigItems untuk nama yang unik. Sebelum mengaktifkan opsi ini Anda harus memeriksa sistem anda untuk produk-config yang sudah ada dengan nama duplikat. Anda dapat melakukan ini dengan script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.';
+    $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/znuny.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
+        'Mengaktifkan / menonaktifkan fungsi untuk memeriksa ConfigItems untuk nama yang unik. Sebelum mengaktifkan opsi ini Anda harus memeriksa sistem anda untuk produk-config yang sudah ada dengan nama duplikat. Anda dapat melakukan ini dengan script bin/znuny.Console.pl Admin::ITSM::Configitem::ListDuplicates.';
     $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         '';

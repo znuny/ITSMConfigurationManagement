@@ -6,22 +6,26 @@
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
-<fieldset class="TableLike W300px">
 
-    <label>[% Translate("Name") | html %]:</label>
-    <p class="Value">
-        [% Data.Name | html %]
-    </p>
-    <div class="Clear"></div>
+<div class="row-of-columns">
+    <div class="Content">
+        <fieldset class="TableLike W300px flex-row">
+            <div class="field-wrapper">
+                <label>[% Translate("Name") | html %]:</label>
+                <p class="Value">
+                    [% Data.Name | html %]
+                </p>
+            </div>
 
-    <label>[% Translate("Number") | html %]:</label>
-    <p class="Value">
-        [% Translate(Data.Number) | html %]
-    </p>
-    <div class="Clear"></div>
-
-
-</fieldset>
-<p class="SpacingTop Center">
-    [% Translate("Do you really want to delete this config item?") | html %]
-</p>
+            <div class="field-wrapper">
+                <label>[% Translate("Number") | html %]:</label>
+                <p class="Value">
+                    [% Translate(Data.Number) | html %]
+                </p>
+            </div>
+        </fieldset>
+        <p class="SpacingTop message-primary">
+            [% Translate("Do you really want to delete this config item?") | html %]
+        </p>
+    </div>
+</div>

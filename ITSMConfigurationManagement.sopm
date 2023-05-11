@@ -2,8 +2,8 @@
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
     <Version>6.5.1</Version>
-    <Framework>6.5.x</Framework>
-    <PackageRequired Version="6.5.1">ITSMCore</PackageRequired>
+    <Framework>7.0.x</Framework>
+    <PackageRequired Version="7.0.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>

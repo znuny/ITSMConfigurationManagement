@@ -104,7 +104,7 @@ sub Run {
     # get link object
     my $LinkObject = $Kernel::OM->Get('Kernel::System::LinkObject');
 
-    CONFIGITEM_ID:
+    CONFIGITEMID:
     for my $ConfigItemID (@ConfigItemIDs) {
         my $ConfigItem = $ConfigItemObject->ConfigItemGet(
             ConfigItemID => $ConfigItemID,
@@ -129,7 +129,7 @@ sub Run {
                     $ConfigItem->{Number},
                 ),
             );
-            next CONFIGITEM_ID;
+            next CONFIGITEMID;
         }
 
         # remember selected config item ids

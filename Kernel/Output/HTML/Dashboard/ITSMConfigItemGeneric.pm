@@ -511,6 +511,7 @@ sub Run {
                     %{$Filter},
                 },
             );
+            $Self->{FilterCount} = $Filter->{Count};
         }
         else {
             $LayoutObject->Block(
@@ -688,12 +689,18 @@ sub Run {
         },
     );
 
+    my %SelectedFilterInformation = (
+        Label => $Self->{Filter},
+        Count => $Self->{FilterCount},
+    );
+
     my $Content = $LayoutObject->Output(
         TemplateFile => 'AgentDashboardITSMConfigItemGeneric',
         Data         => {
             %{ $Self->{Config} },
             Name         => $Self->{Name},
             StyleClasses => $StyleClasses,
+            Filter       => \%SelectedFilterInformation,
         },
         AJAX => $Param{AJAX},
     );

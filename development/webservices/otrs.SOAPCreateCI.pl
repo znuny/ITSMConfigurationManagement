@@ -37,10 +37,10 @@ use Data::Dumper;
 # <HTTP_TYPE>:://<OTRS_FQDN>/nph-genericinterface.pl/Webservice/<WEB_SERVICE_NAME>
 # or
 # <HTTP_TYPE>:://<OTRS_FQDN>/nph-genericinterface.pl/WebserviceID/<WEB_SERVICE_ID>
-my $URL = 'http://localhost/otrs/nph-genericinterface.pl/Webservice/GenericConfigItemConnectorSOAP';
+my $URL = 'http://localhost/znuny/nph-genericinterface.pl/Webservice/GenericConfigItemConnectorSOAP';
 
 # this name space should match the specified name space in the SOAP transport for the web service
-my $NameSpace = 'http://www.otrs.org/ConfigItemConnector';
+my $NameSpace = 'http://www.znuny.org/ConfigItemConnector';
 
 my $Operation = 'ConfigItemCreate';
 

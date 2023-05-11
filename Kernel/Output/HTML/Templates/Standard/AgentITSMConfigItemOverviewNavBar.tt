@@ -6,11 +6,34 @@
 # the enclosed file COPYING for license information (GPL). If you
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
+
 [% RenderBlockStart("OverviewNavBar") %]
 <div class="OverviewBox ARIARoleMain [% Data.View | html %]">
-    <h1>[% Translate(Data.TitleName) | html %]: [% Translate(Data.TitleValue) | html %]</h1>
-
+    <h1>[% Translate(Data.TitleName) | html %]:
+        <div class="overview-breadcrumb">
+            <div>
+                [% Translate(Data.TitleValue) | html %]
+            </div>
+        </div>
+    </h1>
     [% Data.DataInTheMiddle %]
+
+    <div class="WidgetSimple QueueOverview level-filter-view">
+        <div class="Content">
+            <ul class="QueueOverviewList Level_0">
+[% RenderBlockStart("OverviewNavBarFilterItemSelected") %]
+                    <li class="[% Data.CSS | html %]">
+                        <a class="Active" name="OverviewControl" href="[% Env("Baselink") %]Action=[% Env("Action") %];[% Data.FilterLink %]Filter=[% Data.Filter | uri %]">[% Translate(Data.Name) | html %]<span> ([% Data.Count | html %])</span></a>
+                    </li>
+[% RenderBlockEnd("OverviewNavBarFilterItemSelected") %]
+[% RenderBlockStart("OverviewNavBarFilterItemSelectedNot") %]
+                    <li class="[% Data.CSS | html %]">
+                        <a name="OverviewControl" href="[% Env("Baselink") %]Action=[% Env("Action") %];[% Data.FilterLink %]Filter=[% Data.Filter | uri %]">[% Translate(Data.Name) | html %]<span> ([% Data.Count | html %])</span></a>
+                    </li>
+[% RenderBlockEnd("OverviewNavBarFilterItemSelectedNot") %]
+            </ul>
+        </div>
+    </div>
 
     <div class="OverviewControl" id="OverviewControl">
         <div>
@@ -45,7 +68,7 @@
 [% RenderBlockStart("ContextSettings") %]
                 <ul class="ContextFunctions">
                     <li class="ContextSettings">
-                        <a href="#" id="ShowContextSettingsDialog" title="[% Translate("Context Settings") | html %]">
+                        <a class="icon-hover" href="#" id="ShowContextSettingsDialog" title="[% Translate("Context Settings") | html %]">
                             <i class="fa fa-cog"></i>
                             <span>[% Translate("Context Settings") | html %]</span>
                         </a>
@@ -63,7 +86,6 @@
                             <div class="Field">
                                 [% Data.PageShownString %]
                             </div>
-                            <div class="Clear"></div>
                         </fieldset>
                     </form>
                 </div>
@@ -82,32 +104,38 @@
 [% RenderBlockEnd("BulkAction") %]
 
                     [% Data.ActionRow %]
-                    <ul class="OverviewZoom">
+                    <div>
+[% RenderBlockStart("OverviewNavBarPageNavBar") %]
+                        <span class="Pagination">
+                            <ul>
+                                <li>
+                                    <span>[% Data.ResultLong %]</span>
+                                </li>
+                                <li class="page-links">[% Data.SiteNavBarLong %]</li>
+                            </ul>
+                        </span>
+[% RenderBlockEnd("OverviewNavBarPageNavBar") %]
+
+                        <ul class="OverviewZoom">
 
 [% RenderBlockStart("OverviewNavBarViewMode") %]
 [% RenderBlockStart("OverviewNavBarViewModeSelected") %]
-                        <li class="Active">
-                            <a class="[% Data.Name | html %]" name="OverviewControl" href="[% Env("Baselink") %]Action=[% Env("Action") %];Filter=[% Data.Filter | uri %];View=[% Data.View | uri %];[% Data.LinkFilter %]" title="[% Translate(Data.Name) | html %]">
-                                [% Translate(Data.NameShort) | html %]
-                            </a>
-                        </li>
+                            <li class="Active">
+                                <a class="[% Data.Name | html %]" name="OverviewControl" href="[% Env("Baselink") %]Action=[% Env("Action") %];Filter=[% Data.Filter | uri %];View=[% Data.View | uri %];[% Data.LinkFilter %]" title="[% Translate(Data.Name) | html %]">
+                                    [% Translate(Data.NameShort) | html %]
+                                </a>
+                            </li>
 [% RenderBlockEnd("OverviewNavBarViewModeSelected") %]
 [% RenderBlockStart("OverviewNavBarViewModeNotSelected") %]
-                        <li>
-                            <a class="[% Data.Name | html %]" name="OverviewControl" href="[% Env("Baselink") %]Action=[% Env("Action") %];Filter=[% Data.Filter | uri %];View=[% Data.View | uri %];[% Data.LinkFilter %]" title="[% Translate(Data.Name) | html %]">
-                                [% Translate(Data.NameShort) | html %]
-                            </a>
-                        </li>
+                            <li>
+                                <a class="[% Data.Name | html %]" name="OverviewControl" href="[% Env("Baselink") %]Action=[% Env("Action") %];Filter=[% Data.Filter | uri %];View=[% Data.View | uri %];[% Data.LinkFilter %]" title="[% Translate(Data.Name) | html %]">
+                                    [% Translate(Data.NameShort) | html %]
+                                </a>
+                            </li>
 [% RenderBlockEnd("OverviewNavBarViewModeNotSelected") %]
 [% RenderBlockEnd("OverviewNavBarViewMode") %]
-                    </ul>
-                    <span class="Pagination">
-[% RenderBlockStart("OverviewNavBarPageNavBar") %]
-                        [% Data.ResultLong %]
-                        [% Data.SiteNavBarLong %]
-[% RenderBlockEnd("OverviewNavBarPageNavBar") %]
-                    </span>
-                    <div class="ClearLeft"></div>
+                        </ul>
+                    </div>
                 </div>
 # sort order bar if needed
                 [% Data.SortOrderBar %]

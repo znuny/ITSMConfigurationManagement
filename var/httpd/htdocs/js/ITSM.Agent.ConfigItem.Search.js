@@ -12,6 +12,8 @@
 //Remove this line and fix JSDoc
 // nofilter(TidyAll::Plugin::Znuny::JavaScript::ESLint)
 
+// nofilter(TidyAll::Plugin::Znuny::CodeStyle::CodeMarkerPackageName)
+// nofilter(TidyAll::Plugin::Znuny::Common::Origin)
 
 "use strict";
 
@@ -79,12 +81,21 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
         // escape possible colons (:) in element id because jQuery can not handle it in id attribute selectors
         Attribute = Core.App.EscapeSelector(Attribute);
 
-        var $Label = $('#SearchAttributesHidden label#Label' + Attribute);
+        var $Label = $('#SearchAttributesHidden label#Label' + Attribute),
+            $Clone;
 
         if ($Label.length) {
-            $Label.prev().clone().appendTo('#SearchInsert');
-            $Label.clone().appendTo('#SearchInsert');
-            $Label.next().clone().appendTo('#SearchInsert')
+
+            if ($Label.parents('.field-wrapper').length){
+                $Clone = $Label.parents('.field-wrapper').clone();
+            }else{
+                // use old clone calls
+                $Label.prev().clone().appendTo('#SearchInsert');
+                $Label.clone().appendTo('#SearchInsert');
+                $Clone = $Label.next().clone().appendTo('#SearchInsert')
+            }
+
+            $Clone.appendTo('#SearchInsert')
 
                 // bind click function to remove button now
                 .find('.RemoveButton').on('click', function () {
@@ -241,6 +252,11 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
             });
 
             return false;
+        });
+
+        // added cancel function to modal
+        $('#Cancel').on('click', function () {
+            Core.UI.Dialog.CloseDialog($('.Dialog:visible'));
         });
 
         // register return key
@@ -447,6 +463,13 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
             TargetNS.SetSearchDialog('$Env{"Action"}');
             $('#ITSMSearchProfile').removeClass('Hidden');
             $('#ITSMSearchFields').removeClass('Hidden');
+
+            // added 'main-search-component-btns' class to ContentFooter
+            $('.Dialog:visible > .Content > .ContentFooter').addClass("main-search-component-btns");
+            // added cancel function to modal
+            $('.Dialog:visible #Cancel').appendTo($('.Dialog:visible > .Content > .ContentFooter'));
+            $('#Cancel').removeClass('Hidden');
+
             $('.Dialog:visible #SearchFormSubmit').appendTo($('.Dialog:visible > .Content > .ContentFooter'));
             $('#SearchFormSubmit').removeClass('Hidden');
             $('#DivClassID').removeClass('ui-autocomplete-loading');
@@ -472,7 +495,8 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
             var ElementName,
                 $Element,
                 $LabelElement = $(this),
-                $FieldElement = $LabelElement.next('.Field');
+                $FieldElement = $LabelElement.parent().next('.Field');
+
             // those with ID's are used for searching
             if ($(this).attr('id')) {
 
@@ -485,7 +509,7 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
                 // If there's no input element with the selected name
                 // find the next "select" element and use that one for checking
                 if (!$Element.length) {
-                    $Element = $(this).next().find('select');
+                    $Element = $(this).parent().next().find('select');
                 }
 
                 // Fix for bug#10845: make sure time slot fields with TimeInputFormat

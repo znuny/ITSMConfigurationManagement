@@ -35,11 +35,13 @@ ITSM.Agent.ConfigItem.Dashboard = (function (TargetNS) {
 
         if (typeof DashletData !== 'undefined') {
             ITSMConfigItemGeneric(DashletData);
+            WidgetFilter(DashletData);
 
             // Subscribe to ContentUpdate event to initiate ticket generic events on widget update
             Core.App.Subscribe('Event.AJAX.ContentUpdate.Callback', function($WidgetElement) {
                 if (typeof $WidgetElement !== 'undefined' && $WidgetElement.search(DashletData.Name) !== parseInt('-1', 10)) {
                     ITSMConfigItemGeneric(DashletData);
+                    WidgetFilter(DashletData);
                 }
             });
         }
@@ -55,7 +57,6 @@ ITSM.Agent.ConfigItem.Dashboard = (function (TargetNS) {
      *      Initializes dashboard widget ITSMConfigItemGeneric
      */
     function ITSMConfigItemGeneric (DashletData) {
-
             $('#Dashboard' + Core.App.EscapeSelector(DashletData.Name) + '-box').find('.Tab.Actions li a').off('click').on('click', function() {
                 var CustomerID,
                     CustomerUserID,
@@ -96,6 +97,37 @@ ITSM.Agent.ConfigItem.Dashboard = (function (TargetNS) {
                 return false;
             });
     }
+
+    /**
+     * @private
+     * @name WidgetFilter
+     * @memberof ITSM.Agent.ConfigItem.Dashboard
+     * @param {Object} DashletData - Hash with container name and HTML name
+     * @function
+     * @description
+     *      Initializes the dashboard widget filter event.
+     */
+    function WidgetFilter (DashletData) {
+        var $DashboardActions,
+            $FilterContainer;
+
+        // move DashboardActions to the <div class="Header"> after <h2>
+        $DashboardActions = $('#Dashboard' + Core.App.EscapeSelector(DashletData.Name)).find('.DashboardActions').detach();
+
+        // created $FilterContainer var, added it to Header and prepended $DashboardActions to it
+        if($('#Dashboard' + Core.App.EscapeSelector(DashletData.Name) + '-box').find('.HeaderFilter').length) {
+            $('#Dashboard' + Core.App.EscapeSelector(DashletData.Name) + '-box').find('.HeaderFilter').detach();
+        }
+        $FilterContainer = "<div class='HeaderFilter'></div>";
+        $('#Dashboard' + Core.App.EscapeSelector(DashletData.Name) + '-box').find('h2').after($FilterContainer);
+        $('#Dashboard' + Core.App.EscapeSelector(DashletData.Name) + '-box').find('.HeaderFilter').prepend($DashboardActions);
+
+        // additional click event for dropdown-menu to show/hide
+        $('#Dashboard' + Core.App.EscapeSelector(DashletData.Name) + '-box').find('.DashboardActions').off('click.DashboardActions').on('click.DashboardActions', function() {
+            $(this).find('.Tab.Actions').toggle();
+        });
+    }
+
 
     Core.Init.RegisterNamespace(TargetNS, 'APP_MODULE');
 

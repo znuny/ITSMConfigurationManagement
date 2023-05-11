@@ -310,7 +310,7 @@ sub Run {
         Filter        => $Self->{Filter},
         Filters       => \%NavBarFilter,
         FilterLink    => $LinkFilter,
-        TitleName     => $LayoutObject->{LanguageObject}->Translate('Overview: ITSM ConfigItem'),
+        TitleName     => $LayoutObject->{LanguageObject}->Translate('Config Item'),
         TitleValue    => $Filters{ $Self->{Filter} }->{Name},
         Env           => $Self,
         LinkPage      => $LinkPage,

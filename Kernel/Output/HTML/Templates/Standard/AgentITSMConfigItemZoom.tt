@@ -8,7 +8,6 @@
 # --
 
 <div class="MainBox ARIARoleMain">
-    <div class="ClearLeft"></div>
     <div class="Headline">
         <div class="Flag" title="[% Translate(Data.CurInciState) | html %]">
             <span class="[% Data.CurInciSignal | html %]"></span>
@@ -32,52 +31,59 @@
                 </div>
                 <div class="Content">
                     <fieldset class="TableLike FixedLabelSmall Tight">
+                        <span>
+                            <label>[% Translate("Class") | html %]</label>
+                            <p class="Value">[% Translate(Data.Class) | html %]</p>
+                        </span>
 
-                        <label>[% Translate("Class") | html %]:</label>
-                        <p class="Value">[% Translate(Data.Class) | html %]</p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Name") | html %]</label>
+                            <p class="Value">[% Data.Name | truncate(25) | html %]</p>
+                        </span>
 
-                        <label>[% Translate("Name") | html %]:</label>
-                        <p class="Value">[% Data.Name | truncate(25) | html %]</p>
-                        <div class="Clear"></div>
-
-                        <label>[% Translate("Current Deployment State") | html %]:</label>
-                        <div class="Value" title="[% Translate(Data.CurDeplState) | html %]">
-                            <div class="Flag Small">
-                                <span class="[% Data.CurDeplSignal | html %]"></span>
+                        <span>
+                            <label>[% Translate("Current Deployment State") | html %]</label>
+                            <div class="Value" title="[% Translate(Data.CurDeplState) | html %]">
+                                <div class="Flag Small">
+                                    <span class="[% Data.CurDeplSignal | html %]"></span>
+                                </div>
+                                [% Translate(Data.CurDeplState) | html %]
                             </div>
-                            [% Translate(Data.CurDeplState) | html %]
-                        </div>
-                        <div class="Clear"></div>
+                        </span>
 
-                        <label>[% Translate("Current Incident State") | html %]:</label>
-                        <div class="Value" title="[% Translate(Data.CurInciState) | html %]">
-                            <div class="Flag Small">
-                                <span class="[% Data.CurInciSignal | html %]"></span>
+                        <span>
+                            <label>[% Translate("Current Incident State") | html %]</label>
+                            <div class="Value" title="[% Translate(Data.CurInciState) | html %]">
+                                <div class="Flag Small">
+                                    <span class="[% Data.CurInciSignal | html %]"></span>
+                                </div>
+                                [% Translate(Data.CurInciState) | html %]
                             </div>
-                            [% Translate(Data.CurInciState) | html %]
-                        </div>
-                        <div class="Clear"></div>
+                        </span>
 
-                        <label>[% Translate("Created") | html %]:</label>
-                        <p class="Value">[% Data.CreateTime | Localize("TimeLong") %]</p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Created") | html %]</label>
+                            <p class="Value">[% Data.CreateTime | Localize("TimeLong") %]</p>
+                        </span>
 
-                        <label>[% Translate("Created by") | html %]:</label>
-                        <p class="Value">
-                            [% Data.CreateByUserFullName | html %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Created by") | html %]</label>
+                            <p class="Value">
+                                [% Data.CreateByUserFullName | html %]
+                            </p>
+                        </span>
 
-                        <label>[% Translate("Last changed") | html %]:</label>
-                        <p class="Value">[% Data.ChangeTime | Localize("TimeLong") %]</p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Last changed") | html %]</label>
+                            <p class="Value">[% Data.ChangeTime | Localize("TimeLong") %]</p>
+                        </span>
 
-                        <label>[% Translate("Last changed by") | html %]:</label>
-                        <p class="Value">
-                            [% Data.ChangeByUserFullName | html %]
-                        </p>
-                        <div class="Clear"></div>
+                        <span>
+                            <label>[% Translate("Last changed by") | html %]</label>
+                            <p class="Value">
+                                [% Data.ChangeByUserFullName | html %]
+                            </p>
+                        </span>
                     </fieldset>
                 </div>
             </div>
@@ -93,10 +99,8 @@
             </div>
 [% RenderBlockEnd("LinkTableSimple") %]
         </div>
-        <div class="ContentColumn">
-            <div class="ControlRow">
-                <h2></h2>
-            </div>
+        <div class="ContentColumn WidgetSimple">
+
             <div class="ActionRow">
                 <ul class="Actions">
 [% RenderBlockStart("Menu") %]
@@ -110,9 +114,9 @@
             </div>
             <div id="ITSMTree">
 [% RenderBlockStart("Tree") %]
-                <div id="ITSMTable"  class="TicketList">
-                    <div class="ControlRow">
-                        <div class="ITSMItemView Icons">
+                <div id="ITSMTable"  class="TicketList WidgetSimple">
+                    <div class="ControlRow Header">
+                        <div class="ITSMItemView Icons flex-row">
 [% RenderBlockStart("Expand") %]
                             <a class="OneITSMItem Active" href="[% Env("Baselink") %]Action=AgentITSMConfigItemZoom;ConfigItemID=[% Data.ConfigItemID | uri %];ShowVersions=0" title="[% Translate("Show one version") | html %]">
                                 <i class="fa fa-minus"></i>
@@ -188,12 +192,12 @@
 [% RenderBlockEnd("Tree") %]
             </div>
             <div id="ITSMItems">
-                <div class="WidgetBox SpacingTop Expanded">
+                <div class="WidgetSimple WidgetBox Expanded">
                     <div class="LightRow Header">
                         <div class="WidgetAction Toggle"><a href="#" title="[% Translate("Show or hide the content.") | html %]"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i></a></div>
                         <h2>[% Translate("Configuration Item Version Details") | html %]</h2>
                     </div>
-                    <div class="WithPadding Content NoDoubleBorders">
+                    <div class="Content">
                         <table class="DataTable">
                             <thead>
                                 <tr>
@@ -204,10 +208,10 @@
                             <tbody>
 [% RenderBlockStart("Data") %]
                                 <tr>
-                                    <td class="W25pc" style="padding-left: [% Translate(Data.Indentation) | html %]px;" title="[% Translate(Data.Description) | html %]">
+                                    <td class="W25pc" title="[% Translate(Data.Description) | html %]">
                                         [% Translate(Data.Name) | html %]:
                                     </td>
-                                    <td style="padding-left: [% Translate(Data.Indentation) | html %]px;">
+                                    <td>
                                         [% Data.Value %]
                                     </td>
                                 </tr>
@@ -248,6 +252,5 @@
             </div>
 [% RenderBlockEnd("LinkTableComplex") %]
         </div>
-        <div class="Clear"></div>
     </div>
 </div>

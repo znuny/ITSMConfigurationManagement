@@ -2578,8 +2578,6 @@ my @ImportDataTests = (
         },
     },
 
-    # TODO Add some identifier tests
-
     # empty name is given (check return false)
     {
         SourceImportData => {

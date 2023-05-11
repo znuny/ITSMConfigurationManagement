@@ -8,18 +8,19 @@
 # --
 
 [% RenderBlockStart("StartNormal") %]
-<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarLast">
-    <h1>[% Translate("Edit") | html %]: [% Translate("Config Item") | html %]: [% Translate(Data.Number) | html %] - [% Translate("Class") | html %]: [% Translate(Data.Class) | html %]</h1>
+<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarLast ActionsSideBar">
     <div class="ContentColumn">
+        <h1>[% Translate("Edit") | html %] [% Translate("Config Item") | html %] [% Translate(Data.Number) | html %] - [% Translate("Class") | html %] [% Translate(Data.Class) | html %]</h1>
+
 [% RenderBlockEnd("StartNormal") %]
-        <form action="[% Env("CGIHandle") %]" method="post" enctype="multipart/form-data" name="ClassItem" class="Validate PreventMultipleSubmits" id="ClassItem">
+        <form action="[% Env("CGIHandle") %]" method="post" enctype="multipart/form-data" name="ClassItem" class="Validate PreventMultipleSubmits WidgetSimple" id="ClassItem">
 [% RenderBlockStart("StartSmall") %]
             <div class="LayoutPopup ARIARoleMain">
                 <div class="Header">
-                    <h1>[% Translate("Edit") | html %]: [% Translate("Config Item") | html %]: [% Translate(Data.Number) | html %] - [% Translate("Class") | html %]: [% Translate(Data.Class) | html %]</h1>
-                    <p>
-                        <a class="CancelClosePopup" href="#">[% Translate("Cancel & close") | html %]</a>
-                    </p>
+                    <h1>[% Translate("Edit") | html %] [% Translate("Config Item") | html %] [% Translate(Data.Number) | html %] - [% Translate("Class") | html %] [% Translate(Data.Class) | html %]</h1>
+                    <div class="SaveButtons">
+                        <a class="CancelClosePopup btn-cancel-ghost btn-main btn-width-md" href="#">[% Translate("Cancel") | html %]</a>
+                    </div>
                 </div>
                 <input type="hidden" name="ScreenType" value="Popup"/>
 [% RenderBlockEnd("StartSmall") %]
@@ -31,107 +32,125 @@
                     <input type="hidden" name="DuplicateID" value="[% Data.DuplicateID | html %]"/>
                     <input type="hidden" name="FormID" value="[% Data.FormID | html %]"/>
                     <input type="hidden" name="SubmitSave" value="[% Data.SubmitSave | html %]"/>
-                    <fieldset class="TableLike">
+                    <fieldset class="popup-card">
+                        <fieldset class="TableLike">
 [% RenderBlockStart("RowName") %]
-                        <label class="Mandatory" for="Name"><span class="Marker">*</span> [% Translate("Name") | html %]: </label>
-                        <div class="Field">
-                            <input type="text" name="Name" id="Name" class="W50pc Validate_Required [% Data.RowNameInvalid | html %]" maxlength="250" value="[% Data.Name | html %]" title="[% Translate("The name of this config item") | html %]"/>
-                            <div id="NameError" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
+
+                            <div class="field-wrapper">
+                            <label class="Mandatory" for="Name"><span class="Marker">*</span> [% Translate("Name") | html %]: </label>
+                                <div class="Field">
+                                    <input type="text" name="Name" id="Name" class="Validate_Required [% Data.RowNameInvalid | html %]" maxlength="250" value="[% Data.Name | html %]" title="[% Translate("The name of this config item") | html %]"/>
+                                    <div id="NameError" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
 [% RenderBlockStart("RowNameErrorDefault") %]
-                            <div id="NameServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
+                                    <div id="NameServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
 [% RenderBlockEnd("RowNameErrorDefault") %]
 [% RenderBlockStart("RowNameErrorDuplicates") %]
-                            <div id="NameServerError" class="TooltipErrorMessage"><p>[% Translate("Name is already in use by the ConfigItems with the following Number(s): %s", Data.Duplicates) | html %]</p></div>
+                                    <div id="NameServerError" class="TooltipErrorMessage"><p>[% Translate("Name is already in use by the ConfigItems with the following Number(s): %s", Data.Duplicates) | html %]</p></div>
 [% RenderBlockEnd("RowNameErrorDuplicates") %]
 [% RenderBlockStart("RowNameErrorRegEx") %]
-                            <div id="NameServerError" class="TooltipErrorMessage"><p>[% Translate(Data.RegExErrorMessage) | html %]</p></div>
+                                    <div id="NameServerError" class="TooltipErrorMessage"><p>[% Translate(Data.RegExErrorMessage) | html %]</p></div>
 [% RenderBlockEnd("RowNameErrorRegEx") %]
-                        </div>
-                        <div class="Clear"></div>
+                                </div>
+                            </div>
+
 [% RenderBlockEnd("RowName") %]
 [% RenderBlockStart("RowDeplState") %]
-                        <label class="Mandatory" for="DeplStateID"><span class="Marker">*</span> [% Translate("Deployment State") | html %]: </label>
-                        <div class="Field">
-                            [% Data.DeplStateOptionStrg %]
-                            <div id="DeplStateIDError" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
-                            <div id="DeplStateIDServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
-                        </div>
-                        <div class="Clear"></div>
+                            <div class="field-wrapper">
+                                <label class="Mandatory" for="DeplStateID"><span class="Marker">*</span> [% Translate("Deployment State") | html %]: </label>
+                                <div class="Field">
+                                    [% Data.DeplStateOptionStrg %]
+                                    <div id="DeplStateIDError" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
+                                    <div id="DeplStateIDServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
+                                </div>
+                            </div>
+
 [% RenderBlockEnd("RowDeplState") %]
 [% RenderBlockStart("RowInciState") %]
-                        <label class="Mandatory" for="InciStateID"><span class="Marker">*</span> [% Translate("Incident State") | html %]: </label>
-                        <div class="Field">
-                            [% Data.InciStateOptionStrg %]
-                            <div id="InciStateIDError" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
-                            <div id="InciStateIDServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
-                        </div>
-                        <div class="Clear"></div>
+                            <div class="field-wrapper">
+                                <label class="Mandatory" for="InciStateID"><span class="Marker">*</span> [% Translate("Incident State") | html %]: </label>
+                                <div class="Field">
+                                    [% Data.InciStateOptionStrg %]
+                                    <div id="InciStateIDError" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
+                                    <div id="InciStateIDServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
+                                </div>
+                            </div>
+
 [% RenderBlockEnd("RowInciState") %]
-                    </fieldset>
+                        </fieldset>
 
 [% RenderBlockStart("XMLRow") %]
 [% RenderBlockStart("XMLRowFieldsetStart") %]
-                    <fieldset class="TableLike">
+                        <fieldset class="TableLike">
 [% RenderBlockEnd("XMLRowFieldsetStart") %]
+
 [% RenderBlockStart("XMLRowValue") %]
-                        <label [% Data.LabelClass %] [% Data.LabelFor %]>
+                            <div class="field-wrapper">
+                                <label [% Data.LabelClass %] [% Data.LabelFor %]>
 [% RenderBlockStart("XMLRowValueContentRequired") %]
-                            <span class="Marker">*</span>
+                                    <span class="Marker">*</span>
 [% RenderBlockEnd("XMLRowValueContentRequired") %]
-                            [% Translate(Data.Name) | html %]:
-                        </label>
-                        <div class="[% Data.Class %] Field">
-                            [% Data.InputString %]
+                                    [% Translate(Data.Name) | html %]:
+                                </label>
+                                <div class="[% Data.Class %] Field flex-row">
+                                    [% Data.InputString %]
 [% RenderBlockStart("XMLRowValueContentDelete") %]
-                            <button class="DisableValidation Remove" type="submit" name="[% Data.InputKey | html %]::Delete" value="[% Translate("Delete") | html %]">[% Translate("Delete") | html %]</button>
+                                    <button class="DisableValidation Remove icon-hover-md" type="submit" name="[% Data.InputKey | html %]::Delete" value="[% Translate("Delete") | html %]">
+                                        <i class="fa fa-minus-square-o"></i>
+                                    </button>
+
 [% RenderBlockEnd("XMLRowValueContentDelete") %]
-                            <div id="[% Data.ItemID | html %]Error" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
+                                    <div id="[% Data.ItemID | html %]Error" class="TooltipErrorMessage" ><p>[% Translate("This field is required.") | html %]</p></div>
 [% RenderBlockStart("XMLRowValueServerError") %]
-                            <div id="[% Data.ItemID | html %]ServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
+                                    <div id="[% Data.ItemID | html %]ServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
 [% RenderBlockEnd("XMLRowValueServerError") %]
 [% RenderBlockStart("XMLRowValueRegExError") %]
-                            <div id="[% Data.ItemID | html %]ServerError" class="TooltipErrorMessage"><p>[% Translate(Data.RegExErrorMessage) | html %]</p></div>
+                                    <div id="[% Data.ItemID | html %]ServerError" class="TooltipErrorMessage"><p>[% Translate(Data.RegExErrorMessage) | html %]</p></div>
 [% RenderBlockEnd("XMLRowValueRegExError") %]
-                        </div>
+                                </div>
+                            </div>
 [% RenderBlockEnd("XMLRowValue") %]
 
 [% RenderBlockStart("XMLRowAddContent") %]
-                        <label [% Data.Class %] for="[% Data.ItemID | html %]">[% Translate(Data.Name) | html %]: </label>
-                        <div class="Field">
-                            <button class="DisableValidation Add" id="[% Data.ItemID | html %]" type="submit" name="[% Data.InputKey | html %]::Add" value="[% Translate("Add") | html %]" title="[% Translate(Data.Description) | html %]" ></button>
-                        </div>
+                            <div class="field-wrapper">
+                                <label [% Data.Class %] for="[% Data.ItemID | html %]">[% Translate(Data.Name) | html %]: </label>
+                                <div class="Field">
+                                    <button class="DisableValidation Add icon-hover-md" id="[% Data.ItemID | html %]" type="submit" name="[% Data.InputKey | html %]::Add" value="[% Translate("Add") | html %]" title="[% Translate(Data.Description) | html %]" >
+                                        <i class="fa fa-plus-square-o"></i>
+                                    </button>
+                                </div>
+                            </div>
 [% RenderBlockEnd("XMLRowAddContent") %]
 
 [% RenderBlockStart("XMLRowFieldsetEnd") %]
-                    </fieldset>
+                        </fieldset>
 [% RenderBlockEnd("XMLRowFieldsetEnd") %]
 [% RenderBlockEnd("XMLRow") %]
 
-                    <fieldset class="TableLike">
-                        <label>[% Translate("Attachments") | html %]:</label>
-                        <div class="Field">
-                            [% INCLUDE "FormElements/AttachmentList.tt" %]
-                        </div>
-                        <div class="Clear"></div>
+                        <fieldset class="TableLike">
+                            <div class="field-wrapper">
+                                <label>[% Translate("Attachments") | html %]:</label>
+                                <div class="Field component-attachment">
+                                    [% INCLUDE "FormElements/AttachmentList.tt" %]
+                                </div>
+                            </div>
+                        </fieldset>
                     </fieldset>
-
                     <fieldset class="TableLike">
-                        <div class="Field SpacingTop">
-                            <button name="Submit" class="CallForAction Primary" id="SubmitButton" type="submit" value="Submit">
-                                <span>[% Translate("Save") | html %]</span>
-                            </button>
-                            [% Translate("or") | html %]
-                            <a id="CancelButton" href="[% Env("Baselink") %]Action=AgentITSMConfigItemAdd">[% Translate("Cancel") | html %]</a>
+                        <div class="field-wrapper form-button-actions">
+                            <div class="Field buttons-field">
+                                <a id="CancelButton" class="btn-main btn-cancel-ghost btn-width-md" href="[% Env("Baselink") %]Action=AgentITSMConfigItemAdd">[% Translate("Cancel") | html %]</a>
+                                <button name="Submit" class="CallForAction Primary btn-main btn-primary btn-width-md" id="SubmitButton" type="submit" value="Submit">
+                                    <span>[% Translate("Save") | html %]</span>
+                                </button>
+                            </div>
                         </div>
                     </fieldset>
                 </div>
-
 [% RenderBlockStart("EndSmall") %]
             </div>
 [% RenderBlockEnd("EndSmall") %]
         </form>
 [% RenderBlockStart("EndNormal") %]
     </div>
-    <div class="Clear"></div>
 </div>
 [% RenderBlockEnd("EndNormal") %]

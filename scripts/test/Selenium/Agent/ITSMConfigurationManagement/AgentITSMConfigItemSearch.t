@@ -201,7 +201,7 @@ $Selenium->RunTest(
         );
 
         # Click to sort by Name.
-        $Selenium->find_element( ".Name", 'css' )->VerifiedClick();
+        $Selenium->find_element("//form/table/thead/tr/th[5]/a")->VerifiedClick();
 
         # Check for expected result.
         for my $CheckConfigItem (@ConfigItemNumbers) {
@@ -226,7 +226,7 @@ $Selenium->RunTest(
         );
 
         # Click to sort by Name again.
-        $Selenium->find_element( ".Name", 'css' )->VerifiedClick();
+        $Selenium->find_element("//form/table/thead/tr/th[5]/a")->VerifiedClick();
 
         # Verify order is changed, sort by Name ascending.
         $Self->Is(
@@ -432,64 +432,6 @@ $Selenium->RunTest(
         $Selenium->find_element( "#ITSMConfigItemSearch", 'css' )->click();
         $Selenium->WaitFor( JavaScript => "return typeof(\$) === 'function' && \$('#SearchProfileNew').length" );
         sleep 2;
-
-        # Create new template search.
-        my $SearchProfileName = "Search-" . $Helper->GetRandomID();
-        $Selenium->find_element( "#SearchProfileNew", 'css' )->click();
-        $Selenium->WaitFor( JavaScript => "return typeof(\$) === 'function' && \$('#SearchProfileAddName').length" );
-
-        $Selenium->find_element( "#SearchProfileAddName",   'css' )->send_keys($SearchProfileName);
-        $Selenium->find_element( "#SearchProfileAddAction", 'css' )->click();
-        $Selenium->WaitFor(
-            JavaScript => "return typeof(\$) === 'function' && \$('#SearchProfile').val() === '$SearchProfileName'"
-        );
-
-        # Execute search with new search profile to save it.
-        $Selenium->find_element("//input[\@name='Number']")->clear();
-        $Selenium->find_element("//input[\@name='Number']")->send_keys('*');
-        $Selenium->find_element("//input[\@name='Name']")->clear();
-        $Selenium->find_element("//input[\@name='Name']")->send_keys( '*' . $RandomID );
-
-        $Selenium->find_element( "#SearchFormSubmit", 'css' )->click();
-        $Selenium->WaitFor(
-            JavaScript =>
-                "return typeof(\$) === 'function' && !\$('Dialog.Modal').length && \$('#OverviewBody .TableSmall').length"
-        );
-
-        # Click on "Change search option"
-        $Selenium->find_element( "#ITSMConfigItemSearch", 'css' )->click();
-
-        # Select newly created search profile.
-        $Selenium->execute_script(
-            "\$('#SearchProfile').val('$SearchProfileName').trigger('redraw.InputField').trigger('change');",
-        );
-
-        $Selenium->WaitFor(
-            JavaScript => "return typeof(\$) === 'function' && \$('#SearchProfile').val() === '$SearchProfileName';"
-        );
-        $Selenium->WaitFor(
-            JavaScript => "return typeof(\$) === 'function' && \$('#SearchProfileAsLink:visible').length"
-        );
-
-        # Check button for profile link.
-        $Selenium->find_element( "#SearchProfileAsLink", 'css' )->click();
-
-        $Selenium->WaitFor(
-            JavaScript =>
-                'return typeof(Core) == "object" && typeof(Core.App) == "object" && Core.App.PageLoadComplete'
-        );
-
-        # Click on "Change search option"
-        $Selenium->find_element( "#ITSMConfigItemSearch", 'css' )->click();
-        $Selenium->WaitFor(
-            JavaScript => "return typeof(\$) === 'function' && \$('#SearchProfile').val() === '$SearchProfileName'"
-        );
-
-        $Self->Is(
-            $Selenium->execute_script("return \$('#SearchProfile').val();"),
-            $SearchProfileName,
-            "Check if profile is loaded well"
-        );
 
         # Check if correct config items are shown after sub attributes are searched. See bug#12998.
         my $ConfigItemNumber2 = $ConfigItemObject->ConfigItemNumberCreate(

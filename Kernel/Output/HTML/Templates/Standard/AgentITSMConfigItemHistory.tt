@@ -9,14 +9,13 @@
 
 <!-- start form -->
 <div class="LayoutPopup ARIARoleMain">
-
     <div class="Header">
         <h1>
             [% Translate("History of Config Item: %s", Data.Name) | html %]
         </h1>
-        <p>
-            <a href="#" class="CancelClosePopup">[% Translate("Cancel & close") | html %]</a>
-        </p>
+        <div class="SaveButtons">
+            <a href="#" class="CancelClosePopup btn-cancel-ghost btn-main btn-width-md">[% Translate("Cancel") | html %]</a>
+        </div>
     </div>
 
     <div class="Content">
@@ -26,7 +25,7 @@
                     [% Translate("History Content") | html %]
                 </h2>
             </div>
-            <div class="Content">
+            <div class="Content no-padding">
                 <table summary="Configuration Item History" class="DataTable">
                     <thead>
                         <tr>

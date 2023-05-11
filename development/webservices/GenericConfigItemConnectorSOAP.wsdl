@@ -2,9 +2,9 @@
 
 <wsdl:definitions
     name="GenericConfigItemConnectorSOAP"
-    targetNamespace="http://www.otrs.org/ConfigItemConnector"
+    targetNamespace="http://www.znuny.org/ConfigItemConnector"
     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-    xmlns:tns="http://www.otrs.org/ConfigItemConnector"
+    xmlns:tns="http://www.znuny.org/ConfigItemConnector"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
 
@@ -14,7 +14,7 @@ WARNING: This WSDL file is for Development and Test purposes ONLY!
     </wsdl:documentation>
 
     <wsdl:types>
-        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.otrs.org/ConfigItemConnector">
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.znuny.org/ConfigItemConnector">
 
             <xsd:element name="ConfigItemCreate">
                 <xsd:complexType>
@@ -622,7 +622,7 @@ WARNING: This WSDL file is for Development and Test purposes ONLY!
         <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
 
         <wsdl:operation name="ConfigItemCreate">
-            <soap:operation soapAction="http://www.otrs.org/ConfigItemConnector/ConfigItemCreate" />
+            <soap:operation soapAction="http://www.znuny.org/ConfigItemConnector/ConfigItemCreate" />
             <wsdl:input>
                 <soap:body use="literal" />
             </wsdl:input>
@@ -632,7 +632,7 @@ WARNING: This WSDL file is for Development and Test purposes ONLY!
         </wsdl:operation>
 
         <wsdl:operation name="ConfigItemDelete">
-            <soap:operation soapAction="http://www.otrs.org/ConfigItemConnector/ConfigItemDelete" />
+            <soap:operation soapAction="http://www.znuny.org/ConfigItemConnector/ConfigItemDelete" />
             <wsdl:input>
                 <soap:body use="literal" />
             </wsdl:input>
@@ -642,7 +642,7 @@ WARNING: This WSDL file is for Development and Test purposes ONLY!
         </wsdl:operation>
 
         <wsdl:operation name="ConfigItemGet">
-            <soap:operation soapAction="http://www.otrs.org/ConfigItemConnector/ConfigItemGet" />
+            <soap:operation soapAction="http://www.znuny.org/ConfigItemConnector/ConfigItemGet" />
             <wsdl:input>
                 <soap:body use="literal" />
             </wsdl:input>
@@ -652,7 +652,7 @@ WARNING: This WSDL file is for Development and Test purposes ONLY!
         </wsdl:operation>
 
         <wsdl:operation name="ConfigItemUpdate">
-            <soap:operation soapAction="http://www.otrs.org/ConfigItemConnector/ConfigItemUpdate" />
+            <soap:operation soapAction="http://www.znuny.org/ConfigItemConnector/ConfigItemUpdate" />
             <wsdl:input>
                 <soap:body use="literal" />
             </wsdl:input>
@@ -662,7 +662,7 @@ WARNING: This WSDL file is for Development and Test purposes ONLY!
         </wsdl:operation>
 
         <wsdl:operation name="ConfigItemSearch">
-            <soap:operation soapAction="http://www.otrs.org/ConfigItemConnector/ConfigItemSearch" />
+            <soap:operation soapAction="http://www.znuny.org/ConfigItemConnector/ConfigItemSearch" />
             <wsdl:input>
                 <soap:body use="literal" />
             </wsdl:input>

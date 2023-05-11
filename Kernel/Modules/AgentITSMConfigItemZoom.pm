@@ -118,7 +118,7 @@ sub Run {
         my %Menus   = %{ $ConfigObject->Get('ITSMConfigItem::Frontend::MenuModule') };
         my $Counter = 0;
 
-        Menu:
+        MENU:
         for my $Menu ( sort keys %Menus ) {
 
             my $Access;
@@ -146,7 +146,7 @@ sub Run {
                     UserID => $Self->{UserID},
                 );
             }
-            next Menu if !$Access;
+            next MENU if !$Access;
 
             # load module
             if ( $Kernel::OM->Get('Kernel::System::Main')->Require( $Menus{$Menu}->{Module} ) ) {

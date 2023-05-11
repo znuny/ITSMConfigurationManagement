@@ -7,35 +7,36 @@
 # did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
 # --
 
-<div class="DashboardActions">
-
-    <ul class="ITSMConfigItemFilter Tab Actions">
+<div class="DashboardActions dropdown-container dropdown-filter">
+    <label class="btn-main btn-secondary-ghost btn-width-xxl btn-dropdown align-left" href="#" id="Dashboard[% Data.Name | html %]All" data-filter="All">
+        <span class="btn-wrapper space-between">
+            <span class="btn-text">
+                <span class="regular">[% Translate('Show') | html %]:</span>
+                <span class="bold"> &nbsp; [% Translate(Data.Filter.Label) | html %] ([% Data.Filter.Count | html %])</span>
+            </span>
+            <i class="fa fa-caret-down"></i>
+        </span>
+    </label>
+    <ul class="ITSMConfigItemFilter Tab Actions dropdown-menu">
 [% RenderBlockStart("OverviewNavBarFilter") %]
 [% RenderBlockStart("OverviewNavBarFilterItem") %]
 [% RenderBlockStart("OverviewNavBarFilterItemSelected") %]
-            <li class="Selected [% Data.CSS | html %] [% Data.Name | html %]">
+            <li class="AdditionalFilter Selected [% Data.CSS | html %] [% Data.Name | html %] dropdown-item">
                 <a href="#" id="DashboardAdditionalFilter[% Data.Name | html %]" data-filter="[% Data.Name | html %]" class="DashboardITSMConfigItemGenericFilter">[% Translate(Data.Name) | html %] ([% Data.Count | html %]) </a>
             </li>
 [% RenderBlockEnd("OverviewNavBarFilterItemSelected") %]
 [% RenderBlockStart("OverviewNavBarFilterItemSelectedNot") %]
-            <li class="[% Data.CSS | html %] [% Data.Name | html %]">
+            <li class="AdditionalFilter [% Data.CSS | html %] [% Data.Name | html %] dropdown-item">
                 <a href="#" id="DashboardAdditionalFilter[% Data.Name | html %]" data-filter="[% Data.Name | html %]" class="DashboardITSMConfigItemGenericFilter">[% Translate(Data.Name) | html %] ([% Data.Count | html %]) </a>
             </li>
 [% RenderBlockEnd("OverviewNavBarFilterItemSelectedNot") %]
 [% RenderBlockEnd("OverviewNavBarFilterItem") %]
 [% RenderBlockEnd("OverviewNavBarFilter") %]
     </ul>
-
 </div>
 
-[% RenderBlockStart("ContentLargeITSMConfigItemGenericFilterNavBar") %]
-<span class="Pagination">
-    [% Data.SiteNavBar %]
-</span>
-[% RenderBlockEnd("ContentLargeITSMConfigItemGenericFilterNavBar") %]
-
 #<!-- This form will not be submitted, we need it for the AJAX calls. -->
-<form action="[% Env("CGIHandle") %]" method="post" enctype="multipart/form-data">
+<form class="scroll-bar-styled" action="[% Env("CGIHandle") %]" method="post" enctype="multipart/form-data">
     <input type="hidden" name="CustomerID" value="[% Data.CustomerID | html %]"/>
     <input type="hidden" name="CustomerUserID" value="[% Data.CustomerUserID | html %]"/>
     <input type="hidden" name="Filter[% Data.Name | html %]" id="Filter[% Data.Name | html %]" value="[% Data.FilterValue | html %]" />
@@ -45,12 +46,12 @@
         <thead>
             <tr>
 [% RenderBlockStart("RecordCurInciSignalHeader") %]
-                <th>
+                <th class="DashboardHeader">
                     <span>[% Translate("Incident State") | html %]</span>
                 </th>
 [% RenderBlockEnd("RecordCurInciSignalHeader") %]
 [% RenderBlockStart("RecordCurDeplSignalHeader") %]
-                <th>
+                <th class="DashboardHeader">
                     <span>[% Translate("Deployment State") | html %]</span>
                 </th>
 [% RenderBlockEnd("RecordCurDeplSignalHeader") %]
@@ -75,7 +76,7 @@
                 </th>
 [% RenderBlockEnd("RecordCurDeplStateHeader") %]
 [% RenderBlockStart("RecordCurDeplStateTypeHeader") %]
-                <th>
+                <th class="DashboardHeader">
                     <span>[% Translate("Deployment State Type") | html %]</span>
                 </th>
 [% RenderBlockEnd("RecordCurDeplStateTypeHeader") %]
@@ -85,12 +86,12 @@
                 </th>
 [% RenderBlockEnd("RecordCurInciStateHeader") %]
 [% RenderBlockStart("RecordCurInciStateTypeHeader") %]
-                <th>
+                <th class="DashboardHeader">
                     <span>[% Translate("Current Incident State Type") | html %]</span>
                 </th>
 [% RenderBlockEnd("RecordCurInciStateTypeHeader") %]
 [% RenderBlockStart("RecordXMLAttributeHeader") %]
-                <th>
+                <th class="DashboardHeader">
                     <span>[% Translate(Data.XMLAttributeHeader) | html %]</span>
                 </th>
 [% RenderBlockEnd("RecordXMLAttributeHeader") %]
@@ -193,3 +194,9 @@
         </tbody>
     </table>
 </form>
+
+[% RenderBlockStart("ContentLargeITSMConfigItemGenericFilterNavBar") %]
+<span class="Pagination">
+    [% Data.SiteNavBar %]
+</span>
+[% RenderBlockEnd("ContentLargeITSMConfigItemGenericFilterNavBar") %]
