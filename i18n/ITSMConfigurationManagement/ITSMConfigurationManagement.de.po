@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
 "PO-Revision-Date: 2023-05-10 08:27+0000\n"
 "Last-Translator: Niklas Schmitt <ns@znuny.com>\n"
-"Language-Team: German <https://translations.znuny.org/projects/znuny-lts/"
-"itsmconfigurationmanagement/de/>\n"
+"Language-Team: German <https://translations.znuny.org/projects/znuny-lts/itsmconfigurationmanagement/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1268,3 +1267,4 @@ msgstr "Registriert ein ITSMConfigItem-EventModule, das zugehörige Anhänge spe
 #. SysConfig
 msgid "List of events that are available for generic interface event object type ITSMConfigItem."
 msgstr ""
+

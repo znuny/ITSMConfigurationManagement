@@ -102,7 +102,7 @@ sub Data {
     $Self->{Translation}->{'Show one version'} = 'Nur eine Version anzeigen';
     $Self->{Translation}->{'Show all versions'} = 'Alle Versionen anzeigen';
     $Self->{Translation}->{'Version Incident State'} = 'Vorfallstatus-Version';
-    $Self->{Translation}->{'Version Deployment State'} = 'Version des Verwendungsstatus.';
+    $Self->{Translation}->{'Version Deployment State'} = 'Version des Verwendungsstatus';
     $Self->{Translation}->{'Version Number'} = 'Versionsnummer';
     $Self->{Translation}->{'Configuration Item Version Details'} = 'Configuration Item-Versionsdetails';
     $Self->{Translation}->{'Property'} = 'Eigenschaft';
