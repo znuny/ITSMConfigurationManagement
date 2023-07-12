@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>6.5.1</Version>
+    <Version>6.5.2</Version>
     <Framework>6.5.x</Framework>
     <PackageRequired Version="6.5.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,7 @@
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="6.5.2" Date="2023-07-12 12:35:53 +0200">Updated translations.</ChangeLog>
     <ChangeLog Version="6.5.1" Date="2023-02-20 15:46:19 +0100">Initial release for Znuny 6.5.</ChangeLog>
     <ChangeLog Version="6.4.3" Date="2022-11-09 09:29:57 +0100">Updated translations.</ChangeLog>
     <ChangeLog Version="6.4.2" Date="2022-07-28 15:47:25 +0200">Initial release for Znuny 6.4.2.</ChangeLog>
