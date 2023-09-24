@@ -160,9 +160,9 @@ sub Data {
     # Perl Module: Kernel/Modules/AgentITSMConfigItemZoom.pm
     $Self->{Translation}->{'Can\'t show item, no access rights for ConfigItem are given!'} =
         'Impossible d\'afficher l\'élément, aucuns droits d\'accès pour cet élément de configuration n\'a été donné !';
-    $Self->{Translation}->{'operational'} = '';
-    $Self->{Translation}->{'warning'} = '';
-    $Self->{Translation}->{'incident'} = '';
+    $Self->{Translation}->{'operational'} = 'opérationnel';
+    $Self->{Translation}->{'warning'} = 'attention';
+    $Self->{Translation}->{'incident'} = 'incident';
     $Self->{Translation}->{'The deployment state of this config item'} = 'L\'état de déploiement de cet élément de configuration';
     $Self->{Translation}->{'The incident state of this config item'} = 'L\'état d\'incident de cet élément de configuration';
 
@@ -275,7 +275,7 @@ sub Data {
     $Self->{Translation}->{'Unlimited'} = 'Illimité';
 
     # JS File: var/httpd/htdocs/js/ITSM.Agent.ConfigItem.Zoom.js
-    $Self->{Translation}->{'Ok'} = 'Ok';
+    $Self->{Translation}->{'Ok'} = 'Oui';
 
     # SysConfig
     $Self->{Translation}->{'AlternativeTo'} = '';
@@ -394,7 +394,7 @@ sub Data {
         'Paramètres pour l\'exemple des permissions de groupes des attributs du catalogue général.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '';
-    $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'Permission Group'} = 'Groupe de permissions';
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
         '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
