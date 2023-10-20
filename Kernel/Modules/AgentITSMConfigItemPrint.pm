@@ -129,10 +129,15 @@ sub Run {
     my $LinkObject = $Kernel::OM->Get('Kernel::System::LinkObject');
 
     my $LinkListWithData = $LinkObject->LinkListWithData(
-        Object => 'ITSMConfigItem',
-        Key    => $ConfigItemID,
-        State  => 'Valid',
-        UserID => $Self->{UserID},
+        Object           => 'ITSMConfigItem',
+        Key              => $ConfigItemID,
+        State            => 'Valid',
+        UserID           => $Self->{UserID},
+        ObjectParameters => {
+            Ticket => {
+                IgnoreLinkedTicketStateTypes => 1,
+            },
+        },
     );
 
     # get link type list

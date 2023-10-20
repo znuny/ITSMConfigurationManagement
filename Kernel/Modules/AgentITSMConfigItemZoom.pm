@@ -389,10 +389,15 @@ sub Run {
 
     # get linked objects
     my $LinkListWithData = $Kernel::OM->Get('Kernel::System::LinkObject')->LinkListWithData(
-        Object => 'ITSMConfigItem',
-        Key    => $ConfigItemID,
-        State  => 'Valid',
-        UserID => $Self->{UserID},
+        Object           => 'ITSMConfigItem',
+        Key              => $ConfigItemID,
+        State            => 'Valid',
+        UserID           => $Self->{UserID},
+        ObjectParameters => {
+            Ticket => {
+                IgnoreLinkedTicketStateTypes => 1,
+            },
+        },
     );
 
     # get link table view mode
