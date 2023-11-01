@@ -170,11 +170,11 @@ sub InputCreate {
     elsif ( $Param{Item}->{Input}->{ValueDefault} ) {
         $Value = $Param{Item}->{Input}->{ValueDefault};
     }
-    my $Class    = 'W50pc ITSMCustomerSearch';
-    my $Search   = '';
-    my $Required = $Param{Required} || '';
-    my $Invalid  = $Param{Invalid} || '';
-    my $ItemId   = $Param{ItemId} || '';
+    my $Class            = 'W50pc ITSMCustomerSearch';
+    my $CustomerUserName = '';
+    my $Required         = $Param{Required} || '';
+    my $Invalid          = $Param{Invalid} || '';
+    my $ItemId           = $Param{ItemId} || '';
 
     if ($Required) {
         $Class .= ' Validate_Required';
@@ -187,17 +187,14 @@ sub InputCreate {
     # create customer string
     if ($Value) {
 
-        # get customer data
-        my %CustomerSearchList = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerSearch(
-            Search => $Value,
+        # get customer name
+        $CustomerUserName = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerName(
+            UserLogin => $Value,
         );
 
-        # set keys to lowercase to match non case sensitive email-adresses
-         %CustomerSearchList = map { lc $_ => $CustomerSearchList{$_} } keys %CustomerSearchList;
-
         # transform ascii to html
-        $Search = $Kernel::OM->Get('Kernel::Output::HTML::Layout')->Ascii2Html(
-            Text           => $CustomerSearchList{lc $Value} || '',
+        $CustomerUserName = $Kernel::OM->Get('Kernel::Output::HTML::Layout')->Ascii2Html(
+            Text           => $CustomerUserName || '',
             HTMLResultMode => 1,
         );
     }
@@ -217,7 +214,7 @@ sub InputCreate {
         . '" id="'
         . $ItemId
         . '" value="'
-        . $Search . '"/>';
+        . $CustomerUserName . '"/>';
 
     return $String;
 }
