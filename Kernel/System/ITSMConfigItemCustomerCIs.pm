@@ -73,7 +73,7 @@ sub GetCustomerUserCIs {
 
     NEEDED:
     for my $Needed (qw(CustomerUserID)) {
-        next NEEDED if defined $Param{$Needed};
+        next NEEDED if $Param{$Needed};
 
         $LogObject->Log(
             Priority => 'error',
@@ -151,7 +151,7 @@ sub GetCustomerCIs {
 
     NEEDED:
     for my $Needed (qw(CustomerID)) {
-        next NEEDED if defined $Param{$Needed};
+        next NEEDED if $Param{$Needed};
 
         $LogObject->Log(
             Priority => 'error',
@@ -261,14 +261,14 @@ sub GetPossibleCustomerCIs {
     return @ConfigItems if !( $Param{CustomerUserID} || $Param{CustomerID} );
 
     my @CustomerUserConfigItemIDs;
-    if ( $Config->{CustomerUser} ) {
+    if ( $Config->{CustomerUser} && $Param{CustomerUserID} ) {
         @CustomerUserConfigItemIDs = $Self->GetCustomerUserCIs(
             CustomerUserID => $Param{CustomerUserID},
             Limit          => $Config->{SearchLimit},
         );
     }
     my @CustomerConfigItemIDs;
-    if ( $Config->{CustomerCompany} ) {
+    if ( $Config->{CustomerCompany} && $Param{CustomerID} ) {
         @CustomerConfigItemIDs = $Self->GetCustomerCIs(
             CustomerID => $Param{CustomerID},
             Limit      => $Config->{SearchLimit},
