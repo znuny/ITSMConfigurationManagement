@@ -245,7 +245,7 @@ sub Run {
         $PrioCounter++;
 
         # Add filter with params for the search method.
-        $Filters{$ClassID} = {
+        $Filters{ $ClassList->{$ClassID} } = {
             Name   => $ClassList->{$ClassID},
             Prio   => $PrioCounter,
             Search => {
@@ -680,6 +680,10 @@ sub Run {
     my $NameHTML = $Self->{Name};
     $NameHTML =~ s{-}{_}xmsg;
 
+    # remove (-) from name for JS config
+    my $WidgetName = $Self->{Name};
+    $WidgetName =~ s{-}{}g;
+
     # Send data to JS.
     $LayoutObject->AddJSData(
         Key   => 'ITSMConfigItemGeneric',
@@ -692,6 +696,16 @@ sub Run {
     my %SelectedFilterInformation = (
         Label => $Self->{Filter},
         Count => $Self->{FilterCount},
+    );
+
+    # send data to JS
+    $LayoutObject->AddJSData(
+        Key   => 'WidgetContainer' . $WidgetName,
+        Value => {
+            Name           => $Self->{Name},
+            Filter         => \%Filters,
+            FilterSelected => $Self->{Filter},
+        },
     );
 
     my $Content = $LayoutObject->Output(
