@@ -33,7 +33,8 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
     }
 
     TargetNS.CreateWidget = function (Param) {
-        var Action = Core.Config.Get('Action');
+        var Action = Core.Config.Get('Action'),
+            ConfigItemIDs = '';
 
         // check if widget exists
         if ($('#AgentITSMConfigItemCustomerCIsWidget').length > 0) return;
@@ -48,6 +49,15 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
 
         if (Action == 'AgentTicketPhone' || Action == 'AgentTicketEmail') {
             $('form[name=compose]').append('<input type="hidden" id="ITSMConfigItemCustomerCIList" name="ITSMConfigItemCustomerCIList" />');
+
+            $.each($(".ConfigItemLink:checked"), function() {
+                if (ConfigItemIDs) {
+                    ConfigItemIDs += ',';
+                }
+                ConfigItemIDs += $(this).val();
+            });
+
+            $('#ITSMConfigItemCustomerCIList').val(ConfigItemIDs);
         }
 
         return true;
