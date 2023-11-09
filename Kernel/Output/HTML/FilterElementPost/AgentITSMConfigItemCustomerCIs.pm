@@ -61,9 +61,7 @@ sub Run {
     }
     return if !$Permission;
 
-    if ( $LayoutObject->{Action} eq 'AgentTicketZoom' ) {
-        $Param{TicketID} = $ParamObject->GetParam( Param => 'TicketID' ) || '';
-    }
+    $Param{TicketID} = $ParamObject->GetParam( Param => 'TicketID' ) || '';
 
     my %Data;
 
