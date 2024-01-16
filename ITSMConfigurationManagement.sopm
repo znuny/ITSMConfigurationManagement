@@ -1382,8 +1382,6 @@
         You are about to install the Znuny package ITSMConfigurationManagement.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
@@ -1393,8 +1391,6 @@
         <br/>
         <br/>
         Sie sind im Begriff das Znuny-Paket ITSMConfigurationManagement zu installieren.<br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroInstall>
@@ -1406,8 +1402,6 @@
         <br/>
         Usted está punto de instalar el paquete ITSMConfigurationManagement de Znuny.<br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
@@ -1418,8 +1412,6 @@
         <br/>
         Ön az ITSMConfigurationManagement Znuny csomag telepítésére készül.<br/>
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroInstall>
@@ -1435,8 +1427,6 @@
         The menu items that were added by this package will be visible after you log-in to the system again.
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="de"><![CDATA[
@@ -1450,8 +1440,6 @@
         <br/>
         Die von diesem Paket hinzugefügten Menü-Punkte sind erst nach einem erneuten Anmeldevorgang im System sichtbar.
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroInstall>
@@ -1485,8 +1473,6 @@
         Azok a menüpontok, amelyeket ez a csomag adott hozzá, azután lesznek láthatóak, miután ismét bejelentkezik a rendszerbe.
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroInstall>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
@@ -1497,8 +1483,6 @@
         <br/>
         You are about to upgrade the Znuny package ITSMConfigurationManagement.<br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
@@ -1508,8 +1492,6 @@
         <br/>
         <br/>
         Sie sind im Begriff das Znuny-Paket ITSMConfigurationManagement zu aktualisieren.<br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -1522,8 +1504,6 @@
         Usted está a punto de actualizar el paquete ITSMConfigurationManagement de Znuny.<br/>
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
@@ -1533,8 +1513,6 @@
         <br/>
         <br/>
         Ön az ITSMConfigurationManagement Znuny csomag frissítésére készül.<br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroUpgrade>
@@ -1558,8 +1536,6 @@
         The statistics that are associated with this package, will no longer be available if the package is uninstalled.
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="de"><![CDATA[
@@ -1581,8 +1557,6 @@
         <br/>
         Nach der Deinstallation sind die zu diesem Paket zugehörigen Statistiken nicht mehr verfügbar.
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroUninstall>
@@ -1606,8 +1580,6 @@
         Si usted desinstala este paquete, las estadísticas que están asociadas a él ya no estarán disponibles.
         <br/>
         <br/>
-        ((enjoy))<br/>
-        <br/>
 
     ]]></IntroUninstall>
     <IntroUninstall Type="pre" Title="Eltávolítási információk" Lang="hu"><![CDATA[
@@ -1629,8 +1601,6 @@
         <br/>
         Az ehhez a csomaghoz hozzárendelt statisztikák többé nem lesznek elérhetők, ha a csomag eltávolításra kerül.
         <br/>
-        <br/>
-        ((enjoy))<br/>
         <br/>
 
     ]]></IntroUninstall>

@@ -38,8 +38,8 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    # get log object
-    my $LogObject = $Kernel::OM->Get('Kernel::System::Log');
+    my $LogObject       = $Kernel::OM->Get('Kernel::System::Log');
+    my $HTMLUtilsObject = $Kernel::OM->Get('Kernel::System::HTMLUtils');
 
     NEEDED:
     for my $Needed (qw(PageShown StartHit)) {
@@ -102,8 +102,21 @@ sub Run {
         # and the ss safe coverted deployment state as value
         $DeplSignals{ $DeploymentStatesList->{$ItemID} } = $DeplState;
 
-        # covert to lower case
-        my $DeplStateColor = lc $Preferences{Color};
+        # convert to lower case and remove anything security relevant.
+        my $DeplStateColor     = lc $Preferences{Color};
+        my %SafeDeplStateColor = $HTMLUtilsObject->Safety(
+            String       => $DeplStateColor,
+            NoApplet     => 1,
+            NoObject     => 1,
+            NoEmbed      => 1,
+            NoSVG        => 1,
+            NoImg        => 1,
+            NoIntSrcLoad => 1,
+            NoExtSrcLoad => 1,
+            NoJavaScript => 1,
+        );
+
+        $DeplStateColor = $SafeDeplStateColor{String} // '';
 
         # add to style classes string
         $StyleClasses .= "

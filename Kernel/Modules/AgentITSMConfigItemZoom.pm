@@ -30,9 +30,9 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    # get param object
-    my $ParamObject = $Kernel::OM->Get('Kernel::System::Web::Request');
-    my $LogObject   = $Kernel::OM->Get('Kernel::System::Log');
+    my $ParamObject     = $Kernel::OM->Get('Kernel::System::Web::Request');
+    my $LogObject       = $Kernel::OM->Get('Kernel::System::Log');
+    my $HTMLUtilsObject = $Kernel::OM->Get('Kernel::System::HTMLUtils');
 
     # get params
     my $ConfigItemID = $ParamObject->GetParam( Param => 'ConfigItemID' ) || 0;
@@ -235,8 +235,21 @@ sub Run {
         # and the ss safe coverted deployment state as value
         $DeplSignals{ $DeploymentStatesList->{$ItemID} } = $DeplState;
 
-        # covert to lower case
-        my $DeplStateColor = lc $Preferences{Color};
+        # convert to lower case and remove anything security relevant.
+        my $DeplStateColor     = lc $Preferences{Color};
+        my %SafeDeplStateColor = $HTMLUtilsObject->Safety(
+            String       => $DeplStateColor,
+            NoApplet     => 1,
+            NoObject     => 1,
+            NoEmbed      => 1,
+            NoSVG        => 1,
+            NoImg        => 1,
+            NoIntSrcLoad => 1,
+            NoExtSrcLoad => 1,
+            NoJavaScript => 1,
+        );
+
+        $DeplStateColor = $SafeDeplStateColor{String} // '';
 
         # add to style classes string
         $StyleClasses .= "
