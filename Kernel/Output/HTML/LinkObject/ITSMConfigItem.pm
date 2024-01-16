@@ -182,6 +182,7 @@ sub TableCreateComplex {
 
     my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
     my $ConfigItemObject     = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
+    my $HTMLUtilsObject      = $Kernel::OM->Get('Kernel::System::HTMLUtils');
 
     # get and remember the Deployment state colors
     my $DeploymentStatesList = $GeneralCatalogObject->ItemList(
@@ -205,8 +206,21 @@ sub TableCreateComplex {
         # remove any non ascii word characters
         $DeplState =~ s{ [^a-zA-Z0-9] }{_}msxg;
 
-        # covert to lower case
+        # convert to lower case and remove anything security relevant.
         $Self->{DeplStateColors}->{$DeplState} = lc $Preferences{Color};
+        my %SafeDeplStateColor = $HTMLUtilsObject->Safety(
+            String       => $Self->{DeplStateColors}->{$DeplState},
+            NoApplet     => 1,
+            NoObject     => 1,
+            NoEmbed      => 1,
+            NoSVG        => 1,
+            NoImg        => 1,
+            NoIntSrcLoad => 1,
+            NoExtSrcLoad => 1,
+            NoJavaScript => 1,
+        );
+
+        $Self->{DeplStateColors}->{$DeplState} = $SafeDeplStateColor{String} // '';
     }
 
     # Get the columns config.
