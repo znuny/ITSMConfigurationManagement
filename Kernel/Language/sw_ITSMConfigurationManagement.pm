@@ -286,8 +286,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Angalia majina ya kipekee tu katika tabaka sawa la kipengele cha usanidi (\'Tabaka\') au zote (\'Zote\'), ambayo inamaanisha kila kipengele cha usanidi kilichopo kimejumuishwa wakati nakala pacha zinaangaliwa.';
     $Self->{Translation}->{'Config Items'} = 'Vipengele vya usanidi';
-    $Self->{Translation}->{'Config item (dropdown)'} = '';
-    $Self->{Translation}->{'Config item (multiselect)'} = '';
+    $Self->{Translation}->{'Config item (Dropdown)'} = '';
+    $Self->{Translation}->{'Config item (Multiselect)'} = '';
     $Self->{Translation}->{'Config item add.'} = '';
     $Self->{Translation}->{'Config item edit.'} = '';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =

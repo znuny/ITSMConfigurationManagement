@@ -286,8 +286,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Busque un nombre único solo dentro de la misma clase de ConfigItem (\'clase\') o globalmente (\'global\'), lo que significa que cada ConfigItem existente se tiene en cuenta cuando se buscan duplicados.';
     $Self->{Translation}->{'Config Items'} = 'Elementos de configuración';
-    $Self->{Translation}->{'Config item (dropdown)'} = '';
-    $Self->{Translation}->{'Config item (multiselect)'} = '';
+    $Self->{Translation}->{'Config item (Dropdown)'} = '';
+    $Self->{Translation}->{'Config item (Multiselect)'} = '';
     $Self->{Translation}->{'Config item add.'} = 'Añadir elemento de configuración';
     $Self->{Translation}->{'Config item edit.'} = 'Editar elemento de configuración.';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =

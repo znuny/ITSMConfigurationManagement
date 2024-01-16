@@ -105,6 +105,14 @@ sub EditFieldValueValidate {
     return $Self->next::method(%Param);
 }
 
+sub FieldValueValidate {
+    my ( $Self, %Param ) = @_;
+
+    $Param{DynamicFieldConfig}->{Config}->{PossibleValues} = $Self->PossibleValuesGet(%Param);
+
+    return $Self->next::method(%Param);
+}
+
 sub DisplayValueRender {
     my ( $Self, %Param ) = @_;
 

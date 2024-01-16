@@ -286,8 +286,8 @@ sub Data {
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Egyedi név ellenőrzése kizárólag ugyanabban a konfigurációelem osztályban („osztály”) vagy globálisan („globális”), amely azt jelenti, hogy minden meglévő konfigurációelem figyelembe lesz véve a kettőzések keresésekor.';
     $Self->{Translation}->{'Config Items'} = 'Konfigurációelemek';
-    $Self->{Translation}->{'Config item (dropdown)'} = '';
-    $Self->{Translation}->{'Config item (multiselect)'} = '';
+    $Self->{Translation}->{'Config item (Dropdown)'} = '';
+    $Self->{Translation}->{'Config item (Multiselect)'} = '';
     $Self->{Translation}->{'Config item add.'} = 'Konfigurációelem hozzáadása.';
     $Self->{Translation}->{'Config item edit.'} = 'Konfigurációelem szerkesztése.';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
