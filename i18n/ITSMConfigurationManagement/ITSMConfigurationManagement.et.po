@@ -1167,11 +1167,11 @@ msgid "AlternativeTo"
 msgstr ""
 
 #. SysConfig
-msgid "Config item (dropdown)"
+msgid "Config item (Dropdown)"
 msgstr ""
 
 #. SysConfig
-msgid "Config item (multiselect)"
+msgid "Config item (Multiselect)"
 msgstr ""
 
 #. SysConfig

@@ -1731,7 +1731,7 @@
         <Navigation>Core::DynamicFields::DriverRegistration</Navigation>
         <Value>
             <Hash>
-                <Item Key="DisplayName" Translatable="1">Config item (dropdown)</Item>
+                <Item Key="DisplayName" Translatable="1">Config item (Dropdown)</Item>
                 <Item Key="Module">Kernel::System::DynamicField::Driver::ConfigItemDropdown</Item>
                 <Item Key="ConfigDialog">AdminDynamicFieldConfigItem</Item>
                 <Item Key="Config">
@@ -1746,7 +1746,7 @@
         <Navigation>Core::DynamicFields::DriverRegistration</Navigation>
         <Value>
             <Hash>
-                <Item Key="DisplayName" Translatable="1">Config item (multiselect)</Item>
+                <Item Key="DisplayName" Translatable="1">Config item (Multiselect)</Item>
                 <Item Key="Module">Kernel::System::DynamicField::Driver::ConfigItemMultiselect</Item>
                 <Item Key="ConfigDialog">AdminDynamicFieldConfigItem</Item>
                 <Item Key="Config">
