@@ -38,8 +38,8 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = '管理配置項';
     $Self->{Translation}->{'Change class definition'} = '修改類定義';
+    $Self->{Translation}->{'Config Item Management'} = '管理配置項';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = '定義';
     $Self->{Translation}->{'Change'} = '修改';
@@ -54,9 +54,9 @@ sub Data {
     $Self->{Translation}->{'Last changed'} = '最後修改';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = '配置項';
     $Self->{Translation}->{'Filter for Classes'} = '過濾類';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = '先從列表中選擇類別，然後建立新的配置項。';
+    $Self->{Translation}->{'Config Item'} = '配置項';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '';
@@ -91,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-    $Self->{Translation}->{'Run Search'} = '搜索';
     $Self->{Translation}->{'Also search in previous versions?'} = '同時搜索以前的版本?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
@@ -109,7 +108,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = '';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = '';

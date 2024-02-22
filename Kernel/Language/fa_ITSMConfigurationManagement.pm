@@ -38,8 +38,8 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = 'مدیریت CI';
     $Self->{Translation}->{'Change class definition'} = 'تغییر تعریف کلاس';
+    $Self->{Translation}->{'Config Item Management'} = 'مدیریت CI';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = 'تعریف';
     $Self->{Translation}->{'Change'} = 'تغییر';
@@ -54,9 +54,9 @@ sub Data {
     $Self->{Translation}->{'Last changed'} = 'آخرین تغییر';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = 'آیتم پیکربندی';
     $Self->{Translation}->{'Filter for Classes'} = 'فیلتر برای کلاس‌ها';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'کلاسی را برای ساخت یک آیتم پبکربندی جدید انتخا کنید.';
+    $Self->{Translation}->{'Config Item'} = 'آیتم پیکربندی';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '';
@@ -91,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-    $Self->{Translation}->{'Run Search'} = '';
     $Self->{Translation}->{'Also search in previous versions?'} = 'در ویرایش‌های قبلی هم جستجو انجام شود؟';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
@@ -109,7 +108,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = '';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = '';

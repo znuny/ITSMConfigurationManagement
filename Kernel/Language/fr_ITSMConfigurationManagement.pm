@@ -38,8 +38,8 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = 'Gestion des éléments de configuration';
     $Self->{Translation}->{'Change class definition'} = 'Modifier la définition d\'une classe';
+    $Self->{Translation}->{'Config Item Management'} = 'Gestion des éléments de configuration';
     $Self->{Translation}->{'Config Item Class'} = 'Classe d\'élément de configuration';
     $Self->{Translation}->{'Definition'} = 'Définition';
     $Self->{Translation}->{'Change'} = 'Modifier';
@@ -54,9 +54,9 @@ sub Data {
     $Self->{Translation}->{'Last changed'} = 'Dernières modifications';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = 'Élément de configuration';
     $Self->{Translation}->{'Filter for Classes'} = 'Filtres pour les classes';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Choisissez une classe pour créer un nouvel élément de configuration.';
+    $Self->{Translation}->{'Config Item'} = 'Élément de configuration';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = '';
@@ -91,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-    $Self->{Translation}->{'Run Search'} = 'Lancer la recherche';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Chercher également dans les versions précédentes ?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
@@ -109,7 +108,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = 'Aucun accès à la classe n\'a été donné !';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = 'Vue d\'ensemble: éléments de configuration';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = 'Aucun ID d\'élément de configuration n\'a été donné !';

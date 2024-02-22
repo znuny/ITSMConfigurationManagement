@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2023-03-01 15:27+0000\n"
+"POT-Creation-Date: 2024-02-22 06:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,11 +63,11 @@ msgid "These dynamic fields will be filled with values of the same selected conf
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-msgid "Config Item Management"
+msgid "Change class definition"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-msgid "Change class definition"
+msgid "Config Item Management"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
@@ -111,15 +111,15 @@ msgid "Last changed"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-msgid "Config Item"
-msgstr ""
-
-#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Filter for Classes"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Select a Class from the list to create a new Config Item."
+msgstr ""
+
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
+msgid "Config Item"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
@@ -191,10 +191,6 @@ msgid "A generic ITSM Configuration Item table"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-msgid "Run Search"
-msgstr ""
-
-#. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
 msgid "Also search in previous versions?"
 msgstr ""
 
@@ -244,10 +240,6 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
 msgid "No access to Class is given!"
-msgstr ""
-
-#. Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
-msgid "Overview: ITSM ConfigItem"
 msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm

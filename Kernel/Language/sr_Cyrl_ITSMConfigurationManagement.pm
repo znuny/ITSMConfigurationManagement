@@ -38,8 +38,8 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = 'Управљање конфигурационим ставкама';
     $Self->{Translation}->{'Change class definition'} = 'Дефиниција класе промене';
+    $Self->{Translation}->{'Config Item Management'} = 'Управљање конфигурационим ставкама';
     $Self->{Translation}->{'Config Item Class'} = 'Класа конфигурационе ставке';
     $Self->{Translation}->{'Definition'} = 'Дефиниција';
     $Self->{Translation}->{'Change'} = 'Промени';
@@ -54,9 +54,9 @@ sub Data {
     $Self->{Translation}->{'Last changed'} = 'Задњи пут промењено';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = 'Конфигурациона ставка';
     $Self->{Translation}->{'Filter for Classes'} = 'Филтер за класе';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Изаберите класу из листе ради креирања нове конфигурационе ставке.';
+    $Self->{Translation}->{'Config Item'} = 'Конфигурациона ставка';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'ITSM масовна акција на тикету';
@@ -91,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'Генеричка табела ITSM конфигурационе ставке';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-    $Self->{Translation}->{'Run Search'} = 'Покрени претрагу';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Претражите и у претхотним верзијама?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
@@ -109,7 +108,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = 'Није дат приступ класи!';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = 'Преглед: ITSM конфигурационе ставке';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = 'Није дат ConfigItemID!';

@@ -38,8 +38,8 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = 'Konfigurációelem-menedzsment';
     $Self->{Translation}->{'Change class definition'} = 'Osztály-meghatározás módosítása';
+    $Self->{Translation}->{'Config Item Management'} = 'Konfigurációelem-menedzsment';
     $Self->{Translation}->{'Config Item Class'} = 'Konfigurációelem-osztály';
     $Self->{Translation}->{'Definition'} = 'Meghatározás';
     $Self->{Translation}->{'Change'} = 'Változás';
@@ -54,9 +54,9 @@ sub Data {
     $Self->{Translation}->{'Last changed'} = 'Utolsó módosítás';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = 'Konfigurációelem';
     $Self->{Translation}->{'Filter for Classes'} = 'Szűrő az osztályokhoz';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Válasszon egy osztályt a listából egy új konfigurációelem létrehozásához.';
+    $Self->{Translation}->{'Config Item'} = 'Konfigurációelem';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'ITSM konfigurációelem tömeges művelet';
@@ -91,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = 'Egy általános ITSM konfigurációelem táblázat';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-    $Self->{Translation}->{'Run Search'} = 'Keresés futtatása';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Keressen az előző verziókban is?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
@@ -109,7 +108,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = 'Nincs hozzáférés megadva az osztályhoz!';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = 'Áttekintés: ITSM konfigurációelem';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = 'Nincs konfigurációelem-azonosító megadva!';

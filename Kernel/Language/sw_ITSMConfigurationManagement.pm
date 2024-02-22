@@ -38,8 +38,8 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = 'Usanidi wa usimamizi wa kipengele ';
     $Self->{Translation}->{'Change class definition'} = 'Badili ufafanuzi wa tabaka';
+    $Self->{Translation}->{'Config Item Management'} = 'Usanidi wa usimamizi wa kipengele ';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = 'Ufafanuzi';
     $Self->{Translation}->{'Change'} = 'Badilisha';
@@ -54,9 +54,9 @@ sub Data {
     $Self->{Translation}->{'Last changed'} = 'Mwisho kubadilishwa';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
-    $Self->{Translation}->{'Config Item'} = 'Usanidi wa Kipengele ';
     $Self->{Translation}->{'Filter for Classes'} = 'Chuja kwa ajili ya matabaka';
     $Self->{Translation}->{'Select a Class from the list to create a new Config Item.'} = 'Chagua tabaka kutoka kwenye orodha ya kutengeneza kipengele cha usanidi kipya. ';
+    $Self->{Translation}->{'Config Item'} = 'Usanidi wa Kipengele ';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemBulk.tt
     $Self->{Translation}->{'ITSM ConfigItem Bulk Action'} = 'Vitendo vya wingi vya kipengele cha usanidi cha ITSM';
@@ -91,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'A generic ITSM Configuration Item table'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemSearch.tt
-    $Self->{Translation}->{'Run Search'} = 'Tafuta';
     $Self->{Translation}->{'Also search in previous versions?'} = 'Pia tafuta katika toleo lililopita?';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
@@ -109,7 +108,6 @@ sub Data {
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
     $Self->{Translation}->{'No access to Class is given!'} = '';
-    $Self->{Translation}->{'Overview: ITSM ConfigItem'} = '';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
     $Self->{Translation}->{'No ConfigItemID is given!'} = '';
