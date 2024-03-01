@@ -10,13 +10,14 @@ package Kernel::Output::HTML::FilterElementPost::AgentITSMConfigItemCustomerCIs;
 
 use strict;
 use warnings;
+use utf8;
 
 our @ObjectDependencies = (
     'Kernel::Config',
     'Kernel::Output::HTML::Layout',
     'Kernel::System::Group',
+    'Kernel::System::ITSMConfigItemCustomerCIs',
     'Kernel::System::Web::Request',
-    'Kernel::System::AgentITSMConfigItemCustomerCIs',
 );
 
 use Kernel::System::VariableCheck qw(:all);
@@ -77,20 +78,21 @@ sub Run {
         TicketID => $Param{TicketID},
     );
 
-    if (@ConfigItems) {
-        for my $ConfigItem (@ConfigItems) {
-            $LayoutObject->Block(
-                Name => 'ConfigItems',
-                Data => {
-                    %{$ConfigItem},
-                },
-            );
-        }
-        $Data{ConfigItems} = $LayoutObject->Output(
-            TemplateFile => 'AgentITSMConfigItemCustomerCIsWidget',
-            Data         => \%Data,
+    # Hide ticket zoom widget when no data is available to show.
+    return if !@ConfigItems;
+
+    for my $ConfigItem (@ConfigItems) {
+        $LayoutObject->Block(
+            Name => 'ConfigItems',
+            Data => {
+                %{$ConfigItem},
+            },
         );
     }
+    $Data{ConfigItems} = $LayoutObject->Output(
+        TemplateFile => 'AgentITSMConfigItemCustomerCIsWidget',
+        Data         => \%Data,
+    );
 
     my $InitParameter = $LayoutObject->JSONEncode(
         NoQuotes => 1,
