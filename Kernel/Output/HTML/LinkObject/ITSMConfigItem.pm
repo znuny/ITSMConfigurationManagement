@@ -13,6 +13,7 @@ use strict;
 use warnings;
 
 use Kernel::Output::HTML::Layout;
+use Kernel::System::VariableCheck qw(:all);
 
 our @ObjectDependencies = (
     'Kernel::Config',
@@ -467,9 +468,12 @@ sub TableCreateComplex {
                     }
 
                     # convert to ascii text in case the value contains html
-                    my $Value = $Kernel::OM->Get('Kernel::System::HTMLUtils')->ToAscii(
-                        String => $ExtendedVersionData->{$Column}->{Value},
-                    ) || '';
+                    my $Value = $ExtendedVersionData->{$Column}->{Value} // '';
+                    if ( IsStringWithData($Value) ) {
+                        $Value = $Kernel::OM->Get('Kernel::System::HTMLUtils')->ToAscii(
+                            String => $Value,
+                        ) // '';
+                    }
 
                     # convert all whitespace and newlines to single spaces
                     $Value =~ s{ \s+ }{ }gxms;
