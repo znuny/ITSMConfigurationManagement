@@ -36,7 +36,7 @@ sub Run {
     my $LayoutObject       = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $LogObject          = $Kernel::OM->Get('Kernel::System::Log');
     my $ParamObject        = $Kernel::OM->Get('Kernel::System::Web::Request');
-    my $CIAttachmentObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::Attachment');
+    my $CIAttachmentObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem::CIAttachment');
 
     # check needed stuff
     NEEDED:

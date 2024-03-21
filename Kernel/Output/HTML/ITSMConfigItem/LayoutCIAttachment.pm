@@ -62,7 +62,8 @@ sub OutputStringCreate {
         AttachmentID => $Param{Value},
     );
 
-    my $String = '<a href="' . $LayoutObject->{Baselink} . 'Action=AgentZnuny4OTRSCIAttachment;AttachmentID=' . $Value;
+    my $String
+        = '<a href="' . $LayoutObject->{Baselink} . 'Action=AgentITSMConfigItemAttachment;AttachmentID=' . $Value;
 
     # add session id if needed
     if ( !$LayoutObject->{SessionIDCookie} ) {
