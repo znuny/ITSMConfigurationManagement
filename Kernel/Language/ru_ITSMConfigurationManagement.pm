@@ -278,6 +278,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
+    $Self->{Translation}->{'Add link to config item "%s".'} = '';
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
@@ -354,6 +355,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Определяет, какой тип заявки может повлиять на статус связанной КЕ.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Удалить конфигурационную единицу';
+    $Self->{Translation}->{'Delete link to config item "%s".'} = '';
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Цвет состояния использования';
     $Self->{Translation}->{'Duplicate'} = 'Резерв';

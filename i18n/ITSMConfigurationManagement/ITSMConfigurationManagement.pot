@@ -803,6 +803,10 @@ msgid "Ok"
 msgstr ""
 
 #. SysConfig
+msgid "Add link to config item \"%s\"."
+msgstr ""
+
+#. SysConfig
 msgid "AlternativeTo"
 msgstr ""
 
@@ -992,6 +996,10 @@ msgstr ""
 
 #. SysConfig
 msgid "Delete Configuration Item"
+msgstr ""
+
+#. SysConfig
+msgid "Delete link to config item \"%s\"."
 msgstr ""
 
 #. SysConfig

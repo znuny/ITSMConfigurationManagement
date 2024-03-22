@@ -278,6 +278,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Oui';
 
     # SysConfig
+    $Self->{Translation}->{'Add link to config item "%s".'} = '';
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = 'Éléments de configuration attribués';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Éléments de configuration attribués à un client';
@@ -354,6 +355,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Supprimer un élément de configuration';
+    $Self->{Translation}->{'Delete link to config item "%s".'} = '';
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Couleur de l\'état de déploiement';
     $Self->{Translation}->{'Duplicate'} = 'Dupliquer';
