@@ -1270,3 +1270,11 @@ msgstr ""
 msgid "List of events that are available for generic interface event object type ITSMConfigItem."
 msgstr ""
 
+#. SysConfig
+msgid "Add link to config item \"%s\"."
+msgstr ""
+
+#. SysConfig
+msgid "Delete link to config item \"%s\"."
+msgstr ""
+

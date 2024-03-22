@@ -129,6 +129,9 @@ sub CodeInstall {
         UserID     => 1,
     );
 
+    # adds two new ticket histroy types to the sysconfig
+    $Self->_AddTicketHistoryTypes();
+
     return 1;
 }
 
@@ -179,6 +182,9 @@ sub CodeReinstall {
         FilePrefix => $Self->{FilePrefix},
         UserID     => 1,
     );
+
+    # adds two new ticket histroy types to the sysconfig
+    $Self->_AddTicketHistoryTypes();
 
     return 1;
 }
@@ -400,6 +406,9 @@ sub CodeUpgrade {
     # Convert any Perl definition to YAML
     # This could be moved to a version specific
     $Self->_ConvertPerlDefinitions2YAML();
+
+    # adds two new ticket histroy types to the sysconfig
+    $Self->_AddTicketHistoryTypes();
 
     return 1;
 }
@@ -1759,6 +1768,36 @@ sub _MigrateWebserviceConfigs {
     }
 
     return 1;
+}
+
+sub _AddTicketHistoryTypes {
+    my ( $Self, %Param ) = @_;
+
+    my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
+
+    my %Setting = $SysConfigObject->SettingGet(
+        Name => 'Ticket::Frontend::HistoryTypes###000-Framework',
+    );
+    return if !%Setting;
+
+    return 1 if $Setting{'DefaultValue'}->{'CILinkAdd'} && $Setting{'DefaultValue'}->{'CILinkDelete'};
+
+    $Setting{'DefaultValue'}->{'CILinkAdd'}    = 'Add link to config item "%s".';
+    $Setting{'DefaultValue'}->{'CILinkDelete'} = 'Delete link to config item "%s".';
+
+    my $Success = $SysConfigObject->SettingsSet(
+        UserID   => 1,
+        Comments => 'ITSMConfigurationManagement package setup function: _AddTicketHistoryTypes',
+        Settings => [
+            {
+                Name           => 'Ticket::Frontend::HistoryTypes###000-Framework',
+                EffectiveValue => $Setting{'DefaultValue'},
+                IsValid        => $Setting{'IsValid'},
+            },
+        ],
+    );
+
+    return $Success;
 }
 
 1;

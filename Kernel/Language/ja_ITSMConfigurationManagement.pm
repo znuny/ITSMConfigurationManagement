@@ -276,6 +276,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
+    $Self->{Translation}->{'Add link to config item "%s".'} = '';
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '';
     $Self->{Translation}->{'CIs assigned to customer company'} = '';
@@ -358,6 +359,7 @@ CIクラスのエントリがない場合は、ITSMConfigItem :: Frontend :: Age
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'リンクされたCIのステータスに影響するチケットのタイプを定義します。';
     $Self->{Translation}->{'Delete Configuration Item'} = '構成アイテムを削除';
+    $Self->{Translation}->{'Delete link to config item "%s".'} = '';
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'デプロイ・ステータスのカラー';
     $Self->{Translation}->{'Duplicate'} = 'コピー';

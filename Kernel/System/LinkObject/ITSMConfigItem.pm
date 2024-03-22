@@ -420,6 +420,19 @@ sub LinkAddPost {
         UserID => $Param{UserID},
     );
 
+    # When linking a config item to a ticket: Add a ticket history entry
+    if ( $Object eq 'Ticket' ) {
+
+        my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
+
+        $TicketObject->HistoryAdd(
+            TicketID     => $ID,
+            CreateUserID => $Param{UserID},
+            HistoryType  => 'CILinkAdd',
+            Name         => "\%\%$Param{Key}\%\%$Param{Type}",
+        );
+    }
+
     return 1;
 }
 
@@ -530,6 +543,19 @@ sub LinkDeletePost {
         },
         UserID => $Param{UserID},
     );
+
+    # When unlinking a config item from a ticket: Add a ticket history entry
+    if ( $Object eq 'Ticket' ) {
+
+        my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
+
+        $TicketObject->HistoryAdd(
+            TicketID     => $ID,
+            CreateUserID => $Param{UserID},
+            HistoryType  => 'CILinkDelete',
+            Name         => "\%\%$Param{Key}\%\%$Param{Type}",
+        );
+    }
 
     return 1;
 }

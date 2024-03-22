@@ -276,6 +276,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = '确定';
 
     # SysConfig
+    $Self->{Translation}->{'Add link to config item "%s".'} = '';
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = '已分配的配置项';
     $Self->{Translation}->{'CIs assigned to customer company'} = '已分配给客户单位的配置项';
@@ -352,6 +353,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         '定义哪一类工单可以影响一个链接的配置项的状态。';
     $Self->{Translation}->{'Delete Configuration Item'} = '删除配置项';
+    $Self->{Translation}->{'Delete link to config item "%s".'} = '';
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = '部署状态的颜色';
     $Self->{Translation}->{'Duplicate'} = '复制';

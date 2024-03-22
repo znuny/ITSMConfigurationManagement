@@ -276,6 +276,7 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'У реду';
 
     # SysConfig
+    $Self->{Translation}->{'Add link to config item "%s".'} = '';
     $Self->{Translation}->{'AlternativeTo'} = '';
     $Self->{Translation}->{'Assigned CIs'} = 'Додељене конфигурационе ставке';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Конфигурационе ставке додељене фирми клијента';
@@ -352,6 +353,7 @@ sub Data {
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Одређује који тип тикета може да утиче на статус повезане CI.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Брисање конфигурационе ставке';
+    $Self->{Translation}->{'Delete link to config item "%s".'} = '';
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Боја статуса распоређивања';
     $Self->{Translation}->{'Duplicate'} = 'Дупликат';
