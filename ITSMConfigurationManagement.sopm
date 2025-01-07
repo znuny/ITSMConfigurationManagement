@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>7.1.1</Version>
+    <Version>7.1.2</Version>
     <Framework>7.1.x</Framework>
     <PackageRequired Version="7.1.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,7 @@
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="7.1.2" Date="2025-01-07 16:36:57 +0100">Text area in config item definition view (subaction DefinitionView in AdminITSMConfigItem) is now readonly.</ChangeLog>
     <ChangeLog Version="7.1.1" Date="2024-08-30 09:18:45 +0200">Initial release for Znuny 7.1.</ChangeLog>
     <ChangeLog Version="7.0.2" Date="2024-05-16 13:30:05 +0200">- Fixed configuration item attachment handling.&#13;
 - Added filter for related configuration items for the ticket detail view and ticket create screens.&#13;
