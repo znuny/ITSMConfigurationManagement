@@ -159,9 +159,7 @@
                     <div class="field-wrapper">
                         <label>[% Translate("Definition") | html %]</label>
                         <div class="Field">
-                            <textarea name="Definition" id="Definition" rows="30" cols="80" wrap="off">
-                                [% Data.DefinitionString %]
-                            </textarea>
+                            <textarea name="Definition" id="Definition" rows="30" cols="80" wrap="off" readonly="readonly">[% Data.DefinitionString %]</textarea>
                         </div>
                     </div>
                 </fieldset>
