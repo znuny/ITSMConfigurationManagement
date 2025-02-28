@@ -19,8 +19,6 @@ our @ObjectDependencies = (
     'Kernel::System::Web::Request',
 );
 
-use Kernel::System::VariableCheck qw(:all);
-
 sub new {
     my ( $Type, %Param ) = @_;
 
@@ -119,6 +117,37 @@ sub Run {
                 },
             );
         }
+    }
+    elsif ( $Self->{Subaction} eq 'LoadWidget' ) {
+        my @ConfigItems = $ITSMConfigItemCustomerCIsObject->GetPossibleCustomerCIs(
+            TicketID => $Param{TicketID},
+        );
+
+        for my $ConfigItem (@ConfigItems) {
+            $LayoutObject->Block(
+                Name => 'ConfigItems',
+                Data => {
+                    %{$ConfigItem},
+                },
+            );
+        }
+
+        if ( !scalar @ConfigItems ) {
+            $LayoutObject->Block(
+                Name => 'ConfigItemsNone',
+            );
+        }
+
+        my $WidgetTicketHTML = $LayoutObject->Output(
+            TemplateFile => 'AgentITSMConfigItemCustomerCIsWidget',
+        );
+
+        return $LayoutObject->Attachment(
+            ContentType => 'text/html',
+            Content     => $WidgetTicketHTML // ' ',
+            Type        => 'inline',
+            NoCache     => 1,
+        );
     }
 
     return $LayoutObject->Attachment(

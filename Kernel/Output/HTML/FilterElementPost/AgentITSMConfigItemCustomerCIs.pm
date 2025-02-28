@@ -16,7 +16,6 @@ our @ObjectDependencies = (
     'Kernel::Output::HTML::Layout',
     'Kernel::System::Group',
     'Kernel::System::Web::Request',
-    'Kernel::System::AgentITSMConfigItemCustomerCIs',
 );
 
 use Kernel::System::VariableCheck qw(:all);
@@ -33,11 +32,10 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $ConfigObject                    = $Kernel::OM->Get('Kernel::Config');
-    my $GroupObject                     = $Kernel::OM->Get('Kernel::System::Group');
-    my $LayoutObject                    = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
-    my $ParamObject                     = $Kernel::OM->Get('Kernel::System::Web::Request');
-    my $ITSMConfigItemCustomerCIsObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItemCustomerCIs');
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $GroupObject  = $Kernel::OM->Get('Kernel::System::Group');
+    my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+    my $ParamObject  = $Kernel::OM->Get('Kernel::System::Web::Request');
 
     my $Config = $ConfigObject->Get('AgentITSMConfigItemCustomerCIsWidget');
 
@@ -63,36 +61,25 @@ sub Run {
 
     $Param{TicketID} = $ParamObject->GetParam( Param => 'TicketID' ) || '';
 
-    my %Data;
-
     $LayoutObject->Block(
         Name => 'Widget',
+        Data => {
+            CSSStyle => $LayoutObject->{Action} ne 'AgentTicketZoom' ? 'display:none;' : '',
+        }
     );
 
-    $Data{Widget} = $LayoutObject->Output(
+    my $WidgetHTML = $LayoutObject->Output(
         TemplateFile => 'AgentITSMConfigItemCustomerCIsWidget',
     );
 
-    my @ConfigItems = $ITSMConfigItemCustomerCIsObject->GetPossibleCustomerCIs(
+    my $Data = {
+        Widget   => $WidgetHTML,
         TicketID => $Param{TicketID},
-    );
-
-    for my $ConfigItem (@ConfigItems) {
-        $LayoutObject->Block(
-            Name => 'ConfigItems',
-            Data => {
-                %{$ConfigItem},
-            },
-        );
-    }
-    $Data{ConfigItems} = $LayoutObject->Output(
-        TemplateFile => 'AgentITSMConfigItemCustomerCIsWidget',
-        Data         => \%Data,
-    );
+    };
 
     my $InitParameter = $LayoutObject->JSONEncode(
         NoQuotes => 1,
-        Data     => \%Data,
+        Data     => $Data,
     );
 
     my $JSBlock = <<"JS_BLOCK";

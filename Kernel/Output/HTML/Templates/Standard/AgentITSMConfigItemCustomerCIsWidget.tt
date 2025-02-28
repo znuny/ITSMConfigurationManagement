@@ -7,11 +7,14 @@
 # --
 
 [% RenderBlockStart("Widget") %]
-<div class="WidgetSimple Hidden" id="AgentITSMConfigItemCustomerCIsWidget">
-    <div class="Header">
+<div class="WidgetSimple" id="AgentITSMConfigItemCustomerCIsWidget" style="[% Data.CSSStyle | html %]">
+    <div class="WidgetIsLoading" style="background:white;">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+    <div class="Header Hidden">
         <h2>[% Translate("Customer related config items") | html %]</h2>
     </div>
-    <div class="Content">
+    <div class="Content Hidden">
         <fieldset id='AgentITSMConfigItemCustomerCIs' class="TableLike FixedLabelSmall Narrow">
             [% Translate("none") | html %]
          </fieldset>
@@ -28,3 +31,6 @@
             </span>
             <div class="Clear"></div>
 [% RenderBlockEnd("ConfigItems") %]
+[% RenderBlockStart("ConfigItemsNone") %]
+[% Translate("none") | html %]
+[% RenderBlockEnd("ConfigItemsNone") %]

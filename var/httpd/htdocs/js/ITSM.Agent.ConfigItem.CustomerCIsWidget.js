@@ -27,14 +27,36 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
 
     TargetNS.Init = function (Param) {
         TargetNS.CreateWidget(Param);
-        TargetNS.SetEventHandler();
 
         return true;
     }
 
+    TargetNS.ShowWidgetLoading = function ($Widget) {
+        $Widget.show();
+        $Widget.children('.WidgetIsLoading').show();
+        $Widget.children('.Header').addClass('Hidden');
+        $Widget.children('.Content').addClass('Hidden');
+        $Widget.fadeIn();
+    }
+
+    TargetNS.ShowWidgetResults = function ($Widget) {
+        $Widget.hide();
+        $Widget.children('.WidgetIsLoading').hide();
+        $Widget.children('.Header.Hidden').removeClass('Hidden');
+        $Widget.children('.Content.Hidden').removeClass('Hidden');
+        $Widget.fadeIn();
+    }
+
     TargetNS.CreateWidget = function (Param) {
         var Action = Core.Config.Get('Action'),
-            ConfigItemIDs = '';
+            ConfigItemIDs = '',
+            URL = Core.Config.Get('Baselink') + TargetNS.SerializeData({
+                Action: 'AgentITSMConfigItemCustomerCIsWidget',
+                Subaction: 'LoadWidget',
+                TicketID: Param.TicketID,
+            }),
+            $Element,
+            $WidgetElement;
 
         // check if widget exists
         if ($('#AgentITSMConfigItemCustomerCIsWidget').length > 0) return;
@@ -42,24 +64,50 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
         // append widget to sidebar
         $('.SidebarColumn').append(Param.Widget);
 
-        if (Param.ConfigItems) {
-            $('#AgentITSMConfigItemCustomerCIs').empty();
-            $('#AgentITSMConfigItemCustomerCIs').append(Param.ConfigItems);
+        $Element = $('#AgentITSMConfigItemCustomerCIs');
+        $WidgetElement = $('#AgentITSMConfigItemCustomerCIsWidget');
+
+        if ($Element.length === 0){
+            TargetNS.ShowWidgetResults($WidgetElement);
+            return true;
         }
 
-        if (Action == 'AgentTicketPhone' || Action == 'AgentTicketEmail') {
-            $('form[name=compose]').append('<input type="hidden" id="ITSMConfigItemCustomerCIList" name="ITSMConfigItemCustomerCIList" />');
+        TargetNS.ShowWidgetLoading($WidgetElement);
 
-            $.each($(".ConfigItemLink:checked"), function() {
-                if (ConfigItemIDs) {
-                    ConfigItemIDs += ',';
+        Core.AJAX.ContentUpdate($Element, URL, function() {
+
+            // wait for content update
+            $($Element).find("a.AsPopup").on('click', function () {
+                var Matches,
+                    PopupType = 'TicketAction';
+
+                Matches = $(this).attr('class').match(/PopupType_(\w+)/);
+                if (Matches) {
+                    PopupType = Matches[1];
                 }
-                ConfigItemIDs += $(this).val();
+
+                Core.UI.Popup.OpenPopup($(this).attr('href'), PopupType);
+                return false;
             });
 
-            $('#ITSMConfigItemCustomerCIList').val(ConfigItemIDs);
-        }
+            if (Action == 'AgentTicketPhone' || Action == 'AgentTicketEmail') {
+                $('form[name=compose]').append('<input type="hidden" id="ITSMConfigItemCustomerCIList" name="ITSMConfigItemCustomerCIList" />');
 
+                    $.each($(".ConfigItemLink:checked"), function() {
+                        if (ConfigItemIDs) {
+                            ConfigItemIDs += ',';
+                        }
+                        ConfigItemIDs += $(this).val();
+                    });
+
+                    $('#ITSMConfigItemCustomerCIList').val(ConfigItemIDs);
+                }
+
+            TargetNS.ShowWidgetResults($WidgetElement);
+            Core.UI.InitWidgetActionToggle();
+            LastCustomerUserCount = 1;
+            TargetNS.SetEventHandler();
+        });
         return true;
     };
 
@@ -99,7 +147,6 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
                     'json'
                 );
             });
-            $('#AgentITSMConfigItemCustomerCIsWidget').show();
         }
         else {
             if (!GetCustomerInfoHandler) {
@@ -145,6 +192,9 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
             CustomerUserID: CustomerUserID,
             CustomerID:     CustomerID,
         };
+        var $WidgetObj = $('#AgentITSMConfigItemCustomerCIsWidget');
+
+        TargetNS.ShowWidgetLoading($WidgetObj);
 
         Core.AJAX.FunctionCall(
             Core.Config.Get('CGIHandle'),
@@ -155,12 +205,11 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
                 if (Param.ConfigItems) {
                     $('#AgentITSMConfigItemCustomerCIs').append(Param.ConfigItems);
                     TargetNS.SetEventHandler();
-                    $('#AgentITSMConfigItemCustomerCIsWidget').show();
                 }
                 else {
-                    $('#AgentITSMConfigItemCustomerCIsWidget').hide();
                     $('#AgentITSMConfigItemCustomerCIs').append(Core.Language.Translate('none'));
                 }
+                TargetNS.ShowWidgetResults($WidgetObj);
             },
             'json'
         );
@@ -185,6 +234,21 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
             UpdateCustomerCIsOnRemovalOfLastCustomerUser,
             1000
         );
+    }
+
+    // TODO check: maybe better to load Znuny.App.js into AgentTicketZoom/AgentTicketPhone/AgentTicketEmail somehow?
+    // But then, something else can also load it with other priority (like 099-ZnunyMigrator), that's why i did
+    // not go in that direction, rather just copied this function
+
+    TargetNS.SerializeData = function (Data) {
+
+        var QueryString = '';
+
+        $.each(Data, function (Key, Value) {
+            QueryString += encodeURIComponent(Key) + '=' + encodeURIComponent(Value) + ';';
+        });
+
+        return QueryString;
     }
 
     return TargetNS;
