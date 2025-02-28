@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>6.5.3</Version>
+    <Version>6.5.4</Version>
     <Framework>6.5.x</Framework>
     <PackageRequired Version="6.5.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,8 @@
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="6.5.4" Date="2025-02-28 11:47:08 +0100">- Fixed form ID validation for config item attachments.&#13;
+- Changed widget "AgentITSMConfigItemCustomerCIs" data loading to asynchronous method.</ChangeLog>
     <ChangeLog Version="6.5.3" Date="2024-05-16 13:33:22 +0200">- Fixed configuration item attachment handling.&#13;
 - Added filter for related configuration items for the ticket detail view and ticket create screens.&#13;
 - Added variable check to prevent not needed log file entries.&#13;
