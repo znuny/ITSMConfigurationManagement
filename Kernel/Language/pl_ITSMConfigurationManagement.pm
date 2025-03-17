@@ -107,32 +107,32 @@ sub Data {
     $Self->{Translation}->{'Property'} = 'Właściwość';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
-    $Self->{Translation}->{'No access to Class is given!'} = '';
+    $Self->{Translation}->{'No access to Class is given!'} = 'Nie udzielono dostępu do klasy!';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemBulk.pm
-    $Self->{Translation}->{'No ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'You need at least one selected Configuration Item!'} = '';
+    $Self->{Translation}->{'No ConfigItemID is given!'} = 'Nie określono ID dla elementu konfiguracji!';
+    $Self->{Translation}->{'You need at least one selected Configuration Item!'} = 'Potrzebny jest co najmniej jeden wybrany element konfiguracji!';
     $Self->{Translation}->{'You don\'t have write access to this configuration item: %s.'} =
         'Nie masz prawa zapisu do tego elementu konfiguracji: %s.';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemDelete.pm
-    $Self->{Translation}->{'Config item "%s" not found in database!'} = '';
-    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = '';
-    $Self->{Translation}->{'No version found for ConfigItemID %s!'} = '';
+    $Self->{Translation}->{'Config item "%s" not found in database!'} = 'Element konfiguracji "%s" nie znaleziony w bazie danych!';
+    $Self->{Translation}->{'Was not able to delete the configitem ID %s!'} = 'Nie można było usunąć elementu konfiguracji o identyfikatorze %s!';
+    $Self->{Translation}->{'No version found for ConfigItemID %s!'} = 'Nie znaleziono wersji dla elementu konfiguracji o identyfikatorze %s!';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemEdit.pm
-    $Self->{Translation}->{'No ConfigItemID, DuplicateID or ClassID is given!'} = '';
-    $Self->{Translation}->{'No access is given!'} = '';
-    $Self->{Translation}->{'No definition was defined for class %s!'} = '';
+    $Self->{Translation}->{'No ConfigItemID, DuplicateID or ClassID is given!'} = 'Nie określono ID elementu konfiguracji, zduplikowanego ID lub ID klasy!';
+    $Self->{Translation}->{'No access is given!'} = 'Nie udzielono dostępu!';
+    $Self->{Translation}->{'No definition was defined for class %s!'} = 'Brak definicji dla klasy %s!';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItemHistory.pm
-    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = '';
-    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = '';
-    $Self->{Translation}->{'New ConfigItem (ID=%s)'} = '';
+    $Self->{Translation}->{'Can\'t show history, no ConfigItemID is given!'} = 'Nie można wyświetlić historii, nie podano ID elementu konfiguracji!';
+    $Self->{Translation}->{'Can\'t show history, no access rights given!'} = 'Nie można wyświetlić historii, nie udzielono prawa dostępu!';
+    $Self->{Translation}->{'New ConfigItem (ID=%s)'} = 'Nowy element konfiguracji (ID=%s)';
     $Self->{Translation}->{'New version (ID=%s)'} = 'Nowa wersja (ID=%s)';
-    $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = '';
-    $Self->{Translation}->{'Incident state updated (new=%s, old=%s)'} = '';
-    $Self->{Translation}->{'ConfigItem (ID=%s) deleted'} = '';
+    $Self->{Translation}->{'Deployment state updated (new=%s, old=%s)'} = 'Zaktualizowano stan wdrożenia (nowy=%s, stary=%s)';
+    $Self->{Translation}->{'Incident state updated (new=%s, old=%s)'} = 'Zaktualizowano stan zdarzenia (nowy=%s, stary=%s)';
+    $Self->{Translation}->{'ConfigItem (ID=%s) deleted'} = 'Element konfiguracji (ID=%s) usunięty';
     $Self->{Translation}->{'Link to %s (type=%s) added'} = 'Łącze do %s (typ=%s) dodane';
     $Self->{Translation}->{'Link to %s (type=%s) deleted'} = 'Łącze do %s (typ=%s) usunięte';
     $Self->{Translation}->{'ConfigItem definition updated (ID=%s)'} = '';
