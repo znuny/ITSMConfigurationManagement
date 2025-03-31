@@ -1667,6 +1667,15 @@
             </Array>
         </Value>
     </Setting>
+    <Setting Name="Loader::Agent::CommonCSS###999-AgentITSMConfigItemCustomerCIs" Required="0" Valid="1">
+        <Description Translatable="1">List of CSS files to always be loaded for the agent interface.</Description>
+        <Navigation>Frontend::Base::Loader</Navigation>
+        <Value>
+            <Array>
+                <Item>ITSM.Agent.ConfigItem.CustomerCIsWidget.css</Item>
+            </Array>
+        </Value>
+    </Setting>
     <Setting Name="Ticket::EventModulePost###999-ITSMConfigItemCustomerCIs" Required="0" Valid="1">
         <Description Translatable="1">Event Module that links a ConfigItem.</Description>
         <Navigation>Core::Event::Ticket</Navigation>
