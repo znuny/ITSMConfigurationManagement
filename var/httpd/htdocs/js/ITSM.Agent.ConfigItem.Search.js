@@ -456,7 +456,7 @@ ITSM.Agent.ConfigItem.Search = (function (TargetNS) {
         Core.AJAX.ContentUpdate($('#AJAXUpdate'), URL, function() {
             var ITSMSearchProfileAttributes = Core.Config.Get('ITSMSearchProfileAttributes') || [];
             $.each(ITSMSearchProfileAttributes, function(Idx, Attribute) {
-                ITSM.Agent.ConfigItem.Search.SearchAttributeAdd(Core.App.EscapeSelector(Attribute));
+                ITSM.Agent.ConfigItem.Search.SearchAttributeAdd(Attribute);
                 ITSM.Agent.ConfigItem.Search.AdditionalAttributeSelectionRebuild();
             });
 
