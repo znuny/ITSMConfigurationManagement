@@ -911,30 +911,6 @@ sub _CheckValue {
             };
         }
     }
-    elsif ( $Param{Input}->{Type} eq 'Customer' ) {
-
-        # run Customer validations
-        if ( !$Self->ValidateInputCustomer(%Param) ) {
-            return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
-                ErrorMessage =>
-                    "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
-                    . " is not a valid customer!",
-            };
-        }
-    }
-    elsif ( $Param{Input}->{Type} eq 'CustomerCompany' ) {
-
-        # run CustomerCompany validations
-        if ( !$Self->ValidateInputCustomerCompany(%Param) ) {
-            return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
-                ErrorMessage =>
-                    "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
-                    . " is not a valid customer company!",
-            };
-        }
-    }
     elsif ( $Param{Input}->{Type} eq 'Integer' ) {
 
         # run Integer validations
@@ -950,7 +926,7 @@ sub _CheckValue {
     elsif ( $Param{Input}->{Type} eq 'GeneralCatalog' ) {
 
         # run General Catalog validations
-        if ( !$Self->ValidateInputGeneralCatalog(%Param) ) {
+        if ( !$Self->ValidateInputGeneralCatalog( %Param, Valid => 0 ) ) {
             return {
                 ErrorCode => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
