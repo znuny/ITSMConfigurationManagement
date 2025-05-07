@@ -336,9 +336,14 @@ sub ValidateInputGeneralCatalog {
 
     my $Value = $Param{Value};
 
+    if ( !defined $Param{Valid} ) {
+        $Param{Valid} = 1;
+    }
+
     # get the values for the General catalog class
     my $ItemList = $Kernel::OM->Get('Kernel::System::GeneralCatalog')->ItemList(
         Class => $Param{Input}->{Class},
+        Valid => $Param{Valid},
     );
 
     # create a lokup list
