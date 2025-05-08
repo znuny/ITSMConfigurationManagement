@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>6.5.4</Version>
+    <Version>6.5.5</Version>
     <Framework>6.5.x</Framework>
     <PackageRequired Version="6.5.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,8 @@
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="6.5.5" Date="2025-05-08 08:33:58 +0200">Removed ValidateInputCustomer and ValidateInputCustomerCompany if you use ConfigItemSearch. Also added optional Parameter Valid for ValidateInputGeneralCatalog -&gt; GeneralCatalog-&gt;ItemList(), to search for invalid Items.
+Deployment states will not be reset anymore on package reinstallation.</ChangeLog>
     <ChangeLog Version="6.5.4" Date="2025-02-28 11:47:08 +0100">- Fixed form ID validation for config item attachments.&#13;
 - Changed widget "AgentITSMConfigItemCustomerCIs" data loading to asynchronous method.</ChangeLog>
     <ChangeLog Version="6.5.3" Date="2024-05-16 13:33:22 +0200">- Fixed configuration item attachment handling.&#13;
