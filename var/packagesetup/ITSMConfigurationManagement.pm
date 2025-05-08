@@ -169,7 +169,8 @@ sub CodeReinstall {
     $Self->_UpdateDynamicFieldConfigDeplStateIDs();
 
     # set preferences for some configuration items
-    $Self->_SetPreferences();
+    # Issue 55: Don't reset deployment state preferences.
+    # $Self->_SetPreferences();
 
     # set default permission group
     $Self->_SetDefaultPermission();
