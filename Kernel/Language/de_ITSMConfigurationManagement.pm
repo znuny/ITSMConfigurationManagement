@@ -394,7 +394,7 @@ sub Data {
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
         'Parameter für die Farben der Verwendungsstatus in den persönlichen Einstellungen im Agenten-Interface.';
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
-        'Parameter für die zugriffsberechtigte Gruppe der General-Katalog-Attribute.';
+        'Parameter für die Beispiel Zugriffsberechtigungs Gruppe der General Katalog-Attribute.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         'Parameter für die Seiten, in denen Configuration Items angezeigt werden.';
     $Self->{Translation}->{'Permission Group'} = 'Berechtigungsgruppe';

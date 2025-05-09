@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
 "PO-Revision-Date: 2025-05-06 19:52+0000\n"
 "Last-Translator: Hog Duske <hog.duske@dusketech.de>\n"
-"Language-Team: German <https://translations.znuny.org/projects/znuny/"
-"itsmconfigurationmanagement/de/>\n"
+"Language-Team: German <https://translations.znuny.org/projects/znuny/itsmconfigurationmanagement/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -975,9 +974,7 @@ msgstr "Parameter für die Farben der Verwendungsstatus in den persönlichen Ein
 
 #. SysConfig
 msgid "Parameters for the example permission groups of the general catalog attributes."
-msgstr ""
-"Parameter für die Beispiel Zugriffsberechtigungs Gruppe der General Katalog-"
-"Attribute."
+msgstr "Parameter für die Beispiel Zugriffsberechtigungs Gruppe der General Katalog-Attribute."
 
 #. SysConfig
 msgid "Parameters for the pages (in which the configuration items are shown)."
@@ -1290,3 +1287,4 @@ msgstr ""
 #. SysConfig
 msgid "Filters the customer config items by depoyment states into the customer config item widget."
 msgstr ""
+
