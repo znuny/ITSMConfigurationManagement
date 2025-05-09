@@ -396,10 +396,10 @@ sub Data {
     $Self->{Translation}->{'Parameters for the deployment states in the preferences view of the agent interface.'} =
         '';
     $Self->{Translation}->{'Parameters for the example permission groups of the general catalog attributes.'} =
-        'Parametry skupiny pro příklad oprávnění obecných atributů katalogu';
+        'Parametry skupiny pro příklad oprávnění obecných atributů katalogu.';
     $Self->{Translation}->{'Parameters for the pages (in which the configuration items are shown).'} =
         '';
-    $Self->{Translation}->{'Permission Group'} = '';
+    $Self->{Translation}->{'Permission Group'} = 'Oprávnění skupiny';
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
         '';
     $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
