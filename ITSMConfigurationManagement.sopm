@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>7.1.4</Version>
+    <Version>7.1.5</Version>
     <Framework>7.1.x</Framework>
     <PackageRequired Version="7.1.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,9 @@
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="7.1.5" Date="2025-05-21 10:41:59 +0200">- Removed ValidateInputCustomer and ValidateInputCustomerCompany if you use ConfigItemSearch. Also added optional Parameter Valid for ValidateInputGeneralCatalog -&gt; GeneralCatalog-&gt;ItemList(), to search for invalid Items.
+- Updated translation files.
+- Deployment states will not be reset anymore on package reinstallation.</ChangeLog>
     <ChangeLog Version="7.1.4" Date="2025-04-03 11:22:56 +0200">Fixed Bug - Keys saved with a '.' in the value cannot load when saved in a search profile. The selector has been escaped twice.</ChangeLog>
     <ChangeLog Version="7.1.3" Date="2025-03-31 16:06:06 +0200">Changed widget "AgentITSMConfigItemCustomerCIs" data loading to asynchronous method.</ChangeLog>
     <ChangeLog Version="7.1.2" Date="2025-01-07 16:36:57 +0100">Text area in config item definition view (subaction DefinitionView in AdminITSMConfigItem) is now readonly.</ChangeLog>
