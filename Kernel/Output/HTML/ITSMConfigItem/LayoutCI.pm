@@ -11,6 +11,7 @@ package Kernel::Output::HTML::ITSMConfigItem::LayoutCI;
 
 use strict;
 use warnings;
+use utf8;
 
 use Kernel::System::VariableCheck qw(:all);
 
@@ -43,7 +44,7 @@ create an object
 sub new {
     my ( $Type, %Param ) = @_;
 
-    #allocate new hash for object
+    # allocate new hash for object
     my $Self = {};
     bless( $Self, $Type );
 
@@ -93,7 +94,6 @@ sub FormDataGet {
     my $LogObject   = $Kernel::OM->Get('Kernel::System::Log');
     my $ParamObject = $Kernel::OM->Get('Kernel::System::Web::Request');
 
-    # check needed stuff
     NEEDED:
     for my $Needed (qw(Key Item)) {
 
@@ -108,26 +108,26 @@ sub FormDataGet {
 
     my %FormData;
 
-    #get selected CIClass
+    # get selected CIClass
     $FormData{Value} = $ParamObject->GetParam( Param => $Param{Key} );
 
-    #check search button..
+    # check search button..
     if ( $ParamObject->GetParam( Param => $Param{Key} . '::ButtonSearch' ) ) {
         $Param{Item}->{Form}->{ $Param{Key} }->{Search} = $ParamObject->GetParam( Param => $Param{Key} . '::Search' );
     }
 
-    #check select button
+    # check select button
     elsif ( $ParamObject->GetParam( Param => $Param{Key} . '::ButtonSelect' ) ) {
         $FormData{Value} = $ParamObject->GetParam( Param => $Param{Key} . '::Select' );
     }
 
-    #check clear button
+    # check clear button
     elsif ( $ParamObject->GetParam( Param => $Param{Key} . '::ButtonClear' ) ) {
         $FormData{Value} = '';
     }
     else {
 
-        #reset value if search field is empty
+        # reset value if search field is empty
         if (
             !$ParamObject->GetParam( Param => $Param{Key} . '::Search' )
             && defined $FormData{Value}
@@ -136,7 +136,7 @@ sub FormDataGet {
             $FormData{Value} = '';
         }
 
-        #check required option
+        # check required option
         if ( $Param{Item}->{Input}->{Required} && !$FormData{Value} ) {
             $Param{Item}->{Form}->{ $Param{Key} }->{Invalid} = 1;
             $FormData{Invalid} = 1;
@@ -168,7 +168,6 @@ sub InputCreate {
     my $LanguageObject       = $Kernel::OM->Get('Kernel::Language');
     my $ConfigObject         = $Kernel::OM->Get('Kernel::Config');
 
-    # check needed stuff
     NEEDED:
     for my $Needed (qw(Key Item)) {
 
@@ -278,7 +277,7 @@ sub InputCreate {
         # build search result presentation
         if ( %CISearchList && scalar( keys %CISearchList ) > 1 ) {
 
-            #create option list
+            # create option list
             $StringOption = $LayoutObject->BuildSelection(
                 Name  => $Param{Key} . '::Select',
                 Data  => \%CISearchList,
@@ -306,7 +305,7 @@ sub InputCreate {
                 $CIName = $CIVersionDataRef->{Name} . " (" . $CIVersionDataRef->{Number} . ")";
             }
 
-            #transform ascii to html
+            # transform ascii to html
             $Search = $LayoutObject->Ascii2Html(
                 Text           => $CIName || '',
                 HTMLResultMode => 1,
@@ -327,7 +326,7 @@ sub InputCreate {
             $CIName = $CIVersionDataRef->{Name} . " (" . $CIVersionDataRef->{Number} . ")";
         }
 
-        #transform ascii to html
+        # transform ascii to html
         $Search = $LayoutObject->Ascii2Html(
             Text           => $CIName || '',
             HTMLResultMode => 1,
@@ -346,13 +345,17 @@ sub InputCreate {
         . '<br>'
         . $StringOption
         . $StringSelect
-        . '<input class="button" type="submit" name="'
+        . '<input class="button btn-cancel-ghost" type="submit" name="'
         . $Param{Key}
         . '::ButtonSearch" value="'
         . $LanguageObject->Translate("Search") . '">';
 
     if ($Search) {
-        $String .= '&nbsp;' . '<input class="button" type="submit" name="' . $Param{Key} . '::ButtonClear" value="'
+        $String
+            .= '&nbsp;'
+            . '<input class="button btn-cancel-ghost" type="submit" name="'
+            . $Param{Key}
+            . '::ButtonClear" value="'
             . $LanguageObject->Translate("Clear") . '">';
     }
 
@@ -378,7 +381,6 @@ sub SearchFormDataGet {
     my $ParamObject          = $Kernel::OM->Get('Kernel::System::Web::Request');
     my $ITSMConfigItemObject = $Kernel::OM->Get('Kernel::System::ITSMConfigItem');
 
-    # check needed stuff
     NEEDED:
     for my $Needed (qw(Key Item)) {
 
@@ -490,7 +492,6 @@ sub SearchInputCreate {
 
     my $LogObject = $Kernel::OM->Get('Kernel::System::Log');
 
-    # check needed stuff
     NEEDED:
     for my $Needed (qw(Key Item)) {
 
@@ -506,7 +507,7 @@ sub SearchInputCreate {
     my $InputString = '';
 
     if ( $Param{Item}->{Input}->{SearchInputType} && $Param{Item}->{Input}->{SearchInputType} eq 'Pattern' ) {
-        my $Value = $Param{Value};
+        my $Value = '';
         if ( ref( $Param{Value} ) eq 'ARRAY' ) {
             for my $ItemValue ( @{ $Param{Value} } ) {
                 if ($Value) {
