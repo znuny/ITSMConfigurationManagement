@@ -947,6 +947,339 @@
             </Array>
         </Value>
     </Setting>
+
+    <!-- AgentITSMConfigItemSearch Defaults Class: Computer -->
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###Vendor" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###Model" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###Description" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###Type" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###CustomerID" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###Owner" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###SerialNumber" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###FQDN" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###WarrantyExpirationDate" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###InstallDate" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Computer###Note" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+
+    <!-- AgentITSMConfigItemSearch Defaults Class: Hardware -->
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###Vendor" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###Model" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###Description" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###Type" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###CustomerID" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###Owner" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###SerialNumber" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###WarrantyExpirationDate" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###InstallDate" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Hardware###Note" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+
+    <!-- AgentITSMConfigItemSearch Defaults Class: Location -->
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Type" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###CustomerID" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Owner" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Phone1" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Phone2" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Fax" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###E-Mail" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Address" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Location###Note" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+
+    <!-- AgentITSMConfigItemSearch Defaults Class: Network -->
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Network###Description" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Network###Type" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Network###CustomerID" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Network###Owner" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Network###NetworkAddress" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Network###Note" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+
+    <!-- AgentITSMConfigItemSearch Defaults Class: Software -->
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###Vendor" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###Version" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###Description" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###Type" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###CustomerID" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###Owner" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###SerialNumber" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###LicenceType" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###LicenceKey" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+    <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###Defaults###Software###Note" Required="0" Valid="0">
+        <Description Translatable="1">Defines the default search attribute for CI search screen.</Description>
+        <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
+        <Value>
+            <Item ValueType="String">***</Item>
+        </Value>
+    </Setting>
+
     <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemSearch###SearchCSVData" Required="1" Valid="1">
         <Description Translatable="1">Data used to export the search result in CSV format.</Description>
         <Navigation>Frontend::Agent::View::ITSMConfigItemSearch</Navigation>
