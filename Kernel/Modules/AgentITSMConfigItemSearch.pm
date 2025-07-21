@@ -234,6 +234,35 @@ sub Run {
             UserLogin => $Self->{UserLogin},
         );
 
+        my $Class = $ClassList->{$ClassID};
+
+        # If no profile is used, set default params of default attributes
+        if ( !$Self->{Profile} && $Self->{Config}->{Defaults}->{$Class} ) {
+
+            KEY:
+            for my $Key ( sort keys %{ $Self->{Config}->{Defaults}->{$Class} } ) {
+
+                # Skip if the default value is empty
+                next KEY if !$Self->{Config}->{Defaults}->{$Class}->{$Key};
+
+                # Get the attribute definition
+                my ($AttributeDefinition) = grep { $_->{Key} eq $Key } @{ $XMLDefinition->{DefinitionRef} };
+
+                # Skip if the attribute definition is empty
+                next KEY if !$AttributeDefinition;
+
+                # If the attribute is a selection type, we need to pass an array reference
+                if ( $AttributeDefinition->{Input}->{Type} =~ /^(Type|GeneralCatalog|CustomerCompany)$/ ) {
+                    $GetParam{$Key} = [ $Self->{Config}->{Defaults}->{$Class}->{$Key} ];
+                }
+
+                # Otherwise, we can pass the value directly
+                else {
+                    $GetParam{$Key} = $Self->{Config}->{Defaults}->{$Class}->{$Key};
+                }
+            }
+        }
+
         # get attributes to include in attributes string
         if ( $XMLDefinition->{Definition} ) {
             $Self->_XMLSearchAttributesGet(
