@@ -2,29 +2,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-07-22 09:14+0000\n"
+"Last-Translator: Spyros <spyros.veronikis@gmail.com>\n"
+"Language-Team: Greek <https://translations.znuny.org/projects/znuny-lts/"
+"itsmconfigurationmanagement/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Management"
-msgstr ""
+msgstr "Διαχείριση Διαμόρφωσης Αντικειμένου"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change class definition"
-msgstr ""
+msgstr "Αλλαγή ορισμού Κλάσης"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Class"
-msgstr ""
+msgstr "Διαμόρφωση Κλάσης Αντικειμένου"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Definition"
-msgstr ""
+msgstr "Ορισμός"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change"
@@ -56,7 +59,7 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
 msgid "Last changed"
-msgstr ""
+msgstr "Τελευταία αλλαγή"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
 msgid "Config Item"
@@ -156,7 +159,7 @@ msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Last changed by"
-msgstr ""
+msgstr "Τελευταία αλλαγή από"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemZoom.tt
 msgid "Show one version"
@@ -1285,4 +1288,3 @@ msgstr ""
 #. SysConfig
 msgid "Filters the customer config items by depoyment states into the customer config item widget."
 msgstr ""
-
