@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>7.1.5</Version>
+    <Version>7.2.1</Version>
     <Framework>7.2.x</Framework>
     <PackageRequired Version="7.2.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
@@ -11,6 +11,7 @@
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
     <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <ChangeLog Version="7.2.1" Date="2025-09-04 12:53:33 +0200">Initial release for Znuny 7.2.</ChangeLog>
     <ChangeLog Version="7.1.5" Date="2025-05-21 10:41:59 +0200">- Removed ValidateInputCustomer and ValidateInputCustomerCompany if you use ConfigItemSearch. Also added optional Parameter Valid for ValidateInputGeneralCatalog -&gt; GeneralCatalog-&gt;ItemList(), to search for invalid Items.
 - Updated translation files.
 - Deployment states will not be reset anymore on package reinstallation.</ChangeLog>
