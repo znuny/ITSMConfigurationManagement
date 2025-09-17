@@ -322,6 +322,7 @@ sub Data {
         'Definiert das Übersichtsmodul um die "Klein"-Ansicht einer Configuration Items-Liste anzuzeigen.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Definiert reguläre Ausdrücke individuell für jedes Configuration Item, um den Namen des Configuration Item zu überprüfen und entsprechende Fehlermeldungen anzuzeigen.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definiert das Standard-Unterobjekt der Klasse \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

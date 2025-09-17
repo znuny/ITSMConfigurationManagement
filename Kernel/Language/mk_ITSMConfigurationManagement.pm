@@ -322,6 +322,7 @@ sub Data {
         'Дефинира преглед модул за приказ на мал преглед на кофигурациска лчен листа.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Дефинира регуларни изрази индивидуално за секоја КонфигЧлен класа за да провери КонфигЧлен име и да ги прикаже грешните кореспондирачките пораки.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Дефинира стандарден субобјект за класата \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

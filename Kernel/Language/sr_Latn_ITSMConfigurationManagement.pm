@@ -322,6 +322,7 @@ sub Data {
         'Definiše modul pregleda za mali prikaz liste konfiguracionih stavki. ';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Određuje regularne izraze za svaku klasu konfiguracione stavke radi provere naziva konfiguracione stavke i prikaza pripadajućih poruka o greškama.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Određuje podrazumevani podobjekat klase ITSM konfiguraciona stavka.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

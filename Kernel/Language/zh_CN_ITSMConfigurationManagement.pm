@@ -322,6 +322,7 @@ sub Data {
         '定义显示配置项列表简洁视图的概览模块。';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         '为每个配置项类定义独立的正则表达式，以检查配置项名称并显示相应的错误消息。';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '定义\'ITSMConfigItem\'类的默认子对象。';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

@@ -322,6 +322,7 @@ sub Data {
         'Дефинише модул прегледа за мали приказ листе конфигурационих ставки. ';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Одређује регуларне изразе за сваку класу конфигурационе ставке ради провере назива конфигурационе ставке и приказа припадајућих порука о грешкама.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Одређује подразумевани подобјекат класе ITSM конфигурациона ставка.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

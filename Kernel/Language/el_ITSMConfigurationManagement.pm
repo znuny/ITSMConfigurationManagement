@@ -38,10 +38,10 @@ sub Data {
         '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
-    $Self->{Translation}->{'Config Item Management'} = '';
-    $Self->{Translation}->{'Change class definition'} = '';
-    $Self->{Translation}->{'Config Item Class'} = '';
-    $Self->{Translation}->{'Definition'} = '';
+    $Self->{Translation}->{'Config Item Management'} = 'Διαχείριση Διαμόρφωσης Αντικειμένου';
+    $Self->{Translation}->{'Change class definition'} = 'Αλλαγή ορισμού Κλάσης';
+    $Self->{Translation}->{'Config Item Class'} = 'Διαμόρφωση Κλάσης Αντικειμένου';
+    $Self->{Translation}->{'Definition'} = 'Ορισμός';
     $Self->{Translation}->{'Change'} = '';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentDashboardITSMConfigItemGeneric.tt
@@ -51,7 +51,7 @@ sub Data {
     $Self->{Translation}->{'Deployment State Type'} = '';
     $Self->{Translation}->{'Current Incident State'} = '';
     $Self->{Translation}->{'Current Incident State Type'} = '';
-    $Self->{Translation}->{'Last changed'} = '';
+    $Self->{Translation}->{'Last changed'} = 'Τελευταία αλλαγή';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
     $Self->{Translation}->{'Config Item'} = '';
@@ -98,7 +98,7 @@ sub Data {
     $Self->{Translation}->{'Configuration Item'} = '';
     $Self->{Translation}->{'Configuration Item Information'} = '';
     $Self->{Translation}->{'Current Deployment State'} = '';
-    $Self->{Translation}->{'Last changed by'} = '';
+    $Self->{Translation}->{'Last changed by'} = 'Τελευταία αλλαγή από';
     $Self->{Translation}->{'Show one version'} = '';
     $Self->{Translation}->{'Show all versions'} = '';
     $Self->{Translation}->{'Version Incident State'} = '';
@@ -322,6 +322,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         '';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

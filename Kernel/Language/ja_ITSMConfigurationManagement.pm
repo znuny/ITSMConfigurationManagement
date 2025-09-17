@@ -322,6 +322,7 @@ sub Data {
         '構成アイテムを定義して、構成アイテムのリストの小さなビューを表示します。';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         '各ConfigItemクラスの正規表現を個別に定義して、ConfigItem名を確認し、対応するエラーメッセージを表示します。';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         '構成アイテムのクラスのデフォルトのサブオブジェクトを定義する。';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

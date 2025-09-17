@@ -1286,3 +1286,7 @@ msgstr ""
 msgid "Filters the customer config items by depoyment states into the customer config item widget."
 msgstr ""
 
+#. SysConfig
+msgid "Defines the default search attribute for CI search screen."
+msgstr ""
+

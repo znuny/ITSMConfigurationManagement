@@ -322,6 +322,7 @@ sub Data {
         'Задает модуль просмотра КЕ в кратком виде.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Задает регулярные выражения для каждого отдельного класса для проверки имен КЕ и выдачи сообщений об ошибках.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Задает умалчивамый подобъект для класса \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =

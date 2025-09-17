@@ -322,6 +322,7 @@ sub Data {
         'Egy áttekintő modult határoz meg egy konfigurációelem lista kis nézetének megjelenítéséhez.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Reguláris kifejezéseket határoz meg egyénileg minden egyes konfigurációelem osztálynál a konfigurációelem nevének ellenőrzéséhez, valamint a megfelelő hibaüzenetek megjelenítéséhez.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Meghatározza az „ITSMConfigItem” osztály alapértelmezett alobjektumát.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
