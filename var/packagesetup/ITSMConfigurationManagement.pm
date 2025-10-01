@@ -354,7 +354,7 @@ sub _UpdateDynamicFieldConfigDeplStateIDs {
 
         $LogObject->Log(
             Priority => 'error',
-            Message =>
+            Message  =>
                 "Config of dynamic field '$DynamicFieldConfig->{Name}' (ID $DynamicFieldConfig->{ID}) could not be updated.",
         );
     }
@@ -715,7 +715,7 @@ sub _AddConfigItemDefinitions {
 
     # Config item definitions.
     my %Definition = (
-        Computer => << "EOF",
+        Computer => <<"EOF",
 ---
 - Key: Vendor
   Name: Vendor
@@ -889,7 +889,7 @@ sub _AddConfigItemDefinitions {
   CountMin: 0
   CountDefault: 0
 EOF
-        Hardware => << "EOF",
+        Hardware => <<"EOF",
 ---
 - Key: Vendor
   Name: Vendor
@@ -971,7 +971,7 @@ EOF
   CountMax: 1
   CountDefault: 0
 EOF
-        Location => << "EOF",
+        Location => <<"EOF",
 ---
 - Key: Type
   Name: Type
@@ -1040,7 +1040,7 @@ EOF
   CountMin: 0
   CountDefault: 0
 EOF
-        Network => << "EOF",
+        Network => <<"EOF",
 ---
 - Key: Description
   Name: Description
@@ -1112,7 +1112,7 @@ EOF
   CountMax: 1
   CountDefault: 0
 EOF
-        Software => << "EOF",
+        Software => <<"EOF",
 ---
 - Key: Vendor
   Name: Vendor

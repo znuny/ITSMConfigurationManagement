@@ -437,7 +437,7 @@ sub DefinitionCheck {
                 if ( !$Check ) {
                     $Kernel::OM->Get('Kernel::System::Log')->Log(
                         Priority => 'error',
-                        Message =>
+                        Message  =>
                             "Invalid Sub-Definition of element with the key '$Attribute->{Key}'.",
                     );
                     return;

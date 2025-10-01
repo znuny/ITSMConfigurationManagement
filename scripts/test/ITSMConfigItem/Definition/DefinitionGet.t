@@ -45,7 +45,7 @@ my %DefinitionTemplate = (
     Class      => $RandomID,
     CreateBy   => $UserID,
     Version    => 1,
-    Definition => << 'EOF',
+    Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor

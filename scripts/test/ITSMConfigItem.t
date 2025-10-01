@@ -1428,7 +1428,7 @@ my $ConfigItemTests = [
                 {
                     HistoryType   => 'NameUpdate',
                     HistoryTypeID => 5,
-                    Comment =>
+                    Comment       =>
                         'UnitTest - HistoryTest Version 2%%UnitTest - HistoryTest',
                     CreateBy => 1,
                 },

@@ -186,7 +186,7 @@ sub InputCreate {
     my $String = $Kernel::OM->Get('Kernel::Output::HTML::Layout')->BuildDateSelection(
         Prefix           => $Param{Key} . '::',
         Format           => 'DateInputFormat',
-        YearPeriodPast   => $Param{Item}->{Input}->{YearPeriodPast} || 10,
+        YearPeriodPast   => $Param{Item}->{Input}->{YearPeriodPast}   || 10,
         YearPeriodFuture => $Param{Item}->{Input}->{YearPeriodFuture} || 10,
         %Values,
         $Param{Key} . '::' . 'Class' => $Class,

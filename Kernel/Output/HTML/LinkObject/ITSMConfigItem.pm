@@ -711,7 +711,7 @@ sub ContentStringCreate {
 
         # check if color is defined and set the style class
         if ($DeplStateColor) {
-            $Template .= << "END";
+            $Template .= <<"END";
 <style>
     .Flag span.$DeplState {
         background-color: $DeplStateColor;
