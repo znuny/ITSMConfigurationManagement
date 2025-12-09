@@ -320,6 +320,7 @@ sub Data {
         'Mentakrifkan modul gambaran untuk menunjukkan pandangan yang kecil senarai item konfigurasi.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Mentakrifkan ungkapan biasa secara individu untuk setiap kelas ItemKonfig untuk memeriksa nama ItemKonfig dan untuk menunjukkan mesej ralat sepadan.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definiert das Standard-Subobject der Klasse';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -356,7 +357,6 @@ sub Data {
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Penempatan Keadaan Warna.';
     $Self->{Translation}->{'Duplicate'} = 'Gandakan';
-    $Self->{Translation}->{'Dynamic fields administration'} = '';
     $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =

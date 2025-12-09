@@ -320,6 +320,7 @@ sub Data {
         'Definisce un modulo di panoramica per mostrare la vista ridotta di un elenco di elementi di configurazione.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Definisce le espressioni regolari singolarmente per ciascuna classe ConfigItem per controllare il nome ConfigItem e mostrare i messaggi di errore corrispondenti.';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definisce il sotto-oggetto predefinito della classe \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -356,7 +357,6 @@ sub Data {
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Colore dello stato di distribuzione';
     $Self->{Translation}->{'Duplicate'} = 'Duplicato';
-    $Self->{Translation}->{'Dynamic fields administration'} = '';
     $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =

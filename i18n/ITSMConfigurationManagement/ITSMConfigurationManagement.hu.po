@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
 "PO-Revision-Date: 2025-12-08 09:05+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
-"Language-Team: Hungarian <https://translations.znuny.org/projects/znuny/"
-"itsmconfigurationmanagement/hu/>\n"
+"Language-Team: Hungarian <https://translations.znuny.org/projects/znuny/itsmconfigurationmanagement/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1288,3 +1287,8 @@ msgstr ""
 #. SysConfig
 msgid "Filters the customer config items by depoyment states into the customer config item widget."
 msgstr ""
+
+#. SysConfig
+msgid "Defines the default search attribute for CI search screen."
+msgstr ""
+
