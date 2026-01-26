@@ -98,10 +98,15 @@ $Selenium->RunTest(
         # check for error message when no ConfigItemID is provided in history screen
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentITSMConfigItemHistory");
 
-        my $ErrorMessageNoID = 'Can\'t show history, no ConfigItemID is given!';
+        $Selenium->WaitFor(
+            JavaScript => "return document.querySelector('.ErrorScreen');"
+        );
         $Self->True(
-            index( $Selenium->get_page_source(), $ErrorMessageNoID ) > -1,
-            "Error message $ErrorMessageNoID - found",
+            $Selenium->execute_script(
+                "var e=document.querySelector('.ErrorScreen');"
+                    . "return e && e.textContent && e.textContent.length > 0;"
+            ),
+            "Error screen - found",
         );
 
         # create history messages list

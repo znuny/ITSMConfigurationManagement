@@ -20,6 +20,13 @@ $Selenium->RunTest(
 
         my $Helper               = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+        my $DismissMessages      = sub {
+
+            # Close floating alert messages that can block clicks.
+            $Selenium->execute_script(
+                "if (typeof(\$) === 'function') { \$('.modMessages .messageClose').trigger('click'); \$('.modMessages .message').remove(); }"
+            );
+        };
 
         # Get 'Computer' ConfigItem ID.
         my @ConfigItemClassIDs;
@@ -112,6 +119,7 @@ $Selenium->RunTest(
 
         # Navigate to AgentITSMConfigItemSearch.
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentITSMConfigItemSearch");
+        $DismissMessages->();
 
         # Wait until form and overlay has loaded, if necessary.
         $Selenium->WaitFor( JavaScript => "return typeof(\$) === 'function' && \$('#SearchClassID').length" );
@@ -392,6 +400,7 @@ $Selenium->RunTest(
         );
 
         # Go to the second page.
+        $DismissMessages->();
         $Selenium->find_element( "#GenericPage2", 'css' )->VerifiedClick();
 
         $Self->True(
@@ -564,6 +573,7 @@ $Selenium->RunTest(
         );
 
         # Go to the second page.
+        $DismissMessages->();
         $Selenium->find_element( "#GenericPage2", 'css' )->VerifiedClick();
 
         # Check if correct number of items are shown on pagination.
@@ -580,6 +590,7 @@ $Selenium->RunTest(
 
         # Verify search result remained intact after changing items per page, see bug#14717 for more details.
         # Set 10 config items per page.
+        $DismissMessages->();
         $Selenium->find_element( "a#ShowContextSettingsDialog", 'css' )->click();
         $Selenium->WaitFor(
             JavaScript => 'return $(".Dialog.Modal #UserConfigItemOverviewSmallPageShown").length'

@@ -22,6 +22,13 @@ $Selenium->RunTest(
         # get needed objects
         my $Helper               = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $GeneralCatalogObject = $Kernel::OM->Get('Kernel::System::GeneralCatalog');
+        my $DismissMessages      = sub {
+
+            # Close floating alert messages that can block clicks.
+            $Selenium->execute_script(
+                "if (typeof(\$) === 'function') { \$('.modMessages .messageClose').trigger('click'); \$('.modMessages .message').remove(); }"
+            );
+        };
 
         # get 'Hardware' catalog class IDs
         my $ConfigItemDataRef = $GeneralCatalogObject->ItemGet(
@@ -102,6 +109,7 @@ $Selenium->RunTest(
         $Selenium->VerifiedGet(
             "${ScriptAlias}index.pl?Action=AgentITSMConfigItem;SortBy=Number;OrderBy=Down;View=;Filter=$HardwareConfigItemID"
         );
+        $DismissMessages->();
 
         # Click on created ConfigItem.
         $Selenium->find_element("//div[contains(\@title, '$ConfigItemNumber' )]")->VerifiedClick();
@@ -141,6 +149,7 @@ $Selenium->RunTest(
         }
 
         # click to show all versions
+        $DismissMessages->();
         $Selenium->find_element( ".AllITSMItems", 'css' )->click();
 
         # verify both versions are present on screen
