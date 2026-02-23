@@ -33,17 +33,19 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
 
     TargetNS.ShowWidgetLoading = function ($Widget) {
         $Widget.show();
-        $Widget.children('.WidgetIsLoading').show();
-        $Widget.children('.Header').addClass('Hidden');
-        $Widget.children('.Content').addClass('Hidden');
+        $Widget.find('.WidgetIsLoading').show();
+        $Widget.find('.sidebarWidgetTitle').addClass('Hidden');
+        $Widget.find('.sidebarWidgetContent').addClass('Hidden');
+        $Widget.find('.Content').addClass('Hidden');
         $Widget.fadeIn();
     }
 
     TargetNS.ShowWidgetResults = function ($Widget) {
         $Widget.hide();
-        $Widget.children('.WidgetIsLoading').hide();
-        $Widget.children('.Header.Hidden').removeClass('Hidden');
-        $Widget.children('.Content.Hidden').removeClass('Hidden');
+        $Widget.find('.WidgetIsLoading').hide();
+        $Widget.find('.sidebarWidgetTitle').removeClass('Hidden');
+        $Widget.find('.sidebarWidgetContent').removeClass('Hidden');
+        $Widget.find('.Content').removeClass('Hidden');
         $Widget.fadeIn();
     }
 
@@ -62,7 +64,7 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
         if ($('#AgentITSMConfigItemCustomerCIsWidget').length > 0) return;
 
         // append widget to sidebar
-        $('.SidebarColumn').append(Param.Widget);
+        $('.sidebarContent').append(Param.Widget);
 
         $Element = $('#AgentITSMConfigItemCustomerCIs');
         $WidgetElement = $('#AgentITSMConfigItemCustomerCIsWidget');
@@ -93,15 +95,15 @@ ITSM.Agent.ConfigItem.CustomerCIsWidget = (function (TargetNS) {
             if (Action == 'AgentTicketPhone' || Action == 'AgentTicketEmail') {
                 $('form[name=compose]').append('<input type="hidden" id="ITSMConfigItemCustomerCIList" name="ITSMConfigItemCustomerCIList" />');
 
-                    $.each($(".ConfigItemLink:checked"), function() {
-                        if (ConfigItemIDs) {
-                            ConfigItemIDs += ',';
-                        }
-                        ConfigItemIDs += $(this).val();
-                    });
+                $.each($(".ConfigItemLink:checked"), function() {
+                    if (ConfigItemIDs) {
+                        ConfigItemIDs += ',';
+                    }
+                    ConfigItemIDs += $(this).val();
+                });
 
-                    $('#ITSMConfigItemCustomerCIList').val(ConfigItemIDs);
-                }
+                $('#ITSMConfigItemCustomerCIList').val(ConfigItemIDs);
+            }
 
             TargetNS.ShowWidgetResults($WidgetElement);
             Core.UI.InitWidgetActionToggle();

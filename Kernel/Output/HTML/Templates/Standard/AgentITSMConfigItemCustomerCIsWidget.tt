@@ -7,20 +7,27 @@
 # --
 
 [% RenderBlockStart("Widget") %]
-<div class="WidgetSimple" id="AgentITSMConfigItemCustomerCIsWidget" style="[% Data.CSSStyle | html %]">
-    <div class="WidgetIsLoading">
-        <i class="fa fa-spinner fa-spin"></i>
-    </div>
-    <div class="Header Hidden">
-        <div class="WidgetAction Toggle">
-            <a href="#" title="[% Translate("Show or hide the content") | html %]"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i></a>
+<div id="AgentITSMConfigItemCustomerCIsWidget" class="mod modSidebarWidget" style="[% Data.CSSStyle | html %]">
+    <div class="inner">
+        <div class="sidebarWidgetTitle Hidden">
+            <h3>[% Translate("Customer related config items") | html %]</h3>
         </div>
-        <h2>[% Translate("Customer related config items") | html %]</h2>
-    </div>
-    <div class="Content Hidden">
-        <fieldset id='AgentITSMConfigItemCustomerCIs' class="TableLike FixedLabelSmall Narrow">
-            [% Translate("none") | html %]
-         </fieldset>
+        <div class="sidebarWidgetContent Hidden">
+            <div class="mod modCustomerRelatedConfigItems">
+                <div class="inner">
+                    <div id=" CustomerRelatedConfigItems" WidgetSimple>
+                        <div class="WidgetIsLoading Hidden">
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </div>
+                        <div class="Content Hidden">
+                            <fieldset id='AgentITSMConfigItemCustomerCIs' class="TableLike FixedLabelSmall Narrow">
+                                [% Translate("none") | html %]
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 [% RenderBlockEnd("Widget") %]
