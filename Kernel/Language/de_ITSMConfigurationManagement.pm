@@ -377,7 +377,7 @@ sub Data {
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM Configuration Item-Übersicht';
     $Self->{Translation}->{'Limit for config item search.'} = 'Limit für die Config-Item-Suche.';
     $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
-        '';
+        'Liste der Ereignisse, die für das Generic Interface-Ereignisobjekt vom Typ ITSMConfigItem verfügbar sind.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Modul zur Überprüfung der Gruppe, die für eine Klasse verantwortlich ist.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Modul, um die Gruppe zu überprüfen, die für ein Configuration Item verantwortlich ist.';
