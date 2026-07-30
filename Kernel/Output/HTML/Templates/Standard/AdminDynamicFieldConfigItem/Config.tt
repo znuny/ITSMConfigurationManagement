@@ -28,7 +28,7 @@
 <label for="ConfigItemLinkType">[% Translate("Config item link type") | html %]:</label>
 <div class="Field">
     [% Data.ConfigItemLinkTypeSelectionHTML %]
-    <p class="FieldExplanation">[% Translate("Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.") | html %]</p>
+    <p class="FieldExplanation">[% Translate("Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets.") | html %]</p>
 </div>
 <div class="Clear"></div>
 
