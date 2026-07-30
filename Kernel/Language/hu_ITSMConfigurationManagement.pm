@@ -16,26 +16,26 @@ sub Data {
     my $Self = shift;
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
-    $Self->{Translation}->{'This field is required and the value must be alphanumeric.'} = '';
-    $Self->{Translation}->{'Must be unique and only accepts alphanumeric characters.'} = '';
+    $Self->{Translation}->{'This field is required and the value must be alphanumeric.'} = 'Ez a mező kötelező, és az érték csak alfanumerikus lehet.';
+    $Self->{Translation}->{'Must be unique and only accepts alphanumeric characters.'} = 'Egyedinek kell lennie, és csak alfanumerikus karaktereket fogad el.';
     $Self->{Translation}->{'This is the order in which this field will be shown on the screens where it is active.'} =
-        '';
+        'Ez az a sorrend, amelyben ez a mező meg fog jelenni a képernyőkön, ahol aktív.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
-    $Self->{Translation}->{'Config item class'} = '';
+    $Self->{Translation}->{'Config item class'} = 'Konfigurációelem-osztály';
     $Self->{Translation}->{'The selected config item class is invalid or does not exist.'} =
-        '';
-    $Self->{Translation}->{'Config item deployment states'} = '';
-    $Self->{Translation}->{'Config item link type'} = '';
+        'A kiválasztott konfigurációelem-osztály érvénytelen vagy nem létezik.';
+    $Self->{Translation}->{'Config item deployment states'} = 'Konfigurációelem üzembe állítási állapotai';
+    $Self->{Translation}->{'Config item link type'} = 'Konfigurációelem hivatkozástípusa';
     $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
-        '';
-    $Self->{Translation}->{'Config item link source'} = '';
-    $Self->{Translation}->{'Config item link removal'} = '';
+        'Kapcsolattípus kiválasztása a jegy és a kiválasztott konfigurációelemek közötti összekapcsolás engedélyezéséhez. Ne feledje, hogy az összekapcsolás csak a jegyek dinamikus mezőinél érhető el.';
+    $Self->{Translation}->{'Config item link source'} = 'Konfigurációelem hivatkozásforrása';
+    $Self->{Translation}->{'Config item link removal'} = 'Konfigurációelem hivatkozáseltávolítása';
     $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
-        '';
-    $Self->{Translation}->{'Config item key'} = '';
+        'Aktiválja ezt a beállítást, hogy eltávolítsa azon jegy és konfigurációelemek közötti kapcsolatokat, amelyek eltávolításra kerültek ebből a mezőből.';
+    $Self->{Translation}->{'Config item key'} = 'Konfigurációelem kulcsa';
     $Self->{Translation}->{'These dynamic fields will be filled with values of the same selected config item(s).'} =
-        '';
+        'Ezek a dinamikus mezők ugyanazon kiválasztott konfigurációelemek értékeivel lesznek kitöltve.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Config Item Management'} = 'Konfigurációelem-menedzsment';
@@ -50,7 +50,7 @@ sub Data {
     $Self->{Translation}->{'Class'} = 'Osztály';
     $Self->{Translation}->{'Deployment State Type'} = 'Üzembe állítási állapottípus';
     $Self->{Translation}->{'Current Incident State'} = 'Jelenlegi incidensállapot';
-    $Self->{Translation}->{'Current Incident State Type'} = 'Jelenlegi incidensállapot típus';
+    $Self->{Translation}->{'Current Incident State Type'} = 'Jelenlegi incidensállapot-típus';
     $Self->{Translation}->{'Last changed'} = 'Utolsó módosítás';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemAdd.tt
@@ -67,7 +67,7 @@ sub Data {
     $Self->{Translation}->{'The number of another Configuration Item to link with.'} = 'Egy másik konfigurációelem száma, amellyel össze kell kötni.';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemCustomerCIsWidget.tt
-    $Self->{Translation}->{'Customer related config items'} = '';
+    $Self->{Translation}->{'Customer related config items'} = 'Ügyfélhez kapcsolódó konfigurációelemek';
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AgentITSMConfigItemDelete.tt
     $Self->{Translation}->{'Do you really want to delete this config item?'} = 'Valóban törölni szeretné ezt a konfigurációelemet?';
@@ -104,7 +104,7 @@ sub Data {
     $Self->{Translation}->{'Version Incident State'} = 'Verzió incidensállapot';
     $Self->{Translation}->{'Version Deployment State'} = 'Verzió üzembe állítási állapot';
     $Self->{Translation}->{'Version Number'} = 'Verziószám';
-    $Self->{Translation}->{'Configuration Item Version Details'} = 'Konfigurációelem-verzió részletek';
+    $Self->{Translation}->{'Configuration Item Version Details'} = 'Konfigurációelem-verzió részletei';
     $Self->{Translation}->{'Property'} = 'Tulajdonság';
 
     # Perl Module: Kernel/Modules/AgentITSMConfigItem.pm
@@ -181,11 +181,11 @@ sub Data {
     $Self->{Translation}->{'Model'} = 'Modell';
     $Self->{Translation}->{'Customer Company'} = 'Ügyfél-vállalat';
     $Self->{Translation}->{'Serial Number'} = 'Sorozatszám';
-    $Self->{Translation}->{'CPU'} = 'CPU';
-    $Self->{Translation}->{'Ram'} = 'Ram';
+    $Self->{Translation}->{'CPU'} = 'Processzor';
+    $Self->{Translation}->{'Ram'} = 'Memória';
     $Self->{Translation}->{'Hard Disk'} = 'Merevlemez';
     $Self->{Translation}->{'Capacity'} = 'Kapacitás';
-    $Self->{Translation}->{'FQDN'} = '';
+    $Self->{Translation}->{'FQDN'} = 'FQDN';
     $Self->{Translation}->{'Network Adapter'} = 'Hálózati csatoló';
     $Self->{Translation}->{'IP over DHCP'} = 'IP a DHCP fölött';
     $Self->{Translation}->{'IP Address'} = 'IP-cím';
@@ -200,7 +200,7 @@ sub Data {
     $Self->{Translation}->{'Subnet Mask'} = 'Alhálózati maszk';
     $Self->{Translation}->{'Gateway'} = 'Átjáró';
     $Self->{Translation}->{'Licence Type'} = 'Licenctípus';
-    $Self->{Translation}->{'Licence Key'} = 'Licenc kulcs';
+    $Self->{Translation}->{'Licence Key'} = 'Licenckulcs';
     $Self->{Translation}->{'Quantity'} = 'Mennyiség';
     $Self->{Translation}->{'Expiration Date'} = 'Lejárati idő';
     $Self->{Translation}->{'Media'} = 'Adathordozó';
@@ -214,7 +214,7 @@ sub Data {
     $Self->{Translation}->{'Maintenance'} = 'Karbantartás';
     $Self->{Translation}->{'Pilot'} = 'Próbaüzem';
     $Self->{Translation}->{'Planned'} = 'Tervezett';
-    $Self->{Translation}->{'Production'} = '';
+    $Self->{Translation}->{'Production'} = 'Produktív';
     $Self->{Translation}->{'Repair'} = 'Javítás';
     $Self->{Translation}->{'Retired'} = 'Visszavont';
     $Self->{Translation}->{'Review'} = 'Vizsgálat';
@@ -278,17 +278,17 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'OK';
 
     # SysConfig
-    $Self->{Translation}->{'AlternativeTo'} = '';
+    $Self->{Translation}->{'AlternativeTo'} = 'Alternatíva erre';
     $Self->{Translation}->{'Assigned CIs'} = 'Hozzárendelt konfigurációelemek';
-    $Self->{Translation}->{'Autoloading of upload cache.'} = '';
+    $Self->{Translation}->{'Autoloading of upload cache.'} = 'A feltöltési gyorsítótár automatikus betöltése.';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Ügyfél-vállalathoz hozzárendelt konfigurációelemek';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Ügyfél-felhasználóhoz hozzárendelt konfigurációelemek';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB beállítások';
     $Self->{Translation}->{'Check for a unique name only within the same ConfigItem class (\'class\') or globally (\'global\'), which means every existing ConfigItem is taken into account when looking for duplicates.'} =
         'Egyedi név ellenőrzése kizárólag ugyanabban a konfigurációelem osztályban („osztály”) vagy globálisan („globális”), amely azt jelenti, hogy minden meglévő konfigurációelem figyelembe lesz véve a kettőzések keresésekor.';
     $Self->{Translation}->{'Config Items'} = 'Konfigurációelemek';
-    $Self->{Translation}->{'Config item (Dropdown)'} = '';
-    $Self->{Translation}->{'Config item (Multiselect)'} = '';
+    $Self->{Translation}->{'Config item (Dropdown)'} = 'Konfigurációelem (legördülő)';
+    $Self->{Translation}->{'Config item (Multiselect)'} = 'Konfigurációelem (többválasztós)';
     $Self->{Translation}->{'Config item add.'} = 'Konfigurációelem hozzáadása.';
     $Self->{Translation}->{'Config item edit.'} = 'Konfigurációelem szerkesztése.';
     $Self->{Translation}->{'Config item event module that enables logging to history in the agent interface.'} =
@@ -307,7 +307,7 @@ sub Data {
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
-        '';
+        'Leképezés meghatározása a konfigurációelem-osztályok és a Font Awesome ikonok között, amelyek az ügyintézői felületen vannak megjelenítve.';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Meghatározza a szükséges jogosultságokat az ITSM konfigurációelemek létrehozásához az általános felület használatával.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -322,7 +322,7 @@ sub Data {
         'Egy áttekintő modult határoz meg egy konfigurációelem lista kis nézetének megjelenítéséhez.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Reguláris kifejezéseket határoz meg egyénileg minden egyes konfigurációelem osztálynál a konfigurációelem nevének ellenőrzéséhez, valamint a megfelelő hibaüzenetek megjelenítéséhez.';
-    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = 'Meghatározza az alapértelmezett keresési attribútumot a konfigurációelem-keresés képernyőnél.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Meghatározza az „ITSMConfigItem” osztály alapértelmezett alobjektumát.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -352,41 +352,41 @@ sub Data {
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) can affect the status of a linked CI.'} =
         'Meghatározza, hogy mely kapcsolattípusok (a jegy nézőpontjából elnevezve) befolyásolhatják egy kapcsolt konfigurációelem állapotát.';
     $Self->{Translation}->{'Defines which type of link (named from the ticket perspective) is used to link tickets and config items.'} =
-        '';
+        'Meghatározza, hogy mely kapcsolattípusok (a jegy nézőpontjából elnevezve) vannak használva a jegyek és a konfigurációelemek összekapcsolásához.';
     $Self->{Translation}->{'Defines which type of ticket can affect the status of a linked CI.'} =
         'Meghatározza, hogy mely jegytípus befolyásolhatja egy kapcsolt konfigurációelem állapotát.';
     $Self->{Translation}->{'Delete Configuration Item'} = 'Konfigurációelem törlése';
-    $Self->{Translation}->{'DependsOn'} = '';
+    $Self->{Translation}->{'DependsOn'} = 'Függ ettől';
     $Self->{Translation}->{'Deployment State Color'} = 'Üzembe állítási állapot színe';
     $Self->{Translation}->{'Duplicate'} = 'Kettőzés';
-    $Self->{Translation}->{'Dynamic fields administration'} = '';
-    $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
-    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
+    $Self->{Translation}->{'Dynamic fields administration'} = 'Dinamikus mezők adminisztrációja';
+    $Self->{Translation}->{'DynamicFieldConfigItem'} = 'Konfigurációelem dinamikus mező';
+    $Self->{Translation}->{'Enable search for config items based on the customer id.'} = 'Konfigurációelemek keresésének engedélyezése az ügyfél-azonosító alapján.';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
-        '';
+        'Konfigurációelemek keresésének engedélyezése az ügyfélfelhasználó-azonosító alapján.';
     $Self->{Translation}->{'Enables configuration item bulk action feature for the agent frontend to work on more than one configuration item at a time.'} =
         'Engedélyezi a konfigurációelem tömeges művelet funkciót az ügyintézői előtétprogramnál, hogy egyszerre egynél több konfigurációelemmel dolgozhasson.';
     $Self->{Translation}->{'Enables configuration item bulk action feature only for the listed groups.'} =
         'Csak a felsorolt csoportoknak engedélyezi a konfigurációelem tömeges művelet funkciót.';
     $Self->{Translation}->{'Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates.'} =
-        'Engedélyezi vagy letiltja azt a funkcionalitást, amely a konfigurációelemek egyedi neveit ellenőrzi. A lehetőség engedélyezése előtt ellenőriznie kell a rendszerét, hogy vannak-e már létező konfigurációelemek kettőzött névvel. Ezt megteheti a bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates parancsfájllal.';
-    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
+        'Engedélyezi vagy letiltja azt a funkcionalitást, amely a konfigurációelemek egyedi neveit ellenőrzi. A lehetőség engedélyezése előtt ellenőriznie kell a rendszerét, hogy vannak-e már létező konfigurációelemek kettőzött névvel. Ezt a „bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates” parancsfájllal teheti meg.';
+    $Self->{Translation}->{'Event Module that links a ConfigItem.'} = 'Eseménymodul, amely összekapcsol egy konfigurációelemet.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Eseménymodul a konfigurációelem állapotának beállításához egy jegy konfigurációelem hivatkozásán.';
     $Self->{Translation}->{'Filters the customer company config items by depoyment states into the customer config item widget.'} =
-        '';
+        'Üzembe állítási állapotok szerint szűri az ügyfélvállalat konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe.';
     $Self->{Translation}->{'Filters the customer config items by depoyment states into the customer config item widget.'} =
-        '';
+        'Üzembe állítási állapotok szerint szűri az ügyfél konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM konfigurációelem áttekintés.';
-    $Self->{Translation}->{'Limit for config item search.'} = '';
+    $Self->{Translation}->{'Limit for config item search.'} = 'Korlát a konfigurációelem-kereséshez.';
     $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
-        '';
+        'Események listája, amelyek az ITSMConfigItem általános felület eseményobjektum-típushoz érhetők el.';
     $Self->{Translation}->{'Module to check the group responsible for a class.'} = 'Egy modul egy osztályért felelős csoport ellenőrzéséhez.';
     $Self->{Translation}->{'Module to check the group responsible for a configuration item.'} =
         'Egy modul egy konfigurációelemért felelős csoport ellenőrzéséhez.';
     $Self->{Translation}->{'Module to generate ITSM config item statistics.'} = 'Egy modul ITSM konfigurációelem statisztikák előállításához.';
     $Self->{Translation}->{'No longer in use. Do not change. Required due to compatibility with previous package versions.'} =
-        '';
+        'Többé már nincs használatban. Ne változtassa meg! A korábbi csomagverziókkal való kompatibilitás miatt szükséges.';
     $Self->{Translation}->{'Object backend module registration for the import/export module.'} =
         'Objektum háttérprogram modul regisztráció az importálás/exportálás modulhoz.';
     $Self->{Translation}->{'Overview.'} = 'Áttekintés.';
@@ -402,11 +402,11 @@ sub Data {
         'Paraméterek az oldalakhoz (amelyeken a konfigurációelemek megjelennek).';
     $Self->{Translation}->{'Permission Group'} = 'Jogosultsági csoport';
     $Self->{Translation}->{'Registers a ITSMConfigItem-EventModule that will save related attachments.'} =
-        '';
-    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = '';
-    $Self->{Translation}->{'RelevantTo'} = '';
+        'ITSM-konfigurációelem eseményobjektumot regisztrál, amely a kapcsolódó mellékleteket fogja elmenteni.';
+    $Self->{Translation}->{'Registers an output filter that shows a config item widget.'} = 'Kimenetszűrőt regisztrál, amely egy konfigurációelem felületi elemet jelenít meg.';
+    $Self->{Translation}->{'RelevantTo'} = 'Releváns ezzel';
     $Self->{Translation}->{'Required group permissions to use the customer config item widget in the agent interface.'} =
-        '';
+        'A szükséges csoportjogosultságok az ügyfél konfigurációelem felületi elemének használatához az ügyintézői felületen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item screen in the agent interface.'} =
         'A szükséges jogosultságok az ITSM konfigurációelem képernyőjének használatához az ügyintézői felületen.';
     $Self->{Translation}->{'Required permissions to use the ITSM configuration item search screen in the agent interface.'} =
@@ -416,7 +416,7 @@ sub Data {
     $Self->{Translation}->{'Required permissions to use the add ITSM configuration item screen in the agent interface.'} =
         'A szükséges jogosultságok az ITSM konfigurációelem hozzáadása képernyőjének használatához az ügyintézői felületen.';
     $Self->{Translation}->{'Required permissions to use the config item dialog in the agent interface.'} =
-        '';
+        'A szükséges jogosultságok a konfigurációelem párbeszédablakának használatához az ügyintézői felületen.';
     $Self->{Translation}->{'Required permissions to use the edit ITSM configuration item screen in the agent interface.'} =
         'A szükséges jogosultságok az ITSM konfigurációelem szerkesztése képernyőjének használatához az ügyintézői felületen.';
     $Self->{Translation}->{'Required permissions to use the history ITSM configuration item screen in the agent interface.'} =
@@ -458,10 +458,10 @@ sub Data {
     $Self->{Translation}->{'The identifier for a configuration item, e.g. ConfigItem#, MyConfigItem#. The default is ConfigItem#.'} =
         'Egy konfigurációelem azonosítója, például: ConfigItem#, MyConfigItem#. Az alapértelmezett: ConfigItem#.';
     $Self->{Translation}->{'This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget.'} =
-        '';
+        'Ez a beállítás egy előtétprogram-modult regisztrál az ügyintézői felülethez, amely az AJAX-felületet biztosítja az ügyintéző ITSM-konfigurációeleme ügyfél konfigurációelemeinek felületi eleméhez.';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
-        '';
-    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
+        'Jegyeseménymodul, amely hivatkozásokat hoz létre és távolít el a jegyek és a konfigurációelemek között.';
+    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = 'Jegyeseménymodul, amely frissíti a dinamikus mezőket.';
     $Self->{Translation}->{'class'} = 'osztály';
     $Self->{Translation}->{'global'} = 'globális';
     $Self->{Translation}->{'postproductive'} = 'beüzemelés után';

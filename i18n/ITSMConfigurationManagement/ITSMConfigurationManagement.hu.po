@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
 "PO-Revision-Date: 2026-07-30 15:34+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
-"Language-Team: Hungarian <https://translations.znuny.org/projects/znuny-lts/"
-"itsmconfigurationmanagement/hu/>\n"
+"Language-Team: Hungarian <https://translations.znuny.org/projects/znuny-lts/itsmconfigurationmanagement/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -931,12 +930,7 @@ msgstr "Csak a felsorolt csoportoknak engedélyezi a konfigurációelem tömeges
 
 #. SysConfig
 msgid "Enables/disables the functionality to check ConfigItems for unique names. Before enabling this option you should check your system for already existing config items with duplicate names. You can do this with the script bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates."
-msgstr ""
-"Engedélyezi vagy letiltja azt a funkcionalitást, amely a konfigurációelemek "
-"egyedi neveit ellenőrzi. A lehetőség engedélyezése előtt ellenőriznie kell a "
-"rendszerét, hogy vannak-e már létező konfigurációelemek kettőzött névvel. "
-"Ezt a „bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates” "
-"parancsfájllal teheti meg."
+msgstr "Engedélyezi vagy letiltja azt a funkcionalitást, amely a konfigurációelemek egyedi neveit ellenőrzi. A lehetőség engedélyezése előtt ellenőriznie kell a rendszerét, hogy vannak-e már létező konfigurációelemek kettőzött névvel. Ezt a „bin/otrs.Console.pl Admin::ITSM::Configitem::ListDuplicates” parancsfájllal teheti meg."
 
 #. SysConfig
 msgid "Event module to set configitem-status on ticket-configitem-link."
@@ -1128,9 +1122,7 @@ msgstr "Egyedinek kell lennie, és csak alfanumerikus karaktereket fogad el."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem.tt
 msgid "This is the order in which this field will be shown on the screens where it is active."
-msgstr ""
-"Ez az a sorrend, amelyben ez a mező meg fog jelenni a képernyőkön, ahol "
-"aktív."
+msgstr "Ez az a sorrend, amelyben ez a mező meg fog jelenni a képernyőkön, ahol aktív."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Config item class"
@@ -1150,10 +1142,7 @@ msgstr "Konfigurációelem hivatkozástípusa"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets."
-msgstr ""
-"Kapcsolattípus kiválasztása a jegy és a kiválasztott konfigurációelemek "
-"közötti összekapcsolás engedélyezéséhez. Ne feledje, hogy az összekapcsolás "
-"csak a jegyek dinamikus mezőinél érhető el."
+msgstr "Kapcsolattípus kiválasztása a jegy és a kiválasztott konfigurációelemek közötti összekapcsolás engedélyezéséhez. Ne feledje, hogy az összekapcsolás csak a jegyek dinamikus mezőinél érhető el."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Config item link source"
@@ -1165,9 +1154,7 @@ msgstr "Konfigurációelem hivatkozáseltávolítása"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Activate this option to remove links between the ticket and config items removed from this field."
-msgstr ""
-"Aktiválja ezt a beállítást, hogy eltávolítsa azon jegy és konfigurációelemek "
-"közötti kapcsolatokat, amelyek eltávolításra kerültek ebből a mezőből."
+msgstr "Aktiválja ezt a beállítást, hogy eltávolítsa azon jegy és konfigurációelemek közötti kapcsolatokat, amelyek eltávolításra kerültek ebből a mezőből."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Config item key"
@@ -1175,9 +1162,7 @@ msgstr "Konfigurációelem kulcsa"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "These dynamic fields will be filled with values of the same selected config item(s)."
-msgstr ""
-"Ezek a dinamikus mezők ugyanazon kiválasztott konfigurációelemek értékeivel "
-"lesznek kitöltve."
+msgstr "Ezek a dinamikus mezők ugyanazon kiválasztott konfigurációelemek értékeivel lesznek kitöltve."
 
 #. SysConfig
 msgid "AlternativeTo"
@@ -1205,9 +1190,7 @@ msgstr "Konfigurációelem dinamikus mező"
 
 #. SysConfig
 msgid "No longer in use. Do not change. Required due to compatibility with previous package versions."
-msgstr ""
-"Többé már nincs használatban. Ne változtassa meg! A korábbi csomagverziókkal "
-"való kompatibilitás miatt szükséges."
+msgstr "Többé már nincs használatban. Ne változtassa meg! A korábbi csomagverziókkal való kompatibilitás miatt szükséges."
 
 #. SysConfig
 msgid "RelevantTo"
@@ -1215,15 +1198,11 @@ msgstr "Releváns ezzel"
 
 #. SysConfig
 msgid "Ticket event module that creates and removes links between tickets and config items."
-msgstr ""
-"Jegyeseménymodul, amely hivatkozásokat hoz létre és távolít el a jegyek és a "
-"konfigurációelemek között."
+msgstr "Jegyeseménymodul, amely hivatkozásokat hoz létre és távolít el a jegyek és a konfigurációelemek között."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Activate this option to remove links between the ticket and config items that are removed from this field."
-msgstr ""
-"Aktiválja ezt a beállítást, hogy eltávolítsa azon jegy és konfigurációelemek "
-"közötti kapcsolatokat, amelyek eltávolításra kerültek ebből a mezőből."
+msgstr "Aktiválja ezt a beállítást, hogy eltávolítsa azon jegy és konfigurációelemek közötti kapcsolatokat, amelyek eltávolításra kerültek ebből a mezőből."
 
 #. SysConfig
 msgid "Ticket event module that updates DynamicFields."
@@ -1235,15 +1214,11 @@ msgstr "Ügyfélhez kapcsolódó konfigurációelemek"
 
 #. SysConfig
 msgid "Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface."
-msgstr ""
-"Leképezés meghatározása a konfigurációelem-osztályok és a Font Awesome "
-"ikonok között, amelyek az ügyintézői felületen vannak megjelenítve."
+msgstr "Leképezés meghatározása a konfigurációelem-osztályok és a Font Awesome ikonok között, amelyek az ügyintézői felületen vannak megjelenítve."
 
 #. SysConfig
 msgid "Defines which type of link (named from the ticket perspective) is used to link tickets and config items."
-msgstr ""
-"Meghatározza, hogy mely kapcsolattípusok (a jegy nézőpontjából elnevezve) "
-"vannak használva a jegyek és a konfigurációelemek összekapcsolásához."
+msgstr "Meghatározza, hogy mely kapcsolattípusok (a jegy nézőpontjából elnevezve) vannak használva a jegyek és a konfigurációelemek összekapcsolásához."
 
 #. SysConfig
 msgid "Limit for config item search."
@@ -1255,39 +1230,27 @@ msgstr "Jegyeseménymodult regisztrál, amely tesztel."
 
 #. SysConfig
 msgid "Registers an output filter that shows a config item widget."
-msgstr ""
-"Kimenetszűrőt regisztrál, amely egy konfigurációelem felületi elemet jelenít "
-"meg."
+msgstr "Kimenetszűrőt regisztrál, amely egy konfigurációelem felületi elemet jelenít meg."
 
 #. SysConfig
 msgid "Required group permissions to use the customer config item widget in the agent interface."
-msgstr ""
-"A szükséges csoportjogosultságok az ügyfél konfigurációelem felületi "
-"elemének használatához az ügyintézői felületen."
+msgstr "A szükséges csoportjogosultságok az ügyfél konfigurációelem felületi elemének használatához az ügyintézői felületen."
 
 #. SysConfig
 msgid "Required permissions to use the config item dialog in the agent interface."
-msgstr ""
-"A szükséges jogosultságok a konfigurációelem párbeszédablakának "
-"használatához az ügyintézői felületen."
+msgstr "A szükséges jogosultságok a konfigurációelem párbeszédablakának használatához az ügyintézői felületen."
 
 #. SysConfig
 msgid "This configuration registers a frontend module for the agent interface that provides the AJAX interface for AgentITSMConfigItemCustomerCIsWidget."
-msgstr ""
-"Ez a beállítás egy előtétprogram-modult regisztrál az ügyintézői felülethez, "
-"amely az AJAX-felületet biztosítja az ügyintéző ITSM-konfigurációeleme "
-"ügyfél konfigurációelemeinek felületi eleméhez."
+msgstr "Ez a beállítás egy előtétprogram-modult regisztrál az ügyintézői felülethez, amely az AJAX-felületet biztosítja az ügyintéző ITSM-konfigurációeleme ügyfél konfigurációelemeinek felületi eleméhez."
 
 #. SysConfig
 msgid "Enable search for config items based on the customer id."
-msgstr ""
-"Konfigurációelemek keresésének engedélyezése az ügyfél-azonosító alapján."
+msgstr "Konfigurációelemek keresésének engedélyezése az ügyfél-azonosító alapján."
 
 #. SysConfig
 msgid "Enable search for config items based on the customer user id."
-msgstr ""
-"Konfigurációelemek keresésének engedélyezése az ügyfélfelhasználó-azonosító "
-"alapján."
+msgstr "Konfigurációelemek keresésének engedélyezése az ügyfélfelhasználó-azonosító alapján."
 
 #. SysConfig
 msgid "Event Module that links a ConfigItem."
@@ -1295,20 +1258,15 @@ msgstr "Eseménymodul, amely összekapcsol egy konfigurációelemet."
 
 #. SysConfig
 msgid "Autoloading of ITSMConfigurationManagement extensions."
-msgstr ""
-"Az ITSM-konfigurációmenedzsment kiterjesztéseinek automatikus betöltése."
+msgstr "Az ITSM-konfigurációmenedzsment kiterjesztéseinek automatikus betöltése."
 
 #. SysConfig
 msgid "Registers a ITSMConfigItem-EventModule that will save related attachments."
-msgstr ""
-"ITSM-konfigurációelem eseményobjektumot regisztrál, amely a kapcsolódó "
-"mellékleteket fogja elmenteni."
+msgstr "ITSM-konfigurációelem eseményobjektumot regisztrál, amely a kapcsolódó mellékleteket fogja elmenteni."
 
 #. SysConfig
 msgid "List of events that are available for generic interface event object type ITSMConfigItem."
-msgstr ""
-"Események listája, amelyek az ITSMConfigItem általános felület "
-"eseményobjektum-típushoz érhetők el."
+msgstr "Események listája, amelyek az ITSMConfigItem általános felület eseményobjektum-típushoz érhetők el."
 
 #. SysConfig
 msgid "Add link to config item \"%s\"."
@@ -1324,18 +1282,13 @@ msgstr "A feltöltési gyorsítótár automatikus betöltése."
 
 #. SysConfig
 msgid "Filters the customer company config items by depoyment states into the customer config item widget."
-msgstr ""
-"Üzembe állítási állapotok szerint szűri az ügyfélvállalat "
-"konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe."
+msgstr "Üzembe állítási állapotok szerint szűri az ügyfélvállalat konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe."
 
 #. SysConfig
 msgid "Filters the customer config items by depoyment states into the customer config item widget."
-msgstr ""
-"Üzembe állítási állapotok szerint szűri az ügyfél konfigurációelemeit az "
-"ügyfél konfigurációelemének felületi elemébe."
+msgstr "Üzembe állítási állapotok szerint szűri az ügyfél konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe."
 
 #. SysConfig
 msgid "Defines the default search attribute for CI search screen."
-msgstr ""
-"Meghatározza az alapértelmezett keresési attribútumot a konfigurációelem-"
-"keresés képernyőnél."
+msgstr "Meghatározza az alapértelmezett keresési attribútumot a konfigurációelem-keresés képernyőnél."
+
