@@ -2,19 +2,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
 "POT-Creation-Date: 2020-09-22 13:14+0000\n"
-"PO-Revision-Date: 2020-06-27 23:49+0000\n"
-"Last-Translator: Bere Brigitta <brigittabere@gmail.com>\n"
-"Language-Team: Romanian <https://translate.app.otrs.com/projects/otrs-6/itsm-configuration-management/ro/>\n"
+"PO-Revision-Date: 2026-06-04 12:48+0000\n"
+"Last-Translator: Bogdan NEMTANU <bogdan.nemtanu@gmail.com>\n"
+"Language-Team: Romanian <https://translations.znuny.org/projects/znuny/"
+"itsmconfigurationmanagement/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0.4\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Config Item Management"
-msgstr ""
+msgstr "Managementul elementelor de configurare"
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
 msgid "Change class definition"
@@ -1291,4 +1293,3 @@ msgstr ""
 #. SysConfig
 msgid "Defines the default search attribute for CI search screen."
 msgstr ""
-
