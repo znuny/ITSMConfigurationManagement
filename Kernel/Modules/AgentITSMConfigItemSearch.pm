@@ -12,7 +12,7 @@ package Kernel::Modules::AgentITSMConfigItemSearch;
 use strict;
 use warnings;
 
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(:all);
 
 our $ObjectManagerDisabled = 1;
@@ -49,8 +49,8 @@ sub Run {
     $Self->{OrderBy} = $ParamObject->GetParam( Param => 'OrderBy' )
         || $Self->{Config}->{'Order::Default'}
         || 'Down';
-    $Self->{Profile}     = $ParamObject->GetParam( Param => 'Profile' )     || '';
-    $Self->{SaveProfile} = $ParamObject->GetParam( Param => 'SaveProfile' ) || '';
+    $Self->{Profile}        = $ParamObject->GetParam( Param => 'Profile' )     || '';
+    $Self->{SaveProfile}    = $ParamObject->GetParam( Param => 'SaveProfile' ) || '';
     $Self->{TakeLastSearch} = $ParamObject->GetParam( Param => 'TakeLastSearch' );
 
     # get general catalog object
@@ -369,7 +369,7 @@ sub Run {
                 ResultFormStrg            => $Param{ResultFormStrg},
                 ProfilesStrg              => $Param{ProfilesStrg},
                 Number                    => $GetParam{Number} || '',
-                Name                      => $GetParam{Name} || '',
+                Name                      => $GetParam{Name}   || '',
             },
         );
 
@@ -1287,9 +1287,9 @@ sub _XMLSearchFormGet {
                     if ( $Values->{'-between'} ) {
 
                         # get time elemet values
-                        my ( $StartDateTime, $StopDateTime ) = @{ $Values->{'-between'} };
-                        my ( $StartDate,     $StartTime )    = split( /\s/, $StartDateTime );
-                        my ( $StartYear, $StartMonth,  $StartDay )    = split( /-/,  $StartDate );
+                        my ( $StartDateTime, $StopDateTime )          = @{ $Values->{'-between'} };
+                        my ( $StartDate, $StartTime )                 = split( /\s/, $StartDateTime );
+                        my ( $StartYear, $StartMonth, $StartDay )     = split( /-/, $StartDate );
                         my ( $StartHour, $StartMinute, $StartSecond ) = split( /\:/, $StartTime );
 
                         my ( $StopDate, $StopTime ) = split( /\s/, $StopDateTime );

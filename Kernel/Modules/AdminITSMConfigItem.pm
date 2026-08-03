@@ -254,7 +254,7 @@ sub Run {
                 %{$Definition},
                 ClassID => $ClassID,
                 Class   => $ClassList->{$ClassID},
-                Rows =>
+                Rows    =>
                     $Kernel::OM->Get('Kernel::Config')->Get("ITSMConfigItem::Frontend::$Self->{Action}")->{EditorRows}
                     || 30,
             },

@@ -44,7 +44,7 @@ my $DefinitionID1    = $ConfigItemObject->DefinitionAdd(
     ClassID    => $ClassID,
     UserID     => $UserID,
     CreateBy   => $UserID,
-    Definition => << 'EOF',
+    Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor
@@ -63,7 +63,7 @@ my $DefinitionID2 = $ConfigItemObject->DefinitionAdd(
     ClassID    => $ClassID,
     UserID     => $UserID,
     CreateBy   => $UserID,
-    Definition => << 'EOF',
+    Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor
@@ -95,7 +95,7 @@ my @Tests = (
         ExpectedResults => [
             {
                 CreateBy   => $UserID,
-                Definition => << 'EOF',
+                Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor
@@ -110,7 +110,7 @@ EOF
             },
             {
                 CreateBy   => $UserID,
-                Definition => << 'EOF',
+                Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor

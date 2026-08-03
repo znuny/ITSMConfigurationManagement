@@ -269,7 +269,7 @@ sub InputCreate {
         $Output .= '<input type="file" id="' . $KeyUpload . '" name="' . $KeyUpload . '" class="fixed" /> ';
     }
 
-    $LayoutObject->AddJSOnDocumentComplete( Code => <<"ZNUUNY");
+    $LayoutObject->AddJSOnDocumentComplete( Code => <<"ZNUUNY" );
 
 // use getElementById because id has colons
 \$(document.getElementById("$KeyUpload")).on('change', function() {

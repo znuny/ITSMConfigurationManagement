@@ -338,7 +338,7 @@ sub GetPossibleCustomerCIs {
             Number       => $Version->{Number},
             Class        => $Version->{Class},
             Icon         => $Mapping{ $Version->{Class} } || '',
-            Linked       => $LinkKeyList{$ConfigItemID} || 0,
+            Linked       => $LinkKeyList{$ConfigItemID}   || 0,
         };
     }
 

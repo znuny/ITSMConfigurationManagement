@@ -199,7 +199,7 @@ sub Run {
         )
     {
         return $Self->ReturnError(
-            ErrorCode => "$Self->{OperationName}.MissingParameter",
+            ErrorCode    => "$Self->{OperationName}.MissingParameter",
             ErrorMessage =>
                 "$Self->{OperationName}: UserLogin or SessionID is required!",
         );
@@ -230,7 +230,7 @@ sub Run {
     for my $Needed (qw(ConfigItem)) {
         if ( !IsHashRefWithData( $Param{Data}->{$Needed} ) ) {
             return $Self->ReturnError(
-                ErrorCode => "$Self->{OperationName}.MissingParameter",
+                ErrorCode    => "$Self->{OperationName}.MissingParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: $Needed parameter is missing or not valid!",
             );
@@ -266,7 +266,7 @@ sub Run {
 
     if ( !( $ConfigItem->{Class} ) ) {
         return $Self->ReturnError(
-            ErrorCode => "$Self->{OperationName}.MissingParameter",
+            ErrorCode    => "$Self->{OperationName}.MissingParameter",
             ErrorMessage =>
                 "$Self->{OperationName}: ConfigItem->Class parameter is missing!",
         );
@@ -283,7 +283,7 @@ sub Run {
         }
         else {
             return $Self->ReturnError(
-                ErrorCode => "$Self->{OperationName}.WrongStructure",
+                ErrorCode    => "$Self->{OperationName}.WrongStructure",
                 ErrorMessage =>
                     "$Self->{OperationName}: Structure for ConfigItem->InciStates is not correct!",
             );
@@ -335,7 +335,7 @@ sub Run {
         }
         else {
             return $Self->ReturnError(
-                ErrorCode => "$Self->{OperationName}.WrongStructure",
+                ErrorCode    => "$Self->{OperationName}.WrongStructure",
                 ErrorMessage =>
                     "$Self->{OperationName}: Structure for OrderByDirection is not correct!",
             );
@@ -481,7 +481,7 @@ sub _CheckConfigItem {
     # check ConfigItem->Class
     if ( !$Self->ValidateClass( %{$ConfigItem} ) ) {
         return {
-            ErrorCode => "$Self->{OperationName}.InvalidParameter",
+            ErrorCode    => "$Self->{OperationName}.InvalidParameter",
             ErrorMessage =>
                 "$Self->{OperationName}: ConfigItem->Class parameter is invalid!",
         };
@@ -495,7 +495,7 @@ sub _CheckConfigItem {
             # check ConfigItem->InciStates
             if ( !$Self->ValidateInciState( InciState => $InciState ) ) {
                 return {
-                    ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                    ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                     ErrorMessage =>
                         "$Self->{OperationName}: ConfigItem->InciStates parameter is invalid!",
                 };
@@ -510,7 +510,7 @@ sub _CheckConfigItem {
             # check ConfigItem->InciStates
             if ( !$Self->ValidateDeplState( DeplState => $DeplState ) ) {
                 return {
-                    ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                    ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                     ErrorMessage =>
                         "$Self->{OperationName}: ConfigItem->DeplStates parameter is invalid!",
                 };
@@ -530,7 +530,7 @@ sub _CheckConfigItem {
                 )
             {
                 return {
-                    ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                    ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                     ErrorMessage =>
                         "$Self->{OperationName}: ConfigItem->ConfigItem$TimeParam parameter is invalid!",
                 };
@@ -541,7 +541,7 @@ sub _CheckConfigItem {
     if ( defined $ConfigItem->{Limit} ) {
         if ( !IsNumber( $ConfigItem->{Limit} ) ) {
             return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: ConfigItem->Limit parameter is invalid!",
             };
@@ -751,7 +751,7 @@ sub _CheckSearchXMLData {
                 }
                 else {
                     return {
-                        ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                        ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                         ErrorMessage =>
                             "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter"
                             . " is invalid!",
@@ -880,7 +880,7 @@ sub _CheckValue {
         # run Text validations
         if ( !$Self->ValidateInputText(%Param) ) {
             return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
                     . " excedes the maxium length!",
@@ -892,7 +892,7 @@ sub _CheckValue {
         # run Date validations
         if ( !$Self->ValidateInputDate(%Param) ) {
             return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
                     . " is not a valid Date format!",
@@ -904,7 +904,7 @@ sub _CheckValue {
         # run DateTime validations
         if ( !$Self->ValidateInputDateTime(%Param) ) {
             return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
                     . " is not a valid DateTime format!",
@@ -916,7 +916,7 @@ sub _CheckValue {
         # run Integer validations
         if ( !$Self->ValidateInputInteger(%Param) ) {
             return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
                     . " is not a valid Integer or out of range!",
@@ -928,7 +928,7 @@ sub _CheckValue {
         # run General Catalog validations
         if ( !$Self->ValidateInputGeneralCatalog( %Param, Valid => 0 ) ) {
             return {
-                ErrorCode => "$Self->{OperationName}.InvalidParameter",
+                ErrorCode    => "$Self->{OperationName}.InvalidParameter",
                 ErrorMessage =>
                     "$Self->{OperationName}: ConfigItem->CIXMLData->$Parent$ItemKey parameter value"
                     . " is not a valid for General Catalog '$Param{Input}->{Class}'!",

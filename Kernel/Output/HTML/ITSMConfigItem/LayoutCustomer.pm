@@ -173,8 +173,8 @@ sub InputCreate {
     my $Class            = 'W50pc ITSMCustomerSearch';
     my $CustomerUserName = '';
     my $Required         = $Param{Required} || '';
-    my $Invalid          = $Param{Invalid} || '';
-    my $ItemId           = $Param{ItemId} || '';
+    my $Invalid          = $Param{Invalid}  || '';
+    my $ItemId           = $Param{ItemId}   || '';
 
     if ($Required) {
         $Class .= ' Validate_Required';

@@ -43,7 +43,7 @@ $Self->True(
 
 my $Version = 1;
 
-my $PerlDefinition = << 'EOF';
+my $PerlDefinition = <<'EOF';
 [
     {
         Key        => 'Vendor',

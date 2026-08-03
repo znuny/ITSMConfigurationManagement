@@ -13,7 +13,7 @@ use strict;
 use warnings;
 
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -250,7 +250,7 @@ sub Run {
 
                 $LogObject->Log(
                     Priority => 'error',
-                    Message =>
+                    Message  =>
                         "The name $Version->{Name} is already in use by the ConfigItemID(s): "
                         . $NameDuplicatesString,
                 );
@@ -498,7 +498,7 @@ sub Run {
         if ( $ConfigObject->{Debug} > 0 ) {
             $LogObject->Log(
                 Priority => 'debug',
-                Message =>
+                Message  =>
                     "Rendering block for duplicates (CI-Numbers: $DuplicateString) error message",
             );
         }
@@ -929,11 +929,11 @@ sub _XMLFormOutput {
                 Data => {
                     Name        => $Item->{Name},
                     ItemID      => $ItemID,
-                    LabelFor    => $LabelFor || '',
+                    LabelFor    => $LabelFor            || '',
                     Description => $Item->{Description} || $Item->{Name},
                     InputString => $InputString,
                     LabelClass  => $LabelClass || '',
-                    Class       => $Class || '',
+                    Class       => $Class      || '',
                 },
             );
 

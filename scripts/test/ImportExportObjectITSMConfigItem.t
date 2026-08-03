@@ -3052,11 +3052,11 @@ my @ImportDataTests = (
         ReferenceImportData => {
             VersionNumber => 2,
             LastVersion   => {
-                Name                     => 'UnitTest - ConfigItem 3 Version 2',
-                DeplState                => 'Production',
-                InciState                => 'Operational',
-                'Main1::1'               => 'Main1 (1)',
-                'Main1::1::Main1Sub1::1' => 'Main1 (1) Main1Sub1 (1)',
+                Name                                          => 'UnitTest - ConfigItem 3 Version 2',
+                DeplState                                     => 'Production',
+                InciState                                     => 'Operational',
+                'Main1::1'                                    => 'Main1 (1)',
+                'Main1::1::Main1Sub1::1'                      => 'Main1 (1) Main1Sub1 (1)',
                 'Main1::1::Main1Sub1::1::Main1Sub1SubSub1::1' =>
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub1 (1)',
                 'Main1::1::Main1Sub1::1::Main1Sub1SubSub1::2' =>
@@ -3065,7 +3065,7 @@ my @ImportDataTests = (
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub1 (3)',
                 'Main1::1::Main1Sub1::1::Main1Sub1SubSub2::1' =>
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub2 (1)',
-                'Main1::1::Main1Sub1::2' => 'Main1 (1) Main1Sub1 (2)',
+                'Main1::1::Main1Sub1::2'                      => 'Main1 (1) Main1Sub1 (2)',
                 'Main1::1::Main1Sub1::2::Main1Sub1SubSub1::1' =>
                     'Main1 (1) Main1Sub1 (2) Main1Sub1SubSub1 (1)',
                 'Main1::1::Main1Sub1::2::Main1Sub1SubSub2::1' =>
@@ -3168,7 +3168,7 @@ my @ImportDataTests = (
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub1 (2)',
                 'Main1::1::Main1Sub1::1::Main1Sub1SubSub1::3' =>
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub1 (3)',
-                'Main1::1::Main1Sub1::2' => 'Main1 (1) Main1Sub1 (2)',
+                'Main1::1::Main1Sub1::2'                      => 'Main1 (1) Main1Sub1 (2)',
                 'Main1::1::Main1Sub1::2::Main1Sub1SubSub1::1' =>
                     'Main1 (1) Main1Sub1 (2) Main1Sub1SubSub1 (1)',
                 'Main1::1::Main1Sub1::2::Main1Sub1SubSub2::1' =>
@@ -3267,7 +3267,7 @@ my @ImportDataTests = (
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub1 (2)',
                 'Main1::1::Main1Sub1::1::Main1Sub1SubSub1::3' =>
                     'Main1 (1) Main1Sub1 (1) Main1Sub1SubSub1 (3)',
-                'Main1::1::Main1Sub1::2' => 'Main1 (1) Main1Sub1 (2)',
+                'Main1::1::Main1Sub1::2'                      => 'Main1 (1) Main1Sub1 (2)',
                 'Main1::1::Main1Sub1::2::Main1Sub1SubSub1::1' =>
                     'Main1 (1) Main1Sub1 (2) Main1Sub1SubSub1 (1)',
                 'Main1::1::Main1Sub1::2::Main1Sub1SubSub2::1' =>

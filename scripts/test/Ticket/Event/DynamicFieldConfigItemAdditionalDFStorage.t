@@ -558,10 +558,10 @@ $DynamicFieldBackendObject->ValueSet(
 
 # # Only additional dynamic fields set to type "backend" are expected to be set by the event.
 %ExpectedDynamicFieldData = (
-    DynamicFieldConfigItemUnitTestText1 => 'CPU 1, CPU 2, CPU 1, CPU 4',
-    DynamicFieldConfigItemUnitTestText2 => 'CPU 2, CPU 4',
-    DynamicFieldConfigItemUnitTestText3 => 'Unit test computer 1, Unit test computer 2',
-    DynamicFieldConfigItemUnitTestText4 => '127.0.0.1, 127.0.0.2',
+    DynamicFieldConfigItemUnitTestText1        => 'CPU 1, CPU 2, CPU 1, CPU 4',
+    DynamicFieldConfigItemUnitTestText2        => 'CPU 2, CPU 4',
+    DynamicFieldConfigItemUnitTestText3        => 'Unit test computer 1, Unit test computer 2',
+    DynamicFieldConfigItemUnitTestText4        => '127.0.0.1, 127.0.0.2',
     DynamicFieldConfigItemUnitTestText5        => undef,                   # configured for frontend, not backend
     DynamicFieldConfigItemUnitTestDate         => '2040-01-01',
     DynamicFieldConfigItemUnitTestDateTime     => '2040-01-01 00:00:00',

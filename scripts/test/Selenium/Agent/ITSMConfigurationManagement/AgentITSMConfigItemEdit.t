@@ -45,7 +45,7 @@ $Selenium->RunTest(
                 ConfigItemClass => 'Location',
                 CheckEditFields => [
                     'Name', 'DeplStateID', 'InciStateID', 'Type', 'Phone1', 'Phone2', 'Fax', 'E-Mail', 'Address',
-                    'Note', 'FileUpload', 'SubmitSave'
+                    'Note', 'FileUpload',  'SubmitSave'
                 ],
             },
             {
@@ -228,7 +228,7 @@ $Selenium->RunTest(
             Value  => $GroupID,
         );
 
-        my $Definition = << "EOF";
+        my $Definition = <<"EOF";
 ---
 - Key: CustomerID1
   Name: CustomerCompany 1

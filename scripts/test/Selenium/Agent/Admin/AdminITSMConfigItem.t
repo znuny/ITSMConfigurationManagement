@@ -95,7 +95,7 @@ $Selenium->RunTest(
         $Selenium->find_element("//button[\@value='Add'][\@type='submit']")->VerifiedClick();
 
         my $IntegerKey        = "TestInteger$RandomID";
-        my $IntegerDefinition = << "EOF";
+        my $IntegerDefinition = <<"EOF";
 ---
 - Key: $IntegerKey
   Name: Test Integer

@@ -90,9 +90,9 @@ sub PreRun {
     my $All               = $Self->GetOption('all');
     my $Class             = $Self->GetOption('class') // '';
     my @ConfigItemNumbers = @{ $Self->GetOption('configitem-number') // [] };
-    my $DeploymentState   = $Self->GetOption('deployment-state') // '';
-    my $AllOldVersions    = $Self->GetOption('all-old-versions') // '';
-    my $AllButKeepLast    = $Self->GetOption('all-but-keep-last-versions') // '';
+    my $DeploymentState   = $Self->GetOption('deployment-state')             // '';
+    my $AllOldVersions    = $Self->GetOption('all-old-versions')             // '';
+    my $AllButKeepLast    = $Self->GetOption('all-but-keep-last-versions')   // '';
     my $AllOlderThanDays  = $Self->GetOption('all-older-than-days-versions') // '';
 
     if (
@@ -146,9 +146,9 @@ sub Run {
     my $All               = $Self->GetOption('all');
     my $Class             = $Self->GetOption('class') // '';
     my @ConfigItemNumbers = @{ $Self->GetOption('configitem-number') // [] };
-    my $DeploymentState   = $Self->GetOption('deployment-state') // '';
-    my $AllOldVersions    = $Self->GetOption('all-old-versions') // '';
-    my $AllButKeepLast    = $Self->GetOption('all-but-keep-last-versions') // '';
+    my $DeploymentState   = $Self->GetOption('deployment-state')             // '';
+    my $AllOldVersions    = $Self->GetOption('all-old-versions')             // '';
+    my $AllButKeepLast    = $Self->GetOption('all-but-keep-last-versions')   // '';
     my $AllOlderThanDays  = $Self->GetOption('all-older-than-days-versions') // '';
 
     # delete all config items

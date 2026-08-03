@@ -48,7 +48,7 @@ my @Tests = (
     {
         Name   => 'Missing ClasssID',
         Config => {
-            Definition => << 'EOF',
+            Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor
@@ -74,7 +74,7 @@ EOF
         Name   => 'Missing UserID',
         Config => {
             ClassID    => $ClassID,
-            Definition => << 'EOF',
+            Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor
@@ -91,7 +91,7 @@ EOF
         Name   => 'Wrong Definition (Legacy Perl)',
         Config => {
             ClassID    => $ClassID,
-            Definition => << 'EOF',
+            Definition => <<'EOF',
 [
     {
         Key        => 'Vendor',
@@ -113,7 +113,7 @@ EOF
         Name   => 'Wrong Definition (Invalid YAML)',
         Config => {
             ClassID    => $ClassID,
-            Definition => << 'EOF',
+            Definition => <<'EOF',
 ---
 Test
  Invalid
@@ -133,7 +133,7 @@ EOF
         Name   => 'Correct ASCII',
         Config => {
             ClassID    => $ClassID,
-            Definition => << 'EOF',
+            Definition => <<'EOF',
 ---
 - Key: Vendor
   Name: Vendor

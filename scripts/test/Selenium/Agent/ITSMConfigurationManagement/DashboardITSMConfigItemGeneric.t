@@ -51,7 +51,7 @@ $Selenium->RunTest(
             {
                 ClassName  => 'Customer' . $RandomID,
                 Key        => 'Customer',
-                Definition => << "EOF",
+                Definition => <<"EOF",
 ---
 - Key: Customer
   Name: Customer
@@ -63,7 +63,7 @@ EOF
             {
                 ClassName  => 'CustomerCompany' . $RandomID,
                 Key        => 'CustomerCompany',
-                Definition => << "EOF",
+                Definition => <<"EOF",
 ---
 - Key: CustomerCompany
   Name: CustomerCompany
