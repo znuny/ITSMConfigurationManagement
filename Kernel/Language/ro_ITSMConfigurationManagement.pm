@@ -39,7 +39,7 @@ sub Data {
 
     # TT Template: Kernel/Output/HTML/Templates/Standard/AdminITSMConfigItem.tt
     $Self->{Translation}->{'Change class definition'} = '';
-    $Self->{Translation}->{'Config Item Management'} = '';
+    $Self->{Translation}->{'Config Item Management'} = 'Managementul elementelor de configurare';
     $Self->{Translation}->{'Config Item Class'} = '';
     $Self->{Translation}->{'Definition'} = '';
     $Self->{Translation}->{'Change'} = '';
