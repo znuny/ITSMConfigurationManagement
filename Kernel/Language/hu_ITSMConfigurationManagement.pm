@@ -27,8 +27,8 @@ sub Data {
         'A kiválasztott konfigurációelem-osztály érvénytelen vagy nem létezik.';
     $Self->{Translation}->{'Config item deployment states'} = 'Konfigurációelem üzembe állítási állapotai';
     $Self->{Translation}->{'Config item link type'} = 'Konfigurációelem hivatkozástípusa';
-    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
-        'Kapcsolattípus kiválasztása a jegy és a kiválasztott konfigurációelemek közötti összekapcsolás engedélyezéséhez. Ne feledje, hogy az összekapcsolás csak a jegyek dinamikus mezőinél érhető el.';
+    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets.'} =
+        '';
     $Self->{Translation}->{'Config item link source'} = 'Konfigurációelem hivatkozásforrása';
     $Self->{Translation}->{'Config item link removal'} = 'Konfigurációelem hivatkozáseltávolítása';
     $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
@@ -306,8 +306,8 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Meghatározások létrehozása és kezelése a konfigurációelemeknél.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és Core.Agent.LinkObject.js.';
-    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
-        'Leképezés meghatározása a konfigurációelem-osztályok és a Font Awesome ikonok között, amelyek az ügyintézői felületen vannak megjelenítve.';
+    $Self->{Translation}->{'Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface.'} =
+        '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Meghatározza a szükséges jogosultságokat az ITSM konfigurációelemek létrehozásához az általános felület használatával.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -359,8 +359,8 @@ sub Data {
     $Self->{Translation}->{'DependsOn'} = 'Függ ettől';
     $Self->{Translation}->{'Deployment State Color'} = 'Üzembe állítási állapot színe';
     $Self->{Translation}->{'Duplicate'} = 'Kettőzés';
+    $Self->{Translation}->{'Dynamic Field Config Item'} = '';
     $Self->{Translation}->{'Dynamic fields administration'} = 'Dinamikus mezők adminisztrációja';
-    $Self->{Translation}->{'DynamicFieldConfigItem'} = 'Konfigurációelem dinamikus mező';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = 'Konfigurációelemek keresésének engedélyezése az ügyfél-azonosító alapján.';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         'Konfigurációelemek keresésének engedélyezése az ügyfélfelhasználó-azonosító alapján.';
@@ -373,10 +373,10 @@ sub Data {
     $Self->{Translation}->{'Event Module that links a ConfigItem.'} = 'Eseménymodul, amely összekapcsol egy konfigurációelemet.';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Eseménymodul a konfigurációelem állapotának beállításához egy jegy konfigurációelem hivatkozásán.';
-    $Self->{Translation}->{'Filters the customer company config items by depoyment states into the customer config item widget.'} =
-        'Üzembe állítási állapotok szerint szűri az ügyfélvállalat konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe.';
-    $Self->{Translation}->{'Filters the customer config items by depoyment states into the customer config item widget.'} =
-        'Üzembe állítási állapotok szerint szűri az ügyfél konfigurációelemeit az ügyfél konfigurációelemének felületi elemébe.';
+    $Self->{Translation}->{'Filters the customer company config items by deployment states into the customer config item widget.'} =
+        '';
+    $Self->{Translation}->{'Filters the customer config items by deployment states into the customer config item widget.'} =
+        '';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM konfigurációelem áttekintés.';
     $Self->{Translation}->{'Limit for config item search.'} = 'Korlát a konfigurációelem-kereséshez.';
     $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
@@ -461,7 +461,7 @@ sub Data {
         'Ez a beállítás egy előtétprogram-modult regisztrál az ügyintézői felülethez, amely az AJAX-felületet biztosítja az ügyintéző ITSM-konfigurációeleme ügyfél konfigurációelemeinek felületi eleméhez.';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         'Jegyeseménymodul, amely hivatkozásokat hoz létre és távolít el a jegyek és a konfigurációelemek között.';
-    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = 'Jegyeseménymodul, amely frissíti a dinamikus mezőket.';
+    $Self->{Translation}->{'Ticket event module that updates dynamic fields.'} = '';
     $Self->{Translation}->{'class'} = 'osztály';
     $Self->{Translation}->{'global'} = 'globális';
     $Self->{Translation}->{'postproductive'} = 'beüzemelés után';
