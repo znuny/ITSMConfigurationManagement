@@ -10,7 +10,7 @@
     <Description Lang="en">The Znuny::ITSM Configuration Management package.</Description>
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
-    <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <Description Lang="hu">A Znuny::ITSM konfigurációmenedzsment csomag.</Description>
     <ChangeLog Version="6.5.5" Date="2025-05-08 08:33:58 +0200">Removed ValidateInputCustomer and ValidateInputCustomerCompany if you use ConfigItemSearch. Also added optional Parameter Valid for ValidateInputGeneralCatalog -&gt; GeneralCatalog-&gt;ItemList(), to search for invalid Items.
 Deployment states will not be reset anymore on package reinstallation.</ChangeLog>
     <ChangeLog Version="6.5.4" Date="2025-02-28 11:47:08 +0100">- Fixed form ID validation for config item attachments.&#13;
@@ -1454,7 +1454,7 @@ Deployment states will not be reset anymore on package reinstallation.</ChangeLo
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az ITSMConfigurationManagement Znuny csomag telepítésére készül.<br/>
+        Ön az ITSMConfigurationManagement Znuny-csomag telepítésére készül.<br/>
         <br/>
         <br/>
 
@@ -1556,7 +1556,7 @@ Deployment states will not be reset anymore on package reinstallation.</ChangeLo
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az ITSMConfigurationManagement Znuny csomag frissítésére készül.<br/>
+        Ön az ITSMConfigurationManagement Znuny-csomag frissítésére készül.<br/>
         <br/>
 
     ]]></IntroUpgrade>

@@ -1905,7 +1905,7 @@
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemCustomerCIs###Mapping" Required="0" Valid="0">
-        <Description Translatable="1">Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.</Description>
+        <Description Translatable="1">Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface.</Description>
         <Navigation>Frontend::Agent::View::ConfigItem</Navigation>
         <Value>
             <Hash>
@@ -1946,7 +1946,7 @@
         </Value>
     </Setting>
     <Setting Name="AgentITSMConfigItemCustomerCIsWidget###CustomerCIDeploymentStates" Required="0" Valid="1">
-        <Description Translatable="1">Filters the customer config items by depoyment states into the customer config item widget.</Description>
+        <Description Translatable="1">Filters the customer config items by deployment states into the customer config item widget.</Description>
         <Navigation>Core::Znuny::CustomerCIs</Navigation>
         <Value>
             <Array>
@@ -1955,7 +1955,7 @@
         </Value>
     </Setting>
     <Setting Name="AgentITSMConfigItemCustomerCIsWidget###CustomerCompanyCIDeploymentStates" Required="0" Valid="1">
-        <Description Translatable="1">Filters the customer company config items by depoyment states into the customer config item widget.</Description>
+        <Description Translatable="1">Filters the customer company config items by deployment states into the customer config item widget.</Description>
         <Navigation>Core::Znuny::CustomerCIs</Navigation>
         <Value>
             <Array>
@@ -2051,7 +2051,7 @@
                     </Item>
                     <Item Key="Description" Translatable="1"></Item>
                     <Item Key="NavBarName">Ticket</Item>
-                    <Item Key="Title" Translatable="1">DynamicFieldConfigItem</Item>
+                    <Item Key="Title" Translatable="1">Dynamic Field Config Item</Item>
                 </Hash>
             </Item>
         </Value>
@@ -2072,7 +2072,7 @@
                     </Item>
                     <Item Key="Description" Translatable="1"></Item>
                     <Item Key="NavBarName">Ticket</Item>
-                    <Item Key="Title" Translatable="1">DynamicFieldConfigItem</Item>
+                    <Item Key="Title" Translatable="1">Dynamic Field Config Item</Item>
                 </Hash>
             </Item>
         </Value>
@@ -2119,7 +2119,7 @@
         </Value>
     </Setting>
     <Setting Name="Ticket::EventModulePost###999-DynamicFieldConfigItemAdditionalDFStorage" Required="0" Valid="1">
-        <Description Translatable="1">Ticket event module that updates DynamicFields.</Description>
+        <Description Translatable="1">Ticket event module that updates dynamic fields.</Description>
         <Navigation>Core::Event::Znuny::DynamicFieldConfigItem</Navigation>
         <Value>
             <Hash>
