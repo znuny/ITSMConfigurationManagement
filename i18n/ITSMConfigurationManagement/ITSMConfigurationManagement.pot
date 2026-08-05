@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMConfigurationManagement\n"
-"POT-Creation-Date: 2025-12-09 10:17+0000\n"
+"POT-Creation-Date: 2026-08-05 12:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgid "Config item link type"
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
-msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets."
+msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets."
 msgstr ""
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
@@ -891,7 +891,7 @@ msgid "Define Actions where a settings button is available in the linked objects
 msgstr ""
 
 #. SysConfig
-msgid "Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface."
+msgid "Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface."
 msgstr ""
 
 #. SysConfig
@@ -1007,7 +1007,7 @@ msgid "Duplicate"
 msgstr ""
 
 #. SysConfig
-msgid "DynamicFieldConfigItem"
+msgid "Dynamic Field Config Item"
 msgstr ""
 
 #. SysConfig
@@ -1039,11 +1039,11 @@ msgid "Event module to set configitem-status on ticket-configitem-link."
 msgstr ""
 
 #. SysConfig
-msgid "Filters the customer company config items by depoyment states into the customer config item widget."
+msgid "Filters the customer company config items by deployment states into the customer config item widget."
 msgstr ""
 
 #. SysConfig
-msgid "Filters the customer config items by depoyment states into the customer config item widget."
+msgid "Filters the customer config items by deployment states into the customer config item widget."
 msgstr ""
 
 #. SysConfig
@@ -1235,7 +1235,7 @@ msgid "Ticket event module that creates and removes links between tickets and co
 msgstr ""
 
 #. SysConfig
-msgid "Ticket event module that updates DynamicFields."
+msgid "Ticket event module that updates dynamic fields."
 msgstr ""
 
 #. SysConfig

@@ -1290,3 +1290,27 @@ msgstr ""
 msgid "Defines the default search attribute for CI search screen."
 msgstr ""
 
+#. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
+msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets."
+msgstr ""
+
+#. SysConfig
+msgid "Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic Field Config Item"
+msgstr ""
+
+#. SysConfig
+msgid "Filters the customer company config items by deployment states into the customer config item widget."
+msgstr ""
+
+#. SysConfig
+msgid "Filters the customer config items by deployment states into the customer config item widget."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket event module that updates dynamic fields."
+msgstr ""
+
