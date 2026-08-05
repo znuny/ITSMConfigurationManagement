@@ -27,7 +27,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Config item deployment states'} = '';
     $Self->{Translation}->{'Config item link type'} = '';
-    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only availabe for dynamic fields of tickets.'} =
+    $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets.'} =
         '';
     $Self->{Translation}->{'Config item link source'} = '';
     $Self->{Translation}->{'Config item link removal'} = '';
@@ -304,7 +304,7 @@ sub Data {
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Crea e gestisci le definizioni per gli elementi di configurazione.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Definisce l\'azione con cui il bottone dei settaggi è disponibile in un oggetto widget collegato (LinkObject::ViewMode = "complex"). Notare che queste Actions devono essere registrate nei seguenti file JS e CSS: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.';
-    $Self->{Translation}->{'Define a mapping between CI classes and a Fontawesome icons which are shown in the agent interface.'} =
+    $Self->{Translation}->{'Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface.'} =
         '';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Definisce i permessi necessari per creare elementi di configurazione ITSM utilizzando l\'interfaccia generica.';
@@ -357,7 +357,7 @@ sub Data {
     $Self->{Translation}->{'DependsOn'} = '';
     $Self->{Translation}->{'Deployment State Color'} = 'Colore dello stato di distribuzione';
     $Self->{Translation}->{'Duplicate'} = 'Duplicato';
-    $Self->{Translation}->{'DynamicFieldConfigItem'} = '';
+    $Self->{Translation}->{'Dynamic Field Config Item'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = '';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         '';
@@ -370,9 +370,9 @@ sub Data {
     $Self->{Translation}->{'Event Module that links a ConfigItem.'} = '';
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Modulo evento per impostare lo stato di configurazione su ticket-configitem-link.';
-    $Self->{Translation}->{'Filters the customer company config items by depoyment states into the customer config item widget.'} =
+    $Self->{Translation}->{'Filters the customer company config items by deployment states into the customer config item widget.'} =
         '';
-    $Self->{Translation}->{'Filters the customer config items by depoyment states into the customer config item widget.'} =
+    $Self->{Translation}->{'Filters the customer config items by deployment states into the customer config item widget.'} =
         '';
     $Self->{Translation}->{'ITSM config item overview.'} = 'Panoramica degli elementi di configurazione ITSM.';
     $Self->{Translation}->{'Limit for config item search.'} = '';
@@ -458,7 +458,7 @@ sub Data {
         '';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         '';
-    $Self->{Translation}->{'Ticket event module that updates DynamicFields.'} = '';
+    $Self->{Translation}->{'Ticket event module that updates dynamic fields.'} = '';
     $Self->{Translation}->{'class'} = 'classe';
     $Self->{Translation}->{'global'} = 'globale';
     $Self->{Translation}->{'postproductive'} = 'postproductive';
