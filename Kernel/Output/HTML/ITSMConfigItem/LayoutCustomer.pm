@@ -193,9 +193,9 @@ sub InputCreate {
         );
 
         # fall back to pre 6.5.3 customer search if customer has no name
-        if (!$CustomerUserName) {
+        if ( !$CustomerUserName ) {
             my %CustomerSearchList = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerSearch(
-                Search => $Value,
+                UserLogin => $Value,
             );
             $CustomerUserName = $CustomerSearchList{$Value};
         }
