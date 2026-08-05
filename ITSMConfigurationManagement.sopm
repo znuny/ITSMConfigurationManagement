@@ -10,7 +10,7 @@
     <Description Lang="en">The Znuny::ITSM Configuration Management package.</Description>
     <Description Lang="de">Das Znuny::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete Znuny::ITSM Configuration Management.</Description>
-    <Description Lang="hu">Az Znuny::ITSM konfigurációmenedzsment csomag.</Description>
+    <Description Lang="hu">A Znuny::ITSM konfigurációmenedzsment csomag.</Description>
     <ChangeLog Version="7.3.3" Date="2026-04-09 10:51:52 +0200">Updated .pm translation files.</ChangeLog>
     <ChangeLog Version="7.3.2" Date="2026-02-23 13:05:30 +0100">Fixed: Widget Customer Related CIs is missing.</ChangeLog>
     <ChangeLog Version="7.3.1" Date="2026-01-26 21:43:38 +0100">Initial release for Znuny 7.3.</ChangeLog>
@@ -1463,7 +1463,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az ITSMConfigurationManagement Znuny csomag telepítésére készül.<br/>
+        Ön az ITSMConfigurationManagement Znuny-csomag telepítésére készül.<br/>
         <br/>
         <br/>
 
@@ -1565,7 +1565,7 @@
         <strong>ÜDVÖZÖLJÜK</strong>
         <br/>
         <br/>
-        Ön az ITSMConfigurationManagement Znuny csomag frissítésére készül.<br/>
+        Ön az ITSMConfigurationManagement Znuny-csomag frissítésére készül.<br/>
         <br/>
 
     ]]></IntroUpgrade>
