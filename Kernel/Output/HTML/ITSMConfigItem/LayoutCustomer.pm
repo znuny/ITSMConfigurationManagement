@@ -192,6 +192,14 @@ sub InputCreate {
             UserLogin => $Value,
         );
 
+        # fall back to pre 6.5.3 customer search if customer has no name
+        if ( !$CustomerUserName ) {
+            my %CustomerSearchList = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerSearch(
+                UserLogin => $Value,
+            );
+            $CustomerUserName = $CustomerSearchList{$Value};
+        }
+
         # transform ascii to html
         $CustomerUserName = $Kernel::OM->Get('Kernel::Output::HTML::Layout')->Ascii2Html(
             Text           => $CustomerUserName || '',
