@@ -28,7 +28,7 @@ sub Data {
     $Self->{Translation}->{'Config item deployment states'} = 'Config-Item-Verwendungsstatus';
     $Self->{Translation}->{'Config item link type'} = 'Config-Item-Linktyp';
     $Self->{Translation}->{'Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets.'} =
-        '';
+        'Wählen Sie einen Linktyp, um die Verknüpfung zwischen Ticket und gewählten Config-Items zu aktivieren. Beachten Sie, dass die Verknüpfung nur für dynamische Felder von Tickets zur Verfügung steht.';
     $Self->{Translation}->{'Config item link source'} = 'Config-Item-Linkquelle';
     $Self->{Translation}->{'Config item link removal'} = 'Config-Item-Links entfernen';
     $Self->{Translation}->{'Activate this option to remove links between the ticket and config items that are removed from this field.'} =
@@ -278,7 +278,7 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'AlternativeTo'} = 'Alternativ zu';
     $Self->{Translation}->{'Assigned CIs'} = 'Zugewiesene Configuration Items';
-    $Self->{Translation}->{'Autoloading of upload cache.'} = '';
+    $Self->{Translation}->{'Autoloading of upload cache.'} = 'Automatisches Laden des Upload-Caches.';
     $Self->{Translation}->{'CIs assigned to customer company'} = 'Zum Kunden zugewiesene Configurations Items';
     $Self->{Translation}->{'CIs assigned to customer user'} = 'Zum Kundenbenutzer zugewiesene Configurations Items';
     $Self->{Translation}->{'CMDB Settings'} = 'CMDB-Einstellungen';
@@ -300,12 +300,12 @@ sub Data {
     $Self->{Translation}->{'Configuration Management Database.'} = 'Configuration Management Database.';
     $Self->{Translation}->{'Configuration item bulk module.'} = 'Configuration Item-Sammelaktion.';
     $Self->{Translation}->{'Configuration item search backend router of the agent interface.'} =
-        '';
+        'Backend-Router für die Configuration Item-Suche der Agentenoberfläche.';
     $Self->{Translation}->{'Create and manage the definitions for Configuration Items.'} = 'Die Definitionen von Configuration Item-Limit erstellen und verwalten.';
     $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
         'Definieren Sie Actions, in denen im Verknüpfte-Objekte-Widget ein Einstellungen-Knopf verfügbar sein soll (LinkObject::ViewMode = "complex"). Bitte beachten Sie, dass für diese Actions die folgenden JS- und CSS-Dateien registriert sein müssen:  Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js und Core.Agent.LinkObject.js.';
     $Self->{Translation}->{'Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface.'} =
-        '';
+        'Definieren Sie eine Zuordnung zwischen CI-Klassen und Font Awesome-Symbolen, welche im Agenten-Interface angezeigt werden.';
     $Self->{Translation}->{'Defines Required permissions to create ITSM configuration items using the Generic Interface.'} =
         'Definiert die benötigten Berechtigungen zum Erstellen von ITSM Configuration Items durch das Generic Interface.';
     $Self->{Translation}->{'Defines Required permissions to delete ITSM configuration items using the Generic Interface.'} =
@@ -320,7 +320,8 @@ sub Data {
         'Definiert das Übersichtsmodul um die "Klein"-Ansicht einer Configuration Items-Liste anzuzeigen.';
     $Self->{Translation}->{'Defines regular expressions individually for each ConfigItem class to check the ConfigItem name and to show corresponding error messages.'} =
         'Definiert reguläre Ausdrücke individuell für jedes Configuration Item, um den Namen des Configuration Item zu überprüfen und entsprechende Fehlermeldungen anzuzeigen.';
-    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} = '';
+    $Self->{Translation}->{'Defines the default search attribute for CI search screen.'} =
+        'Definiert das Standard-Suchattribut für die Configuration Items-Suche.';
     $Self->{Translation}->{'Defines the default subobject of the class \'ITSMConfigItem\'.'} =
         'Definiert das Standard-Unterobjekt der Klasse \'ITSMConfigItem\'.';
     $Self->{Translation}->{'Defines the number of rows for the CI definition editor in the admin interface.'} =
@@ -357,7 +358,7 @@ sub Data {
     $Self->{Translation}->{'DependsOn'} = 'Hängt ab von';
     $Self->{Translation}->{'Deployment State Color'} = 'Verwendungsstatus-Farbe';
     $Self->{Translation}->{'Duplicate'} = 'Duplizieren';
-    $Self->{Translation}->{'Dynamic Field Config Item'} = '';
+    $Self->{Translation}->{'Dynamic Field Config Item'} = 'Dynamisches Feld Config-Item';
     $Self->{Translation}->{'Enable search for config items based on the customer id.'} = 'Aktiviert die Suche nach Config-Items basierend auf dem Kundenbenutzer.';
     $Self->{Translation}->{'Enable search for config items based on the customer user id.'} =
         'Aktiviert die Suche nach Config-Items basierend auf dem Kunden.';
@@ -371,9 +372,9 @@ sub Data {
     $Self->{Translation}->{'Event module to set configitem-status on ticket-configitem-link.'} =
         'Ein Ereignismodul das beim Verknüpfen von Tickets mit Configuration Items den Status des Configuration Items verändert.';
     $Self->{Translation}->{'Filters the customer company config items by deployment states into the customer config item widget.'} =
-        '';
+        'Filtert die Config-Items der Kundenfirma nach Verwendungsstatus in das Kunden-Config-Item-Widget.';
     $Self->{Translation}->{'Filters the customer config items by deployment states into the customer config item widget.'} =
-        '';
+        'Filtert die Kunden-Config-Items nach Verwendungsstatus in das Kunden-Config-Item-Widget.';
     $Self->{Translation}->{'ITSM config item overview.'} = 'ITSM Configuration Item-Übersicht';
     $Self->{Translation}->{'Limit for config item search.'} = 'Limit für die Config-Item-Suche.';
     $Self->{Translation}->{'List of events that are available for generic interface event object type ITSMConfigItem.'} =
@@ -458,7 +459,8 @@ sub Data {
         'Diese Konfiguration registriert ein Frontend-Modul für die Agenten-Interface, das die AJAX-Schnittstelle für AgentITSMConfigItemCustomerCIsWidget bereitstellt.';
     $Self->{Translation}->{'Ticket event module that creates and removes links between tickets and config items.'} =
         'Ticket-Event-Modul, das Links zwischen Tickets und Config-Items erstellt und entfernt.';
-    $Self->{Translation}->{'Ticket event module that updates dynamic fields.'} = '';
+    $Self->{Translation}->{'Ticket event module that updates dynamic fields.'} =
+        'Ticket-Event-Modul, das dynamische Felder aktualisiert.';
     $Self->{Translation}->{'class'} = 'Klasse';
     $Self->{Translation}->{'global'} = 'Global';
     $Self->{Translation}->{'postproductive'} = 'Post-produktiv';

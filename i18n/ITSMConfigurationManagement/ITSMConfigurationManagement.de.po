@@ -810,7 +810,7 @@ msgstr "Configuration Item-Sammelaktion."
 
 #. SysConfig
 msgid "Configuration item search backend router of the agent interface."
-msgstr ""
+msgstr "Backend-Router für die Configuration Item-Suche der Agentenoberfläche."
 
 #. SysConfig
 msgid "Create and manage the definitions for Configuration Items."
@@ -1186,7 +1186,7 @@ msgstr "dynamische Felder Administration"
 
 #. SysConfig
 msgid "DynamicFieldConfigItem"
-msgstr ""
+msgstr "Dynamisches Feld Config-Item"
 
 #. SysConfig
 msgid "No longer in use. Do not change. Required due to compatibility with previous package versions."
@@ -1278,41 +1278,41 @@ msgstr "Verknüpfung zu Config-Item \"%s\" entfernt."
 
 #. SysConfig
 msgid "Autoloading of upload cache."
-msgstr ""
+msgstr "Automatisches Laden des Upload-Caches."
 
 #. SysConfig
 msgid "Filters the customer company config items by depoyment states into the customer config item widget."
-msgstr ""
+msgstr "Filtert die Config-Items der Kundenfirma nach Verwendungsstatus in das Kunden-Config-Item-Widget."
 
 #. SysConfig
 msgid "Filters the customer config items by depoyment states into the customer config item widget."
-msgstr ""
+msgstr "Filtert die Kunden-Config-Items nach Verwendungsstatus in das Kunden-Config-Item-Widget."
 
 #. SysConfig
 msgid "Defines the default search attribute for CI search screen."
-msgstr ""
+msgstr "Definiert das Standard-Suchattribut für die Configuration Items-Suche."
 
 #. TT Template: Kernel/Output/HTML/Templates/Standard/AdminDynamicFieldConfigItem/Config.tt
 msgid "Select a link type to enable linking between the ticket and the selected config items. Note that linking is only available for dynamic fields of tickets."
-msgstr ""
+msgstr "Wählen Sie einen Linktyp, um die Verknüpfung zwischen Ticket und gewählten Config-Items zu aktivieren. Beachten Sie, dass die Verknüpfung nur für dynamische Felder von Tickets zur Verfügung steht."
 
 #. SysConfig
 msgid "Define a mapping between CI classes and Font Awesome icons which are shown in the agent interface."
-msgstr ""
+msgstr "Definieren Sie eine Zuordnung zwischen CI-Klassen und Font Awesome-Symbolen, welche im Agenten-Interface angezeigt werden."
 
 #. SysConfig
 msgid "Dynamic Field Config Item"
-msgstr ""
+msgstr "Dynamisches Feld Config-Item"
 
 #. SysConfig
 msgid "Filters the customer company config items by deployment states into the customer config item widget."
-msgstr ""
+msgstr "Filtert die Config-Items der Kundenfirma nach Verwendungsstatus in das Kunden-Config-Item-Widget."
 
 #. SysConfig
 msgid "Filters the customer config items by deployment states into the customer config item widget."
-msgstr ""
+msgstr "Filtert die Kunden-Config-Items nach Verwendungsstatus in das Kunden-Config-Item-Widget."
 
 #. SysConfig
 msgid "Ticket event module that updates dynamic fields."
-msgstr ""
+msgstr "Ticket-Event-Modul, das dynamische Felder aktualisiert."
 
