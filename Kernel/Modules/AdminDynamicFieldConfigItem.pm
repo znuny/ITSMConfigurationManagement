@@ -10,6 +10,7 @@ package Kernel::Modules::AdminDynamicFieldConfigItem;
 
 use strict;
 use warnings;
+use utf8;
 
 our @ObjectDependencies = (
     'Kernel::Config',
@@ -157,7 +158,8 @@ sub _AddAction {
     }
 
     for my $ConfigParam (
-        qw(ObjectType ObjectTypeName FieldType FieldTypeName ValidID ConfigItemClass ConfigItemLinkType ConfigItemLinkSource ConfigItemLinkRemoval)
+        qw(ObjectType ObjectTypeName FieldType FieldTypeName ValidID ConfigItemClass ConfigItemLinkType ConfigItemLinkSource ConfigItemLinkRemoval
+        RestrictByCustomerIDAgent RestrictByCustomerUserIDAgent RestrictByCustomerIDCustomer RestrictByCustomerUserIDCustomer)
         )
     {
         $GetParam{$ConfigParam} = $ParamObject->GetParam( Param => $ConfigParam );
@@ -212,7 +214,8 @@ sub _AddAction {
     # overwrite dynamic field config
     KEY:
     for my $Key (
-        qw( ConfigItemClass DeplStates ConfigItemLinkType ConfigItemLinkSource ConfigItemLinkRemoval AdditionalDFStorage )
+        qw( ConfigItemClass DeplStates ConfigItemLinkType ConfigItemLinkSource ConfigItemLinkRemoval AdditionalDFStorage
+        RestrictByCustomerIDAgent RestrictByCustomerUserIDAgent RestrictByCustomerIDCustomer RestrictByCustomerUserIDCustomer )
         )
     {
         next KEY if !defined $GetParam{$Key};
@@ -376,7 +379,8 @@ sub _ChangeAction {
     }
 
     for my $ConfigParam (
-        qw(ObjectType ObjectTypeName FieldType FieldTypeName DefaultValue ValidID ConfigItemLinkType ConfigItemLinkSource ConfigItemLinkRemoval)
+        qw(ObjectType ObjectTypeName FieldType FieldTypeName DefaultValue ValidID ConfigItemLinkType ConfigItemLinkSource ConfigItemLinkRemoval
+        RestrictByCustomerIDAgent RestrictByCustomerUserIDAgent RestrictByCustomerIDCustomer RestrictByCustomerUserIDCustomer)
         )
     {
         $GetParam{$ConfigParam} = $ParamObject->GetParam( Param => $ConfigParam );
@@ -395,6 +399,11 @@ sub _ChangeAction {
     $DynamicFieldConfig->{Config}->{ConfigItemLinkType}    = $GetParam{ConfigItemLinkType};
     $DynamicFieldConfig->{Config}->{ConfigItemLinkSource}  = $GetParam{ConfigItemLinkSource};
     $DynamicFieldConfig->{Config}->{ConfigItemLinkRemoval} = $GetParam{ConfigItemLinkRemoval};
+
+    $DynamicFieldConfig->{Config}->{RestrictByCustomerIDAgent}        = $GetParam{RestrictByCustomerIDAgent};
+    $DynamicFieldConfig->{Config}->{RestrictByCustomerUserIDAgent}    = $GetParam{RestrictByCustomerUserIDAgent};
+    $DynamicFieldConfig->{Config}->{RestrictByCustomerIDCustomer}     = $GetParam{RestrictByCustomerIDCustomer};
+    $DynamicFieldConfig->{Config}->{RestrictByCustomerUserIDCustomer} = $GetParam{RestrictByCustomerUserIDCustomer};
 
     if ( !$GetParam{ValidID} ) {
         return $LayoutObject->ErrorScreen(
@@ -641,6 +650,24 @@ sub _ShowScreen {
         Class      => 'Modernize',
     );
 
+    # selections to restrict the selectable config items to those of the ticket's customer,
+    # separately for the agent and customer interface, and separately by CustomerID/CustomerUser
+    my %RestrictByCustomerSelectionHTML;
+    for my $RestrictByCustomerConfigKey (
+        qw(RestrictByCustomerIDAgent RestrictByCustomerUserIDAgent RestrictByCustomerIDCustomer RestrictByCustomerUserIDCustomer)
+        )
+    {
+        $RestrictByCustomerSelectionHTML{$RestrictByCustomerConfigKey} = $LayoutObject->BuildSelection(
+            Data => {
+                0 => Translatable('No'),
+                1 => Translatable('Yes'),
+            },
+            Name       => $RestrictByCustomerConfigKey,
+            SelectedID => $Param{$RestrictByCustomerConfigKey} // 0,
+            Class      => 'Modernize',
+        );
+    }
+
     $Output .= $LayoutObject->Output(
         TemplateFile => 'AdminDynamicFieldConfigItem',
         Data         => {
@@ -650,9 +677,10 @@ sub _ShowScreen {
             ConfigItemLinkTypeSelectionHTML    => $ConfigItemLinkTypeSelectionHTML,
             ConfigItemLinkSourceSelectionHTML  => $ConfigItemLinkSourceSelectionHTML,
             ConfigItemLinkRemovalSelectionHTML => $ConfigItemLinkRemovalSelectionHTML,
-            ValidityStrg                       => $ValidityStrg,
-            DynamicFieldOrderStrg              => $DynamicFieldOrderStrg,
-            ReadonlyInternalField              => $ReadonlyInternalField,
+            %RestrictByCustomerSelectionHTML,
+            ValidityStrg          => $ValidityStrg,
+            DynamicFieldOrderStrg => $DynamicFieldOrderStrg,
+            ReadonlyInternalField => $ReadonlyInternalField,
         },
     );
 

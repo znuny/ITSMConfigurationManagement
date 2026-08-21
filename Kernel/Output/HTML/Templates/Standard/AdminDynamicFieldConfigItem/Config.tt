@@ -48,6 +48,40 @@
     </div>
 </div>
 
+<div class="field-wrapper">
+    <label for="RestrictByCustomerIDAgent">[% Translate("Restrict to customer ID (agent interface)") | html %]</label>
+    <div class="Field">
+        [% Data.RestrictByCustomerIDAgent %]
+        <p class="FieldExplanation">[% Translate("Activate this option to only show config items assigned to the ticket's customer ID, in the agent interface.") | html %]</p>
+    </div>
+</div>
+
+<div class="field-wrapper">
+    <label for="RestrictByCustomerUserIDAgent">[% Translate("Restrict to customer user (agent interface)") | html %]</label>
+    <div class="Field">
+        [% Data.RestrictByCustomerUserIDAgent %]
+        <p class="FieldExplanation">[% Translate("Activate this option to only show config items assigned to the ticket's customer user, in the agent interface.") | html %]</p>
+    </div>
+</div>
+
+<div class="field-wrapper">
+    <label for="RestrictByCustomerIDCustomer">[% Translate("Restrict to customer ID (customer interface)") | html %]</label>
+    <div class="Field">
+        [% Data.RestrictByCustomerIDCustomer %]
+        <p class="FieldExplanation">[% Translate("Activate this option to only show config items assigned to the ticket's customer ID, in the customer interface.") | html %]</p>
+    </div>
+</div>
+
+<div class="field-wrapper">
+    <label for="RestrictByCustomerUserIDCustomer">[% Translate("Restrict to customer user (customer interface)") | html %]</label>
+    <div class="Field">
+        [% Data.RestrictByCustomerUserIDCustomer %]
+        <p class="FieldExplanation">[% Translate("Activate this option to only show config items assigned to the ticket's customer user, in the customer interface.") | html %]</p>
+    </div>
+</div>
+
+<p class="FieldExplanation">[% Translate("Restriction is based on the config item class attribute(s) configured for the Customer/Customer User Information Center widgets (SysConfig groups ITSMConfigItem::Frontend::AgentCustomerInformationCenter / AgentCustomerUserInformationCenter).") | html %]</p>
+
 [% RenderBlockStart("AdditionalDFStorage") %]
 
 <div class="field-wrapper">
