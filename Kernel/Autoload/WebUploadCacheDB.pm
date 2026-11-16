@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2021 Znuny GmbH, https://znuny.org/
 # --
-# $origin: Znuny - bae2fb28ba2e90d82f5f4915b2ef0274cd350138 - Kernel/System/Web/UploadCache/DB.pm
+# $origin: Znuny - 1e28c86b12c5326849e6ef84bd8d7e3434f3fad7 - Kernel/System/Web/UploadCache/DB.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
