@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Application">
+  <Setting Name="Stats::DynamicObjectRegistration###CMDBList" Required="0" Valid="1">
+	<Description Translatable="1">Enables the CMDB list statistics module for configuration items.</Description>
+        <Navigation>Core::Stats</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::Stats::Dynamic::CMDBList</Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
