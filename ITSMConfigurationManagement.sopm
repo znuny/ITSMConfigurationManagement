@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<otrs_package version="1.0">
+<package version="1.0">
     <Name>ITSMConfigurationManagement</Name>
     <Version>7.3.6</Version>
-    <Framework>7.3.x</Framework>
-    <PackageRequired Version="7.3.1">ITSMCore</PackageRequired>
+    <Framework>7.5.x</Framework>
+    <PackageRequired Version="7.5.1">ITSMCore</PackageRequired>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
@@ -1668,4 +1668,4 @@
     <PackageMerge Name="Znuny-ITSMConfigItemTypes" TargetVersion="6.5.0"/>
     <PackageMerge Name="Znuny4OTRS-ITSMConfigItemInvoker" TargetVersion="6.5.0"/>
     <PackageMerge Name="Znuny-ITSMConfigItemInvoker" TargetVersion="6.5.0"/>
-</otrs_package>
+</package>

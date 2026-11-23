@@ -30,8 +30,8 @@ This package provides the ITSM Configuration Management (CMDB) functionality for
 
 **Prerequisites**
 
-- Znuny 7.3
-- ITSMCore 7.3.1
+- Znuny 7.5
+- ITSMCore 7.5.1
 
 **Installation**
 

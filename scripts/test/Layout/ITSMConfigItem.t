@@ -332,7 +332,7 @@ $Self->IsDeeply(
 # Set OTRSTimeZone to UTC.
 $Helper->ConfigSettingChange(
     Valid => 1,
-    Key   => 'OTRSTimeZone',
+    Key   => 'ZnunyTimeZone',
     Value => 'UTC',
 );
 
